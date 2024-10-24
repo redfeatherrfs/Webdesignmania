@@ -12,6 +12,8 @@ import OurWork from '../components/OurWork';
 import HomeGallery from '../components/HomeGallery';
 
 import FooterSection from '../components/Footer';
+import ContactForm from '../components/ContactForm';
+import TestimonialSection from '../components/Testimonial';
 
 
 
@@ -34,6 +36,9 @@ const Home = () => {
             <UniqueUIDesignsSection/>
 
             <HomeGallery/>
+            <TestimonialSection/>
+            <ContactForm/>
+            
             <FooterSection/>
             
 
