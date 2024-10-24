@@ -3,7 +3,7 @@ import React from 'react';
 
 const UniqueUIDesignsSection = () => {
   const services = [
-    { id: '01', title: 'Website Design', description: 'Affordable Web Design & Development Services', imgSrc: 'images/Mask group.png', alt: 'Website Design' },
+    { id: '01', title: 'Website Design', description: 'Affordable Web Design & Development Services', imgSrc:"images/Mask group.png", alt: 'Website Design' },
     { id: '02', title: 'App Design', description: 'Focused on Creating Engaging and Successful Mobile Apps', imgSrc: 'images/Mask group-1.png', alt: 'App Design' },
     { id: '03', title: 'SEO', description: 'Professional Search Engine Optimization (SEO) Services', imgSrc: 'images/Mask group-4.png', alt: 'SEO' },
     { id: '04', title: 'Stationery Design', description: 'Professional Business Stationery Design Services', imgSrc: 'images/Mask group-3.png', alt: 'Stationery Design' },
