@@ -1,0 +1,91 @@
+
+/* pricing */
+
+.scrollable-content {
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 15px 0;
+  font-size: 12px;
+  color: grey;
+  font-weight: 600;
+}
+
+.package-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.package-list li {
+  margin: 10px 0;
+}
+
+.package-list li::before {
+  content: "\2022";
+  color: #0c140e;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.package-header {
+  margin-bottom: 15px;
+}
+
+.package-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.package-btn:hover {
+  background-color: #0056b3;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price h2 {
+  margin-right: 10px;
+  color: red;
+}
+
+.price strike {
+  color: gray;
+}
+
+.scrollable-content::-webkit-scrollbar {
+  width: 3px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+  background-color: #3A19CB;
+  border-radius: 5px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+  background-color: #B4B3BD;
+}
+
+.package {
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+/* PricingSection.css */
+.pricing-tabs .nav-item {
+  margin-right: 15px; /* Adjust the value to control spacing */
+}
+
+.pricing-tabs .nav-item:last-child {
+  margin-right: 0; /* Remove margin for the last tab */
+}

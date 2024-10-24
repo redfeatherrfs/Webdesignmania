@@ -6,10 +6,10 @@ import LogoSection from '../components/logos';
 import GetStartedSection from '../components/Formsection';
 import OurMissionSection from '../components/MissionVision';
 import StatisticsSection from '../components/Statistics';
-import CustomCarousel from '../components/Carousel';
 import UniqueUIDesignsSection from '../components/UniqueUIDesigns';
 import OurWork from '../components/OurWork';
 import HomeGallery from '../components/HomeGallery';
+import Pricing from '../components/PricingSection';
 
 import FooterSection from '../components/Footer';
 
@@ -32,8 +32,9 @@ const Home = () => {
             <OurWork/>
             {/* <CustomCarousel/> */}
             <UniqueUIDesignsSection/>
-
             <HomeGallery/>
+            <Pricing/>
+
             <FooterSection/>
             
 
