@@ -15,6 +15,9 @@ import FooterSection from '../components/Footer';
 import ContactForm from '../components/ContactForm';
 import TestimonialSection from '../components/Testimonial';
 
+import bannerImage from '../images/div.home_wrap.png'; // Ensure the image path is correct
+
+
 
 
  
@@ -26,7 +29,7 @@ const Home = () => {
     return (
         <>
             <HeaderSection/>
-            <BannerSection /> {/* Include the BannerSection component here */}
+            <BannerSection title="We create awesome\ntailor-made websites" image={bannerImage} /> {/* Include the BannerSection component here */}
             <LogoSection />
             <GetStartedSection/>
             <OurMissionSection/>

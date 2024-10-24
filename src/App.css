@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+.btn-custom {
+    background-color: #3E1DCE !important;
+    color: #ffffff !important;
+}
 
 
 
@@ -599,6 +603,15 @@ body {
       column-count: 1; /* Reduce to 1 column on small screens */
   }
 }
+
+/* ENGAGING UI SECTION */
+.engaging-ui-section .btn-custom {
+    width: 182px;
+    height: 48px;
+}
+
+
+/* ENGAGING UI SECTION */
 
 
 
