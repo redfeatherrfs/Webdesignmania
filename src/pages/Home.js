@@ -8,6 +8,8 @@ import OurMissionSection from '../components/MissionVision';
 import StatisticsSection from '../components/Statistics';
 import CustomCarousel from '../components/Carousel';
 import UniqueUIDesignsSection from '../components/UniqueUIDesigns';
+import OurWork from '../components/OurWork';
+import HomeGallery from '../components/HomeGallery';
 
 import FooterSection from '../components/Footer';
 
@@ -27,10 +29,13 @@ const Home = () => {
             <GetStartedSection/>
             <OurMissionSection/>
             <StatisticsSection/>
-            <CustomCarousel/>
+            <OurWork/>
+            {/* <CustomCarousel/> */}
             <UniqueUIDesignsSection/>
-            <FooterSection/>
 
+            <HomeGallery/>
+            <FooterSection/>
+            
 
             {/* <div>
                 <h1>Home Page</h1>
