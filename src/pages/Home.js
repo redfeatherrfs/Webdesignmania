@@ -12,6 +12,8 @@ import HomeGallery from '../components/HomeGallery';
 import Pricing from '../components/PricingSection';
 
 import FooterSection from '../components/Footer';
+import ContactForm from '../components/ContactForm';
+import TestimonialSection from '../components/Testimonial';
 
 
 
@@ -35,6 +37,9 @@ const Home = () => {
             <HomeGallery/>
             <Pricing/>
 
+            <TestimonialSection/>
+            <ContactForm/>
+            
             <FooterSection/>
             
 
