@@ -4,6 +4,120 @@ body {
   padding: 0;
 }
 
+
+
+
+/* Start header */
+
+.custom-header .navbar {
+  background: linear-gradient(0deg, #1E00B200 7.59%, #160a48 82.03%);
+  padding: 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+.custom-header .navbar-brand img {
+  max-width: 150px; /* Adjust logo size */
+}
+
+.custom-header .custom-nav-link {
+  color: #ffffff !important; /* White text for navigation links */
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.custom-header .custom-nav-link:hover {
+  color: #dbe1ff !important; /* Hover effect */
+}
+
+.custom-header .custom-phone-number a {
+  color: #ffffff !important; /* White color for the phone number */
+  font-weight: 600;
+}
+
+.custom-header .custom-phone-number a:hover {
+  color: #dbe1ff !important; /* Hover effect for phone number */
+}
+
+.custom-header .navbar.fixed-top.scrolled {
+  background: #00000075;
+}
+
+
+/* End header */
+
+
+
+
+
+   /* Footer Styles */
+   .footer {
+    background-color: #3E1DCE; /* Footer background color */
+    padding-top: 40px;
+    padding-bottom: 0px;
+    color: white;
+  }
+
+  .footer .footer-heading {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+
+  .footer p {
+    font-size: 14px;
+    line-height: 1.5;
+    padding-right: 50px;
+  }
+
+  .footer .footer-links {
+    padding-left: 0; /* Remove padding for the links */
+  }
+
+  .footer .footer-links li {
+    list-style: none;
+    text-align: left; /* Align list items to the left */
+  }
+
+  .footer .footer-links a {
+    color: #ffffff; /* Set link color to white */
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .footer .footer-links a:hover {
+    color: #dbe1ff;
+  }
+
+  .footer .social-icons a {
+    color: white;
+    margin-right: 10px;
+  }
+
+  .footer .payment-icons img {
+    max-width: 160px;
+    margin-right: 10px;
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #2b0f91;
+    padding-top: 15px;
+    font-size: 14px;
+  }
+
+  .footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+
+  .footer-bottom a:hover {
+    color: #dbe1ff;
+  }
+
+
+
+
 /* Banner Section */
 .banner-section {
   display: flex;
@@ -485,3 +599,12 @@ body {
       column-count: 1; /* Reduce to 1 column on small screens */
   }
 }
+
+
+
+
+
+
+
+
+

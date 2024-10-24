@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HeaderSection from '../components/Header';
 import BannerSection from '../components/banner'; // Adjust the path if needed
 import LogoSection from '../components/logos';
 import GetStartedSection from '../components/Formsection';
@@ -7,6 +8,9 @@ import OurMissionSection from '../components/MissionVision';
 import StatisticsSection from '../components/Statistics';
 import CustomCarousel from '../components/Carousel';
 import UniqueUIDesignsSection from '../components/UniqueUIDesigns';
+
+import FooterSection from '../components/Footer';
+
 
 
  
@@ -17,6 +21,7 @@ import UniqueUIDesignsSection from '../components/UniqueUIDesigns';
 const Home = () => {
     return (
         <>
+            <HeaderSection/>
             <BannerSection /> {/* Include the BannerSection component here */}
             <LogoSection />
             <GetStartedSection/>
@@ -24,6 +29,8 @@ const Home = () => {
             <StatisticsSection/>
             <CustomCarousel/>
             <UniqueUIDesignsSection/>
+            <FooterSection/>
+
 
             {/* <div>
                 <h1>Home Page</h1>
