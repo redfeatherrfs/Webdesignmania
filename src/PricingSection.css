@@ -95,11 +95,32 @@
 }
 
 .package {
-  border: 2px solid #d6cfff;
-  border-radius: 10px;
+  position: relative;
   padding: 20px;
   background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures the gradient doesn't overflow */
+  z-index: 1;
 }
+
+.package::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px; /* Matches the main element’s border radius */
+  padding: 1px; /* Matches the border width */
+  background: linear-gradient(0deg, rgba(35, 2, 177, 0.1) 2.39%, #6A48FF 36.71%);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; 
+          mask-composite: exclude;
+  z-index: -1; /* Places gradient behind content */
+}
+
 /* PricingSection.css */
 #pricing-tabs .nav-item {
   margin-right: 10px; /* Adjust spacing as needed */
