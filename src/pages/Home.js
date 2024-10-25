@@ -24,13 +24,6 @@ import serviceImage5 from '../images/Mask group-4.png'
 import serviceImage6 from '../images/Mask group-5.png'
 
 
-
-
- 
-
- 
- 
- 
 const Home = () => {
     const services = [
         { id: '01', title: 'Website Design', description: 'Affordable Web Design & Development Services', imgSrc: serviceImage1, alt: 'Website Design' },

@@ -9,6 +9,17 @@
   color: grey;
   font-weight: 600;
 }
+.pricing-heading-one{
+  font-weight: 700;
+  font-size: 54px;
+}
+.pricing-one{
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #A5A5A5;
+
+}
 
 .package-list {
   list-style-type: none;
@@ -30,15 +41,22 @@
 
 .package-header {
   margin-bottom: 15px;
+  text-align: left;
+
 }
+.package-header h5{
+  text-align: left;
+  color: #6542F9;
+}
+
 
 .package-btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
+  padding: 10px 80px;
+  background: linear-gradient(0deg, #2302B1 0%, #6A48FF 96.76%);
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px;
   text-decoration: none;
   margin-top: 15px;
 }
@@ -49,13 +67,14 @@
 
 .price {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  justify-content: left;
 }
 
 .price h2 {
   margin-right: 10px;
-  color: red;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
 
 .price strike {
@@ -76,16 +95,16 @@
 }
 
 .package {
-  border: 2px solid #007bff;
+  border: 2px solid #d6cfff;
   border-radius: 10px;
   padding: 20px;
   background-color: #f9f9f9;
 }
 /* PricingSection.css */
-.pricing-tabs .nav-item {
-  margin-right: 15px; /* Adjust the value to control spacing */
+#pricing-tabs .nav-item {
+  margin-right: 10px; /* Adjust spacing as needed */
 }
 
-.pricing-tabs .nav-item:last-child {
-  margin-right: 0; /* Remove margin for the last tab */
+#pricing-tabs .nav-item:last-child {
+  margin-right: 0; /* Removes extra spacing on the last item */
 }
