@@ -1,8 +1,64 @@
-import React from 'react';
+// import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+
 import { Tabs, Tab, Container, Row, Col } from 'react-bootstrap';
 import '../PricingSection.css'; // Import the CSS file
 
+
+
 const PricingSection = () => {
+  // Form state to capture user input
+  const [formData, setFormData] = useState({
+    fullName: '',
+    contactNumber: '',
+    emailAddress: '',
+    services: '',
+  });
+
+// State to manage the price
+const [price, setPrice] = useState('$10'); // Default price
+
+// Function to fetch user's location and set price
+const fetchLocationAndSetPrice = async () => {
+  try {
+    const response = await axios.get('https://ipapi.co/json/');
+    const { country } = response.data;
+
+    if (country === 'GB') {
+      setPrice('£10'); // Set price to £10 if from UK
+    } else {
+      setPrice('$10'); // Set price to $10 for everywhere else
+    }
+  } catch (error) {
+    console.error('Error fetching location:', error);
+  }
+};
+
+
+
+useEffect(() => {
+  fetchLocationAndSetPrice(); // Fetch location on component mount
+}, []);
+
+// Handle form input changes
+const handleChange = (e) => {
+  const { name, value } = e.target;
+  setFormData({
+    ...formData,
+    [name]: value,
+  });
+};
+
+// Handle form submission
+const handleSubmit = (e) => {
+  e.preventDefault();
+  // Submit the form data to backend or show a message
+  console.log('Form submitted:', formData);
+  alert('Form submitted successfully!');
+};
+ 
   // Sample packages with more items for each category
   const packages = [
     {
@@ -160,9 +216,8 @@ const PricingSection = () => {
   return (
     <section className="pricing-section text-center py-5">
       <Container>
-         <h6 className="pricing-one">Pricing</h6>
-        <h2 className="mb-4 pricing-heading-one">Pocket-Friendly Pricing Solutions</h2>
-
+        <h2 className="mb-4">Pocket-Friendly Pricing Solutions </h2>
+        <h3 className="mt-3">Price: {price}</h3> {/* Display price */}
         {/* React Bootstrap Tabs with Centered and No Underline */}
         <Tabs
           defaultActiveKey="Logo Design"
