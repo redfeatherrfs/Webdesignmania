@@ -3,19 +3,21 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules'; // Import Navigation and Autoplay modules
 import 'swiper/css';
 import 'swiper/css/navigation';
-import carouselImg from '../images/Mask group-7.png'; // Example import for images
+import ourworkimg1 from '../images/our-work1.png';
+import ourworkimg2 from '../images/our-work2.png';
+import ourworkimg3 from '../images/our-work3.png'; // Example import for images
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is loaded
 import '../OurWork.css';
 
 const OurWork = () => {
     const projects = [
-        { category: 'Fashion', title: 'Kate Spade', image: carouselImg, link: '#' },
-        { category: 'Food & Beverages', title: 'Dayfresh', image: carouselImg, link: '#' },
-        { category: 'Vehicles', title: 'Isuzu', image: carouselImg, link: '#' },
-        { category: 'Technology', title: 'Apple', image: carouselImg, link: '#' },
-        { category: 'Technology', title: 'Apple', image: carouselImg, link: '#' },
-        { category: 'Technology', title: 'Apple', image: carouselImg, link: '#' },
-        { category: 'Technology', title: 'Apple', image: carouselImg, link: '#' },
+        { category: 'Fashion', title: 'Kate Spade', image: ourworkimg1, link: '#' },
+        { category: 'Food & Beverages', title: 'Dayfresh', image: ourworkimg2, link: '#' },
+        { category: 'Vehicles', title: 'Isuzu', image: ourworkimg3, link: '#' },
+        { category: 'Technology', title: 'Apple', image: ourworkimg1, link: '#' },
+        { category: 'Technology', title: 'Apple', image: ourworkimg2, link: '#' },
+        { category: 'Technology', title: 'Apple', image: ourworkimg3, link: '#' },
+        { category: 'Technology', title: 'Apple', image: ourworkimg1, link: '#' },
         // Add more projects as needed
     ];
 
