@@ -10,13 +10,10 @@ import UniqueUIDesignsSection from '../components/UniqueUIDesigns';
 import OurWork from '../components/OurWork';
 import HomeGallery from '../components/HomeGallery';
 import Pricing from '../components/PricingSection';
-
 import FooterSection from '../components/Footer';
 import ContactForm from '../components/ContactForm';
 import TestimonialSection from '../components/Testimonial';
 import AllInOnePkgs from '../components/AllinOnepkg';
-
-
 import bannerImage from '../images/div.home_wrap.png'; // Ensure the image path is correct
 import serviceImage1 from '../images/Mask group.png'
 import serviceImage2 from '../images/Mask group-1.png'
@@ -27,12 +24,6 @@ import serviceImage6 from '../images/Mask group-5.png'
 
 
 
-
-
- 
-
- 
- 
  
 const Home = () => {
     const services = [

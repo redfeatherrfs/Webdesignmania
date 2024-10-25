@@ -4,14 +4,17 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/AboutUs';
 import AppPage from './pages/AppPage';
+import ContactUs from './pages/ContactUs';
 
 const App = () => {
     return (
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/app" element={<AppPage />} />
+                <Route path="/about-us" element={<About />} />
+                <Route path="/app-design" element={<AppPage />} />
+                <Route path="/contact-us" element={<ContactUs />} />
+                
             </Routes>
         </Router>
     );
