@@ -160,7 +160,8 @@ const PricingSection = () => {
   return (
     <section className="pricing-section text-center py-5">
       <Container>
-        <h2 className="mb-4">Pocket-Friendly Pricing Solutions</h2>
+         <h6 className="pricing-one">Pricing</h6>
+        <h2 className="mb-4 pricing-heading-one">Pocket-Friendly Pricing Solutions</h2>
 
         {/* React Bootstrap Tabs with Centered and No Underline */}
         <Tabs

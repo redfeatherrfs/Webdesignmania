@@ -55,9 +55,6 @@ body {
 /* End header */
 
 
-
-
-
 /* Footer Styles */
 .footer {
     background-color: #3E1DCE;
@@ -127,8 +124,7 @@ body {
 .footer-bottom a:hover {
     color: #dbe1ff;
 }
-
-
+/* End Footer Styles */
 
 
 /* Banner Section */
@@ -671,5 +667,3 @@ body {
     border: none;
     font-size: 35px;
 }
-
-/* ENGAGING UI CAROUSEL SECTION */
