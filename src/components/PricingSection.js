@@ -3,158 +3,213 @@ import { Tabs, Tab, Container, Row, Col } from 'react-bootstrap';
 import '../PricingSection.css'; // Import the CSS file
 
 const PricingSection = () => {
-  // Sample packages with more items for each category
+  // Sample packages with corrected property names for original price
   const packages = [
     {
       id: 1,
-      category: 'Logo Design',
+      category: 'Custom Website',
       items: [
         {
            title: "LOGO SPECIAL PACKAGE",
            subtitle:"Professional & Unique Designs!",
-           price: "$299",
-           originalPric: "$799",
+           price: "Let’s talk!",
+          //  originalPrice: "$799", // Corrected property name
            features: [
-        "Custom Logo Design",
-        "3 Initial Concepts",
-        "Unlimited Revisions",
-        "4 Original Logo Concepts",
-        "4 Dedicated Logo Designers",
-        "4 Revisions",
-        "With Grey Scale Format",
-        "Free Icon Design",
-        "24 – 48 Hours Turnaround Time",
-        "100% Satisfaction",
-        "100% Ownership Rights",
-        "Money Back Guarantee*",
-        "Dedicated Account Manager"],
-    
+              "Custom Logo Design",
+              "3 Initial Concepts",
+              "Unlimited Revisions",
+              "4 Original Logo Concepts",
+              "4 Dedicated Logo Designers",
+              "4 Revisions",
+              "With Grey Scale Format",
+              "Free Icon Design",
+              "24 – 48 Hours Turnaround Time",
+              "100% Satisfaction",
+              "100% Ownership Rights",
+              "Money Back Guarantee*",
+              "Dedicated Account Manager"
+           ],
         },
         {
           title: "PROFESSIONAL LOGO PACKAGE",
           subtitle:"Professional & Unique Designs!",
-          price: "$299",
-          originalPric: "$799",
+          price: "Let’s talk!",
+          // originalPrice: "$799", // Corrected property name
           features: [
-       "Custom Logo Design",
-       "3 Initial Concepts",
-       "Unlimited Revisions",
-       "4 Original Logo Concepts",
-       "4 Dedicated Logo Designers",
-       "4 Revisions",
-       "With Grey Scale Format",
-       "Free Icon Design",
-       "24 – 48 Hours Turnaround Time",
-       "100% Satisfaction",
-       "100% Ownership Rights",
-       "Money Back Guarantee*",
-       "Dedicated Account Manager"],
-   
-       },
-       {
-        title: "LOGO INFINITE PACKAGE",
-        subtitle:"Professional & Unique Designs!",
-        price: "$299",
-        originalPric: "$799",
-        features: [
-     "Custom Logo Design",
-     "3 Initial Concepts",
-     "Unlimited Revisions",
-     "4 Original Logo Concepts",
-     "4 Dedicated Logo Designers",
-     "4 Revisions",
-     "With Grey Scale Format",
-     "Free Icon Design",
-     "24 – 48 Hours Turnaround Time",
-     "100% Satisfaction",
-     "100% Ownership Rights",
-     "Money Back Guarantee*",
-     "Dedicated Account Manager"],
- 
-     },
+              "Custom Logo Design",
+              "3 Initial Concepts",
+              "Unlimited Revisions",
+              "4 Original Logo Concepts",
+              "4 Dedicated Logo Designers",
+              "4 Revisions",
+              "With Grey Scale Format",
+              "Free Icon Design",
+              "24 – 48 Hours Turnaround Time",
+              "100% Satisfaction",
+              "100% Ownership Rights",
+              "Money Back Guarantee*",
+              "Dedicated Account Manager"
+          ],
+        },
+        {
+          title: "LOGO INFINITE PACKAGE",
+          subtitle:"Professional & Unique Designs!",
+          price: "Let’s talk!",
+          // originalPrice: "$799", // Corrected property name
+          features: [
+              "Custom Logo Design",
+              "3 Initial Concepts",
+              "Unlimited Revisions",
+              "4 Original Logo Concepts",
+              "4 Dedicated Logo Designers",
+              "4 Revisions",
+              "With Grey Scale Format",
+              "Free Icon Design",
+              "24 – 48 Hours Turnaround Time",
+              "100% Satisfaction",
+              "100% Ownership Rights",
+              "Money Back Guarantee*",
+              "Dedicated Account Manager"
+          ],
+        },
       ],
     },
     {
       id: 2,
-      category: 'Website',
+      category: 'E-commerce Website',
       items: [
         {
           title: "Basic Website Package",
           subtitle: "Best Value for Money Guaranteed!",
           price: "$199",
-          originalPrice: "$665",
+          originalPrice: "$665", // This is correct
           features: ["3 Page Website", "5 Revisions", "2 Stock Images"],
         },
         {
           title: "Standard Website Package",
           subtitle: "Perfect for Small Businesses!",
           price: "$499",
-          originalPrice: "$899",
+          originalPrice: "$899", // This is correct
           features: ["5 Page Website", "10 Revisions", "SEO Ready"],
         },
         {
           title: "Premium Website Package",
           subtitle: "Advanced Features Included!",
           price: "$999",
-          originalPrice: "$1499",
+          originalPrice: "$1499", // This is correct
           features: ["10 Page Website", "Unlimited Revisions", "E-commerce Ready"],
         },
       ],
     },
     {
       id: 3,
-      category: 'E-Commerce',
+      category: 'Logo Design',
       items: [
         {
           title: "Basic E-Commerce Package",
           subtitle: "Get Your Store Online!",
           price: "$399",
-          originalPrice: "$999",
+          originalPrice: "$999", // This is correct
           features: ["10 Products Setup", "Payment Gateway Integration", "Basic SEO Setup"],
         },
         {
           title: "Standard E-Commerce Package",
           subtitle: "Launch Your Business!",
           price: "$699",
-          originalPrice: "$1299",
+          originalPrice: "$1299", // This is correct
           features: ["50 Products Setup", "Payment Gateway Integration", "Advanced SEO Setup"],
         },
         {
           title: "Premium E-Commerce Package",
           subtitle: "All-in-One Solution!",
           price: "$1299",
-          originalPrice: "$1999",
+          originalPrice: "$1999", // This is correct
           features: ["Unlimited Products", "Custom Features", "Marketing Tools"],
         },
       ],
     },
     {
       id: 4,
-      category: 'Stationery',
+      category: 'Stationery Design',
       items: [
         {
           title: "Stationery Design Package",
           subtitle: "Complete Branding Solution!",
           price: "$150",
-          originalPrice: "$450",
+          originalPrice: "$450", // This is correct
           features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
         },
         {
           title: "Business Branding Package",
           subtitle: "All Your Needs Covered!",
           price: "$350",
-          originalPrice: "$750",
+          originalPrice: "$750", // This is correct
           features: ["Business Cards", "Letterhead", "Email Signature"],
         },
         {
           title: "Custom Stationery Package",
           subtitle: "Tailored for You!",
           price: "$250",
-          originalPrice: "$550",
+          originalPrice: "$550", // This is correct
           features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
         },
       ],
     },
+    {
+      id: 4,
+      category: 'SEO',
+      items: [
+        {
+          title: "Stationery Design Package",
+          subtitle: "Complete Branding Solution!",
+          price: "$150",
+          originalPrice: "$450", // This is correct
+          features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
+        },
+        {
+          title: "Business Branding Package",
+          subtitle: "All Your Needs Covered!",
+          price: "$350",
+          originalPrice: "$750", // This is correct
+          features: ["Business Cards", "Letterhead", "Email Signature"],
+        },
+        {
+          title: "Custom Stationery Package",
+          subtitle: "Tailored for You!",
+          price: "$250",
+          originalPrice: "$550", // This is correct
+          features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
+        },
+      ],
+    },
+    {
+      id: 4,
+      category: 'SMM',
+      items: [
+        {
+          title: "Stationery Design Package",
+          subtitle: "Complete Branding Solution!",
+          price: "$150",
+          originalPrice: "$450", // This is correct
+          features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
+        },
+        {
+          title: "Business Branding Package",
+          subtitle: "All Your Needs Covered!",
+          price: "$350",
+          originalPrice: "$750", // This is correct
+          features: ["Business Cards", "Letterhead", "Email Signature"],
+        },
+        {
+          title: "Custom Stationery Package",
+          subtitle: "Tailored for You!",
+          price: "$250",
+          originalPrice: "$550", // This is correct
+          features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
+        },
+      ],
+    },
+
   ];
 
   return (
@@ -165,7 +220,7 @@ const PricingSection = () => {
 
         {/* React Bootstrap Tabs with Centered and No Underline */}
         <Tabs
-          defaultActiveKey="Logo Design"
+          defaultActiveKey="Custom Website"
           id="pricing-tabs"
           className="mb-3 justify-content-center" // Center the tabs
           style={{ borderBottom: 'none' }} // Remove the underline
@@ -185,8 +240,8 @@ const PricingSection = () => {
                         <div className="price">
                           <h2>{item.price}</h2>
                           <div>
-                            <strike>{item.originalPrice}</strike>
-                            <span> Only</span>
+                            <strike>{item.originalPrice}</strike> {/* Ensure originalPrice is used */}
+                            {/* <span> Only</span> */}
                           </div>
                         </div>
                       </div>
