@@ -33,7 +33,7 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="footer-heading">Our Services</h5>
             <ul className="footer-links">
-              <li><a href="#">App Design</a></li>
+              <li><a href="/app-design">App Design</a></li>
               <li><a href="#">Website Design</a></li>
               <li><a href="#">SMM</a></li>
               <li><a href="#">Website</a></li>
