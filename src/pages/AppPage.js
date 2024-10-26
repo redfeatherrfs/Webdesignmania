@@ -15,6 +15,7 @@ import FooterSection from "../components/Footer"
 import ContactForm from "../components/ContactForm"
 import TestimonialSection from "../components/Testimonial"
 import PricingSection from "../components/PricingSection"
+import AppDevelopmentProcessSection from "../components/AppDevelopmentProcessSection"
 
 const AppPage = () => {
 
@@ -38,7 +39,7 @@ const AppPage = () => {
             <EngagingUISection />
             <EngagingUiCarouselSection />
             <UniqueUIDesignsSection services={services} page='app'/>
-
+            <AppDevelopmentProcessSection />
             <PricingSection/>
             <TestimonialSection/>
             <ContactForm/>

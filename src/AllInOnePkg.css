@@ -1,4 +1,5 @@
 .allinonepkg {
+    padding: 40px 0;
     max-width: 1400px; /* Expanding the width to 1400px */
     margin: 0 auto; /* Centering the section */
   }
@@ -66,3 +67,18 @@
     padding-left: 10px;
     padding-right: 0;
 }
+  
+  .get-started-btn {
+    background: linear-gradient(0deg, #2302B1 0%, #6A48FF 96.76%);
+    border: none;
+    color: #fff;
+    padding: 10px 25px;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    background: linear-gradient(0deg, #6A48FF 0%, #2302B1 96.76%);
+  }
+  
