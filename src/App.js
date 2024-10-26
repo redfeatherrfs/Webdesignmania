@@ -5,6 +5,10 @@ import Home from './pages/Home';
 import About from './pages/AboutUs';
 import AppPage from './pages/AppPage';
 import ContactUs from './pages/ContactUs';
+import LogoDesign from './pages/LogoDesign';
+
+
+
 
 const App = () => {
     return (
@@ -14,7 +18,7 @@ const App = () => {
                 <Route path="/about-us" element={<About />} />
                 <Route path="/app-design" element={<AppPage />} />
                 <Route path="/contact-us" element={<ContactUs />} />
-                
+                <Route path="/logo-design" element={<LogoDesign />} />
             </Routes>
         </Router>
     );

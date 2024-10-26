@@ -8,8 +8,8 @@ const AllInOnePkg = () => {
       {/* Heading Section */}
       <div className="row text-center">
         <div className="col-12">
-          <p className="sub-heading">ABOUT US</p>
-          <h2 className="main-heading">All In One Combo</h2>
+          {/* <p className="pricing-one">ABOUT US</p> */}
+          <h2 className="pricing-heading-one">All In One Combo</h2>
         </div>
       </div>
       
@@ -74,7 +74,7 @@ const AllInOnePkg = () => {
       {/* Button Section */}
       <div className="row text-center mt-4">
         <div className="col-12">
-          <button className="get-started-btn">Get Started</button>
+          <button className="package-btn">Get Started</button>
         </div>
       </div>
     </section>
