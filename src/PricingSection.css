@@ -129,3 +129,10 @@
 #pricing-tabs .nav-item:last-child {
   margin-right: 0; /* Removes extra spacing on the last item */
 }
+
+.most-popular {
+    background-color: #6342F891;
+    color: white;
+    padding: 7px 9px;
+    font-weight: 600;
+}
