@@ -6,6 +6,8 @@ import About from './pages/AboutUs';
 import AppPage from './pages/AppPage';
 import ContactUs from './pages/ContactUs';
 import LogoDesign from './pages/LogoDesign';
+import SMM from './pages/Smm';
+
 
 
 
@@ -19,6 +21,7 @@ const App = () => {
                 <Route path="/app-design" element={<AppPage />} />
                 <Route path="/contact-us" element={<ContactUs />} />
                 <Route path="/logo-design" element={<LogoDesign />} />
+                <Route path="/smm" element={<SMM />} />
             </Routes>
         </Router>
     );

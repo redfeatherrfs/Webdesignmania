@@ -1,0 +1,40 @@
+.smmprocess .dotted-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 2px dotted #bbb;
+    z-index: 0;
+  }
+  
+  .smmprocess .process-step {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .smmprocess .icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+  
+  .smmprocess h5 {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .smmprocess h3 {
+    color: #333;
+  }
+  
+  .smmprocess p {
+    font-size: 14px;
+    color: #999;
+  }
+  

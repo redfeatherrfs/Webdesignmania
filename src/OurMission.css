@@ -31,8 +31,10 @@
 
 .ourmission-section .vertical-line {
     border-left: 2px solid #ddd;
-    height: 100px;
+    height: 150px;
     margin: 0 auto;
+    margin-left: 70px !important;
+
 }
 
 @media (max-width: 768px) {

@@ -16,19 +16,19 @@
     color: #333;
   }
   
-  h3 {
+  .allinonepkg h3 {
     font-size: 18px;
     font-weight: 600;
     color: #333;
     margin-bottom: 15px;
   }
   
-  ul {
+  .allinonepkg ul {
     list-style: none;
     padding: 0;
   }
   
-  ul li {
+  .allinonepkg ul li {
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
@@ -36,7 +36,7 @@
     align-items: center;
   }
   
-  ul li svg {
+  .allinonepkg ul li svg {
     margin-right: 8px;
     color: #6A48FF;
   }
@@ -61,8 +61,3 @@
     border-left: 2px solid #2302B1;
   }
   
-  /* Remove gap between columns */
-  .row .col-md-2 {
-    padding-left: 10px;
-    padding-right: 0;
-}
