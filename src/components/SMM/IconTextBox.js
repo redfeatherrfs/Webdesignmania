@@ -1,6 +1,7 @@
 import React from "react";
 import '../.././IconTextBox.css';
 import { Container, Row, Col } from "react-bootstrap";
+
 import socialMediaIcon from '../../images/Frame 21.png'; 
 import seoIcon from '../../images/Frame 20.png'; 
 import ppcIcon from '../../images/Frame 22.png'; 

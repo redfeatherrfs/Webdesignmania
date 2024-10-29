@@ -8,53 +8,6 @@ body {
     background-color: #3E1DCE !important;
     color: #ffffff !important;
 }
-
-
-
-/* Start header */
-
-.custom-header .navbar {
-    background: linear-gradient(0deg, #1E00B200 7.59%, #160a48 82.03%);
-    padding: 20px 0;
-    transition: background-color 0.3s ease;
-}
-
-.custom-header .navbar-brand img {
-    max-width: 150px;
-    /* Adjust logo size */
-}
-
-.custom-header .custom-nav-link {
-    color: #ffffff !important;
-    /* White text for navigation links */
-    font-weight: 600;
-    margin-right: 15px;
-}
-
-.custom-header .custom-nav-link:hover {
-    color: #dbe1ff !important;
-    /* Hover effect */
-}
-
-.custom-header .custom-phone-number a {
-    color: #ffffff !important;
-    /* White color for the phone number */
-    font-weight: 600;
-}
-
-.custom-header .custom-phone-number a:hover {
-    color: #dbe1ff !important;
-    /* Hover effect for phone number */
-}
-
-.custom-header .navbar.fixed-top.scrolled {
-    background: #00000075;
-}
-
-
-/* End header */
-
-
 /* Footer Styles */
 .footer {
     background-color: #3E1DCE;

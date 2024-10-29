@@ -9,7 +9,7 @@ const CustomContainerV3 = () => {
         <div className="container custom-container-margin-v3">
             <div className="row align-items-center">
                 <div className="col-lg-6 custom-text-section-v3">
-                    <h2>Same Premium Logos, Now Faster!</h2>
+                    <h2>Same Premium Logos,<br/> Now Faster!</h2>
                     <p>We have delivered top-notch designs to thousands of clients. With our free logo services,
                         get high-quality, customizable logos in minutes straight from our expert designers!
                     </p>
