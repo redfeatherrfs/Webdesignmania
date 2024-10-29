@@ -242,14 +242,96 @@ textarea.lpbanner-input.lpbanner-textarea {
 /* end languagelogos */
 
 
+/* Lp Third section */
+
+.lpthirdsection {
+    background-color: #FAFAFA;
+    padding: 50px 0; /* Add some padding for top and bottom */
+}
+
+.lpiconbox h4{
+    margin-top: 10px;
+}
+
+.lpthird-head{
+    align-items: center;
+    width: 600px;
+}
+
+.lpthirdsection h2{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.lpiconbox {
+    margin-top: 20px;
+    background-color: white;
+    /* border: 1px solid #e0e0e0; */
+    box-shadow: 0 12px 11px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 5px;
+    text-align: left;
+    align-items: center;
+}
+
+
+.lpicon-image {
+    width: 50px; /* Set width for the icon image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and text */
+}
 
 
 
 
+/* End Lp Third Section */
 
 
 
+/* Landing Page CTA */
 
+.lp-cta1 {
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  
+  .cta-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .cta-text {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-buttons .leave-message-btn {
+    background-color: white;
+    color: #4B0082;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .cta-buttons .live-chat-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+
+  
+
+/* End Landing Page CTA */
 
 
 
@@ -267,6 +349,20 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 }
 
+/* Landing Page CTa Mobile Responsive */
+
+@media (max-width: 576px) {
+    .cta-heading {
+      font-size: 1.5rem;
+    }
+  
+    .cta-buttons .leave-message-btn, 
+    .cta-buttons .live-chat-btn {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }
+
 @media only screen and (max-width: 768px) {
 
     .lpbanner-badges img {
@@ -280,7 +376,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     }
     
     .lpbanner-heading {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         color: #fff;
         font-weight: bold;
         /* display: flex; */
@@ -296,6 +392,25 @@ textarea.lpbanner-input.lpbanner-textarea {
 		padding: 5px 0;
 		font-size: 12px;
 	}
+    img.lpbanner-bracket-img {
+        display: none;
+    }
+}
+
+/* Lp Third Section */
+@media (max-width: 768px) {
+    .lpthirdsection h2{
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+    .lpiconbox {
+        flex-direction: column; /* Stack image above text on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .lpicon-image {
+        margin-bottom: 10px; /* Space below image */
+    }
 }
 
 
@@ -309,9 +424,7 @@ textarea.lpbanner-input.lpbanner-textarea {
         color: #fff;
     }
 
-    img.lpbanner-bracket-img {
-        display: none;
-    }
+    
     .lp-right-column{
         width: 100%;
         background-image: none !important;
@@ -330,7 +443,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     }
 .lpbanner {
     
-    background: darkblue;
+    background: #5638DD;
     background-size: cover;
     background-position: center;
     padding: 50px 0;
