@@ -43,15 +43,12 @@ const Home = () => {
             <OurMissionSection/>
             <StatisticsSection/>
             <OurWork/>
-            {/* <CustomCarousel/> */}
             <UniqueUIDesignsSection services={services} page='home'/>
             <HomeGallery/>
             <Pricing/>
             <AllInOnePkgs/>
-
             <TestimonialSection/>
             <ContactForm/>
-            
             <FooterSection/>
             
 
