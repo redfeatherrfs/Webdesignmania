@@ -53,6 +53,7 @@
     color: white; /* Text color for dropdown items */
     text-decoration: none; /* Remove underline */
     transition: background-color 0.3s; /* Smooth transition for background */
+    font-size: 12px;
 }
 
 /* Hover effect for dropdown items */

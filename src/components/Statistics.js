@@ -27,7 +27,7 @@ const StatisticsSection = () => {
       {/* End Statistics Section */}
 
       {/* Start Full Width Image Section */}
-      <section className="banner-section">
+      <section className="secbanner-section">
         <img src={bannerImage} alt="Background" className="img-fluid" />
       </section>
       {/* End Full Width Image Section */}
