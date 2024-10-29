@@ -16,6 +16,8 @@ import ContactForm from "../components/ContactForm"
 import TestimonialSection from "../components/Testimonial"
 import PricingSection from "../components/PricingSection"
 import AppDevelopmentProcessSection from "../components/AppDevelopmentProcessSection"
+import TechnologyStackSection from "../components/TechnologyStackSection"
+import IndustriesSection from "../components/IndustriesSection"
 
 const AppPage = () => {
 
@@ -179,6 +181,8 @@ const AppPage = () => {
             <EngagingUiCarouselSection />
             <UniqueUIDesignsSection services={services} page='app' />
             <AppDevelopmentProcessSection />
+            {/* <TechnologyStackSection />
+            <IndustriesSection /> */}
             <PricingSection packages={packages} />
             <TestimonialSection />
             <ContactForm />

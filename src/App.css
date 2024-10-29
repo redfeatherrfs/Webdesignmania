@@ -697,3 +697,17 @@ body {
 }
 
 /* APP DEVELOPMENT PROCESS SECTION */
+
+/****************************************************/
+
+/* TECHNOLOGY STACK SECTION */
+
+.tech-stack-section
+.description {
+    font-size: 18px;
+    color: #666666;
+    width: 50%;
+    margin: auto;
+}
+
+/* TECHNOLOGY STACK SECTION */

@@ -4,12 +4,12 @@
     margin: 0 auto; /* Centering the section */
   }
   
-  .sub-heading {
+  /* .sub-heading {
     font-size: 14px;
     color: #6A48FF;
     margin-bottom: 5px;
     text-transform: uppercase;
-  }
+  } */
   
   .main-heading {
     font-size: 32px;

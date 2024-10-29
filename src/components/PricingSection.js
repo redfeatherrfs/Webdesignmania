@@ -78,10 +78,10 @@ const PricingSection = ({ packages }) => {
                                     <Col key={index} lg={4} md={6} sm={12} className="mb-3"> {/* Changed lg={3} to lg={4} */}
                                         <div className="package">
                                             <div className="package-header">
-                                                <div className='d-flex justify-content-between align-items-center'>
-                                                    <h5>{item.title}</h5>
+                                                <div className='d-flex justify-content-between align-items-center mb-3'>
+                                                    <h5 className='mb-0'>{item.title}</h5>
                                                     {item?.mostPopular && (
-                                                        <span class="badge rounded-pill most-popular">Most Popular</span>
+                                                        <span className="badge rounded-pill most-popular">Most Popular</span>
                                                     )}
 
                                                 </div>
@@ -107,7 +107,7 @@ const PricingSection = ({ packages }) => {
                                             </div>
 
                                             {/* Button */}
-                                            <a href="javascript:;" className="package-btn">START PROJECT</a>
+                                            <a href="#" className="package-btn">START PROJECT</a>
                                         </div>
                                     </Col>
                                 ))}
