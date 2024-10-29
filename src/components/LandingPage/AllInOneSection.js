@@ -6,7 +6,7 @@ const AllInOneCombo = () => {
         <section className="all-in-one-combo-section py-5">
             <div className="container">
                 <div className='row align-items-center'>
-                    <div className='col-md-6'>
+                    <div className='col-xl-6'>
                         <h3 className="sub-title">Ultimate Value for Start-ups and Businesses</h3>
                         <h1 className='title'>All-In-One Combo</h1>
                         <h1 className='title'>$157</h1>
@@ -53,7 +53,7 @@ const AllInOneCombo = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='col-md-6'>
+                    <div className='col-xl-6'>
                         <img src={allInOneBannerImage} alt='All-in-one combo banner' className='banner-img' />
                     </div>
                 </div>

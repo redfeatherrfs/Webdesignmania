@@ -20,28 +20,61 @@
     height: 460px;
 }
 
-.all-in-one-combo-section
-.order-btn {
+.all-in-one-combo-section .order-btn {
     background-color: white !important;
     color: #3A19CB !important;
 }
 
-.all-in-one-combo-section
-.order-btn:hover {
+.all-in-one-combo-section .order-btn:hover {
     background-color: #3A19CB !important;
     border: 1px solid white !important;
     color: white !important;
 }
 
-.all-in-one-combo-section
-.call-btn {
+.all-in-one-combo-section .call-btn {
     background-color: #3A19CB !important;
     border: 1px solid white !important;
     color: white !important;
 }
 
-.all-in-one-combo-section
-.call-btn:hover {
+.all-in-one-combo-section .call-btn:hover {
     background-color: white !important;
     color: #3A19CB !important;
+}
+
+/* For screen 1400px & up */
+@media (max-width: 1571.98px) {
+    .all-in-one-combo-section .banner-img {
+        width: 687px;
+        height: 460px;
+    }
+}
+/* For screen 1200px to 1399px */
+@media (max-width: 1399.98px) {
+
+}
+
+/* For screen 992px to 1199px */
+@media (max-width: 1199.98px) {
+
+}
+
+/* For screen 768px to 991px */
+@media (max-width: 991.98px) {
+
+}
+
+/* For screen 576px to 767px */
+@media (max-width: 767.98px) {
+
+}
+
+/* For screen 480px to 575px */
+@media (max-width: 575.98px) {
+
+}
+
+/* For screen 350px to 479px */
+@media (max-width: 479.98px) {
+    
 }
