@@ -6,6 +6,16 @@ import bannerImage from '../images/app-page-banner.jpg'
 import LogoSection from "../components/logos"
 import GetStartedSection from '../components/Formsection';
 import CustomContainer from '../components/CustomContainerV3';
+import LogoPortfolio from '../components/LogoDesignsPortfolio';
+import LogoProcess from '../components/CustomLogoProcess';
+import CustomSection from '../components/CustomSectionV3';
+import FooterSection from '../components/Footer';
+import ContactForm from '../components/ContactForm';
+import Pricing from '../components/PricingSection';
+import TestimonialSection from '../components/Testimonial';
+
+
+
 
 
 
@@ -25,7 +35,16 @@ const LogoDesign = () => {
             <LogoSection />
             <GetStartedSection />
             <CustomContainer/>
+            <LogoPortfolio/>
+            <LogoProcess/>
+            <CustomSection/>
+            <Pricing/>
+            <TestimonialSection/>
 
+            <ContactForm/>
+            <FooterSection/>
+
+            
         </>
     )
 }
