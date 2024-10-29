@@ -60,7 +60,7 @@ const Lpbanner = () => {
                 backgroundImage: `url(${formbg2})`, // Use your background image here
                 backgroundSize: 'cover', // Cover the entire column
                 backgroundPosition: 'center', // Center the image
-                padding: '90px', // Add padding for spacing
+                padding: '70px', // Add padding for spacing
                 borderRadius: '5px', // Optional: rounded corners
                 // height: '600px', // Ensure the height covers the content
             }}
