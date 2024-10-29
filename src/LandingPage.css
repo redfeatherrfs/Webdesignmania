@@ -1,0 +1,254 @@
+.top-head {
+    color: white;
+	background: #3716C7;
+	padding: 5px 0;
+   
+}
+
+
+.top-head a{
+    
+    text-decoration: none;
+}
+
+.avail-discount-btn {
+	margin-right: 10px;
+	background: linear-gradient(to right, #9053F5, #6226EE);
+
+	color: #ffffff;
+}
+
+.top-left a {
+    background: #ffba00;
+    padding: 5px 20px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 2px;
+    font-size: 15px;
+        margin-left: 20px;
+}
+
+.lp-banner-margin{
+    margin-left: 50px;
+}
+
+
+.custom-btn {
+	padding: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+.top-left.col-md-7 {
+	display: flex;
+	align-items: center;
+}
+
+
+.lpbanner {
+    /* background: darkblue; */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+}
+  .lpbanner-logo {
+    
+    margin-bottom: 40px;
+  }
+  
+  .lpbanner-heading {
+    font-size: 3.5rem;
+    color: #fff;
+    font-weight: bold;
+    /* display: flex; */
+    align-items: center;
+  }
+
+  
+  .lpbanner-bracket {
+    color: #f39c12; /* Customize the color for brackets */
+    font-size: 6rem;
+    margin-right: 10px;
+  }
+  
+  .lpbanner-price {
+    color: #FFBD35;
+  }
+  
+  .lpbanner-text {
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+
+textarea.lpbanner-input.lpbanner-textarea {
+ 
+    height: 80px !important;
+}
+  
+  .lpbanner-buttons .lpbanner-btn {
+    margin-right: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .lpbanner-btn.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+  }
+
+  .lpbanner-btn.btn-dark {
+    color: #fff;
+    background-color: #0f04ad;
+  }
+
+  .lpbanner-btn.btn-outline-light:hover {
+    color: darkblue; /* Change text color to dark blue on hover */
+}
+
+.lpbanner-submit-btn:hover {
+    background-color: #0f04ad; /* Lighter blue color on hover */
+    color: #ffffff; /* Keep text color white on hover */
+}
+  
+.lpbanner-badges img {
+    margin-top: 20px;
+    width: 120px;
+    margin-right: 10px;
+}
+  
+  .lpbanner-form {
+    background: rgb(255 255 255 / 40%);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+  }
+  
+ 
+
+  .lpbanner-form-title {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+    justify-self: center;
+}
+
+.lpbanner-form p {
+ 
+    color: #696969;
+    margin-bottom: 10px;
+    justify-self: center;
+}
+  
+  
+  .lpbanner-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 100%);
+    color: #333;
+  }
+  
+
+
+
+  .lpbanner-submit-btn {
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3716C7;
+}
+  
+
+
+@media(max-width: 376px) {
+
+
+	.top-head {
+		background: #3716C7;
+		padding: 5px 0;
+		font-size: 10px;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .lpbanner-badges img {
+        width: 100px !important;
+    }
+    .col-md-5.lp-right-column {
+        padding: 0px !important;
+    }
+    .lp-banner-margin{
+        margin-left: 0px !important;
+    }
+    
+    .lpbanner-heading {
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: bold;
+        /* display: flex; */
+        align-items: center;
+    }
+    .top-left.col-md-7 {
+
+		display: none;
+	}
+
+    .top-head {
+		background: #3716C7;
+		padding: 5px 0;
+		font-size: 12px;
+	}
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .lpbanner-form {
+        background: rgb(255 255 255 / 80%);
+        padding: 30px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        color: #fff;
+    }
+
+    img.lpbanner-bracket-img {
+        display: none;
+    }
+    .lp-right-column{
+        width: 100%;
+        background-image: none !important;
+    }
+    .lp-right-column .img{
+        display: none;
+    }
+    .top-left a{
+        display: none;
+    }
+
+    .lp-left-column {
+        margin-bottom: 20px;
+        width: 100%;
+        place-items: center;
+    }
+.lpbanner {
+    
+    background: darkblue;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    /* height: 800px; */
+    text-align: -webkit-center;
+}
+}
