@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
+
 import HeaderSection from '../components/Header';
 import BannerSection from '../components/banner'; // Adjust the path if needed
 import LogoSection from '../components/logos';
@@ -238,6 +240,12 @@ const Home = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Full-Service Digital Marketing Agency - Web Design Mania</title>
+                <meta name="description" content="Web Design Mania is a full-service digital marketing agency offering expert web design, SEO, branding, and development services to boost your business worldwide." />
+                <link rel="canonical" href="https://webdesignmania.co.uk" />
+            </Helmet>           
+            
             <HeaderSection />
             <BannerSection title="We create awesome\ntailor-made websites" image={bannerImage} /> {/* Include the BannerSection component here */}
             <LogoSection />

@@ -18,6 +18,7 @@ import PricingSection from "../components/PricingSection"
 import AppDevelopmentProcessSection from "../components/AppDevelopmentProcessSection"
 import TechnologyStackSection from "../components/TechnologyStackSection"
 import IndustriesSection from "../components/IndustriesSection"
+import { Helmet } from 'react-helmet-async';
 
 const AppPage = () => {
 
@@ -170,6 +171,10 @@ const AppPage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>App Design and Development Services by top App Designers</title>
+                <meta name="description" content="Get top-notch app design and development services by leading app designers at Web Design Mania. We create user-friendly, innovative apps to your business needs." />
+             </Helmet>     
             <HeaderSection />
             <BannerSection
                 title='Mobile Application\nDesign & Development'

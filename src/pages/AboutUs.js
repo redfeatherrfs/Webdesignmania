@@ -13,6 +13,7 @@ import ImageRightBanner from '../components/Aboutus/ImageRightbanner';
 import ImageIconBox from "../components/Aboutus/ImageIconBox"
 import OurMission from "../components/Aboutus/OurMission"
 
+import { Helmet } from 'react-helmet-async';
 
 
 const AppPage = () => {
@@ -21,6 +22,13 @@ const AppPage = () => {
 
     return (
         <>
+
+            <Helmet>
+                <title>About Us  - Web Design Mania</title>
+                <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
+                <link rel="canonical" href="https://webdesignmania.co.uk/about-us" />
+            </Helmet>     
+
             <HeaderSection />
             <BannerSection
                 title='Mobile Application\nDesign & Development'
