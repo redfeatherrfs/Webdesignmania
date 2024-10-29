@@ -1,3 +1,4 @@
+// Header.js
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
@@ -48,14 +49,15 @@ const Header = () => {
                 <Link to="/about-us" className="nav-link custom-nav-link">About Us</Link>
               </li>
               <li className="nav-item dropdown custom-dropdown">
-                <Link to="#" className="nav-link dropdown-toggle custom-nav-link" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </Link>
-              <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                <Link to="/services" className="nav-link dropdown-toggle custom-nav-link" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</Link>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
                   <li><Link to="/logo-design" className="dropdown-item">Logo Design</Link></li>
-                  <li><Link to="/service2" className="dropdown-item">Service 2</Link></li>
-                  <li><Link to="/service3" className="dropdown-item">Service 3</Link></li>
-                  <li><Link to="/service4" className="dropdown-item">Service 4</Link></li>
-                  <li><Link to="/service5" className="dropdown-item">Service 5</Link></li>
-              </ul>
+                  <li><Link to="/service3" className="dropdown-item">Website Design</Link></li>
+                  <li><Link to="/app-design" className="dropdown-item">App Design</Link></li>
+                  <li><Link to="/service5" className="dropdown-item">SEO</Link></li>
+                  <li><Link to="/smm" className="dropdown-item">SMM</Link></li>
+
+                </ul>
               </li>
               <li className="nav-item">
                 <Link to="/contact-us" className="nav-link custom-nav-link">Contact Us</Link>
