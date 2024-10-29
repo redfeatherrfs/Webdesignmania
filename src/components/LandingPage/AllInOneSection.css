@@ -1,0 +1,47 @@
+.all-in-one-combo-section {
+    background: url('../../images/all-in-one-banner-bg.png');
+    color: white;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.all-in-one-combo-section .sub-title {
+    font-size: 20px;
+}
+
+.all-in-one-combo-section .title {
+    font-size: 51px;
+    font-weight: 700;
+}
+
+.all-in-one-combo-section .banner-img {
+    width: 774px;
+    height: 460px;
+}
+
+.all-in-one-combo-section
+.order-btn {
+    background-color: white !important;
+    color: #3A19CB !important;
+}
+
+.all-in-one-combo-section
+.order-btn:hover {
+    background-color: #3A19CB !important;
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.all-in-one-combo-section
+.call-btn {
+    background-color: #3A19CB !important;
+    border: 1px solid white !important;
+    color: white !important;
+}
+
+.all-in-one-combo-section
+.call-btn:hover {
+    background-color: white !important;
+    color: #3A19CB !important;
+}

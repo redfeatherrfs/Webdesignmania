@@ -1,0 +1,25 @@
+.our-work-process-section
+.description {
+    width: 55%;
+    margin: auto;
+    line-height: 26px;
+    color: #696969;
+}
+
+.our-work-process-section
+.icon {
+    width: 270px;
+    height: 140px;
+    box-shadow: 0px 0px 35px 0px #77777821;
+    border-radius: 50%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+/* .our-work-process-section
+.icon
+img {
+    width: 55px;
+    height: 45px;
+} */
