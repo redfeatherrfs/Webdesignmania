@@ -13,7 +13,7 @@ const AllInOneCombo = () => {
                         <p>Our all-in-one combo package offers comprehensive solutions: custom logo design, engaging web design, and professional stationery design. Let Creative Logo Design ensure your brand presents a cohesive and standout image across all platforms and materials.</p>
 
                         <div className='row'>
-                            <div className='col-6'>
+                            <div className='col-md-6'>
                                 <h4>Logo Design</h4>
                                 <ul>
                                     <li>Unlimited Logo Design Concepts</li>
@@ -31,13 +31,8 @@ const AllInOneCombo = () => {
                                     <li>Any 3 Social Media Platforms</li>
                                     <li>Complete W3C Certified HTML</li>
                                 </ul>
-
-                                <div className='d-flex gap-3 mt-5'>
-                                    <button className='btn btn-primary order-btn'>Order Now</button>
-                                    <button className='btn btn-outline-primary call-btn'>Call Now</button>
-                                </div>
                             </div>
-                            <div className='col-6'>
+                            <div className='col-md-6'>
                                 <h4>Stationary Design</h4>
                                 <ul>
                                     <li>Business Card, Letterhead, Envelope</li>
@@ -50,6 +45,12 @@ const AllInOneCombo = () => {
                                     <li>Customizable</li>
                                     <li>Complete Deployment</li>
                                 </ul>
+                            </div>
+                            <div className='col-12'>
+                                <div className='d-flex gap-3 mt-3'>
+                                    <button className='btn btn-primary order-btn'>Order Now</button>
+                                    <button className='btn btn-outline-primary call-btn'>Call Now</button>
+                                </div>
                             </div>
                         </div>
                     </div>
