@@ -284,6 +284,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 
 
+
 /* End Lp Third Section */
 
 
@@ -334,6 +335,90 @@ textarea.lpbanner-input.lpbanner-textarea {
 /* End Landing Page CTA */
 
 
+/* Start LpIconServiceBox */
+
+.lp-service-icon-box {
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.lp-service-icon-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.lp-service-icon-box p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.lp-icon-box {
+  text-align: center;
+  padding: 20px;
+}
+
+.lp-icon-box img {
+  max-width: 100px; /* Adjust size as needed */
+  margin-bottom: 15px;
+}
+
+.lp-icon-box {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.lp-icon-image {
+  max-width: 100%; 
+  height: auto; 
+}
+
+
+
+.lp-icon-box h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.lp-icon-box p {
+  font-size: 1rem;
+}
+
+/* Style for Swiper navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000000; /* Change color as needed */
+  font-size: 1.5rem; /* Adjust size as needed */
+  margin: 0 15px; /* Add horizontal margin for spacing */
+  top: 50%; 
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  right: -20px; /* Adjust the right position */
+}
+
+.swiper-button-prev {
+  left: -10px; /* Adjust the left position */
+}
+
+
+/* End LpIconServiceBox */
+
+/**************** Start LpImgSec *****************/
+
+.lp-img-sec {
+  padding: 50px 0; /* Adjust padding as needed */
+}
+
+.lp-img-sec img {
+  border-radius: 10px; /* Optional: Add rounded corners to images */
+  
+}
+
+/* Ensure spacing between columns */
+
+
+
 
 
 
@@ -361,6 +446,15 @@ textarea.lpbanner-input.lpbanner-textarea {
       padding: 8px 16px;
       font-size: 0.9rem;
     }
+
+   /**************** Start LpImgSec *****************/
+      .lp-img-sec .col-md-4 {
+          padding: 0 15px; /* Add horizontal space between columns */
+      }
+    
+    
+    
+    /**************** End LpImgSec *****************/
   }
 
 @media only screen and (max-width: 768px) {

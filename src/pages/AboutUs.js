@@ -39,6 +39,7 @@ const AppPage = () => {
     subHeading="ABOUT US"
     heading="Creatively led.
 Results digital agency  "
+
     description={
         <>
 A place where talent and ambition can soar. Unleash your creativity and let your talents take center stage. When you work with us, you step into a world where your passion meets our purpose.
@@ -49,7 +50,8 @@ A place where talent and ambition can soar. Unleash your creativity and let your
     imageHeight="500px"  // Set height here
     imageWidth="100%"     // Set width here
     borderRadius="30px"
-    reverseOrder={true}
+    reverseOrder={false}
+    // buttonUrl="https://www.facebook.com/" 
 />
 </div>
 
