@@ -25,7 +25,7 @@ const UniqueUIDesignsSection = ({ services, page }) => {
                                     <span className="unique-number">{service.id}</span>
                                 </div>
                                 <div className="col-3">
-                                    <h3>{service.title}</h3>
+                                    <h3 className='mb-0'>{service.title}</h3>
                                 </div>
                                 <div className="col-6 text-muted">
                                     <p>{service.description}</p>
@@ -40,7 +40,7 @@ const UniqueUIDesignsSection = ({ services, page }) => {
                                     <span className="unique-number">{service.id}</span>
                                 </div>
                                 <div className="col-5">
-                                    <h3>{service.title}</h3>
+                                    <h3 className='mb-0'>{service.title}</h3>
                                 </div>
                                 <div className="col-4 text-muted">
                                     <p>{service.description}</p>

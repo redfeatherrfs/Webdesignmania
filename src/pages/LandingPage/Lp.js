@@ -23,6 +23,8 @@ import LpLogoSlider2 from "../../images/lplogoslider2.png"
 import LpLogoSlider3 from "../../images/lplogoslider3.png"
 import LpLogoSlider4 from "../../images/lplogoslider4.png"
 import LpLogoSlider5 from "../../images/lplogoslider5.png"
+import OurWorkProcess from "../../components/LandingPage/OurWorkProcess"
+import AllInOneCombo from "../../components/LandingPage/AllInOneSection"
 
 
 
@@ -70,59 +72,61 @@ const logosData = [
 
 const LpPage = () => {
 
-   
+
 
     return (
         <>
-        <TopHead/>
-        <Lpbanner/>
-        <LanguageLogos/>
-        <LpPricingSection/>
-        <LpthirdSection/>
-        <LpCta1/>
- 
+            <TopHead />
+            <Lpbanner />
+            <LanguageLogos />
+            <LpPricingSection />
+            <LpthirdSection />
+            <LpCta1 />
 
-        <div style={{ padding: '100px 0px 0px 0px' }}>
-<ImageRightBanner
-    // subHeading="ABOUT US"
-    heading="Tired of Working with
-Website Builders Offering Limited Customization? "
-    description={
-        <>
-Change the game with WordPress, the world’s most popular content management system (CMS). It's powerful, flexible, and easy to use with plenty of options to build a website that effectively converts.
-        </>
-    }
-    imageSrc={lpImage}
-    objectfit="contain"
-    imageHeight="500px"  // Set height here
-    imageWidth="100%"     // Set width here
-    borderRadius="30px"
-    reverseOrder={true}
-    buttonUrl="https://www.facebook.com/" 
-/>
-</div>
 
-<LpServiceIconBox
-            backgroundColor="#f9f9f9" // Example background color
-            servicesTitle="Services"
-            message="Drop us a message, and our experts will get back to you shortly."
-            iconBoxes={iconBoxesData}
-        />
-         <div>
-            <LpImgSec
-                backgroundColor="#f0f0f0" // Example background color
-                images={imagesData}
+            <div style={{ padding: '100px 0px 0px 0px' }}>
+                <ImageRightBanner
+                    // subHeading="ABOUT US"
+                    heading="Tired of Working with Website Builders Offering Limited Customization? "
+                    description={
+                        <>
+                            Change the game with WordPress, the world’s most popular content management system (CMS). It's powerful, flexible, and easy to use with plenty of options to build a website that effectively converts.
+                        </>
+                    }
+                    imageSrc={lpImage}
+                    objectfit="contain"
+                    imageHeight="500px"  // Set height here
+                    imageWidth="100%"     // Set width here
+                    borderRadius="30px"
+                    reverseOrder={true}
+                    buttonUrl="https://www.facebook.com/"
+                />
+            </div>
+
+            <LpServiceIconBox
+                backgroundColor="#f9f9f9" // Example background color
+                servicesTitle="Services"
+                message="Drop us a message, and our experts will get back to you shortly."
+                iconBoxes={iconBoxesData}
             />
-        </div>
+            <div>
+                <LpImgSec
+                    backgroundColor="#f0f0f0" // Example background color
+                    images={imagesData}
+                />
+            </div>
+            <OurWorkProcess />
+            <AllInOneCombo />
+            <div style={{ padding: '100px 0px 50px 0px' }}> <LpPortfolio /></div>
 
-        <LpPortfolio/>
+            <div style={{ padding: '100px 0px 50px 0px' }}>
+                <LpLogoSlider logos={logosData} />
+            </div>
 
-        <div style={{ padding: '100px 0px 50px 0px' }}>
-            <LpLogoSlider logos={logosData} />
-        </div>
+            <TestimonialSection />
+            <ContactForm />
 
-<TestimonialSection/>
-<ContactForm/>
+          
 
 
         </>

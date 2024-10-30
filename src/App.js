@@ -1,6 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
+
 import Home from './pages/Home';
 import About from './pages/AboutUs';
 import AppPage from './pages/AppPage';
@@ -12,6 +14,7 @@ import Lp from './pages/LandingPage/Lp';
 
 const App = () => {
     return (
+        <HelmetProvider>
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -24,6 +27,7 @@ const App = () => {
                 <Route path="/lp" element={<Lp/>} />
             </Routes>
         </Router>
+        </HelmetProvider>
     );
 };
 

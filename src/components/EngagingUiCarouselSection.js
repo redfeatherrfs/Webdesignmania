@@ -8,10 +8,6 @@ import image2 from '../images/engaging-banner-img-2.png'
 import image3 from '../images/engaging-banner-img-3.png'
 import image4 from '../images/engaging-banner-img-4.png'
 import image5 from '../images/engaging-banner-img-5.png'
-// import carouselImg from '../images/Mask group-7.png'; // Example import for images
-// import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is loaded
-// import '../OurWork.css';
-
 
 const EngagingUiCarouselSection = () => {
     return (
@@ -48,7 +44,6 @@ const EngagingUiCarouselSection = () => {
                             spaceBetween={30}
                             navigation={true} // Enable default navigation
                             autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay settings
-                            // autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay settings
                             modules={[Navigation, Autoplay]} // Add Navigation and Autoplay to modules
                             breakpoints={{
                                 1200: { slidesPerView: 3 }, // Show 3 slides on large screens
@@ -58,47 +53,27 @@ const EngagingUiCarouselSection = () => {
                         >
                             <SwiperSlide>
                                 <div className="col-12 mb-4">
-                                    <a href='#' className="card-link text-decoration-none">
-                                        <div className="our-work-carda">
-                                            <img src={image1} className="our-work-img img-fluid" />
-                                        </div>
-                                    </a>
+                                    <img src={image1} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="col-12 mb-4">
-                                    <a href='#' className="card-link text-decoration-none">
-                                        <div className="our-work-carda">
-                                            <img src={image2} className="our-work-img img-fluid" />
-                                        </div>
-                                    </a>
+                                    <img src={image2} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="col-12 mb-4">
-                                    <a href='#' className="card-link text-decoration-none">
-                                        <div className="our-work-carda">
-                                            <img src={image3} className="our-work-img img-fluid" />
-                                        </div>
-                                    </a>
+                                    <img src={image3} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="col-12 mb-4">
-                                    <a href='#' className="card-link text-decoration-none">
-                                        <div className="our-work-carda">
-                                            <img src={image4} className="our-work-img img-fluid" />
-                                        </div>
-                                    </a>
+                                    <img src={image4} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
                                 <div className="col-12 mb-4">
-                                    <a href='#' className="card-link text-decoration-none">
-                                        <div className="our-work-carda">
-                                            <img src={image5} className="our-work-img img-fluid" />
-                                        </div>
-                                    </a>
+                                    <img src={image5} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                         </Swiper>
