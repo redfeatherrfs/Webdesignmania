@@ -63,6 +63,9 @@
   }
 
   
+  
+  /* Remove gap between columns */
+ 
   .get-started-btn {
     background: linear-gradient(0deg, #2302B1 0%, #6A48FF 96.76%);
     border: none;
