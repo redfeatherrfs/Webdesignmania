@@ -17,6 +17,14 @@ import LpImgSec from "../../components/LandingPage/LpImgSec"
 import LpImgSec1 from "../../images/googlepartner.png"
 import LpImgSec2 from "../../images/inc500.png"
 import LpImgSec3 from "../../images/forbes.png"
+import LpLogoSlider from "../../components/LandingPage/LpLogoSlider"
+import LpLogoSlider1 from "../../images/lplogoslider1.png"
+import LpLogoSlider2 from "../../images/lplogoslider2.png"
+import LpLogoSlider3 from "../../images/lplogoslider3.png"
+import LpLogoSlider4 from "../../images/lplogoslider4.png"
+import LpLogoSlider5 from "../../images/lplogoslider5.png"
+
+
 
 
 
@@ -47,6 +55,17 @@ const imagesData = [
     { src: LpImgSec1, alt: 'Description 1' },
     { src: LpImgSec2, alt: 'Description 2' },
     { src: LpImgSec3, alt: 'Description 3' },
+];
+
+
+const logosData = [
+    { src: LpLogoSlider1, alt: 'Logo 1' },
+    { src: LpLogoSlider2, alt: 'Logo 2' },
+    { src: LpLogoSlider3, alt: 'Logo 3' },
+    { src: LpLogoSlider4, alt: 'Logo 4' },
+    { src: LpLogoSlider5, alt: 'Logo 5' },
+    { src: LpLogoSlider1, alt: 'Logo 6' },
+    { src: LpLogoSlider2, alt: 'Logo 7' },
 ];
 
 const LpPage = () => {
@@ -97,6 +116,10 @@ Change the game with WordPress, the world’s most popular content management sy
         </div>
 
         <LpPortfolio/>
+
+        <div style={{ padding: '100px 0px 50px 0px' }}>
+            <LpLogoSlider logos={logosData} />
+        </div>
 
 <TestimonialSection/>
 <ContactForm/>
