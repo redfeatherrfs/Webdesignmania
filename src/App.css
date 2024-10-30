@@ -10,9 +10,6 @@ body {
 }
 
 
-
-
-
 /* Start header */
 
 .custom-header .navbar {
@@ -337,6 +334,12 @@ body {
     text-align: justify;
     color: #666666;
 
+}
+
+/* Privacy policy page css */
+.simple-section{
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
