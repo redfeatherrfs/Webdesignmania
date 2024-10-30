@@ -383,23 +383,24 @@ textarea.lpbanner-input.lpbanner-textarea {
   font-size: 1rem;
 }
 
-/* Style for Swiper navigation buttons */
-.swiper-button-next,
+
+
+
+/* .swiper-button-next,
 .swiper-button-prev {
-  color: #000000; /* Change color as needed */
-  font-size: 1.5rem; /* Adjust size as needed */
-  margin: 0 15px; /* Add horizontal margin for spacing */
+  color: #000000 !important; 
+  font-size: 1.5rem; 
   top: 50%; 
   transform: translateY(-50%);
 }
 
 .swiper-button-next {
-  right: -20px; /* Adjust the right position */
+  right: -20px; 
 }
 
 .swiper-button-prev {
-  left: -10px; /* Adjust the left position */
-}
+  left: -10px; 
+} */
 
 
 /* End LpIconServiceBox */
@@ -418,6 +419,56 @@ textarea.lpbanner-input.lpbanner-textarea {
 /* Ensure spacing between columns */
 
 
+/***************** Start LpLogo Slider Sections **************/
+
+.lp-logo-slider {
+  padding: 50px 0; /* Adjust padding as needed */
+  background-color: #f8f9fa; /* Example background color */
+}
+
+.lp-logo-slider h2 {
+  font-size: 2.5rem; /* Adjust font size */
+  margin-bottom: 30px; /* Space below heading */
+}
+
+.logo-image {
+  max-width: 100%; /* Ensure logos are responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Adjust Swiper navigation buttons */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #00060c; /* Change color as needed */
+  /* font-size: 2rem;  */
+}
+
+
+
+.lp-logo-slider .container-fluid {
+  position: relative;
+}
+
+.custom-carousel-control {
+  background-color: #4B29DD;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.custom-carousel-control i {
+  font-size: 16px;
+}
+
+.custom-carousel-control:hover {
+  background-color: #4B29DD;
+}
+
+
+
+/***************** End LpLogo Slider Sections **************/
 
 
 
@@ -451,13 +502,20 @@ textarea.lpbanner-input.lpbanner-textarea {
       .lp-img-sec .col-md-4 {
           padding: 0 15px; /* Add horizontal space between columns */
       }
-    
-    
-    
     /**************** End LpImgSec *****************/
+
+    /***************** Start LpLogo Slider Sections **************/
+    .lp-logo-slider h2 {
+      font-size: 2rem; /* Smaller font size on mobile */
+  }
+   /***************** End LpLogo Slider Sections **************/
   }
 
 @media only screen and (max-width: 768px) {
+
+  .col-8.lp-lg-slider {
+    text-align: center;
+}
 
     .lpbanner-badges img {
         width: 100px !important;
@@ -489,6 +547,13 @@ textarea.lpbanner-input.lpbanner-textarea {
     img.lpbanner-bracket-img {
         display: none;
     }
+/***************** Start LpLogo Slider Sections **************/
+    .lp-logo-slider h2 {
+      font-size: 2.5rem; /* Medium font size on tablets */
+
+  }
+
+  /***************** End LpLogo Slider Sections **************/
 }
 
 /* Lp Third Section */
