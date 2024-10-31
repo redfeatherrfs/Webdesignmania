@@ -1,72 +1,58 @@
 .allinonepkg {
     padding: 40px 0;
-    max-width: 1400px; /* Expanding the width to 1400px */
-    margin: 0 auto; /* Centering the section */
-  }
-  
-  /* .sub-heading {
-    font-size: 14px;
-    color: #6A48FF;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-  } */
-  
-  .main-heading {
+    max-width: 1400px;
+    /* Expanding the width to 1400px */
+    margin: 0 auto;
+    /* Centering the section */
+}
+
+.main-heading {
     font-size: 32px;
     font-weight: 700;
     color: #333;
-  }
-  
-  .allinonepkg h3 {
+}
+
+.allinonepkg h3 {
     font-size: 18px;
     font-weight: 600;
     color: #333;
     margin-bottom: 15px;
-  }
-  
-  .allinonepkg ul {
+}
+
+.allinonepkg ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .allinonepkg ul li {
+}
+
+.allinonepkg ul li {
     font-size: 14px;
     color: #666;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
-  }
-  
-  .allinonepkg ul li svg {
+}
+
+.allinonepkg ul li svg {
     margin-right: 8px;
     color: #6A48FF;
-  }
-  
-  /* Styling for the service columns with borders */
-  .service-column {
+}
+
+/* Styling for the service columns with borders */
+.allinonepkg
+.bordered-box {
     border: 1px solid #2302B1;
-    padding: 20px;
     border-radius: 5px;
-    min-height: 320px;
-  }
+}
 
-  /* First and last column will have their own borders */
-.service-column:first-child {
-    border-left: 2px solid #2302B1;
-    border-right: 2px solid #2302B1; /* For left and right boundaries */
-  }
-  
-  
-  .service-column:last-child {
-    border-right: 2px solid #2302B1; /* Right boundary only for last column */
-    border-left: 2px solid #2302B1;
-  }
+.allinonepkg
+.bordered-box
+.service-column {
+    border-right: 1px solid #2302B1;
+}
 
-  
-  
-  /* Remove gap between columns */
- 
-  .get-started-btn {
+/* Remove gap between columns */
+
+.get-started-btn {
     background: linear-gradient(0deg, #2302B1 0%, #6A48FF 96.76%);
     border: none;
     color: #fff;
@@ -74,9 +60,8 @@
     font-size: 16px;
     border-radius: 50px;
     transition: background 0.3s ease;
-  }
-  
-  .get-started-btn:hover {
+}
+
+.get-started-btn:hover {
     background: linear-gradient(0deg, #6A48FF 0%, #2302B1 96.76%);
-  }
-  
+}

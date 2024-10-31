@@ -10,14 +10,15 @@ const AllInOnePkg = () => {
                 <div className="row text-center">
                     <div className="col-12">
                         {/* <p className="pricing-one">ABOUT US</p> */}
+                        <h6 className="sub-heading m-0">ABOUT US</h6>
                         <h2 className="pricing-heading-one">All In One Combo</h2>
                     </div>
                 </div>
 
                 {/* Services Columns with Borders */}
-                <div className="row mt-4 justify-content-center">
+                <div className="row mt-4 justify-content-center bordered-box">
                     {/* First Column */}
-                    <div className="col-md-2 col-12 service-column">
+                    <div className="col service-column py-5">
                         <h3>Logo Design Services</h3>
                         <ul>
                             <li><FiChevronRight /> 5 Custom Logo Design Concepts</li>
@@ -28,7 +29,7 @@ const AllInOnePkg = () => {
                     </div>
 
                     {/* Second Column */}
-                    <div className="col-md-2 col-12 service-column">
+                    <div className="col service-column py-5">
                         <h3>Stationery Services</h3>
                         <ul>
                             <li><FiChevronRight /> MS Word Letterhead</li>
@@ -39,7 +40,7 @@ const AllInOnePkg = () => {
                     </div>
 
                     {/* Third Column */}
-                    <div className="col-md-2 col-12 service-column">
+                    <div className="col service-column py-5">
                         <h3>Social Media Services</h3>
                         <ul>
                             <li><FiChevronRight /> Facebook Page Design</li>
@@ -50,7 +51,7 @@ const AllInOnePkg = () => {
                     </div>
 
                     {/* Fourth Column */}
-                    <div className="col-md-2 col-12 service-column">
+                    <div className="col service-column py-5">
                         <h3>Website Services</h3>
                         <ul>
                             <li><FiChevronRight /> 10 Pages Website Design</li>
@@ -61,7 +62,7 @@ const AllInOnePkg = () => {
                     </div>
 
                     {/* Fifth Column */}
-                    <div className="col-md-2 col-12 service-column">
+                    <div className="col py-5">
                         <h3>Value Added Services</h3>
                         <ul>
                             <li><FiChevronRight /> All Final File Formats</li>
