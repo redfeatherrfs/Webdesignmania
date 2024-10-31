@@ -25,6 +25,9 @@ import LpLogoSlider4 from "../../images/lplogoslider4.png"
 import LpLogoSlider5 from "../../images/lplogoslider5.png"
 import OurWorkProcess from "../../components/LandingPage/OurWorkProcess"
 import AllInOneCombo from "../../components/LandingPage/AllInOneSection"
+import LpCtaSec2 from "../../components/LandingPage/LpCtaSec2"
+import LpContactSec from "../../components/LandingPage/LpContactSec"
+import LpFooterSec from "../../components/LandingPage/LpFooterSection"
 
 
 
@@ -117,14 +120,27 @@ const LpPage = () => {
             </div>
             <OurWorkProcess />
             <AllInOneCombo />
-            <div style={{ padding: '100px 0px 50px 0px' }}> <LpPortfolio /></div>
+            <div style={{ padding: '100px 0px 50px 0px' }}> 
+                <LpPortfolio /></div>
 
             <div style={{ padding: '100px 0px 50px 0px' }}>
                 <LpLogoSlider logos={logosData} />
             </div>
 
+        
+            <LpCtaSec2/>
+
             <TestimonialSection />
+            <div className="row text-center">
+                    <div className="col-12">
+                        <button className="package-btn">Get Started</button>
+                    </div>
+                </div>
+            
             <ContactForm />
+
+            <LpContactSec/>
+            <LpFooterSec/>
 
           
 
