@@ -28,6 +28,8 @@ import AllInOneCombo from "../../components/LandingPage/AllInOneSection"
 import LpCtaSec2 from "../../components/LandingPage/LpCtaSec2"
 import LpContactSec from "../../components/LandingPage/LpContactSec"
 import LpFooterSec from "../../components/LandingPage/LpFooterSection"
+import { useState } from "react"
+import PopupForm from "../../components/common/PopupForm"
 
 
 
@@ -75,18 +77,18 @@ const logosData = [
 
 const LpPage = () => {
 
+    const [title, setTitle] = useState('')
 
+    const handleTitleChange = newTitle => setTitle(newTitle)
 
     return (
         <>
-            <TopHead />
-            <Lpbanner />
+            <TopHead updateTitle={handleTitleChange} />
+            <Lpbanner updateTitle={handleTitleChange} />
             <LanguageLogos />
-            <LpPricingSection />
+            <LpPricingSection updateTitle={handleTitleChange} />
             <LpthirdSection />
             <LpCta1 />
-
-
             <div style={{ padding: '100px 0px 0px 0px' }}>
                 <ImageRightBanner
                     // subHeading="ABOUT US"
@@ -102,10 +104,9 @@ const LpPage = () => {
                     imageWidth="100%"     // Set width here
                     borderRadius="30px"
                     reverseOrder={true}
-                    buttonUrl="https://www.facebook.com/"
+                    updateTitle={handleTitleChange}
                 />
             </div>
-
             <LpServiceIconBox
                 backgroundColor="#f9f9f9" // Example background color
                 servicesTitle="Services"
@@ -120,31 +121,18 @@ const LpPage = () => {
             </div>
             <OurWorkProcess />
             <AllInOneCombo />
-            <div style={{ padding: '100px 0px 50px 0px' }}> 
-                <LpPortfolio /></div>
-
+            <div style={{ padding: '100px 0px 50px 0px' }}>
+                <LpPortfolio />
+            </div>
             <div style={{ padding: '100px 0px 50px 0px' }}>
                 <LpLogoSlider logos={logosData} />
             </div>
-
-        
-            <LpCtaSec2/>
-
-            <TestimonialSection />
-            <div className="row text-center">
-                    <div className="col-12">
-                        <button className="package-btn">Get Started</button>
-                    </div>
-                </div>
-            
+            <LpCtaSec2 />
+            <TestimonialSection updateTitle={handleTitleChange} />
             <ContactForm />
-
-            <LpContactSec/>
-            <LpFooterSec/>
-
-          
-
-
+            <LpContactSec />
+            <LpFooterSec />
+            <PopupForm title={title} />
         </>
     )
 }

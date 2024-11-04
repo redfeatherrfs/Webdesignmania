@@ -1,42 +1,9 @@
-// import React from 'react';
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
-
-
 import { Tabs, Tab, Container, Row, Col } from 'react-bootstrap';
 import '../../PricingSection.css'; // Import the CSS file
 
 
 
-const LpPricingSection = () => {
-    // Form state to capture user input
-    const [formData, setFormData] = useState({
-        fullName: '',
-        contactNumber: '',
-        emailAddress: '',
-        services: '',
-    });
-
-
-
-
-    // Handle form input changes
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
-
-    // Handle form submission
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Submit the form data to backend or show a message
-        console.log('Form submitted:', formData);
-        alert('Form submitted successfully!');
-    };
-
+const LpPricingSection = ({ updateTitle }) => {
     // Sample packages with more items for each category
     const packages = [
         {
@@ -247,7 +214,7 @@ const LpPricingSection = () => {
     ];
 
     return (
-        <section className="pricing-section text-center py-5">
+        <section className="pricing-section text-center py-5" id='pricing-section'>
             <Container>
                 <h2 className="mb-4">Pocket-Friendly Pricing Solutions </h2>
 
@@ -289,7 +256,7 @@ const LpPricingSection = () => {
                                             </div>
 
                                             {/* Button */}
-                                            <a href="javascript:;" className="package-btn">START PROJECT</a>
+                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updateTitle(item.title)} className="package-btn">START PROJECT</button>
                                         </div>
                                     </Col>
                                 ))}

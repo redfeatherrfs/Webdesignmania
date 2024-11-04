@@ -18,7 +18,7 @@
 	color: #ffffff;
 }
 
-.top-left a {
+.top-left .avail-discount-btn {
     background: #ffba00;
     padding: 5px 20px;
     color: #000;
@@ -729,7 +729,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     .lp-right-column .img{
         display: none;
     }
-    .top-left a{
+    .top-left .avail-discount-btn{
         display: none;
     }
 

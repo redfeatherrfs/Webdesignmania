@@ -35,9 +35,9 @@ section.ebook-contact-form.container
           margin-bottom: 20px;
       }
 
-      .ebook-contact-form .form-control {
+      /* .ebook-contact-form .form-control {
           border-radius: 10px;
-      }
+      } */
 
       .ebook-contact-form .btn-submit {
           background: linear-gradient(90deg, #2302B1, #6A48FF);
@@ -49,13 +49,13 @@ section.ebook-contact-form.container
           margin-top: 15px;
       }
 
-      .form-control {
+      /* .form-control {
         background-color: #f9f9f9;
         border: 1px solid #2302B1;
         height: 50px;
         font-size: 16px;
         border-radius: 8px;
-    }
+    } */
 
       section.ebook-contact-form.container
         {
@@ -109,9 +109,9 @@ section.ebook-contact-form.container
     margin-right: 15px;
   }
 
-  textarea.form-control {
+  /* textarea.form-control {
     height: 100px;
-}
+} */
   
   .contact-info a,
   .contact-info span {
