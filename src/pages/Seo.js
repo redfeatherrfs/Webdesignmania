@@ -166,9 +166,14 @@ const AppPage = () => {
         <>
             <HeaderSection />
             <BannerSection
-                title='Mobile Application\nDesign & Development'
+                title='About Us'
+                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                buttonlink='/'
+                buttontext="Start a Project"
                 image={bannerImage}
             />
+            <LogoSection />
+
             <LogoSection />
             <GetStartedSection />
 
@@ -229,9 +234,10 @@ Need some help turning heads? Wish to improve your marketing metrics? Our visual
 />
 </div>
 
-<IconTextBox/>
-<OurMission/>
-<SMMProcess/>
+
+
+           
+
 <PricingSection packages={packages} />
            
            

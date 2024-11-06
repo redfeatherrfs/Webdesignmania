@@ -57,8 +57,8 @@ const ContactForm = () => {
         <section className="ebook-contact-form container">
             <div className="row">
                 <div className="col-md-5 left-column">
-                    <h2>Let's Build Your <br/>
-                    Digital Future <br/></h2>
+                    <h2>Let’s Succeed Together! <br/>
+                   <br/></h2>
                     <ul className="contact-info">
                         <li>
                             <FaPhoneAlt className="contact-icon" />

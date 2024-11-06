@@ -175,8 +175,11 @@ const LogoDesign = () => {
             <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
         </Helmet>     
          <HeaderSection />
-            <BannerSection
-                title='We create awesome\ntailor-made websites'
+         <BannerSection
+                title='Logo Design'
+                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                buttonlink='/'
+                buttontext="Start a Project"
                 image={bannerImage}
             />
             <LogoSection />
@@ -184,8 +187,7 @@ const LogoDesign = () => {
             <CustomContainer/>
             <LogoPortfolio/>
             <LogoProcess/>
-            <CustomSection/>
-            
+            <CustomSection/>         
             <PricingSection packages={packages} />
             <TestimonialSection/>
 

@@ -12,6 +12,8 @@ import TestimonialSection from "../components/Testimonial"
 import ImageRightBanner from '../components/Aboutus/ImageRightbanner';
 import ImageIconBox from "../components/Aboutus/ImageIconBox"
 import OurMission from "../components/Aboutus/OurMission"
+import ourMissionImage from '../images/ourmission.png';
+import ourVisionImage from '../images/ourvission.png';
 
 import { Helmet } from 'react-helmet-async';
 
@@ -31,7 +33,10 @@ const AppPage = () => {
 
             <HeaderSection />
             <BannerSection
-                title='Mobile Application\nDesign & Development'
+                title='About Us'
+                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                buttonlink='/'
+                buttontext="Start a Project"
                 image={bannerImage}
             />
             <LogoSection />
@@ -45,12 +50,12 @@ const AppPage = () => {
             <div style={{ padding: '100px 0px 0px 0px' }}>
 <ImageRightBanner
     subHeading="ABOUT US"
-    heading="Creatively led.
-Results digital agency  "
+    heading="Your Digital Partner In Exceling Your Brand "
 
     description={
         <>
-A place where talent and ambition can soar. Unleash your creativity and let your talents take center stage. When you work with us, you step into a world where your passion meets our purpose.
+Let creativity meet strategy! We turn your online vision into reality! With a focus on innovative strategies and cutting-edge technologies, our passionate team is committed to driving results and ensuring your success in the ever-evolving digital landscape.
+
         </>
     }
     imageSrc={aboutuslaptop}
@@ -65,7 +70,23 @@ A place where talent and ambition can soar. Unleash your creativity and let your
 
             <ImageIconBox/>
 
-            <OurMission/>
+            <div>
+      <OurMission
+        ourmissionImg={ourMissionImage}
+        ourvissionImg={ourVisionImage}
+        heading="Grow Your Community With Web Design Mania "
+        subHeading="WHO WE ARE"
+        content1={{
+         
+          text: "Empowering businesses by delivering innovative marketing solutions that enhance brand visibility, foster engagement, and drive measurable results. We aim to be a trusted partner in our clients' growth journeys."
+        }}
+        content2={{
+         
+          text: "Be the number one website development agency ecognized for transforming brands and shaping their success in the digital world. By staying at the forefront of industry trends and technologies, we aim to empower our clients businesses in the competitive industry."
+        }}
+       
+      />
+    </div>
            
         
             <TestimonialSection/>

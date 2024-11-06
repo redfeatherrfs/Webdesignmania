@@ -13,14 +13,14 @@ const OurMissionSection = () => {
                     <div className="col-md-7">
                         <h2 className="sub-heading">ABOUT US</h2>
                         <h2 className="about-heading">
-                            We are Professional
-                            <br />
-                            Digital Team
+                        Our Website Developers Will <br />Elevate Your Digital Identity
+  
                         </h2>
                     </div>
                     <div className="col-md-5">
                         <p className="about-desc">
-                            We are a team of professional web designers and developers with expertise in creating custom websites that are tailored to meet the specific needs and goals of our clients.
+                        Let’s engineer efficient codes that deliver high-performance websites optimized for speed, SEO, and long-term growth. From front-end frameworks to back-end solutions, our website developers specialize in all. 
+
                         </p>
                     </div>
 
@@ -36,7 +36,8 @@ const OurMissionSection = () => {
                                 <div className="icon-content">
                                     <h4>Our Mission</h4>
                                     <p>
-                                        Our mission is to provide affordable, expert web design services that help businesses succeed in the digital world. We believe that every business deserves a website that reflects their unique brand and meets their business needs. That's why we offer a range of services tailored to meet the specific needs of our clients.
+                                    To develop efficient, secure code for real-time, dynamic websites. We aim to deliver visually stunning websites that focus on fast data handling and provide users with smooth interactions.
+
                                     </p>
                                 </div>
                             </div>
@@ -47,7 +48,7 @@ const OurMissionSection = () => {
                                 <div className="icon-content">
                                     <h4>Our Vision</h4>
                                     <p>
-                                        Our vision is to be the go-to web design agency for businesses looking for affordable, high-quality web design services. We strive to provide our clients with the best possible experience and to exceed their expectations every time.
+                                    To set a new benchmark in web development by combining cutting-edge technology with user-centered design. We envision pushing the boundaries of our website developers to continuously innovate, leveraging the latest in web standards and frameworks.
                                     </p>
                                 </div>
                             </div>
@@ -56,9 +57,9 @@ const OurMissionSection = () => {
                             <div className="icon-box">
                                 <img src={workIcon} alt="Our Philosophy" className="icon-image" />
                                 <div className="icon-content">
-                                    <h4>Our Philosophy</h4>
+                                    <h4>Our Value</h4>
                                     <p>
-                                        We're all about helping businesses succeed online. We think every business should have a website that shows off its unique style and meets its needs. That's why we offer affordable, expert web design services that are tailored to each client. We're committed to going the extra mile to make sure our clients' websites help them thrive in the digital world.
+                                    Transparency and honesty are key to everything we do. Every project we work on is developed with attention to detail and a commitment to excellence. We take pride in building long-lasting relationships that foster trust.
                                     </p>
                                 </div>
                             </div>
