@@ -2,215 +2,540 @@ import { Tabs, Tab, Container, Row, Col } from 'react-bootstrap';
 import '../../PricingSection.css'; // Import the CSS file
 
 
-
 const LpPricingSection = ({ updateTitle }) => {
-    // Sample packages with more items for each category
     const packages = [
         {
-            id: 1,
-            category: 'Custom Website',
+            category: 'Custom Website Packages',
             items: [
                 {
-                    title: "LOGO SPECIAL PACKAGE",
+                    title: "Custom Website Starter Package",
                     subtitle: "Professional & Unique Designs!",
-                    price: "Let’s talk!",
-                    //  originalPrice: "$799", // Corrected property name
-                    features: [
-                        "Custom Logo Design",
-                        "3 Initial Concepts",
-                        "Unlimited Revisions",
-                        "4 Original Logo Concepts",
-                        "4 Dedicated Logo Designers",
-                        "4 Revisions",
-                        "With Grey Scale Format",
-                        "Free Icon Design",
-                        "24 – 48 Hours Turnaround Time",
-                        "100% Satisfaction",
-                        "100% Ownership Rights",
-                        "Money Back Guarantee*",
-                        "Dedicated Account Manager"
-                    ],
-                },
-                {
-                    title: "PROFESSIONAL LOGO PACKAGE",
-                    subtitle: "Professional & Unique Designs!",
-                    price: "Let’s talk!",
-                    // originalPrice: "$799", // Corrected property name
-                    features: [
-                        "Custom Logo Design",
-                        "3 Initial Concepts",
-                        "Unlimited Revisions",
-                        "4 Original Logo Concepts",
-                        "4 Dedicated Logo Designers",
-                        "4 Revisions",
-                        "With Grey Scale Format",
-                        "Free Icon Design",
-                        "24 – 48 Hours Turnaround Time",
-                        "100% Satisfaction",
-                        "100% Ownership Rights",
-                        "Money Back Guarantee*",
-                        "Dedicated Account Manager"
-                    ],
-                },
-                {
-                    title: "LOGO INFINITE PACKAGE",
-                    subtitle: "Professional & Unique Designs!",
-                    price: "Let’s talk!",
-                    // originalPrice: "$799", // Corrected property name
-                    features: [
-                        "Custom Logo Design",
-                        "3 Initial Concepts",
-                        "Unlimited Revisions",
-                        "4 Original Logo Concepts",
-                        "4 Dedicated Logo Designers",
-                        "4 Revisions",
-                        "With Grey Scale Format",
-                        "Free Icon Design",
-                        "24 – 48 Hours Turnaround Time",
-                        "100% Satisfaction",
-                        "100% Ownership Rights",
-                        "Money Back Guarantee*",
-                        "Dedicated Account Manager"
-                    ],
-                },
-            ],
-        },
-        {
-            id: 2,
-            category: 'E-commerce Website',
-            items: [
-                {
-                    title: "Basic Website Package",
-                    subtitle: "Best Value for Money Guaranteed!",
                     price: "$199",
-                    originalPrice: "$665", // This is correct
-                    features: ["3 Page Website", "5 Revisions", "2 Stock Images"],
+                    features: [
+                        "Design Up to 3 Pages",
+                        "5 Visual Images",
+                        "1 jQuery Slider Banner",
+                        "2 CTAs & Lead forms",
+                        "Facebook Page Design",
+                        "X (Twitter) Page Design",
+                        "YouTube Page Design",
+                        "48 to 72 hours TAT",
+                        "Complete Deployment",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee*",
+                    ],
+                    VAS: [
+                        "Cross-Browser Compatibility",
+                        "SEO Friendly Coding",
+                        "Experienced Account Manager",
+                    ],
                 },
                 {
-                    title: "Standard Website Package",
-                    subtitle: "Perfect for Small Businesses!",
-                    price: "$499",
-                    originalPrice: "$899", // This is correct
-                    features: ["5 Page Website", "10 Revisions", "SEO Ready"],
-                },
-                {
-                    title: "Premium Website Package",
-                    subtitle: "Advanced Features Included!",
-                    price: "$999",
-                    originalPrice: "$1499", // This is correct
-                    features: ["10 Page Website", "Unlimited Revisions", "E-commerce Ready"],
-                },
-            ],
-        },
-        {
-            id: 3,
-            category: 'Logo Design',
-            items: [
-                {
-                    title: "Basic E-Commerce Package",
-                    subtitle: "Get Your Store Online!",
+                    title: "Custom Website Essential Package",
+                    subtitle: "Professional & Unique Designs!",
                     price: "$399",
-                    originalPrice: "$999", // This is correct
-                    features: ["10 Products Setup", "Payment Gateway Integration", "Basic SEO Setup"],
+                    features: [
+                        "Design Up to 6 Pages",
+                        "8 Visual Images",
+                        "3 jQuery Slider Banner",
+                        "4 CTAs & Lead forms",
+                        "Mobile Responsive Design",
+                        "Facebook Page Design",
+                        "X (Twitter) Page Design",
+                        "Instagram Page Creation",
+                        "YouTube Page Design",
+                        "Regular Security Plugins",
+                        "XML Sitemap",
+                        "URL Submission in SE's",
+                        "On-Page SEO",
+                        "Google Analytics Tracking",
+                        "Google Search Console Tracking",
+                        "48 to 72 hours TAT",
+                        "Complete Deployment",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee*",
+                    ],
+                    VAS: [
+                        "Cross-Browser Compatibility",
+                        "SEO Friendly Coding",
+                        "Experienced Account Manager",
+                        "One Month On-going Support",
+                    ],
                 },
                 {
-                    title: "Standard E-Commerce Package",
-                    subtitle: "Launch Your Business!",
-                    price: "$699",
-                    originalPrice: "$1299", // This is correct
-                    features: ["50 Products Setup", "Payment Gateway Integration", "Advanced SEO Setup"],
-                },
-                {
-                    title: "Premium E-Commerce Package",
-                    subtitle: "All-in-One Solution!",
-                    price: "$1299",
-                    originalPrice: "$1999", // This is correct
-                    features: ["Unlimited Products", "Custom Features", "Marketing Tools"],
+                    title: "Custom Website Business Package",
+                    subtitle: "Professional & Unique Designs!",
+                    price: "Let's talk!",
+                    features: [
+                        "Design Up to 10 Pages",
+                        "Logo Design",
+                        "Professional Custom Design",
+                        "12 Visual Images",
+                        "4 jQuery Slider Banner",
+                        "6 CTAs & Lead Capturing Forms",
+                        "Mobile Responsive Design",
+                        "Facebook Page Design",
+                        "X (Twitter) Page Design",
+                        "YouTube Page Design",
+                        "Instagram Page Creation",
+                        "Standard Security Plugins",
+                        "XML Sitemap",
+                        "Robots File",
+                        "URL Submission in SE's",
+                        "On-Page SEO",
+                        "Google Analytics Tracking",
+                        "Google Search Console Tracking",
+                        "Google Business Profile Creation",
+                        "Complete Deployment",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee*",
+                    ],
+                    VAS: [
+                        "Cross-Browser Compatibility",
+                        "SEO Friendly Coding",
+                        "Experienced Account Manager",
+                        "3 Month On-going Support & Maintenance",
+                    ],
                 },
             ],
         },
         {
-            id: 4,
-            category: 'Stationery Design',
+            category: 'E-commerce Website Packages',
             items: [
                 {
-                    title: "Stationery Design Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "$150",
-                    originalPrice: "$450", // This is correct
-                    features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
+                    title: "E-commerce Website Starter Package",
+                    subtitle: "Best Value for Money Guaranteed!",
+                    price: "$1199",
+                    features: [
+                        "eCommerce Integration",
+                        "Design Up to 20 Pages",
+                        "Graphic Design",
+                        "Logo Design",
+                        "Professional Web Design",
+                        "Mobile Responsive Design",
+                        "Chatbot/Livechat Setup",
+                        "Reputation Management Setup",
+                        "Newsletter Integration",
+                        "Social Media Integration",
+                        "Event Calendar Integration",
+                        "Schema Optimization",
+                        "Image Optimization",
+                        "Search Engine Optimized",
+                        "Formidable Pro Forms",
+                        "Keyword Research",
+                        "Market & Competitor Analysis",
+                        "Google Analytics Setup",
+                        "Submission to Search Engines",
+                        "Google Search Console Setup",
+                        "Google My Business Optimization",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee*",
+                    ],
+                    VAS: [
+                        "Cross-Browser Compatibility",
+                        "SEO Friendly Coding",
+                        "Experienced Account Manager",
+                        "2 Month On-going Support & Maintenance",
+                    ],
                 },
                 {
-                    title: "Business Branding Package",
-                    subtitle: "All Your Needs Covered!",
-                    price: "$350",
-                    originalPrice: "$750", // This is correct
-                    features: ["Business Cards", "Letterhead", "Email Signature"],
+                    title: "E-commerce Website Business Package",
+                    subtitle: "Perfect for Small Businesses!",
+                    price: "Let's talk!",
+                    features: [
+                        "eCommerce Integration",
+                        "Design Up to 100 Pages",
+                        "Graphic Design",
+                        "Logo Design",
+                        "Professional Web Design",
+                        "Mobile Responsive Design",
+                        "Chatbot/Livechat Setup",
+                        "Reputation Management Setup",
+                        "Newsletter Integration",
+                        "Social Media Integration",
+                        "Event Calendar Integration",
+                        "Schema Optimization",
+                        "Image Optimization",
+                        "Search Engine Optimized",
+                        "Formidable Pro Forms",
+                        "Keyword Research",
+                        "Market & Competitor Analysis",
+                        "Google Analytics Setup",
+                        "Submission to Search Engines",
+                        "Google Search Console Setup",
+                        "Google My Business Optimization",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee*",
+                    ],
+                    VAS: [
+                        "Cross-Browser Compatibility",
+                        "SEO Friendly Coding",
+                        "Experienced Account Manager",
+                        "3 Month On-going Support & Maintenance",
+                    ],
                 },
                 {
-                    title: "Custom Stationery Package",
-                    subtitle: "Tailored for You!",
-                    price: "$250",
-                    originalPrice: "$550", // This is correct
-                    features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
+                    title: "E-commerce Website Enterprise Package",
+                    subtitle: "Advanced Features Included!",
+                    price: "Let's talk!",
+                    features: [
+                        "eCommerce Integration",
+                        "Advanced Order Management",
+                        "Design Up to 100 to 1000 Pages",
+                        "Product reviews and rating",
+                        "Website Content Writing",
+                        "Graphic Design",
+                        "Logo Design",
+                        "Professional Web Design",
+                        "Mobile Responsive Design",
+                        "Knowledgebase Setup",
+                        "Chatbot/Livechat Setup",
+                        "Reputation Management Setup",
+                        "Newsletter Integration",
+                        "Social Media Integration",
+                        "Event Calendar Integration",
+                        "Schema Optimization",
+                        "Image Optimization",
+                        "Search Engine Optimized",
+                        "Formidable Pro Forms",
+                        "Keyword Research",
+                        "Market & Competitor Analysis",
+                        "Google Analytics Setup",
+                        "Submission to Search Engines",
+                        "Google Search Console Setup",
+                        "Google My Business Optimization",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee*",
+                    ],
+                    VAS: [
+                        "Cross-Browser Compatibility",
+                        "SEO Friendly Coding",
+                        "Experienced Account Manager",
+                        "6 Month On-going Support & Maintenance",
+                    ],
                 },
             ],
         },
         {
-            id: 4,
-            category: 'SEO',
+            category: 'Logo Design Packages',
             items: [
                 {
-                    title: "Stationery Design Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "$150",
-                    originalPrice: "$450", // This is correct
-                    features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
+                    title: "Basic Logo Package",
+                    subtitle: "Get Your Store Online!",
+                    price: "$45",
+                    features: [
+                        "2 Logo Design Concepts",
+                        "4 Free Revisions",
+                        "Dedicated Project Manager",
+                        "24 - 48 Hours Delivery",
+                    ],
+                    whatYouWillGet: [
+                        "1 Finalized Logo",
+                        "2 File Formats (PNG, JPG)",
+                    ],
                 },
                 {
-                    title: "Business Branding Package",
-                    subtitle: "All Your Needs Covered!",
-                    price: "$350",
-                    originalPrice: "$750", // This is correct
-                    features: ["Business Cards", "Letterhead", "Email Signature"],
+                    title: "Professional Logo Package",
+                    subtitle: "Get Your Store Online!",
+                    price: "Let's Talk",
+                    features: [
+                        "4 Logo Design Concepts",
+                        "8 Free Revisions",
+                        "Dedicated Project Manager",
+                        "24 - 48 Hours Delivery",
+                    ],
+                    whatYouWillGet: [
+                        "1 Finalized Logo",
+                        "3 File Formats (JPG, PNG, PDF)",
+                    ],
                 },
                 {
-                    title: "Custom Stationery Package",
-                    subtitle: "Tailored for You!",
-                    price: "$250",
-                    originalPrice: "$550", // This is correct
-                    features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
+                    title: "Infinite Logo Package",
+                    subtitle: "Get Your Store Online!",
+                    price: "Let's Talk",
+                    features: [
+                        "6 Logo Design Concepts",
+                        "Unlimited Revisions",
+                        "Dedicated Project Manager",
+                        "24 - 48 Hours Delivery",
+                    ],
+                    whatYouWillGet: [
+                        "1 Finalized Logo",
+                        "All File Formats (Ai, PSD, EPS, PNG, JPG, PDF)",
+                    ],
                 },
             ],
         },
         {
-            id: 4,
-            category: 'SMM',
+            category: 'Stationery Design Packages',
             items: [
                 {
-                    title: "Stationery Design Package",
+                    title: "Stationery Basic Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "$150",
-                    originalPrice: "$450", // This is correct
-                    features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
+                    price: "$129",
+                    features: [
+                        "Business Card Design",
+                        "Letterhead Design",
+                        "Envelope Design",
+                        "MS Word Letterhead",
+                        "Email Signature Design",
+                        "Invoice Design",
+                        "Facebook Banner Design",
+                        "YouTube Banner Design",
+                        "Twitter Banner Design",
+                        "LinkedIn Banner Design",
+                        "Logo Watermark",
+                    ],
                 },
                 {
-                    title: "Business Branding Package",
-                    subtitle: "All Your Needs Covered!",
-                    price: "$350",
-                    originalPrice: "$750", // This is correct
-                    features: ["Business Cards", "Letterhead", "Email Signature"],
+                    title: "Stationery Startup Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: [
+                        "Business Card Design",
+                        "Letterhead Design",
+                        "Envelope Design",
+                        "MS Word Letterhead",
+                        "Email Signature Design",
+                        "Invoice Design",
+                        "Facebook Banner Design",
+                        "YouTube Banner Design",
+                        "Twitter Banner Design",
+                        "LinkedIn Banner Design",
+                        "Logo Watermark",
+                        "Favicon Design",
+                        "Polo/T-Shirt Design",
+                        "Cap/Hat Design",
+                    ],
                 },
                 {
-                    title: "Custom Stationery Package",
-                    subtitle: "Tailored for You!",
-                    price: "$250",
-                    originalPrice: "$550", // This is correct
-                    features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
+                    title: "Stationery Infinite Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: [
+                        "Business Card Design",
+                        "Letterhead Design",
+                        "Envelope Design",
+                        "MS Word Letterhead",
+                        "Email Signature Design",
+                        "Invoice Design",
+                        "Facebook Banner Design",
+                        "YouTube Banner Design",
+                        "Twitter Banner Design",
+                        "LinkedIn Banner Design",
+                        "Logo Watermark",
+                        "Favicon Design",
+                        "Polo/T-Shirt Design",
+                        "Cap/Hat Design",
+                        "Bag Design",
+                        "Signage Design",
+                        "Flyer Design",
+                    ],
                 },
             ],
         },
-
+        {
+            category: 'SEO Packages',
+            items: [
+                {
+                    title: "Basic SEO Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "$250",
+                    features: [
+                        "Prior Analysis",
+                        "Business Analysis",
+                        "Consumer Analysis",
+                        "Competitor Analysis",
+                        "15 Selected Keywords Targeting",
+                        "15 Pages Keyword Targeted",
+                        "Web Page Optimization",
+                        "Meta Tags Creation",
+                        "Keyword Optimization",
+                        "Image Optimization",
+                        "Inclusion of anchors",
+                        "Tracking & Analysis",
+                        "Google Analytics Installation",
+                        "Google Webmaster Installation",
+                        "Call To Action Plan",
+                        "Creation of Sitemaps",
+                        "Reporting",
+                        "Monthly Reporting",
+                        "Recommendation",
+                        "Email Support",
+                        "Phone Support",
+                        "Off-Page Optimization",
+                        "Social Bookmarking",
+                        "Slideshare Marketing",
+                        "Forums/FAQ's",
+                        "Link Building",
+                        "Directory Submission",
+                        "Local Business Listings",
+                        "100% Ownership Rights",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee *",
+                    ],
+                },
+                {
+                    title: "Premium SEO Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: [
+                        "Prior Analysis",
+                        "Business Analysis",
+                        "Consumer Analysis",
+                        "Competitor Analysis",
+                        "30 Selected Keywords Targeting",
+                        "30 Pages Keyword Targeted",
+                        "Web Page Optimization",
+                        "Meta Tags Creation",
+                        "Keyword Optimization",
+                        "Image Optimization",
+                        "Inclusion of anchors",
+                        "Tracking & Analysis",
+                        "Google Analytics Installation",
+                        "Google Webmaster Installation",
+                        "Call To Action Plan",
+                        "Creation of Sitemaps",
+                        "Reporting",
+                        "Monthly Reporting",
+                        "Recommendation",
+                        "Email Support",
+                        "Phone Support",
+                        "Off-Page Optimization",
+                        "Social Bookmarking",
+                        "Slideshare Marketing",
+                        "Forums/FAQ's",
+                        "Link Building",
+                        "Directory Submission",
+                        "Local Business Listings",
+                        "100% Ownership Rights",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee *",
+                    ],
+                },
+                {
+                    title: "Platinum SEO Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: [
+                        "Prior Analysis",
+                        "Business Analysis",
+                        "Consumer Analysis",
+                        "Competitor Analysis",
+                        "30 Selected Keywords Targeting",
+                        "30 Pages Keyword Targeted",
+                        "Web Page Optimization",
+                        "Meta Tags Creation",
+                        "Keyword Optimization",
+                        "Image Optimization",
+                        "Inclusion of anchor tags",
+                        "Tracking & Analysis",
+                        "Google Analytics Installation",
+                        "Google Webmaster Installation",
+                        "Call To Action Plan",
+                        "Creation of Sitemaps",
+                        "Reporting",
+                        "Monthly Reporting",
+                        "Recommendation",
+                        "Email Support",
+                        "Phone Support",
+                        "Off-Page Optimization",
+                        "Social Bookmarking",
+                        "Slideshare Marketing",
+                        "Forums/FAQ's",
+                        "Link Building",
+                        "Directory Submission",
+                        "Local Business Listings",
+                        "Blog Content Creation",
+                        "Local SEO",
+                        "100% Ownership Rights",
+                        "100% Satisfaction Guarantee",
+                        "100% Unique Design Guarantee",
+                        "100% Money Back Guarantee *",
+                    ],
+                },
+            ],
+        },
+        {
+            category: 'SMM Packages',
+            items: [
+                {
+                    title: "Starter Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "$199",
+                    features: [
+                        "3 postings per week (per network) Facebook + Twitter + Instagram",
+                        "Content Creation",
+                        "Business Page Optimization",
+                        "Social Media Strategy (Overview)",
+                        "Facebook Likes Campaign",
+                        "Monthly Progress report",
+                        "Copywriting",
+                    ],
+                },
+                {
+                    title: "Scaling Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: [
+                        "Prior Analysis",
+                        "Business Analysis",
+                        "Consumer Analysis",
+                        "Competitor Analysis",
+                        "30 Selected Keywords Targeting",
+                        "30 Pages Keyword Targeted",
+                        "Web Page Optimization",
+                        "Meta Tags Creation",
+                        "Keyword Optimization",
+                        "Image Optimization",
+                        "Inclusion of anchors",
+                        "Tracking & Analysis",
+                        "Google Places Inclusions",
+                        "Google Analytics Installation",
+                        "Google Webmaster Installation",
+                        "Call To Action Plan",
+                        "Creation of Sitemaps",
+                        "Reporting",
+                        "Monthly Reporting",
+                        "Recommendation",
+                        "Email Support",
+                        "Phone Support",
+                        "Off-Page Optimization",
+                        "Social Bookmarking",
+                        "Slideshare Marketing",
+                        "Forums/FAQ's",
+                        "Link Building",
+                        "Directory Submission",
+                        "Local Business Listings",
+                    ],
+                },
+                {
+                    title: "Venture Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: [
+                        "Copywriting and visual designs",
+                        "Business Page Optimization",
+                        "Ad Campaign Management",
+                        "Spam monitoring",
+                        "6 postings per week Facebook + Twitter + Instagram + Google+",
+                        "Reputation Management",
+                        "Social Account Setup",
+                        "Content Creation",
+                        "Social Media Hearing",
+                        "Query and comments reply",
+                    ],
+                },
+            ],
+        },
     ];
 
     return (
@@ -220,13 +545,13 @@ const LpPricingSection = ({ updateTitle }) => {
 
                 {/* React Bootstrap Tabs with Centered and No Underline */}
                 <Tabs
-                    defaultActiveKey="Custom Website"
+                    defaultActiveKey="Custom Website Packages"
                     id="pricing-tabs"
                     className="mb-3 justify-content-center" // Center the tabs
                     style={{ borderBottom: 'none' }} // Remove the underline
                 >
-                    {packages.map((pkg) => (
-                        <Tab eventKey={pkg.category} title={pkg.category} key={pkg.id}>
+                    {packages.map((pkg, index) => (
+                        <Tab eventKey={pkg.category} title={pkg.category} key={index}>
                             <Row className="justify-content-center">
                                 {/* Display items in rows of 3 */}
                                 {pkg.items.map((item, index) => (
@@ -239,10 +564,9 @@ const LpPricingSection = ({ updateTitle }) => {
                                                 {/* Price section */}
                                                 <div className="price">
                                                     <h2>{item.price}</h2>
-                                                    <div>
-                                                        <strike>{item.originalPrice}</strike> {/* Ensure originalPrice is used */}
-                                                        {/* <span> Only</span> */}
-                                                    </div>
+                                                    {/* <div>
+                                                        <strike>{item.originalPrice}</strike>
+                                                    </div> */}
                                                 </div>
                                             </div>
 
@@ -252,11 +576,29 @@ const LpPricingSection = ({ updateTitle }) => {
                                                     {item.features.map((feature, index) => (
                                                         <li key={index}>{feature}</li>
                                                     ))}
+
+                                                    {item?.VAS?.length && (
+                                                        <>
+                                                            <div className='text-center text-dark'><b>Value Added Services</b></div>
+                                                            {item.VAS.map((service, index) => (
+                                                                <li key={index}>{service}</li>
+                                                            ))}
+                                                        </>
+                                                    )}
+
+                                                    {item?.whatYouWillGet?.length && (
+                                                        <>
+                                                            <div className='text-center text-dark'><b>What will you Get?</b></div>
+                                                            {item.whatYouWillGet.map((service, index) => (
+                                                                <li key={index}>{service}</li>
+                                                            ))}
+                                                        </>
+                                                    )}
                                                 </ul>
                                             </div>
 
                                             {/* Button */}
-                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updateTitle(item.title)} className="package-btn">START PROJECT</button>
+                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updateTitle(item.price.includes('$') ? `${item.title} - ${item.price}` : item.title)} className="package-btn">START PROJECT</button>
                                         </div>
                                     </Col>
                                 ))}

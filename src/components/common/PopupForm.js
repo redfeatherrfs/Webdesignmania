@@ -1,8 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const PopupForm = ({ title }) => {
+    const navigate = useNavigate()
     const [loading, setLoading] = useState(false); // Loading state
     const [formData, setFormData] = useState({
+        title: '',
         name: '',
         email: '',
         phone: '',
@@ -17,14 +21,26 @@ const PopupForm = ({ title }) => {
         });
     };
 
-    const handleSubmit = e => {
-        setLoading(true)
-        e.preventDefault()
-        /**
-         * @TODO api call
-         */
-        setTimeout(() => setLoading(false), 2000)
+    useEffect(() => {
+        setFormData({ ...formData, title })
+    }, [title])
 
+    const handleSubmit = async e => {
+        e.preventDefault()
+        setLoading(true)
+        await fetch(/*'http://localhost:9090/packages.php'*/"https://webdesignmania.co.uk/php/packages.php", {
+            method: 'POST',
+            body: JSON.stringify(formData)
+        })
+            .then(r => r.json())
+            .then(({ success, message }) => {
+                document.querySelector('button[data-bs-dismiss]').click()
+                setLoading(false)
+                if (success)
+                    navigate('/thank-you')
+                else
+                    Swal.fire('Error', message, 'error')
+            })
     }
 
     return (
@@ -37,7 +53,7 @@ const PopupForm = ({ title }) => {
                     </div>
                     <div className="modal-body pt-0">
                         <form method='POST' onSubmit={handleSubmit}>
-                            <input type='hidden' name='title' value={title} />
+                            <input type='hidden' name='title' value={formData.title} />
                             <div className="mb-3">
                                 <label htmlFor="name" className="form-label">Full name</label>
                                 <input type="text" className="form-control" id="name" placeholder="John Doe" name='name' value={formData.name} onChange={handleChange} required />
@@ -58,7 +74,7 @@ const PopupForm = ({ title }) => {
                                 <button type='submit' className='btn btn-primary' disabled={loading}>
                                     {loading ? (
                                         <>
-                                            <span class="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                                            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
                                             <span role="status">Loading...</span>
                                         </>
                                     ) : 'Submit'}
