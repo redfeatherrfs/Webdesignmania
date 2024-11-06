@@ -14,8 +14,9 @@ const UniqueUIDesignsSection = ({ services, page }) => {
     return (
         <section className="unique-ui-designs-section">
             <div className="container">
-                <h6>ABOUT US</h6>
-                <h2 className='mb-5'>UI Designs At<br /> Web Design Mania</h2>
+                <h6>Services</h6>
+                <h2 className='mb-5'>What We Do?
+                </h2>
 
                 {services.map(service => (
                     <div key={service.id} className=''>

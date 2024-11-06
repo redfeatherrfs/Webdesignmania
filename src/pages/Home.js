@@ -29,12 +29,12 @@ import serviceImage6 from '../images/Mask group-5.png'
 
 const Home = () => {
     const services = [
-        { id: '01', title: 'Website Design', description: 'Affordable Web Design & Development Services', imgSrc: serviceImage1, alt: 'Website Design' },
+        { id: '01', title: 'Website Design', description: 'Craft a virtual home for your brand that captivates and engages users.', imgSrc: serviceImage1, alt: 'Website Design' },
         { id: '02', title: 'App Design', description: 'Focused on Creating Engaging and Successful Mobile Apps', imgSrc: serviceImage2, alt: 'App Design' },
-        { id: '03', title: 'SEO', description: 'Professional Search Engine Optimization (SEO) Services', imgSrc: serviceImage3, alt: 'SEO' },
-        { id: '04', title: 'Stationery Design', description: 'Professional Business Stationery Design Services', imgSrc: serviceImage4, alt: 'Stationery Design' },
+        { id: '03', title: 'SEO', description: 'Turn your website into a traffic magnet and get your ticket to grow your business.', imgSrc: serviceImage3, alt: 'SEO' },
+        { id: '04', title: 'Stationery Design', description: 'Turn your everyday material into an artful extension of your brands personality.', imgSrc: serviceImage4, alt: 'Stationery Design' },
         { id: '05', title: 'Logo Design', description: 'Professional Custom Logo Design Services', imgSrc: serviceImage5, alt: 'Logo Design' },
-        { id: '06', title: 'SMM', description: 'Effective Social Media Marketing Strategies', imgSrc: serviceImage6, alt: 'SMM' },
+        { id: '06', title: 'SMM', description: 'Turn social platforms into powerful tools that spark conversations and drive results.', imgSrc: serviceImage6, alt: 'SMM' },
     ];
 
     const packages = [
@@ -247,7 +247,15 @@ const Home = () => {
             </Helmet>           
             
             <HeaderSection />
-            <BannerSection title="We create awesome\ntailor-made websites" image={bannerImage} /> {/* Include the BannerSection component here */}
+            <BannerSection
+                title='Your Professional Website Designer That Combines Aesthetics With Performance'
+                description="Were you looking for custom web design services tailored to meet a seamless user experience and increase conversions?"
+                buttonlink='/'
+                buttontext="Start a Project"
+                image={bannerImage}
+            />
+           
+
             <LogoSection />
             <GetStartedSection />
             <OurMissionSection />

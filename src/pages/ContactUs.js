@@ -24,7 +24,10 @@ const AppPage = () => {
             </Helmet>     
             <HeaderSection />
             <BannerSection
-                title='Mobile Application\nDesign & Development'
+                title='Contact Us'
+                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                buttonlink='/'
+                buttontext="Start a Project"
                 image={bannerImage}
             />
             <LogoSection />

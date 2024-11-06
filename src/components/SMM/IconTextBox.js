@@ -2,9 +2,9 @@ import React from "react";
 import '../.././IconTextBox.css';
 import { Container, Row, Col } from "react-bootstrap";
 
-import socialMediaIcon from '../../images/Frame 21.png'; 
-import seoIcon from '../../images/Frame 20.png'; 
-import ppcIcon from '../../images/Frame 22.png'; 
+import socialMediaIcon from '../../images/smmic1.png'; 
+import seoIcon from '../../images/smmic2.png'; 
+import ppcIcon from '../../images/smmic3.png'; 
 
 const IconTextBox = () => {
   return (
@@ -22,7 +22,7 @@ const IconTextBox = () => {
         <Col md={4} sm={12} className="mb-4">
           <div className="iconbox2 d-flex align-items-start">
             <div className="iconbox2-icon">
-              <img src={socialMediaIcon} alt="Social Media Icon" className="icon-image" />
+              <img src={socialMediaIcon} alt="Social Media Icon" className="icon-image-ic" />
             </div>
             <div className="iconbox2-text-content">
               <h3>Social Media Management</h3>
@@ -33,18 +33,25 @@ const IconTextBox = () => {
         <Col md={4} sm={12} className="mb-4">
           <div className="iconbox2 d-flex align-items-start">
             <div className="iconbox2-icon">
-              <img src={seoIcon} alt="SEO Icon" className="icon-image" />
+              <img src={seoIcon} alt="SEO Icon" className="icon-image-ic" />
             </div>
             <div className="iconbox2-text-content">
               <h3>Search Engine Optimization</h3>
-              <p>We deliver initial design concepts in the lowest possible times.</p>
+              <p>We deliver initial design concepts in the lowest possible times.
+              We deliver initial design concepts in the lowest possible times.
+              We deliver initial design concepts in the lowest possible times.
+              We deliver initial design concepts in the lowest possible times.
+              We deliver initial design concepts in the lowest possible times.
+
+              </p>
             </div>
           </div>
         </Col>
         <Col md={4} sm={12} className="mb-4">
           <div className="iconbox2 d-flex align-items-start">
             <div className="iconbox2-icon">
-              <img src={ppcIcon} alt="PPC Icon" className="icon-image" />
+              <img src={ppcIcon} alt="PPC Icon" className="icon-image-ic" />
+   
             </div>
             <div className="iconbox2-text-content">
               <h3>PPC Management</h3>

@@ -1,10 +1,26 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ourmission from '../../images/ourmission.png';
-import ourvission from '../../images/ourvission.png';
 import '../../OurMission.css'; // Unique CSS for this section
 
-const OurMission = () => {
+
+// Default props in case no props are passed
+const defaultBorderStyle = {
+    top: 'none',
+    right: 'none',
+    bottom: 'none',
+    left: 'none'
+};
+
+const OurMission = ({ 
+    ourmissionImg, 
+    ourvissionImg, 
+    heading, 
+    subHeading, 
+    content1, 
+    content2, 
+    borderStyle1 = defaultBorderStyle, 
+    borderStyle2 = defaultBorderStyle 
+}) => {
     return (
         <section className="ourmission-section py-5">
             <div className="container text-center">
@@ -12,19 +28,18 @@ const OurMission = () => {
                 {/* First Row - Subheading and Heading */}
                 <div className="row mb-5">
                     <div className="col-12">
-                        <p className="sub-heading text-muted">ABOUT US</p>
-                        <h2 className="main-heading">
-                            Creatively led.<br /> Results digital agency
-                        </h2>
+                        <p className="sub-heading text-muted">{subHeading}</p>
+                        <h2 className="main-heading">{heading}</h2>
                     </div>
                 </div>
                 
                 {/* Second Row - Image and Text Columns */}
                 <div className="row align-items-center">
                     {/* First Column - Image and Text */}
-                    <div className="col-12 col-md-5 text-center mb-4 mb-md-0">
-                        <img src={ourmission} alt="Our Mission 1" className="img-fluid mission-img" />
-                        <p className="mission-text mt-3">If you wanna stand out, gotta be outstanding. Embrace the creativity with Kendrick. Our designers and development rockstars are here to make your digital dreams pop.</p>
+                    <div className="col-12 col-md-5 text-center mb-4 mb-md-0 py-2" style={{ borderTop: borderStyle1.top, borderRight: borderStyle1.right, borderBottom: borderStyle1.bottom, borderLeft: borderStyle1.left }}>
+                        <img src={ourmissionImg} alt="Our Mission 1" className="img-fluid mission-img" />
+                        <h2>{content1.heading}</h2>
+                        <p className="mission-text mt-3">{content1.text}</p>
                     </div>
 
                     {/* Border Between Columns */}
@@ -33,14 +48,16 @@ const OurMission = () => {
                     </div>
 
                     {/* Second Column - Image and Text */}
-                    <div className="col-12 col-md-5 text-center">
-                        <img src={ourvission} alt="Our Mission 2" className="img-fluid mission-img" />
-                        <p className="mission-text mt-3">If you wanna stand out, gotta be outstanding. Embrace the creativity with Kendrick. Our designers and development rockstars are here to make your digital dreams pop.</p>
+                    <div className="col-12 col-md-5 text-center py-2" style={{ borderTop: borderStyle2.top, borderRight: borderStyle2.right, borderBottom: borderStyle2.bottom, borderLeft: borderStyle2.left }}>
+                        <img src={ourvissionImg} alt="Our Mission 2" className="img-fluid mission-img" />
+                        <h2>{content2.heading}</h2>
+                        <p className="mission-text mt-3">{content2.text}</p>
                     </div>
                 </div>
             </div>
         </section>
     );
 };
+
 
 export default OurMission;
