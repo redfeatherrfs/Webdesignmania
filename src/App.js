@@ -10,6 +10,7 @@ import ContactUs from './pages/ContactUs';
 import LogoDesign from './pages/LogoDesign';
 import Services from './pages/Services';
 import SMM from './pages/Smm';
+import Seo from './pages/Seo';
 import Lp from './pages/LandingPage/Lp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsCondition from './pages/TermsCondition';
@@ -29,6 +30,7 @@ const App = () => {
                 <Route path="/contact-us" element={<ContactUs />} />
                 <Route path="/logo-design" element={<LogoDesign />} />
                 <Route path="/smm" element={<SMM />} />
+                <Route path="/seo" element={<Seo />} />
                 <Route path="/services" element={<Services />} />
                 <Route path="/lp" element={<Lp/>} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />

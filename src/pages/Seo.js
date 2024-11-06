@@ -1,31 +1,24 @@
-import React from 'react';
-import '../LogoDesign.css'; // Import the CSS file
 import BannerSection from "../components/banner"
+import GetStartedSection from "../components/Formsection"
 import HeaderSection from "../components/Header"
-import bannerImage from '../images/app-page-banner.jpg'
 import LogoSection from "../components/logos"
-import GetStartedSection from '../components/Formsection';
-import CustomContainer from '../components/CustomContainerV3';
-import LogoPortfolio from '../components/LogoDesignsPortfolio';
-import LogoProcess from '../components/CustomLogoProcess';
-import CustomSection from '../components/CustomSectionV3';
-import FooterSection from '../components/Footer';
-import ContactForm from '../components/ContactForm';
-import Pricing from '../components/PricingSection';
-import TestimonialSection from '../components/Testimonial';
-import { Helmet } from 'react-helmet-async';
-import PricingSection from '../components/PricingSection';
+
+import bannerImage from '../images/seopagebanner.jpg'
+import smm2 from '../images/smm2.png'
+
+import FooterSection from "../components/Footer"
+import ContactForm from "../components/ContactForm"
+import TestimonialSection from "../components/Testimonial"
+import ImageRightBanner from '../components/Aboutus/ImageRightbanner';
+import IconTextBox from "../components/SMM/IconTextBox"
+import OurMission from "../components/Aboutus/OurMission"
+import SMMProcess from "../components/SMM/SMMProcess"
+import PricingSection from "../components/PricingSection"
 
 
 
 
-
-
-
-
-
-
-const LogoDesign = () => {
+const AppPage = () => {
 
 
     const packages = [
@@ -167,34 +160,87 @@ const LogoDesign = () => {
 
     ]
 
+   
 
     return (
         <>
-        <Helmet>
-            <title>Custom Logo Design Services by Expert Logo Designers</title>
-            <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
-        </Helmet>     
-         <HeaderSection />
+            <HeaderSection />
             <BannerSection
-                title='We create awesome\ntailor-made websites'
+                title='Mobile Application\nDesign & Development'
                 image={bannerImage}
             />
             <LogoSection />
             <GetStartedSection />
-            <CustomContainer/>
-            <LogoPortfolio/>
-            <LogoProcess/>
-            <CustomSection/>
-            
-            <PricingSection packages={packages} />
+
+            <div style={{ padding: '100px 0px 0px 0px' }}>
+<ImageRightBanner
+    subHeading="ABOUT US"
+    heading="User-Friendly Website Designs  "
+    description={
+        <>
+Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+
+        </>
+    }
+    imageSrc={smm2}
+    objectfit="contain"
+    imageHeight="500px"  // Set height here
+    imageWidth="100%"     // Set width here
+    borderRadius="30px"
+    reverseOrder={false}
+/>
+</div>
+
+<div style={{ padding: '100px 0px 0px 0px' }}>
+<ImageRightBanner
+    subHeading="ABOUT US"
+    heading="User-Friendly Website Designs  "
+    description={
+        <>
+Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+
+        </>
+    }
+    imageSrc={smm2}
+    objectfit="contain"
+    imageHeight="500px"  // Set height here
+    imageWidth="100%"     // Set width here
+    borderRadius="30px"
+    reverseOrder={true}
+/>
+</div>
+
+<div style={{ padding: '100px 0px 0px 0px' }}>
+<ImageRightBanner
+    subHeading="ABOUT US"
+    heading="User-Friendly Website Designs  "
+    description={
+        <>
+Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+
+        </>
+    }
+    imageSrc={false}
+    objectfit="contain"
+    imageHeight="500px"  // Set height here
+    imageWidth="100%"     // Set width here
+    borderRadius="30px"
+    reverseOrder={true}
+/>
+</div>
+
+<IconTextBox/>
+<OurMission/>
+<SMMProcess/>
+<PricingSection packages={packages} />
+           
+           
+        
             <TestimonialSection/>
-
             <ContactForm/>
-            <FooterSection/>
-
-            
+            <FooterSection />
         </>
     )
 }
 
-export default LogoDesign
+export default AppPage
