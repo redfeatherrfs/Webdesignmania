@@ -25,9 +25,32 @@ const PopupForm = ({ title }) => {
         setFormData({ ...formData, title })
     }, [title])
 
+    const validateEmailAndPhone = () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            phoneRegex = /^\+1\d{10}$/
+
+        if (!emailRegex.test(formData.email))
+            document.querySelector('#popupForm input[name=email]').classList.add('is-invalid')
+        else
+            document.querySelector('#popupForm input[name=email]').classList.remove('is-invalid')
+
+        if (!phoneRegex.test(formData.phone))
+            document.querySelector('#popupForm input[name=phone]').classList.add('is-invalid');
+        else
+            document.querySelector('#popupForm input[name=phone]').classList.remove('is-invalid');
+
+        return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
+    }
+
     const handleSubmit = async e => {
         e.preventDefault()
+
+        // Email & phone validation
+        if(!validateEmailAndPhone())
+            return
+
         setLoading(true)
+
         await fetch(/*'http://localhost:9090/packages.php'*/"https://webdesignmania.co.uk/php/packages.php", {
             method: 'POST',
             body: JSON.stringify(formData)
@@ -61,10 +84,16 @@ const PopupForm = ({ title }) => {
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">Email address</label>
                                 <input type="email" className="form-control" id="email" placeholder="example@test.com" name='email' value={formData.email} onChange={handleChange} required />
+                                <div className="invalid-feedback">
+                                    Invalid Email address
+                                </div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="phone" className="form-label">Phone number</label>
                                 <input type="tel" className="form-control" id="phone" placeholder="1234567890" name='phone' value={formData.phone} onChange={handleChange} required />
+                                <div className="invalid-feedback">
+                                    Invalid Phone number. Example: +19876543210
+                                </div>
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="message" className="form-label">Message</label>
@@ -75,7 +104,7 @@ const PopupForm = ({ title }) => {
                                     {loading ? (
                                         <>
                                             <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
-                                            <span role="status">Loading...</span>
+                                            <span role="status">Submitting...</span>
                                         </>
                                     ) : 'Submit'}
                                 </button>

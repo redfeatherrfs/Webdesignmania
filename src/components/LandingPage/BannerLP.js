@@ -9,8 +9,68 @@ import clutch from '../../images/clutchicon.png';
 import barkicon from '../../images/barkicon.png';
 
 import '../../LandingPage.css';
+import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 
 const Lpbanner = ({ updateTitle }) => {
+    const navigate = useNavigate()
+    const [loading, setLoading] = useState(false); // Loading state
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    })
+
+    const handleChange = e => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const validateEmailAndPhone = () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            phoneRegex = /^\+1\d{10}$/
+
+        let html = ''
+
+        if (!emailRegex.test(formData.email))
+            html = "Invalid email address<br />"
+
+        if (!phoneRegex.test(formData.phone))
+            html += "Invalid phone number. Example: +19876543210"
+
+        if(html.length > 0)
+            Swal.fire('Error', html, 'error')
+
+        return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
+    }
+
+    const handleSubmit = async e => {
+        e.preventDefault()
+
+        // Email & phone validation
+        if(!validateEmailAndPhone())
+            return
+
+        setLoading(true)
+
+        await fetch(/*'http://localhost:9090'*/"https://webdesignmania.co.uk/php/index.php", {
+            method: 'POST',
+            body: JSON.stringify(formData)
+        })
+            .then(r => r.json())
+            .then(({ success, message }) => {
+                setLoading(false)
+                if (success)
+                    navigate('/thank-you')
+                else
+                    Swal.fire('Error', message, 'error')
+            })
+    }
+
     return (
         <section
             className="lpbanner"
@@ -42,7 +102,6 @@ const Lpbanner = ({ updateTitle }) => {
                             </div>
                             <div className="lpbanner-badges">
                                 <img src={clutch} alt="Clutch" />
-
                                 <img src={trustpilot} alt="Trustpilot" />
                                 <img src={barkicon} alt="Bark" />
                             </div>
@@ -63,20 +122,25 @@ const Lpbanner = ({ updateTitle }) => {
                         <div className="lpbanner-form">
                             <h3 className="lpbanner-form-title">Get a Website Quote</h3>
                             <p>Get response from us within 24 hours</p>
-                            <form>
-                                <input type="text" placeholder="Enter your name" className="lpbanner-input" />
-                                <input type="tel" placeholder="Enter your number" className="lpbanner-input" />
-                                <input type="email" placeholder="Enter your email" className="lpbanner-input" />
-                                <textarea placeholder="Message" className="lpbanner-input lpbanner-textarea"></textarea>
-                                <button type="submit" className="btn btn-dark lpbanner-submit-btn">Send Your Query</button>
+                            <form method="POST" onSubmit={handleSubmit} id="bannerForm">
+                                <input type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
+                                <input type="tel" placeholder="Enter your number" name="phone" value={formData.phone} onChange={handleChange} className="lpbanner-input" required />
+                                <input type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
+                                <textarea placeholder="Message" name="message" className="lpbanner-input lpbanner-textarea" value={formData.message} onChange={handleChange} required ></textarea>
+                                <button type="submit" className="btn btn-dark lpbanner-submit-btn" disabled={loading}>
+                                    {loading ? (
+                                        <>
+                                            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                                            <span role="status">Submitting...</span>
+                                        </>
+                                    ) : 'Send Your Query'}
+                                </button>
                             </form>
                         </div>
                     </div>
 
                 </div>
             </div>
-
-            {/* <PopupForm title={title} /> */}
         </section>
     );
 };
