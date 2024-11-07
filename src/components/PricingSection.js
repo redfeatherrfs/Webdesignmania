@@ -8,7 +8,7 @@ import '../PricingSection.css'; // Import the CSS file
 
 
 
-const PricingSection = ({ packages }) => {
+const PricingSection = ({ packages, updatePopupTitle }) => {
     // Form state to capture user input
     const [formData, setFormData] = useState({
         fullName: '',
@@ -39,24 +39,6 @@ const PricingSection = ({ packages }) => {
     useEffect(() => {
         fetchLocationAndSetPrice(); // Fetch location on component mount
     }, []);
-
-    // Handle form input changes
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
-
-    // Handle form submission
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Submit the form data to backend or show a message
-        console.log('Form submitted:', formData);
-        alert('Form submitted successfully!');
-    };
-
 
     return (
         <section className="pricing-section text-center py-5">
@@ -90,10 +72,11 @@ const PricingSection = ({ packages }) => {
                                                 {/* Price section */}
                                                 <div className="price">
                                                     <h2>{item.price}</h2>
-                                                    <div>
-                                                        <strike>{item.originalPrice}</strike> {/* Ensure originalPrice is used */}
-                                                        {/* <span> Only</span> */}
-                                                    </div>
+                                                    {/* <div>
+                                                        <strike>{item.originalPrice}</strike> 
+                                                        Ensure originalPrice is used
+                                                        <span> Only</span>
+                                                    </div> */}
                                                 </div>
                                             </div>
 
@@ -103,11 +86,29 @@ const PricingSection = ({ packages }) => {
                                                     {item.features.map((feature, index) => (
                                                         <li key={index}>{feature}</li>
                                                     ))}
+
+                                                    {item?.VAS?.length && (
+                                                        <>
+                                                            <div className='text-center text-dark'><b>Value Added Services</b></div>
+                                                            {item.VAS.map((service, index) => (
+                                                                <li key={index}>{service}</li>
+                                                            ))}
+                                                        </>
+                                                    )}
+
+                                                    {item?.whatYouWillGet?.length && (
+                                                        <>
+                                                            <div className='text-center text-dark'><b>What will you Get?</b></div>
+                                                            {item.whatYouWillGet.map((service, index) => (
+                                                                <li key={index}>{service}</li>
+                                                            ))}
+                                                        </>
+                                                    )}
                                                 </ul>
                                             </div>
 
                                             {/* Button */}
-                                            <a href="#" className="package-btn">START PROJECT</a>
+                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updatePopupTitle(item.price.includes('$') ? `${item.title} - ${item.price}` : item.title)} className="package-btn">START PROJECT</button>
                                         </div>
                                     </Col>
                                 ))}

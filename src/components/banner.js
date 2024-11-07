@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css'; // assuming you have external styles
 
-const BannerSection = ({ title, image,buttonlink,buttontext, description }) => {
+const BannerSection = ({ title, image, updatePopupTitle, buttontext, description }) => {
     return (
         <section className="banner-section">
             <img src={image} alt="Background" className="banner-image" />
@@ -19,7 +19,7 @@ const BannerSection = ({ title, image,buttonlink,buttontext, description }) => {
                                 ))} */}
                             </h1>
                             <p>{description}</p>
-                            <a href={buttonlink} className="cta-button">{buttontext}</a>
+                            <button className="cta-button" data-bs-toggle='modal' data-bs-target='#popupForm' onClick={() => updatePopupTitle('Basic Package - $199')}>{buttontext}</button>
                         </div>
                     </div>
                 </div>

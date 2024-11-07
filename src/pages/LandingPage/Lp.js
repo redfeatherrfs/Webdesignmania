@@ -128,7 +128,7 @@ const LpPage = () => {
                 <LpLogoSlider logos={logosData} />
             </div>
             <LpCtaSec2 />
-            <TestimonialSection updateTitle={handleTitleChange} />
+            <TestimonialSection updatePopupTitle={handleTitleChange} />
             <ContactForm />
             <LpContactSec />
             <LpFooterSec />

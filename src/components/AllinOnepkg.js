@@ -2,7 +2,7 @@ import React from 'react';
 import { FiChevronRight } from 'react-icons/fi'; // Importing arrow icon from React Icons
 import '../AllInOnePkg.css'; // Importing the CSS file
 
-const AllInOnePkg = () => {
+const AllInOnePkg = ({ updatePopupTitle }) => {
     return (
         <section className="allinonepkg">
             <div className='container'>
@@ -76,7 +76,7 @@ const AllInOnePkg = () => {
                 {/* Button Section */}
                 <div className="row text-center mt-4">
                     <div className="col-12">
-                        <button className="package-btn">Get Started</button>
+                        <button className="package-btn" data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updatePopupTitle('All In One Combo - $4999')}>Get Started</button>
                     </div>
                 </div>
             </div>

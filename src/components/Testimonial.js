@@ -9,7 +9,7 @@ import React from 'react';
 import { FaStar } from 'react-icons/fa';
 import '../Testimonial.css'; // Custom styles
 
-const TestimonialSection = ({ updateTitle }) => {
+const TestimonialSection = ({ updatePopupTitle }) => {
     const testimonials = [
         {
             quote: "Let's create a symphony of code that'll leave everyone amazed. Dare to be different.",
@@ -82,7 +82,7 @@ const TestimonialSection = ({ updateTitle }) => {
                     </Swiper>
 
                     <div className="text-center">
-                        <button className="package-btn" data-bs-toggle='modal' data-bs-target='#popupForm' onClick={() => updateTitle('Basic Package - $199')}>Get Started</button>
+                        <button className="package-btn" data-bs-toggle='modal' data-bs-target='#popupForm' onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
                     </div>
                 </div>
             </div>

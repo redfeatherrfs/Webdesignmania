@@ -1,71 +1,65 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const GetStartedSection = () => {
-    // Form state to capture user input
-
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [subject, setSubject] = useState('start');
-    const [phone, setPhone] = useState('');
-    const [message, setMessage] = useState('');
-    const [service, setService] = useState('');
-
-    const [submitted, setSubmitted] = useState(false); // State to track form submission
+    const navigate = useNavigate()
     const [loading, setLoading] = useState(false); // Loading state
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    })
 
-    const navigate = useNavigate();
-    // Handle form submission
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setLoading(true); // Set loading to true when form submission starts
-        const formData = {
-            name,
-            email,
-            phone,
-            service,
-            subject,
-            message
-        };
-
-        try {
-            const response = await fetch('http://study.loc/PHPMailer/index.php', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                const data = await response.json();
-                console.log(data);
-
-                if (data.status === 'success') {
-                    console.log('Form submitted successfully');
-                    setSubmitted(true);
-                    setName('');
-                    setEmail('');
-                    setPhone('');
-                    setSubject('');
-                    setMessage('');
-                } else {
-                    console.error('Error:', data.message);
-                }
-            } else {
-                console.error('Error submitting form');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-        } finally {
-            setLoading(false); // Set loading to false when form submission completes
-        }
+    const handleChange = e => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
     };
 
-    if (submitted) {
-        navigate('/thank-you');
+    const validateEmailAndPhone = () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            phoneRegex = /^\+1\d{10}$/
+
+        if (!emailRegex.test(formData.email))
+            document.querySelector('.get-started-section input[name=email]').classList.add('is-invalid')
+        else
+            document.querySelector('.get-started-section input[name=email]').classList.remove('is-invalid')
+
+        if (!phoneRegex.test(formData.phone))
+            document.querySelector('.get-started-section input[name=phone]').classList.add('is-invalid');
+        else
+            document.querySelector('.get-started-section input[name=phone]').classList.remove('is-invalid');
+
+        return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
     }
 
+    const handleSubmit = async e => {
+        e.preventDefault()
+
+        // Email & phone validation
+        if (!validateEmailAndPhone())
+            return
+
+        setLoading(true)
+
+        await fetch(/*'http://localhost:9090'*/"https://webdesignmania.co.uk/php/index.php", {
+            method: 'POST',
+            body: JSON.stringify(formData)
+        })
+            .then(r => r.json())
+            .then(({ success, message }) => {
+                setLoading(false)
+                if (success)
+                    navigate('/thank-you')
+                else
+                    Swal.fire('Error', message, 'error')
+            })
+    }
+    
     return (
         <section className="get-started-section">
             <div className="container">
@@ -76,70 +70,70 @@ const GetStartedSection = () => {
                             <h2 className="fw-bold">Let's Get Started</h2>
                             <p>Please enter your email and phone number on our contact form and we will be happy to assist you.</p>
                         </div>
-
-                        {submitted ? (
-
-                            <h3>Thank you! Your message has been sent.</h3>
-                        ) : (
-                            <form onSubmit={handleSubmit}>
-                                <div className="row g-3">
-                                    <div className="col-md-6 col-lg-3">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            name="fullName"
-                                            placeholder="Full Name*"
-                                            value={name}
-                                            onChange={(e) => setName(e.target.value)}
-                                            required
-                                        />
-                                    </div>
-                                    <div className="col-md-6 col-lg-3">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-
-                                            placeholder="Contact Number*"
-                                            value={phone}
-                                            onChange={(e) => setPhone(e.target.value)}
-                                            required
-                                        />
-                                    </div>
-                                    <div className="col-md-6 col-lg-3">
-                                        <input
-                                            type="email"
-                                            className="form-control"
-                                            name="emailAddress"
-                                            placeholder="Email Address*"
-                                            value={email}
-                                            onChange={(e) => setEmail(e.target.value)}
-                                            required
-                                        />
-                                    </div>
-                                    <div className="col-md-6 col-lg-3">
-                                        <input
-                                            type="text"
-                                            className="form-control"
-
-                                            placeholder="Select Services*"
-                                            value={service}
-                                            onChange={(e) => setService(e.target.value)}
-                                            required
-                                        />
+                        <form onSubmit={handleSubmit} method='POST'>
+                            <div className="row g-3">
+                                <div className="col-md-6 col-lg-3">
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        name="name"
+                                        placeholder="Full Name*"
+                                        value={formData.name}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="col-md-6 col-lg-3">
+                                    <input
+                                        type="tel"
+                                        className="form-control"
+                                        placeholder="Contact Number*"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    <div className="invalid-feedback">
+                                        Invalid Phone number. Example: +19876543210
                                     </div>
                                 </div>
-                                <div className="text-center mt-4">
+                                <div className="col-md-6 col-lg-3">
+                                    <input
+                                        type="email"
+                                        className="form-control"
+                                        name="email"
+                                        placeholder="Email Address*"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                    <div className="invalid-feedback">
+                                        Invalid Email address
+                                    </div>
+                                </div>
+                                <div className="col-md-6 col-lg-3">
+                                    <input
+                                        type="text"
+                                        className="form-control"
+                                        name="message"
+                                        placeholder="Select Services*"
+                                        value={formData.services}
+                                        onChange={handleChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div className="text-center mt-4">
+                                <button type="submit" className="btn btn-primary btn-lg" disabled={loading}>
                                     {loading ? (
-                                        <button type="button" className="btn btn-primary btn-lg" disabled>
-                                            Submitting...
-                                        </button>
-                                    ) : (
-                                        <button type="submit" className="btn btn-primary btn-lg">Submit</button>
-                                    )}
-                                </div>
-                            </form>
-
-                        )}
+                                        <>
+                                            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                                            <span role="status">Submitting...</span>
+                                        </>
+                                    ) : 'Submit'}
+                                </button>
+                            </div>
+                        </form>
 
                     </div>
                 </div>
