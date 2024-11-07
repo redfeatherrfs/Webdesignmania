@@ -1,27 +1,24 @@
+import React from 'react';
+import '../LogoDesign.css'; // Import the CSS file
 import BannerSection from "../components/banner"
-import GetStartedSection from "../components/Formsection"
 import HeaderSection from "../components/Header"
-import LogoSection from "../components/logos"
-
 import bannerImage from '../images/app-page-banner.jpg'
-import smm2 from '../images/smm2.png'
-
-import FooterSection from "../components/Footer"
-import ContactForm from "../components/ContactForm"
-import TestimonialSection from "../components/Testimonial"
-import ImageRightBanner from '../components/Aboutus/ImageRightbanner'
-import IconTextBox from "../components/SMM/IconTextBox"
-import OurMission from "../components/Aboutus/OurMission"
-import SMMProcess from "../components/SMM/SMMProcess"
-import PricingSection from "../components/PricingSection"
-import ourMissionImage from '../images/ourmission.png';
-import ourVisionImage from '../images/ourvission.png';
-
-
+import LogoSection from "../components/logos"
+import GetStartedSection from '../components/Formsection';
+import CustomContainer from '../components/CustomContainerV3';
+import LogoPortfolio from '../components/LogoDesignsPortfolio';
+import LogoProcess from '../components/CustomLogoProcess';
+import CustomSection from '../components/CustomSectionV3';
+import FooterSection from '../components/Footer';
+import ContactForm from '../components/ContactForm';
+import Pricing from '../components/PricingSection';
+import TestimonialSection from '../components/Testimonial';
+import { Helmet } from 'react-helmet-async';
+import PricingSection from '../components/PricingSection';
 
 
+const LogoDesign = () => {
 
-const AppPage = () => {
 
     const packages = [
         {
@@ -163,13 +160,15 @@ const AppPage = () => {
     ]
 
 
-   
-
     return (
         <>
-            <HeaderSection />
-            <BannerSection
-                title='Contact Us'
+        <Helmet>
+            <title>Custom Logo Design Services by Expert Logo Designers</title>
+            <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
+        </Helmet>     
+         <HeaderSection />
+         <BannerSection
+                title='Logo Design'
                 description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
                 buttonlink='/'
                 buttontext="Start a Project"
@@ -177,67 +176,19 @@ const AppPage = () => {
             />
             <LogoSection />
             <GetStartedSection />
-
-            <div style={{ padding: '100px 0px 0px 0px' }}>
-<ImageRightBanner
-    subHeading="ABOUT US"
-    heading="User-Friendly Website Designs  "
-    description={
-        <>
-Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
-
-        </>
-    }
-    imageSrc={smm2}
-    objectfit="contain"
-    imageHeight="500px"  // Set height here
-    imageWidth="100%"     // Set width here
-    borderRadius="30px"
-    reverseOrder={true}
-/>
-</div>
-
-<IconTextBox/>
-
-<div>
-      <OurMission
-        ourmissionImg={ourMissionImage}
-        ourvissionImg={ourVisionImage}
-        heading="Leading the Way in Digital Innovation"
-        subHeading="WHO WE ARE"
-        content1={{
-        //   heading: "Our Mission",
-          text: "Our mission is to empower businesses to grow through creativity and digital solutions."
-        }}
-        content2={{
-        //   heading: "Our Vision",
-          text: "To be the most innovative and impactful digital agency in the world."
-        }}
-        borderStyle1={{
-            
-          top: 'none',
-          right: 'none',
-          bottom: '2px solid #5432E7',
-          left: '2px solid #5432E7'
-        }}
-        borderStyle2={{
-          top: '2px solid #5432E7',
-          right: '2px solid #5432E7',
-          bottom: 'none',
-          left: 'none'
-        }}
-      />
-    </div>
-<SMMProcess/>
-<PricingSection packages={packages} />
-           
-           
-        
+            <CustomContainer/>
+            <LogoPortfolio/>
+            <LogoProcess/>
+            <CustomSection/>         
+            <PricingSection packages={packages} />
             <TestimonialSection/>
+
             <ContactForm/>
-            <FooterSection />
+            <FooterSection/>
+
+            
         </>
     )
 }
 
-export default AppPage
+export default LogoDesign

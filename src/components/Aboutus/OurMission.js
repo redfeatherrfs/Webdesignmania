@@ -36,7 +36,7 @@ const OurMission = ({
                 {/* Second Row - Image and Text Columns */}
                 <div className="row align-items-center">
                     {/* First Column - Image and Text */}
-                    <div className="col-12 col-md-5 text-center mb-4 mb-md-0 py-2" style={{ borderTop: borderStyle1.top, borderRight: borderStyle1.right, borderBottom: borderStyle1.bottom, borderLeft: borderStyle1.left }}>
+                    <div className="col-12 col-md-5 text-center mb-4 mb-md-0 py-5" style={{ borderTop: borderStyle1.top, borderRight: borderStyle1.right, borderBottom: borderStyle1.bottom, borderLeft: borderStyle1.left }}>
                         <img src={ourmissionImg} alt="Our Mission 1" className="img-fluid mission-img" />
                         <h2>{content1.heading}</h2>
                         <p className="mission-text mt-3">{content1.text}</p>
@@ -48,7 +48,7 @@ const OurMission = ({
                     </div>
 
                     {/* Second Column - Image and Text */}
-                    <div className="col-12 col-md-5 text-center py-2" style={{ borderTop: borderStyle2.top, borderRight: borderStyle2.right, borderBottom: borderStyle2.bottom, borderLeft: borderStyle2.left }}>
+                    <div className="col-12 col-md-5 text-center py-5" style={{ borderTop: borderStyle2.top, borderRight: borderStyle2.right, borderBottom: borderStyle2.bottom, borderLeft: borderStyle2.left }}>
                         <img src={ourvissionImg} alt="Our Mission 2" className="img-fluid mission-img" />
                         <h2>{content2.heading}</h2>
                         <p className="mission-text mt-3">{content2.text}</p>
