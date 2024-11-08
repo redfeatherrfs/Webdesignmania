@@ -46,7 +46,7 @@ const GetStartedSection = () => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*/"https://webdesignmania.co.uk/php/index.php", {
+        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/index.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })

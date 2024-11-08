@@ -2,7 +2,7 @@ import { Tabs, Tab, Container, Row, Col } from 'react-bootstrap';
 import '../../PricingSection.css'; // Import the CSS file
 
 
-const LpPricingSection = ({ updateTitle }) => {
+const LpPricingSection = ({ updatePopupTitle }) => {
     const packages = [
         {
             category: 'Custom Website Packages',
@@ -598,7 +598,7 @@ const LpPricingSection = ({ updateTitle }) => {
                                             </div>
 
                                             {/* Button */}
-                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updateTitle(item.price.includes('$') ? `${item.title} - ${item.price}` : item.title)} className="package-btn">START PROJECT</button>
+                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updatePopupTitle(item.price.includes('$') ? `${item.title} - ${item.price}` : item.title)} className="package-btn">START PROJECT</button>
                                         </div>
                                     </Col>
                                 ))}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../LogoDesign.css'; // Import the CSS file
 import BannerSection from "../components/banner"
 import HeaderSection from "../components/Header"
@@ -15,9 +15,12 @@ import Pricing from '../components/PricingSection';
 import TestimonialSection from '../components/Testimonial';
 import { Helmet } from 'react-helmet-async';
 import PricingSection from '../components/PricingSection';
+import PopupForm from '../components/common/PopupForm';
 
 const LogoDesign = () => {
+    const [title, setTitle] = useState('')
 
+    const handleTitleChange = newTitle => setTitle(newTitle)
 
     const packages = [
         {
@@ -172,20 +175,21 @@ const LogoDesign = () => {
                 buttonlink='/'
                 buttontext="Start a Project"
                 image={bannerImage}
+                updatePopupTitle={handleTitleChange}
             />
             <LogoSection />
             <GetStartedSection />
-            <CustomContainer/>
-            <LogoPortfolio/>
-            <LogoProcess/>
-            <CustomSection/>         
-            <PricingSection packages={packages} />
-            <TestimonialSection/>
+            <CustomContainer />
+            <LogoPortfolio />
+            <LogoProcess />
+            <CustomSection />
+            <PricingSection packages={packages} updatePopupTitle={handleTitleChange} />
+            <TestimonialSection updatePopupTitle={handleTitleChange} />
 
-            <ContactForm/>
-            <FooterSection/>
+            <ContactForm />
+            <FooterSection />
+            <PopupForm title={title} />
 
-            
         </>
     )
 }

@@ -38,24 +38,20 @@ import PopupForm from "../../components/common/PopupForm"
 const iconBoxesData = [
     {
         image: serviceiconbox1,
-        heading: 'Web Design',
-        text: 'A website design with elements that grabs attention; yet at the same time, reflects the brand\'s unique personality.',
+        heading: '5+ Years’ Experience ',
+        text: 'We have been revolutionizing your marketing with our cool strategies for more than 5 years. In this period, we have catered to the diverse business marketing needs of international clients with unbridled success and critical acclaim. ',
     },
     {
         image: serviceiconbox2,
-        heading: 'SEO Services',
-        text: 'Optimize your website to rank higher in search engine results and drive organic traffic.',
+        heading: '900+ Successful Clients',
+        text: 'We have facilitated more than 1100 customers from every field of life and have always left them satisfied. Our success is down to the dedication, motivation, passion, loyalty, and expertise of our marvelous team.',
     },
     {
         image: serviceiconbox3,
-        heading: 'Marketing Strategy',
-        text: 'Craft a strategy that aligns with your business goals and reaches your target audience effectively.',
+        heading: '800+ Custom Features Developed',
+        text: 'Our company has been the best website development company with a large focus on e-commerce web development. We have harmonized many brands’ rhyme and shine through the years.',
     },
-    {
-        image: serviceiconbox1,
-        heading: 'Marketing Strategy',
-        text: 'Craft a strategy that aligns with your business goals and reaches your target audience effectively.',
-    },
+  
 ];
 
 const imagesData = [
@@ -83,19 +79,19 @@ const LpPage = () => {
 
     return (
         <>
-            <TopHead updateTitle={handleTitleChange} />
-            <Lpbanner updateTitle={handleTitleChange} />
+            <TopHead updatePopupTitle={handleTitleChange} />
+            <Lpbanner updatePopupTitle={handleTitleChange} />
             <LanguageLogos />
-            <LpPricingSection updateTitle={handleTitleChange} />
+            <LpPricingSection updatePopupTitle={handleTitleChange} />
             <LpthirdSection />
             <LpCta1 />
             <div style={{ padding: '100px 0px 0px 0px' }}>
                 <ImageRightBanner
                     // subHeading="ABOUT US"
-                    heading="Tired of Working with Website Builders Offering Limited Customization? "
+                    heading="Customized Web Development Services That Talk To Your Audience."
                     description={
                         <>
-                            Change the game with WordPress, the world’s most popular content management system (CMS). It's powerful, flexible, and easy to use with plenty of options to build a website that effectively converts.
+                           Make your brand the smartest on the market with our clever custom web design and development services. Stay ahead of the curve with the world’s most popular Content Management System. From dull to cool, our website redesign services make your brand the coolest on the market. We have professional team of web designers and developers.
                         </>
                     }
                     imageSrc={lpImage}
@@ -104,13 +100,13 @@ const LpPage = () => {
                     imageWidth="100%"     // Set width here
                     borderRadius="30px"
                     reverseOrder={true}
-                    updateTitle={handleTitleChange}
+                    updatePopupTitle={handleTitleChange}
                 />
             </div>
             <LpServiceIconBox
                 backgroundColor="#f9f9f9" // Example background color
-                servicesTitle="Services"
-                message="Drop us a message, and our experts will get back to you shortly."
+                servicesTitle="We Specialize In Coding High Performance Websites"
+                // message="Drop us a message, and our experts will get back to you shortly."
                 iconBoxes={iconBoxesData}
             />
             <div>

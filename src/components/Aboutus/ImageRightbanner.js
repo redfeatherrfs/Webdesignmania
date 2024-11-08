@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../ImageRightbanner.css';
 
-const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHeight, imageWidth, objectfit, borderRadius, reverseOrder, updateTitle }) => {
+const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHeight, imageWidth, objectfit, borderRadius, reverseOrder, updatePopupTitle }) => {
     return (
         <section className="image-right-banner">
             <div className="container">
@@ -12,7 +12,7 @@ const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHei
                         <h2 className="about-heading">{heading}</h2>
                         <p className="design-process-description">{description}</p>
                         <div>
-                            <button className="btn btn-custom" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updateTitle('Basic Package - $199')}>Get Started</button>
+                            <button className="btn btn-custom" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
                         </div>
                     </div>
 

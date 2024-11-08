@@ -2,7 +2,7 @@ import { FaPhone, FaComment } from 'react-icons/fa';
 import '../../LandingPage.css';
 
 
-const TopHead = ({ updateTitle }) => {
+const TopHead = ({ updatePopupTitle }) => {
     const title = "Get Free Consultancy"
 
     return (
@@ -15,7 +15,7 @@ const TopHead = ({ updateTitle }) => {
                                 title={title}
                                 className="avail-discount-btn custom-btn common-popup mb-3 mb-md-0"
                                 data-bs-toggle="modal" data-bs-target="#popupForm"
-                                onClick={() => updateTitle(title)}
+                                onClick={() => updatePopupTitle(title)}
                             >
                                 Get free consultancy
                             </button>

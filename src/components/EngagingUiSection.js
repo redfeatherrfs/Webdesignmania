@@ -1,7 +1,7 @@
 import listImage from "../images/list-item.png"
 import iphonesImage from "../images/iphones.png"
 
-const EngagingUISection = () => {
+const EngagingUISection = ({updatePopupTitle}) => {
     return (
         <section className="my-5 py-5 engaging-ui-section">
             <div className="container">
@@ -34,7 +34,7 @@ const EngagingUISection = () => {
                         </div>
 
                         <div>
-                            <button className="btn btn-custom">
+                            <button className="btn btn-custom" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>
                                 Get Started
                             </button>
                         </div>

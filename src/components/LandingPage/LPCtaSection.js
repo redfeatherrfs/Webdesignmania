@@ -12,9 +12,9 @@ const LpCta1 = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="cta-heading">Looking For A Creative Web Design?</h2>
+            <h2 className="cta-heading">Ignite curiosity, and inspire action with our classy web design services. </h2>
             <p className="cta-text">
-              Drop Us A Message, And Our Experts Will Get Back To You Shortly
+            Leave a message. Our professional web designers will get in touch with you.
             </p>
             <div className="cta-buttons">
               <button className="btn btn-primary leave-message-btn">Leave A Message</button>

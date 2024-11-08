@@ -16,15 +16,19 @@ import SMMProcess from "../components/SMM/SMMProcess"
 import PricingSection from "../components/PricingSection"
 import ourMissionImage from '../images/smmicon1.png';
 import ourVisionImage from '../images/smmicon2.png';
-import socialMediaIcon from '../images/smmic1.png'; 
-import seoIcon from '../images/smmic2.png'; 
-import ppcIcon from '../images/smmic3.png'; 
-
+import socialMediaIcon from '../images/smmic1.png';
+import seoIcon from '../images/smmic2.png';
+import ppcIcon from '../images/smmic3.png';
+import { useState } from "react"
+import PopupForm from "../components/common/PopupForm"
+import { Helmet } from 'react-helmet-async';
 
 
 
 const AppPage = () => {
+    const [title, setTitle] = useState('')
 
+    const handleTitleChange = newTitle => setTitle(newTitle)
     const packages = [
         {
             category: 'Website',
@@ -179,18 +183,22 @@ const AppPage = () => {
           title: "Social Media Management",
           description: "Actively managing your social media profiles, posting regularly, engaging with your followers, and analyzing your content performance. "
         }
-      ];
+    ];
 
-   
+
 
     return (
         <>
+            <Helmet>
+                <title>Result Driven Social Media Marketing (SMM) Services</title>
+                <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
+            </Helmet>
             <HeaderSection />
             <BannerSection
                 title='We Harness The Power Of Social Platforms And Make Your Brand Stay Relevant'
                 description="Thinking about how to implement social media analytics to your brand and generate quality leads? Why not out-source your worries!
 "
-                buttonlink='/'
+                updatePopupTitle={handleTitleChange}
                 buttontext="Start a Project"
                 image={bannerImage}
             />
@@ -205,16 +213,17 @@ const AppPage = () => {
         <>
 Think of having Social Media Marketing (SMM) as a direct line to your customers. Imagine being able to connect with your audience in real-time, sharing your latest updates, products, or promotions while also hearing their feedback, SMM will do just that for you. This two-way communication turns casual followers into enthusiastic ambassadors. Let’s work to keep your brand on top-of-mind!
 
-        </>
-    }
-    imageSrc={smm2}
-    objectfit="contain"
-    imageHeight="500px"  // Set height here
-    imageWidth="100%"     // Set width here
-    borderRadius="30px"
-    reverseOrder={true}
-/>
-</div>
+                        </>
+                    }
+                    imageSrc={smm2}
+                    objectfit="contain"
+                    imageHeight="500px"  // Set height here
+                    imageWidth="100%"     // Set width here
+                    borderRadius="30px"
+                    reverseOrder={true}
+                    updatePopupTitle={handleTitleChange}
+                />
+            </div>
 
 <IconTextBox
       sectionHeading="Unlocking SMM To Highlight Your Brand’s Presence"
@@ -252,13 +261,16 @@ Think of having Social Media Marketing (SMM) as a direct line to your customers.
       />
     </div>
 <SMMProcess/>
-<PricingSection packages={packages} />
+            
            
-           
-        
-            <TestimonialSection/>
-            <ContactForm/>
+            <PricingSection packages={packages} updatePopupTitle={handleTitleChange} />
+
+
+
+            <TestimonialSection updatePopupTitle={handleTitleChange} />
+             <ContactForm/>
             <FooterSection />
+            <PopupForm title={title} />
         </>
     )
 }

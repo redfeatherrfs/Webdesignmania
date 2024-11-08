@@ -1,5 +1,5 @@
 import React from 'react';
-import footer from '../images/footer.png'; // Ensure the image path is correct
+import footer from '../images/lp-footer.png'; // Ensure the image path is correct
 import visa from '../images/visa.png';
 import { Link } from 'react-router-dom';
 
@@ -25,8 +25,8 @@ const Footer = () => {
             <ul className="footer-links">
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about-us">About Us</Link></li>
-              <li><Link href="#">Case Studies</Link></li>
-              <li><a href="#">Expertise</a></li>
+              <li><Link to="/contact-us">Contact Us</Link></li>
+             
             </ul>
           </div>
 
@@ -34,10 +34,13 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="footer-heading">Our Services</h5>
             <ul className="footer-links">
-              <li><Link to="/app-design">App Design</Link></li>
-              <li><a href="#">Website Design</a></li>
-              <li><Link to="/smm">SMM</Link></li>
-              <li><a href="#">Website</a></li>
+            <li><Link to="/logo-design">Logo Design</Link></li>
+            <li><a href="/">Website Design</a></li>
+            <li><Link to="/app-design">App Design</Link></li>
+            <li><Link to="/stationary">Stationary</Link></li>
+            <li><Link to="/seo">SEO</Link></li>
+            <li><Link to="/smm">SMM</Link></li>
+              
             </ul>
           </div>
 
@@ -50,13 +53,13 @@ const Footer = () => {
               {/* <img src="images/mastercard.png" alt="Mastercard" />
               <img src="images/paypal.png" alt="Paypal" /> */}
             </div>
-            <h5 className="footer-heading mt-3">Follow Us</h5>
+            {/* <h5 className="footer-heading mt-3">Follow Us</h5>
             <div className="social-icons">
               <a href="#"><i className="bi bi-facebook"></i></a>
               <a href="#"><i className="bi bi-twitter"></i></a>
               <a href="#"><i className="bi bi-instagram"></i></a>
               <a href="#"><i className="bi bi-linkedin"></i></a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

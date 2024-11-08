@@ -9,14 +9,6 @@ import '../PricingSection.css'; // Import the CSS file
 
 
 const PricingSection = ({ packages, updatePopupTitle }) => {
-    // Form state to capture user input
-    const [formData, setFormData] = useState({
-        fullName: '',
-        contactNumber: '',
-        emailAddress: '',
-        services: '',
-    });
-
     // State to manage the price
     const [price, setPrice] = useState('$10'); // Default price
 

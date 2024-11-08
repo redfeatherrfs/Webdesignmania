@@ -16,10 +16,14 @@ import IconTextBox from "../components/SMM/IconTextBox"
 import OurMission from "../components/Aboutus/OurMission"
 import SMMProcess from "../components/SMM/SMMProcess"
 import PricingSection from "../components/PricingSection"
+import { useState } from "react"
+import PopupForm from "../components/common/PopupForm"
 
 
 const AppPage = () => {
+    const [title, setTitle] = useState('')
 
+    const handleTitleChange = newTitle => setTitle(newTitle)
 
     const packages = [
         {
@@ -160,7 +164,7 @@ const AppPage = () => {
 
     ]
 
-   
+
 
     return (
         <>
@@ -168,13 +172,13 @@ const AppPage = () => {
             <BannerSection
                 title='Rank Higher, Reach More People, And Grow Faster'
                 description="Ready to boost website traffic with a powerful SEO strategy? You have reached the right destination!"
-                buttonlink='/'
+                updatePopupTitle={handleTitleChange}
                 buttontext="Start a Project"
                 image={bannerImage}
             />
             <LogoSection />
 
-        
+
             <GetStartedSection />
 
             <div style={{ padding: '100px 0px 0px 0px' }}>
@@ -192,6 +196,7 @@ Imagine your business being the go-to choice whenever someone searches for what 
     imageWidth="100%"     // Set width here
     borderRadius="30px"
     reverseOrder={false}
+    updatePopupTitle={handleTitleChange}
 />
 </div>
 
@@ -212,6 +217,7 @@ We create strategies that work uniquely for your business growth. We build a cus
     imageWidth="100%"     // Set width here
     borderRadius="30px"
     reverseOrder={true}
+    updatePopupTitle={handleTitleChange}
 />
 </div>
 
@@ -231,20 +237,22 @@ Our developers stay alighned with the latest SEO techniques to keep your busines
     imageWidth="100%"     // Set width here
     borderRadius="30px"
     reverseOrder={false}
+    updatePopupTitle={handleTitleChange}
 />
 </div>
 
 
 
-           
 
-<PricingSection packages={packages} />
-           
-           
-        
-            <TestimonialSection/>
-            <ContactForm/>
+
+            <PricingSection packages={packages} updatePopupTitle={handleTitleChange} />
+
+
+
+            <TestimonialSection updatePopupTitle={handleTitleChange}  />
+            <ContactForm />
             <FooterSection />
+            <PopupForm title={title} />
         </>
     )
 }
