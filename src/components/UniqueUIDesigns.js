@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const UniqueUIDesignsSection = ({ services, page }) => {
+const UniqueUIDesignsSection = ({ services, page, servicetittle, servicedesc }) => {
     // const services = [
     //     { id: '01', title: 'Website Design', description: 'Affordable Web Design & Development Services', imgSrc: "images/Mask group.png", alt: 'Website Design' },
     //     { id: '02', title: 'App Design', description: 'Focused on Creating Engaging and Successful Mobile Apps', imgSrc: 'images/Mask group-1.png', alt: 'App Design' },
@@ -14,8 +14,8 @@ const UniqueUIDesignsSection = ({ services, page }) => {
     return (
         <section className="unique-ui-designs-section">
             <div className="container">
-                <h6>Services</h6>
-                <h2 className='mb-5'>What We Do?
+                    <h6>{servicedesc}</h6>
+                <h2 className='mb-5'>{servicetittle}
                 </h2>
 
                 {services.map(service => (

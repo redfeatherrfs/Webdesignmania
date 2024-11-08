@@ -9,20 +9,20 @@ const CustomLogoProcess = () => {
         {
             imgSrc: Frame20,
             number: "01",
-            heading: "Discovery and Research",
-            text: "First up, we dive into learning all about your brand, audience, and competitors. This helps us get a feel for what your logo should say and how it should stand out. We’ll brainstorm, survey, and check out what others in your space are doing.",
+            heading: "Brainstorming",
+            text: "Tell us about your brand's mission, values, and target audience. Once we have a solid understanding, we'll start sketching initial ideas and concepts that reflect our conversations. We will work on competitor analysis and prepare to outshine your logo in the industry. ",
         },
         {
             imgSrc: Frame21,
             number: "02",
-            heading: "Concept Refinement",
-            text: "We begin by sketching ideas and exploring different styles through rough drafts and mood boards. Once the best concepts emerge, we refine them by finalizing colors, typography, and ensuring the logo works across all formats. Your feedback guides the final tweaks.",
+            heading: "Get Custom Designs",
+            text: "We'll turn rough sketches into digital designs, experimenting with colors, fonts, and shapes. After creating a few options, we'll review them together, make adjustments, and fine-tune the design until the desired results are achieved. ",
         },
         {
             imgSrc: Frame22,
             number: "03",
-            heading: "Finalization and Delivery",
-            text: "Finally, we prepare your logo for action. We create various formats for different uses and make sure they look great everywhere. Plus, we might put together a style guide to keep everything consistent.",
+            heading: "Wrap-Up And Launch",
+            text: "We’ll make any last adjustments to the design and prepare it for use. We’ll create different file formats so your logo looks great everywhere—on websites, business cards, or signs. Then, we’ll share the finished logo with you including all necessary files and guidance for its implementation.",
         },
     ];
 
@@ -32,12 +32,12 @@ const CustomLogoProcess = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                            <h2>Simple and Fast<br />Customizable Logo<br />Design Process</h2>
+                        
+                            <h2>Logo Design<br />Made Easy<br />Our Framework</h2>
                         </div>
                         <div className="col-md-6">
                             <p style={{ textAlign: "justify" }}>
-                                We understand the rush to launch your business startup, and that’s why customizable logos make sense. 
-                                Getting a professional logo design from our advance studio isn’t hard, just follow these steps.
+                            We know the hustle behind your brand, let’s not make it more complicated for you. Clients fall for a simple and easy process and we deliver just that. Introducing our three-part design strategy: 
                             </p>
                         </div>
                     </div>

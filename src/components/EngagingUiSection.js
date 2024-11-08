@@ -7,25 +7,29 @@ const EngagingUISection = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-6">
-                        <h2 className="sub-heading">ABOUT US</h2>
-                        <h2 className="about-heading">Creating Engaging & Successful Mobile Apps UI</h2>
+                        <h2 className="sub-heading">App Design</h2>
+                        <h2 className="about-heading">Make Your Mobile Apps UI Stand Out In The App Store</h2>
 
                         <div className="mb-5">
                             <div className="d-flex align-items-center mb-3">
                                 <img src={listImage} className="me-3" />
-                                <div>Increased Engagement</div>
+                                <div>Improved UX</div>
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <img src={listImage} className="me-3" />
-                                <div>Cross-platform Development</div>
+                                <div>Higher Conversion Rates</div>
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <img src={listImage} className="me-3" />
-                                <div>Native App Development</div>
+                                <div>Increased User Engagement</div>
                             </div>
                             <div className="d-flex align-items-center mb-3">
                                 <img src={listImage} className="me-3" />
-                                <div>App Design and UX Optimization</div>
+                                <div>Reduced Development Costs</div>
+                            </div>
+                            <div className="d-flex align-items-center mb-3">
+                                <img src={listImage} className="me-3" />
+                                <div>Positive Reviews and Ratings</div>
                             </div>
                         </div>
 

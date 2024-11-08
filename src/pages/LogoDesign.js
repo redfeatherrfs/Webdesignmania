@@ -2,7 +2,7 @@ import React from 'react';
 import '../LogoDesign.css'; // Import the CSS file
 import BannerSection from "../components/banner"
 import HeaderSection from "../components/Header"
-import bannerImage from '../images/app-page-banner.jpg'
+import bannerImage from '../images/logodesignbg.png'
 import LogoSection from "../components/logos"
 import GetStartedSection from '../components/Formsection';
 import CustomContainer from '../components/CustomContainerV3';
@@ -15,15 +15,6 @@ import Pricing from '../components/PricingSection';
 import TestimonialSection from '../components/Testimonial';
 import { Helmet } from 'react-helmet-async';
 import PricingSection from '../components/PricingSection';
-
-
-
-
-
-
-
-
-
 
 const LogoDesign = () => {
 
@@ -176,8 +167,8 @@ const LogoDesign = () => {
         </Helmet>     
          <HeaderSection />
          <BannerSection
-                title='Logo Design'
-                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                title='Precision-Crafted Logos That Speaks Volume'
+                description="What if you could capture your brand’s essence into a lasting symbol? Contact our community creative professionals and give your vision a picture. "
                 buttonlink='/'
                 buttontext="Start a Project"
                 image={bannerImage}
