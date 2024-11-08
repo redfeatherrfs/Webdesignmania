@@ -162,9 +162,6 @@ const AppPage = () => {
 
     ]
 
-
-
-
     return (
         <>
             <HeaderSection />
@@ -185,7 +182,6 @@ const AppPage = () => {
                     description={
                         <>
                             Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
-
                         </>
                     }
                     imageSrc={smm2}
