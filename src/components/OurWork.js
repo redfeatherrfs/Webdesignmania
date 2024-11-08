@@ -11,13 +11,13 @@ import '../OurWork.css';
 
 const OurWork = () => {
     const projects = [
-        { category: 'Fashion', title: 'Kate Spade', image: ourworkimg1, link: '#' },
-        { category: 'Food & Beverages', title: 'Dayfresh', image: ourworkimg2, link: '#' },
-        { category: 'Vehicles', title: 'Isuzu', image: ourworkimg3, link: '#' },
-        { category: 'Technology', title: 'Apple', image: ourworkimg1, link: '#' },
-        { category: 'Technology', title: 'Apple', image: ourworkimg2, link: '#' },
-        { category: 'Technology', title: 'Apple', image: ourworkimg3, link: '#' },
-        { category: 'Technology', title: 'Apple', image: ourworkimg1, link: '#' },
+        { category: 'Fashion', title: 'Kate Spade', image: ourworkimg1, },
+        { category: 'Food & Beverages', title: 'Dayfresh', image: ourworkimg2, },
+        { category: 'Vehicles', title: 'Isuzu', image: ourworkimg3, },
+        { category: 'Technology', title: 'Apple', image: ourworkimg1, },
+        { category: 'Technology', title: 'Apple', image: ourworkimg2, },
+        { category: 'Technology', title: 'Apple', image: ourworkimg3, },
+        { category: 'Technology', title: 'Apple', image: ourworkimg1, },
         // Add more projects as needed
     ];
 

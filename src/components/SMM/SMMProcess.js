@@ -6,9 +6,9 @@ const SMMProcess = () => {
     <section className="smmprocess py-5">
       <div className="container text-center">
         {/* Subheading */}
-        <p className="text-uppercase text-muted mb-2">About Us</p>
+        <p className="text-uppercase text-muted mb-2">SMM</p>
         {/* Main Heading */}
-        <h3 className="font-weight-bold">Our Social Media Marketing Process</h3>
+        <h3 className="font-weight-bold">Ladder To Your Success        </h3>
 
         {/* Process Steps */}
         <div className="row d-flex align-items-center mt-4">
@@ -28,19 +28,19 @@ const SMMProcess = () => {
                 <div className="icon-circle mb-2">
                   <i className="fas fa-lightbulb"></i>
                 </div>
-                <h5>Strategy</h5>
+                <h5>Explore</h5>
               </div>
               <div className="col text-center process-step">
                 <div className="icon-circle mb-2">
                   <i className="fas fa-lightbulb"></i>
                 </div>
-                <h5>Design</h5>
+                <h5>Creating Your Vision</h5>
               </div>
               <div className="col text-center process-step">
                 <div className="icon-circle mb-2">
                   <i className="fas fa-lightbulb"></i>
                 </div>
-                <h5>Execution</h5>
+                <h5>Executing Your Dream</h5>
               </div>
               <div className="col text-center process-step">
                 <div className="icon-circle mb-2">
