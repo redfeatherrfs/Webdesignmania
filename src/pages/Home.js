@@ -584,7 +584,7 @@ const Home = () => {
             <Helmet>
                 <title>Full-Service Digital Marketing Agency - Web Design Mania</title>
                 <meta name="description" content="Web Design Mania is a full-service digital marketing agency offering expert web design, SEO, branding, and development services to boost your business worldwide." />
-                <link rel="canonical" href="https://webdesignmania.co.uk" />
+                <link rel="canonical" href="https://webdesignmania.com" />
             </Helmet>
 
             <HeaderSection />

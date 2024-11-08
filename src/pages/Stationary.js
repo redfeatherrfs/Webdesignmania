@@ -26,7 +26,7 @@ import serviceImage2 from '../images/Mask group-1.png'
 import serviceImage3 from '../images/Mask group-2.png'
 import serviceImage4 from '../images/Mask group-3.png'
 import serviceImage5 from '../images/Mask group-4.png'
-
+ 
 
 const Stationary = () => {
 
@@ -219,8 +219,10 @@ const Stationary = () => {
     return (
         <>
         <Helmet>
-            <title>Custom Logo Design Services by Expert Logo Designers</title>
-            <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
+            <title>Custom Stationery Design Service by Top Graphic Designers</title>
+            <meta name="description" content="Web Design Mania offers custom stationery design by top graphic designers, creating unique, branded materials that leave a lasting impression on your audience." />
+             
+        
         </Helmet>     
          <HeaderSection />
          <BannerSection

@@ -19,6 +19,7 @@ import ourVisionImage from '../images/ourvission.png';
 import socialMediaIcon from '../images/smmic1.png'; 
 import seoIcon from '../images/smmic2.png'; 
 import ppcIcon from '../images/smmic3.png'; 
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -185,6 +186,12 @@ const AppPage = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Result Driven Social Media Marketing (SMM) Services</title>
+                <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
+                
+            </Helmet>
+
             <HeaderSection />
             <BannerSection
                 title='Contact Us'
