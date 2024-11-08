@@ -42,11 +42,10 @@ const ContactUsform = () => {
               <h3>Contact Information</h3>
               <p>Say something to start a live chat</p>
               <address>
-      <FaMapMarkerAlt /> 43-10-F Dr. Mahmood Husain Road,<br />
-      P.E.C.H.S Block 2 Karachi <br />
+      <FaMapMarkerAlt /> 43 3rd Ave 2nd Floor, Edison, NJ 08837<br />
     </address>
                 <a href="tel:+923003601830" className="contactuspg-link">
-                  <FaPhoneAlt /> +92 300 3601830
+                  <FaPhoneAlt />+1 (551) 554-3283
                 </a><br />
                 <a href="mailto:info@webdesignmania.com" className="contactuspg-link">
                   <FaEnvelope /> info@webdesignmania.com
