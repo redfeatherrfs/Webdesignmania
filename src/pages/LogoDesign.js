@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../LogoDesign.css'; // Import the CSS file
 import BannerSection from "../components/banner"
 import HeaderSection from "../components/Header"
@@ -15,6 +15,7 @@ import Pricing from '../components/PricingSection';
 import TestimonialSection from '../components/Testimonial';
 import { Helmet } from 'react-helmet-async';
 import PricingSection from '../components/PricingSection';
+import PopupForm from '../components/common/PopupForm';
 
 
 
@@ -26,7 +27,9 @@ import PricingSection from '../components/PricingSection';
 
 
 const LogoDesign = () => {
+    const [title, setTitle] = useState('')
 
+    const handleTitleChange = newTitle => setTitle(newTitle)
 
     const packages = [
         {
@@ -170,31 +173,31 @@ const LogoDesign = () => {
 
     return (
         <>
-        <Helmet>
-            <title>Custom Logo Design Services by Expert Logo Designers</title>
-            <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
-        </Helmet>     
-         <HeaderSection />
-         <BannerSection
+            <Helmet>
+                <title>Custom Logo Design Services by Expert Logo Designers</title>
+                <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
+            </Helmet>
+            <HeaderSection />
+            <BannerSection
                 title='Logo Design'
                 description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
-                buttonlink='/'
+                updatePopupTitle={handleTitleChange}
                 buttontext="Start a Project"
                 image={bannerImage}
             />
             <LogoSection />
             <GetStartedSection />
-            <CustomContainer/>
-            <LogoPortfolio/>
-            <LogoProcess/>
-            <CustomSection/>         
-            <PricingSection packages={packages} />
-            <TestimonialSection/>
+            <CustomContainer />
+            <LogoPortfolio />
+            <LogoProcess />
+            <CustomSection />
+            <PricingSection packages={packages} updatePopupTitle={handleTitleChange} />
+            <TestimonialSection updatePopupTitle={handleTitleChange} />
 
-            <ContactForm/>
-            <FooterSection/>
+            <ContactForm />
+            <FooterSection />
+            <PopupForm title={title} />
 
-            
         </>
     )
 }

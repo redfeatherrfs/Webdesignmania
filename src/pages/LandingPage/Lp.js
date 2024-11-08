@@ -83,10 +83,10 @@ const LpPage = () => {
 
     return (
         <>
-            <TopHead updateTitle={handleTitleChange} />
-            <Lpbanner updateTitle={handleTitleChange} />
+            <TopHead updatePopupTitle={handleTitleChange} />
+            <Lpbanner updatePopupTitle={handleTitleChange} />
             <LanguageLogos />
-            <LpPricingSection updateTitle={handleTitleChange} />
+            <LpPricingSection updatePopupTitle={handleTitleChange} />
             <LpthirdSection />
             <LpCta1 />
             <div style={{ padding: '100px 0px 0px 0px' }}>
@@ -104,7 +104,7 @@ const LpPage = () => {
                     imageWidth="100%"     // Set width here
                     borderRadius="30px"
                     reverseOrder={true}
-                    updateTitle={handleTitleChange}
+                    updatePopupTitle={handleTitleChange}
                 />
             </div>
             <LpServiceIconBox

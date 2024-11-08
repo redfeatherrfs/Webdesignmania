@@ -12,7 +12,7 @@ import '../../LandingPage.css';
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const Lpbanner = ({ updateTitle }) => {
+const Lpbanner = ({ updatePopupTitle }) => {
     const navigate = useNavigate()
     const [loading, setLoading] = useState(false); // Loading state
     const [formData, setFormData] = useState({
@@ -97,7 +97,7 @@ const Lpbanner = ({ updateTitle }) => {
                         <div className="lp-banner-margin">
                             <p className="lpbanner-text">Is your brand getting lost in a sea of online noise? Looking for a way to make waves and drive growth?</p>
                             <div className="lpbanner-buttons">
-                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updateTitle('Basic Package - $199')}>Get Started</button>
+                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
                             </div>
                             <div className="lpbanner-badges">
