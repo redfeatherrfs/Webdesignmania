@@ -19,8 +19,13 @@ import AppDevelopmentProcessSection from "../components/AppDevelopmentProcessSec
 import TechnologyStackSection from "../components/TechnologyStackSection"
 import IndustriesSection from "../components/IndustriesSection"
 import { Helmet } from 'react-helmet-async';
+import { useState } from "react"
+import PopupForm from "../components/common/PopupForm"
 
 const AppPage = () => {
+    const [title, setTitle] = useState('')
+
+    const handleTitleChange = newTitle => setTitle(newTitle)
 
     const services = [
         { id: '01', title: 'Native App Development ', description: 'Develop high-performance apps good for iOS or Android that give speed', imgSrc: serviceImage1, alt: 'Android App Development' },
@@ -174,7 +179,7 @@ const AppPage = () => {
             <Helmet>
                 <title>App Design and Development Services by top App Designers</title>
                 <meta name="description" content="Get top-notch app design and development services by leading app designers at Web Design Mania. We create user-friendly, innovative apps to your business needs." />
-             </Helmet>     
+            </Helmet>
             <HeaderSection />
             <BannerSection
                 title='Your Partner in Creating Innovative Mobile App Design'
@@ -182,19 +187,21 @@ const AppPage = () => {
                 buttonlink='/'
                 buttontext="Start a Project"
                 image={bannerImage}
+                updatePopupTitle={handleTitleChange}
             />
             <LogoSection />
             <GetStartedSection />
-            <EngagingUISection />
+            <EngagingUISection updatePopupTitle={handleTitleChange} />
             <EngagingUiCarouselSection />
             <UniqueUIDesignsSection services={services} page='app' />
             <AppDevelopmentProcessSection />
             {/* <TechnologyStackSection />
             <IndustriesSection /> */}
-            <PricingSection packages={packages} />
-            <TestimonialSection />
+            <PricingSection packages={packages} updatePopupTitle={handleTitleChange}  />
+            <TestimonialSection updatePopupTitle={handleTitleChange} />
             <ContactForm />
             <FooterSection />
+            <PopupForm title={title} />
         </>
     )
 }

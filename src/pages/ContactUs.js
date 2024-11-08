@@ -9,11 +9,15 @@ import FooterSection from "../components/Footer"
 import ContactForm from "../components/ContactForm"
 import ContactUsform from "../components/ContactUsform"
 import { Helmet } from 'react-helmet-async';
+import { useState } from "react"
+import PopupForm from "../components/common/PopupForm"
 
 
 const AppPage = () => {
 
- 
+    const [title, setTitle] = useState('')
+
+    const handleTitleChange = newTitle => setTitle(newTitle)
 
     return (
         <>
@@ -29,12 +33,14 @@ const AppPage = () => {
                 buttonlink='/'
                 buttontext="Start a Project"
                 image={bannerImage}
+                updatePopupTitle={handleTitleChange}
             />
             <LogoSection />
           
           
             <ContactUsform/>
             <FooterSection />
+            <PopupForm title={title} />
         </>
     )
 }

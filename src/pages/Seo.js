@@ -14,12 +14,16 @@ import IconTextBox from "../components/SMM/IconTextBox"
 import OurMission from "../components/Aboutus/OurMission"
 import SMMProcess from "../components/SMM/SMMProcess"
 import PricingSection from "../components/PricingSection"
+import { useState } from "react"
+import PopupForm from "../components/common/PopupForm"
 
 
 
 
 const AppPage = () => {
+    const [title, setTitle] = useState('')
 
+    const handleTitleChange = newTitle => setTitle(newTitle)
 
     const packages = [
         {
@@ -160,7 +164,7 @@ const AppPage = () => {
 
     ]
 
-   
+
 
     return (
         <>
@@ -168,83 +172,87 @@ const AppPage = () => {
             <BannerSection
                 title='About Us'
                 description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
-                buttonlink='/'
+                updatePopupTitle={handleTitleChange}
                 buttontext="Start a Project"
                 image={bannerImage}
             />
             <LogoSection />
 
-        
+
             <GetStartedSection />
 
             <div style={{ padding: '100px 0px 0px 0px' }}>
-<ImageRightBanner
-    subHeading="ABOUT US"
-    heading="User-Friendly Website Designs  "
-    description={
-        <>
-Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+                <ImageRightBanner
+                    subHeading="ABOUT US"
+                    heading="User-Friendly Website Designs  "
+                    description={
+                        <>
+                            Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
 
-        </>
-    }
-    imageSrc={smm2}
-    objectfit="contain"
-    imageHeight="500px"  // Set height here
-    imageWidth="100%"     // Set width here
-    borderRadius="30px"
-    reverseOrder={false}
-/>
-</div>
+                        </>
+                    }
+                    imageSrc={smm2}
+                    objectfit="contain"
+                    imageHeight="500px"  // Set height here
+                    imageWidth="100%"     // Set width here
+                    borderRadius="30px"
+                    reverseOrder={false}
+                    updatePopupTitle={handleTitleChange}
+                />
+            </div>
 
-<div style={{ padding: '100px 0px 0px 0px' }}>
-<ImageRightBanner
-    subHeading="ABOUT US"
-    heading="User-Friendly Website Designs  "
-    description={
-        <>
-Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+            <div style={{ padding: '100px 0px 0px 0px' }}>
+                <ImageRightBanner
+                    subHeading="ABOUT US"
+                    heading="User-Friendly Website Designs  "
+                    description={
+                        <>
+                            Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
 
-        </>
-    }
-    imageSrc={smm2}
-    objectfit="contain"
-    imageHeight="500px"  // Set height here
-    imageWidth="100%"     // Set width here
-    borderRadius="30px"
-    reverseOrder={true}
-/>
-</div>
+                        </>
+                    }
+                    imageSrc={smm2}
+                    objectfit="contain"
+                    imageHeight="500px"  // Set height here
+                    imageWidth="100%"     // Set width here
+                    borderRadius="30px"
+                    reverseOrder={true}
+                    updatePopupTitle={handleTitleChange}
+                />
+            </div>
 
-<div style={{ padding: '100px 0px 0px 0px' }}>
-<ImageRightBanner
-    subHeading="ABOUT US"
-    heading="User-Friendly Website Designs  "
-    description={
-        <>
-Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+            <div style={{ padding: '100px 0px 0px 0px' }}>
+                <ImageRightBanner
+                    subHeading="ABOUT US"
+                    heading="User-Friendly Website Designs  "
+                    description={
+                        <>
+                            Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
 
-        </>
-    }
-    imageSrc={false}
-    objectfit="contain"
-    imageHeight="500px"  // Set height here
-    imageWidth="100%"     // Set width here
-    borderRadius="30px"
-    reverseOrder={true}
-/>
-</div>
+                        </>
+                    }
+                    imageSrc={false}
+                    objectfit="contain"
+                    imageHeight="500px"  // Set height here
+                    imageWidth="100%"     // Set width here
+                    borderRadius="30px"
+                    reverseOrder={true}
+                    updatePopupTitle={handleTitleChange}
+                />
+            </div>
 
 
 
-           
 
-<PricingSection packages={packages} />
-           
-           
-        
-            <TestimonialSection/>
-            <ContactForm/>
+
+            <PricingSection packages={packages} updatePopupTitle={handleTitleChange} />
+
+
+
+            <TestimonialSection updatePopupTitle={handleTitleChange}  />
+            <ContactForm />
             <FooterSection />
+            <PopupForm title={title} />
         </>
     )
 }
