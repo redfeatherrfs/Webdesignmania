@@ -12,29 +12,29 @@ import '../Testimonial.css'; // Custom styles
 const TestimonialSection = ({ updatePopupTitle }) => {
     const testimonials = [
         {
-            quote: "Let's create a symphony of code that'll leave everyone amazed. Dare to be different.",
-            name: 'Samuel Wills',
+            quote: "Web Design Mania did an outstanding job designing our app from scratch. They took the time to understand our goals and turned them into a high-quality, functional design that's been a hit with users. Their ability to balance creativity with functionality is unmatched, and their communication was top-notch throughout the project.",
+            name: 'Gladys Burgess',
             position: 'Assistant',
         },
         {
-            quote: "Let's create a symphony of code that'll leave everyone amazed. Dare to be different.",
-            name: 'Samuel Wills',
-            position: 'Assistant',
+            quote: "We saw immediate results after partnering with Web Design Mania for our SEO efforts. They conducted a thorough audit, optimized our website, and implemented a strategic link-building plan. The boost in organic traffic and leads has been impressive. Their team is responsive and truly understands SEO best practices!",
+            name: 'Lucy Kaur',
+            position: 'Bussiness Owner',
         },
         {
-            quote: "Coding with precision and creativity leads to perfection.",
-            name: 'Jane Doe',
-            position: 'Developer',
+            quote: "I've worked with several web design companies, but none have been as reliable and innovative as Web Design Mania. Our site is performing better than ever! Also thinking about hiring for SEO services!",
+            name: 'Harry Bariston',
+            position: 'Manager',
         },
         {
-            quote: "Coding with precision and creativity leads to perfection.",
-            name: 'Jane Doe',
-            position: 'Developer',
+            quote: "The design is sleek, and the functionality is spot-on. Our customers now enjoy a seamless shopping experience, and the back-end is easy for us to manage. They also optimized the site for faster loading times, which has improved customer retention. Overall, they delivered a high-quality product that's helped us grow our online business.",
+            name: 'Janet Hodgson',
+            position: 'Ecommerce Manager',
         },
         {
-            quote: "Coding with precision and creativity leads to perfection.",
-            name: 'Jane Doe',
-            position: 'Developer',
+            quote: "Web Design Mania did an incredible job redesigning our eCommerce website. It's mobile-responsive, user-friendly, and perfectly aligned with our brand identity.",
+            name: 'Darren Jordan',
+            position: 'Brand Ambasador',
         },
     ];
 
@@ -45,12 +45,13 @@ const TestimonialSection = ({ updatePopupTitle }) => {
                     {/* Heading and Text */}
                     <div className="col-12 text-center">
                         <h2>Trusted by Professionals</h2>
-                        <p>Let's create a symphony of pixels and code that'll leave everyone amazed. Dare to be different –
-                            <br /> let's embark on this wild ride of creativity together!</p>
+                        With a proven track record of success, our skilled logo designers and web developer bring years of experience to every logo design & web project. Let’s build your project with collaborative creativity!
+
+                      
                     </div>
                 </div>
 
-                <div className="row">
+                <div className="row py-4">
                     {/* Swiper Testimonials */}
                     <Swiper
                         spaceBetween={30}

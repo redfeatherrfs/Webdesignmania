@@ -11,6 +11,7 @@ import LogoDesign from './pages/LogoDesign';
 import Services from './pages/Services';
 import SMM from './pages/Smm';
 import Seo from './pages/Seo';
+import Stationary from './pages/Stationary';
 import Lp from './pages/LandingPage/Lp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsCondition from './pages/TermsCondition';
@@ -31,7 +32,8 @@ const App = () => {
                 <Route path="/logo-design" element={<LogoDesign />} />
                 <Route path="/smm" element={<SMM />} />
                 <Route path="/seo" element={<Seo />} />
-                <Route path="/services" element={<Services />} />
+                <Route path="/seo" element={<Seo />} />
+                <Route path="/stationary" element={<Stationary />} />
                 <Route path="/lp" element={<Lp/>} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-condition" element={<TermsCondition />} />

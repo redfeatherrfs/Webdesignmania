@@ -13,10 +13,10 @@ const EngagingUiCarouselSection = () => {
     return (
         <section className="my-5 py-5 engaging-ui-carousel-section">
             <div className="container">
-                <h2 className="sub-heading">ABOUT US</h2>
+                <h2 className="sub-heading">App Design</h2>
                 <div className="row justify-content-end align-items-start">
                     <div className="col-md-8">
-                        <h2 className="about-heading">Creating Engaging & Successful Mobile Apps UI</h2>
+                        <h2 className="about-heading">Take A Peek At Our Portfolio!                         </h2>
                     </div>
                     <div className="col-md-4">
                         <div className="text-end carousel-action-btns">

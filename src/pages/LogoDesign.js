@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../LogoDesign.css'; // Import the CSS file
 import BannerSection from "../components/banner"
 import HeaderSection from "../components/Header"
-import bannerImage from '../images/app-page-banner.jpg'
+import bannerImage from '../images/logodesignbg.png'
 import LogoSection from "../components/logos"
 import GetStartedSection from '../components/Formsection';
 import CustomContainer from '../components/CustomContainerV3';
@@ -16,15 +16,6 @@ import TestimonialSection from '../components/Testimonial';
 import { Helmet } from 'react-helmet-async';
 import PricingSection from '../components/PricingSection';
 import PopupForm from '../components/common/PopupForm';
-
-
-
-
-
-
-
-
-
 
 const LogoDesign = () => {
     const [title, setTitle] = useState('')
@@ -173,17 +164,18 @@ const LogoDesign = () => {
 
     return (
         <>
-            <Helmet>
-                <title>Custom Logo Design Services by Expert Logo Designers</title>
-                <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
-            </Helmet>
-            <HeaderSection />
-            <BannerSection
-                title='Logo Design'
-                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
-                updatePopupTitle={handleTitleChange}
+        <Helmet>
+            <title>Custom Logo Design Services by Expert Logo Designers</title>
+            <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
+        </Helmet>     
+         <HeaderSection />
+         <BannerSection
+                title='Precision-Crafted Logos That Speaks Volume'
+                description="What if you could capture your brand’s essence into a lasting symbol? Contact our community creative professionals and give your vision a picture. "
+                buttonlink='/'
                 buttontext="Start a Project"
                 image={bannerImage}
+                updatePopupTitle={handleTitleChange}
             />
             <LogoSection />
             <GetStartedSection />

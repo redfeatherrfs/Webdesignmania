@@ -174,7 +174,7 @@ const AppPage = () => {
             />
             <LogoSection />
 
-            <LogoSection />
+        
             <GetStartedSection />
 
             <div style={{ padding: '100px 0px 0px 0px' }}>

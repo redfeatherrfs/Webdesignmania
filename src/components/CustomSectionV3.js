@@ -10,11 +10,10 @@ const CustomSectionV3 = () => {
                     <img src={MaskGroupImage} alt="Affordable Logo Design" className="img-fluid" />
                 </div>
                 <div className="col-lg-6 custom-content-v3">
-                    <h2>We Craft Affordable Logo Designs To Boost Creativity</h2>
+                    <h2>Web Design Mania - You Are Making The Right Choice
+                    </h2>
                     <p style={{ textAlign: 'justify' }}>
-                        Allow us to create logo designs with top-notch quality! We offer affordable, professional logos
-                        perfect for startups and small businesses. Get the same expert design style without the hefty
-                        price tag, thanks to our global team of skilled logo designers.
+                    Having the right partner in your business makes all the difference. Whether you have a clear idea of what you want or need help brainstorming, we're here to support you every step of the way. We aim to make the design process enjoyable and stress-free. Our approachable designers and developers await to hear your creative side!
                     </p>
                 </div>
             </div>

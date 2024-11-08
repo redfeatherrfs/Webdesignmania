@@ -23,11 +23,11 @@ import { Helmet } from 'react-helmet-async';
 const AppPage = () => {
 
     const services = [
-        { id: '01', title: 'Android App Development', description: 'Our content writing conveys message directly', imgSrc: serviceImage1, alt: 'Android App Development' },
-        { id: '02', title: 'iOS App Development', description: 'Our content writing conveys message directly', imgSrc: serviceImage2, alt: 'iOS App Development' },
-        { id: '03', title: 'React Native App Development', description: 'Our content writing conveys message directly', imgSrc: serviceImage3, alt: 'React Native App Development' },
-        { id: '04', title: 'Flutter App Development', description: 'Our content writing conveys message directly', imgSrc: serviceImage4, alt: 'Flutter App Development' },
-        { id: '05', title: 'Swift App Development', description: 'Our content writing conveys message directly', imgSrc: serviceImage5, alt: 'Swift App Development' },
+        { id: '01', title: 'Native App Development ', description: 'Develop high-performance apps good for iOS or Android that give speed', imgSrc: serviceImage1, alt: 'Android App Development' },
+        { id: '02', title: 'iOS App Development', description: 'Design and develop your next big idea with iOS, combining stunning visuals', imgSrc: serviceImage2, alt: 'iOS App Development' },
+        { id: '03', title: 'Android App Development', description: 'Transform your ideas into powerful applications - designed for user-friendly experiences', imgSrc: serviceImage3, alt: 'React Native App Development' },
+        { id: '04', title: 'Flutter App Development', description: 'Simplify your life with Flutter, a versatile framework that lets you build visually appealing', imgSrc: serviceImage4, alt: 'Flutter App Development' },
+        { id: '05', title: 'Swift App Development', description: 'Start your journey with Swift app development, a user-friendly', imgSrc: serviceImage5, alt: 'Swift App Development' },
     ];
 
     const packages = [
@@ -177,8 +177,8 @@ const AppPage = () => {
              </Helmet>     
             <HeaderSection />
             <BannerSection
-                title='Contact Us'
-                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                title='Your Partner in Creating Innovative Mobile App Design'
+                description="Ready to turn your app idea into a reality that stands out in the crowd? Partner with us and design apps that make a lasting impression at your fingertips. "
                 buttonlink='/'
                 buttontext="Start a Project"
                 image={bannerImage}

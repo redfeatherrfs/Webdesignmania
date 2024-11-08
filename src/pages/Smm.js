@@ -16,7 +16,9 @@ import SMMProcess from "../components/SMM/SMMProcess"
 import PricingSection from "../components/PricingSection"
 import ourMissionImage from '../images/ourmission.png';
 import ourVisionImage from '../images/ourvission.png';
-
+import socialMediaIcon from '../images/smmic1.png'; 
+import seoIcon from '../images/smmic2.png'; 
+import ppcIcon from '../images/smmic3.png'; 
 
 
 
@@ -161,6 +163,25 @@ const AppPage = () => {
         },
 
     ]
+    const iconBoxesData = [
+        {
+          icon: socialMediaIcon,
+          title: "Social Media Management",
+          description: "We create bespoke brochure designs that embody your value propositions and goals."
+        },
+        {
+          icon: seoIcon,
+          title: "Search Engine Optimization",
+          description: "We deliver initial design concepts in the lowest possible times."
+        },
+        {
+          icon: ppcIcon,
+          title: "PPC Management",
+          description: "Fulfilling all your design needs under one roof."
+        }
+      ];
+
+   
 
     return (
         <>
@@ -176,61 +197,66 @@ const AppPage = () => {
             <GetStartedSection />
 
             <div style={{ padding: '100px 0px 0px 0px' }}>
-                <ImageRightBanner
-                    subHeading="ABOUT US"
-                    heading="User-Friendly Website Designs  "
-                    description={
-                        <>
-                            Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
-                        </>
-                    }
-                    imageSrc={smm2}
-                    objectfit="contain"
-                    imageHeight="500px"  // Set height here
-                    imageWidth="100%"     // Set width here
-                    borderRadius="30px"
-                    reverseOrder={true}
-                />
-            </div>
+<ImageRightBanner
+    subHeading="ABOUT US"
+    heading="User-Friendly Website Designs  "
+    description={
+        <>
+Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
 
-            <IconTextBox />
+        </>
+    }
+    imageSrc={smm2}
+    objectfit="contain"
+    imageHeight="500px"  // Set height here
+    imageWidth="100%"     // Set width here
+    borderRadius="30px"
+    reverseOrder={true}
+/>
+</div>
 
-            <div>
-                <OurMission
-                    ourmissionImg={ourMissionImage}
-                    ourvissionImg={ourVisionImage}
-                    heading="Leading the Way in Digital Innovation"
-                    subHeading="WHO WE ARE"
-                    content1={{
-                        //   heading: "Our Mission",
-                        text: "Our mission is to empower businesses to grow through creativity and digital solutions."
-                    }}
-                    content2={{
-                        //   heading: "Our Vision",
-                        text: "To be the most innovative and impactful digital agency in the world."
-                    }}
-                    borderStyle1={{
+<IconTextBox
+      sectionHeading="Marketing, Social Media Marketing"
+      subHeading="ABOUT US"
+      iconBoxes={iconBoxesData}
+    />
 
-                        top: 'none',
-                        right: 'none',
-                        bottom: '2px solid #5432E7',
-                        left: '2px solid #5432E7'
-                    }}
-                    borderStyle2={{
-                        top: '2px solid #5432E7',
-                        right: '2px solid #5432E7',
-                        bottom: 'none',
-                        left: 'none'
-                    }}
-                />
-            </div>
-            <SMMProcess />
-            <PricingSection packages={packages} />
-
-
-
-            <TestimonialSection />
-            <ContactForm />
+<div>
+      <OurMission
+        ourmissionImg={ourMissionImage}
+        ourvissionImg={ourVisionImage}
+        heading="Leading the Way in Digital Innovation"
+        subHeading="WHO WE ARE"
+        content1={{
+        //   heading: "Our Mission",
+          text: "Our mission is to empower businesses to grow through creativity and digital solutions."
+        }}
+        content2={{
+        //   heading: "Our Vision",
+          text: "To be the most innovative and impactful digital agency in the world."
+        }}
+        borderStyle1={{
+            
+          top: 'none',
+          right: 'none',
+          bottom: '2px solid #5432E7',
+          left: '2px solid #5432E7'
+        }}
+        borderStyle2={{
+          top: '2px solid #5432E7',
+          right: '2px solid #5432E7',
+          bottom: 'none',
+          left: 'none'
+        }}
+      />
+    </div>
+<SMMProcess/>
+<PricingSection packages={packages} />
+           
+           
+        
+            <TestimonialSection/>
+            <ContactForm/>
             <FooterSection />
         </>
     )
