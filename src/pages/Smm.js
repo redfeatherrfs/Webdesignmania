@@ -14,8 +14,8 @@ import IconTextBox from "../components/SMM/IconTextBox"
 import OurMission from "../components/Aboutus/OurMission"
 import SMMProcess from "../components/SMM/SMMProcess"
 import PricingSection from "../components/PricingSection"
-import ourMissionImage from '../images/ourmission.png';
-import ourVisionImage from '../images/ourvission.png';
+import ourMissionImage from '../images/smmicon1.png';
+import ourVisionImage from '../images/smmicon2.png';
 import socialMediaIcon from '../images/smmic1.png';
 import seoIcon from '../images/smmic2.png';
 import ppcIcon from '../images/smmic3.png';
@@ -169,19 +169,19 @@ const AppPage = () => {
     ]
     const iconBoxesData = [
         {
-            icon: socialMediaIcon,
-            title: "Social Media Management",
-            description: "We create bespoke brochure designs that embody your value propositions and goals."
+          icon: socialMediaIcon,
+          title: "Influencer Marketing",
+          description: "This involves partnering with popular social media influencers to promote your brand, making their audience your customers."
         },
         {
-            icon: seoIcon,
-            title: "Search Engine Optimization",
-            description: "We deliver initial design concepts in the lowest possible times."
+          icon: seoIcon,
+          title: "Content Marketing",
+          description: "Creating engaging blog posts and eye-catching videos to convert engagement into purchasers. "
         },
         {
-            icon: ppcIcon,
-            title: "PPC Management",
-            description: "Fulfilling all your design needs under one roof."
+          icon: ppcIcon,
+          title: "Social Media Management",
+          description: "Actively managing your social media profiles, posting regularly, engaging with your followers, and analyzing your content performance. "
         }
     ];
 
@@ -195,8 +195,9 @@ const AppPage = () => {
             </Helmet>
             <HeaderSection />
             <BannerSection
-                title='Contact Us'
-                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                title='We Harness The Power Of Social Platforms And Make Your Brand Stay Relevant'
+                description="Thinking about how to implement social media analytics to your brand and generate quality leads? Why not out-source your worries!
+"
                 updatePopupTitle={handleTitleChange}
                 buttontext="Start a Project"
                 image={bannerImage}
@@ -205,12 +206,12 @@ const AppPage = () => {
             <GetStartedSection />
 
             <div style={{ padding: '100px 0px 0px 0px' }}>
-                <ImageRightBanner
-                    subHeading="ABOUT US"
-                    heading="User-Friendly Website Designs  "
-                    description={
-                        <>
-                            Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+<ImageRightBanner
+    subHeading="SMM"
+    heading="Fueling Brand Engagement With Effective SMM "
+    description={
+        <>
+Think of having Social Media Marketing (SMM) as a direct line to your customers. Imagine being able to connect with your audience in real-time, sharing your latest updates, products, or promotions while also hearing their feedback, SMM will do just that for you. This two-way communication turns casual followers into enthusiastic ambassadors. Let’s work to keep your brand on top-of-mind!
 
                         </>
                     }
@@ -224,48 +225,50 @@ const AppPage = () => {
                 />
             </div>
 
-            <IconTextBox
-                sectionHeading="Marketing, Social Media Marketing"
-                subHeading="ABOUT US"
-                iconBoxes={iconBoxesData}
-            />
+<IconTextBox
+      sectionHeading="Unlocking SMM To Highlight Your Brand’s Presence"
+      subHeading="SMM"
+      iconBoxes={iconBoxesData}
+    />
 
-            <div>
-                <OurMission
-                    ourmissionImg={ourMissionImage}
-                    ourvissionImg={ourVisionImage}
-                    heading="Leading the Way in Digital Innovation"
-                    subHeading="WHO WE ARE"
-                    content1={{
-                        //   heading: "Our Mission",
-                        text: "Our mission is to empower businesses to grow through creativity and digital solutions."
-                    }}
-                    content2={{
-                        //   heading: "Our Vision",
-                        text: "To be the most innovative and impactful digital agency in the world."
-                    }}
-                    borderStyle1={{
-
-                        top: 'none',
-                        right: 'none',
-                        bottom: '2px solid #5432E7',
-                        left: '2px solid #5432E7'
-                    }}
-                    borderStyle2={{
-                        top: '2px solid #5432E7',
-                        right: '2px solid #5432E7',
-                        bottom: 'none',
-                        left: 'none'
-                    }}
-                />
-            </div>
-            <SMMProcess />
+<div>
+      <OurMission
+        ourmissionImg={ourMissionImage}
+        ourvissionImg={ourVisionImage}
+        heading="Innovative Solutions For An Innovative Brand"
+        subHeading="SMM"
+        content1={{
+          heading: "Your One Stop Solution ",
+          text: "Our mission is to empower businesses to grow through creativity and digital solutions."
+        }}
+        content2={{
+          heading: "Desired Outcome",
+          text: "you can expect increased brand awareness and lasting customer relationships that translate into higher traffic and conversions."
+        }}
+        borderStyle1={{
+            
+          top: 'none',
+          right: 'none',
+          bottom: '2px solid #5432E7',
+          left: '2px solid #5432E7'
+        }}
+        borderStyle2={{
+          top: '2px solid #5432E7',
+          right: '2px solid #5432E7',
+          bottom: 'none',
+          left: 'none'
+        }}
+      />
+    </div>
+<SMMProcess/>
+            
+           
             <PricingSection packages={packages} updatePopupTitle={handleTitleChange} />
 
 
 
             <TestimonialSection updatePopupTitle={handleTitleChange} />
-            <ContactForm />
+             <ContactForm/>
             <FooterSection />
             <PopupForm title={title} />
         </>

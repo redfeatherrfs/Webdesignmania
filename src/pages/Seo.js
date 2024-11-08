@@ -5,6 +5,8 @@ import LogoSection from "../components/logos"
 
 import bannerImage from '../images/seopagebanner.jpg'
 import smm2 from '../images/smm2.png'
+import seo3 from '../images/seo3.png'
+import seo2 from '../images/seo2.png'
 
 import FooterSection from "../components/Footer"
 import ContactForm from "../components/ContactForm"
@@ -16,8 +18,6 @@ import SMMProcess from "../components/SMM/SMMProcess"
 import PricingSection from "../components/PricingSection"
 import { useState } from "react"
 import PopupForm from "../components/common/PopupForm"
-
-
 
 
 const AppPage = () => {
@@ -170,8 +170,8 @@ const AppPage = () => {
         <>
             <HeaderSection />
             <BannerSection
-                title='About Us'
-                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                title='Rank Higher, Reach More People, And Grow Faster'
+                description="Ready to boost website traffic with a powerful SEO strategy? You have reached the right destination!"
                 updatePopupTitle={handleTitleChange}
                 buttontext="Start a Project"
                 image={bannerImage}
@@ -182,64 +182,64 @@ const AppPage = () => {
             <GetStartedSection />
 
             <div style={{ padding: '100px 0px 0px 0px' }}>
-                <ImageRightBanner
-                    subHeading="ABOUT US"
-                    heading="User-Friendly Website Designs  "
-                    description={
-                        <>
-                            Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+<ImageRightBanner
+    subHeading="SEO"
+    heading="Unlocking The Power Of Seo For Your Brand's Success"
+    description={
+        <>
+Imagine your business being the go-to choice whenever someone searches for what you offer – that’s the power of SEO! Understanding your audience is SEO! When people can find you easily, they’re more likely to visit your site, learn about your services, and even make a purchase. Make this digital marketing investment today that keeps on giving!
+        </>
+    }
+    imageSrc={smm2}
+    objectfit="contain"
+    imageHeight="500px"  // Set height here
+    imageWidth="100%"     // Set width here
+    borderRadius="30px"
+    reverseOrder={false}
+    updatePopupTitle={handleTitleChange}
+/>
+</div>
 
-                        </>
-                    }
-                    imageSrc={smm2}
-                    objectfit="contain"
-                    imageHeight="500px"  // Set height here
-                    imageWidth="100%"     // Set width here
-                    borderRadius="30px"
-                    reverseOrder={false}
-                    updatePopupTitle={handleTitleChange}
-                />
-            </div>
+<div style={{ padding: '100px 0px 0px 0px' }}>
+<ImageRightBanner
+    subHeading="SEO"
+    heading="Your Online Growth With Targeted SEO"
+    description={
+        <>
+We create strategies that work uniquely for your business growth. We build a customized SEO plan that focuses on the keywords, content, and technical optimizations that matter most. We are aware of any latest SEO trends to boost your website’s ranking. Our mission is an SEO partnership that brings you steady growth, higher visibility, and results you can see.
 
-            <div style={{ padding: '100px 0px 0px 0px' }}>
-                <ImageRightBanner
-                    subHeading="ABOUT US"
-                    heading="User-Friendly Website Designs  "
-                    description={
-                        <>
-                            Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
 
-                        </>
-                    }
-                    imageSrc={smm2}
-                    objectfit="contain"
-                    imageHeight="500px"  // Set height here
-                    imageWidth="100%"     // Set width here
-                    borderRadius="30px"
-                    reverseOrder={true}
-                    updatePopupTitle={handleTitleChange}
-                />
-            </div>
+        </>
+    }
+    imageSrc={seo2}
+    objectfit="contain"
+    imageHeight="500px"  // Set height here
+    imageWidth="100%"     // Set width here
+    borderRadius="30px"
+    reverseOrder={true}
+    updatePopupTitle={handleTitleChange}
+/>
+</div>
 
-            <div style={{ padding: '100px 0px 0px 0px' }}>
-                <ImageRightBanner
-                    subHeading="ABOUT US"
-                    heading="User-Friendly Website Designs  "
-                    description={
-                        <>
-                            Need some help turning heads? Wish to improve your marketing metrics? Our visual artists harness the power of brand values and eye-grabbing graphics to convey the right brand message to the audience with premium.
+<div style={{ padding: '100px 0px 0px 0px' }}>
+<ImageRightBanner
+    subHeading="SEO"
+    heading="Future-Proofing Your Business With Latest SEO Trends  "
+    description={
+        <>
+Our developers stay alighned with the latest SEO techniques to keep your business ahead of your competitors. Whether it’s optimizing for voice search, enhancing mobile experiences, or focusing on AI-driven insights—we ensure your brand is always visible and relevant. We don’t just follow trends; we test, adapt, and implement strategies that will genuinely work for your conversion rates. We assure your business will grow long-term with our implementing style.
 
-                        </>
-                    }
-                    imageSrc={false}
-                    objectfit="contain"
-                    imageHeight="500px"  // Set height here
-                    imageWidth="100%"     // Set width here
-                    borderRadius="30px"
-                    reverseOrder={true}
-                    updatePopupTitle={handleTitleChange}
-                />
-            </div>
+        </>
+    }
+    imageSrc={seo3}
+    objectfit="contain"
+    imageHeight="500px"  // Set height here
+    imageWidth="100%"     // Set width here
+    borderRadius="30px"
+    reverseOrder={false}
+    updatePopupTitle={handleTitleChange}
+/>
+</div>
 
 
 
