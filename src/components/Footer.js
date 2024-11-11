@@ -2,6 +2,7 @@ import React from 'react';
 import footer from '../images/lp-footer.png'; // Ensure the image path is correct
 import visa from '../images/visa.png';
 import { Link } from 'react-router-dom';
+import ScrollToTopButton from './Scrolltotop';
 
 
 const Footer = () => {
@@ -76,6 +77,8 @@ const Footer = () => {
             <div className="col-6 text-end">
               <a href="#">Terms & conditions</a> | 
               <a href="#">Privacy Policy</a>
+              <ScrollToTopButton/>
+
             </div>
           </div>
         </div>
