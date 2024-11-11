@@ -16,7 +16,7 @@ import FooterSection from '../components/Footer';
 import ContactForm from '../components/ContactForm';
 import TestimonialSection from '../components/Testimonial';
 import AllInOnePkgs from '../components/AllinOnepkg';
-import bannerImage from '../images/div.home_wrap.png'; // Ensure the image path is correct
+import bannerImage from '../images/Home&WebsitesPage.webp'; // Ensure the image path is correct
 import serviceImage1 from '../images/Mask group.png'
 import serviceImage2 from '../images/Mask group-1.png'
 import serviceImage3 from '../images/Mask group-2.png'
@@ -24,6 +24,7 @@ import serviceImage4 from '../images/Mask group-3.png'
 import serviceImage5 from '../images/Mask group-4.png'
 import serviceImage6 from '../images/Mask group-5.png'
 import PopupForm from '../components/common/PopupForm';
+import LpPortfolio from '../components/LandingPage/LpPortfolio';
 
 
 
@@ -604,7 +605,8 @@ const Home = () => {
             <OurWork />
             {/* <CustomCarousel/> */}
             <UniqueUIDesignsSection services={services} page='home' />
-            <HomeGallery />
+            {/* <HomeGallery /> */}
+            <LpPortfolio/>
             <Pricing packages={packages} updatePopupTitle={handleTitleChange} />
             <AllInOnePkgs updatePopupTitle={handleTitleChange} />
 

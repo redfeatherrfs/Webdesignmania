@@ -3,7 +3,7 @@ import BannerSection from "../components/banner"
 import HeaderSection from "../components/Header"
 import LogoSection from "../components/logos"
 
-import bannerImage from '../images/app-page-banner.jpg'
+import bannerImage from '../images/ContactUs.webp'
 
 import FooterSection from "../components/Footer"
 import ContactForm from "../components/ContactForm"

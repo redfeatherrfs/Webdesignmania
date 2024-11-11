@@ -13,7 +13,7 @@ import TestimonialSection from '../components/Testimonial';
 import { Helmet } from 'react-helmet-async';
 import PricingSection from '../components/PricingSection';
 import OurWork from '../components/OurWork';
-import stationarybg from '../images/stationarybg.png'
+import stationarybg from '../images/Stationery.webp'
 import stationary1 from '../images/stationary1.png'
 import ImageRightBanner from '../components/Aboutus/ImageRightbanner';
 import IconTextBox from '../components/SMM/IconTextBox';

@@ -5,7 +5,7 @@ import GetStartedSection from "../components/Formsection"
 import HeaderSection from "../components/Header"
 import LogoSection from "../components/logos"
 import UniqueUIDesignsSection from "../components/UniqueUIDesigns"
-import bannerImage from '../images/app-page-banner.jpg'
+import bannerImage from '../images/AppsPage.webp'
 import serviceImage1 from '../images/Mask group.png'
 import serviceImage2 from '../images/Mask group-1.png'
 import serviceImage3 from '../images/Mask group-2.png'
