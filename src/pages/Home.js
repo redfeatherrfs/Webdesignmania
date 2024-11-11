@@ -50,7 +50,7 @@ const Home = () => {
                 {
                     title: "Custom Website Starter Package",
                     subtitle: "Professional & Unique Designs!",
-                    price: "$199",
+                    price: "$399",
                     features: [
                         "Design Up to 3 Pages",
                         "5 Visual Images",
@@ -74,7 +74,7 @@ const Home = () => {
                 {
                     title: "Custom Website Essential Package",
                     subtitle: "Professional & Unique Designs!",
-                    price: "$399",
+                    price: "Let's talk!",
                     mostPopular: true,
                     features: [
                         "Design Up to 6 Pages",
