@@ -11,7 +11,7 @@ const LpthirdSection = () => {
                 {/* First Row */}
                 <div className="row text-center justify-content-center">
                     <div className="col-12 lpthird-head">
-                        <h2>We Specialize in Coding High Performing Websites</h2>
+                        <h2>We Excel in designing Highly Efficient Supercharged Websites</h2>
                     </div>
                 </div>
 
@@ -21,8 +21,8 @@ const LpthirdSection = () => {
                     <div className="col-md-4 mb-4">
                         <div className="lpiconbox">
                             <img src={lpicon1} alt="Icon 1" className="lpicon-image" />
-                            <h4>Mobile Friendly</h4>
-                            <p>Today, customers look for a website that loads quickly and gives a seamless unbreakable experience on any mobile device.</p>
+                            <h4>Custom Web Design </h4>
+                            <p>Web design is one of the most essential aspects of a website that grabs a customer's attention. At Web Design Mania we hone the platform to build excellent small businesses and amazing startups.  </p>
                         </div>
                     </div>
 
@@ -30,8 +30,8 @@ const LpthirdSection = () => {
                     <div className="col-md-4 mb-4">
                         <div className="lpiconbox">
                             <img src={lpicon2} alt="Icon 2" className="lpicon-image" />
-                            <h4>Mobile Friendly</h4>
-                            <p>Today, customers look for a website that loads quickly and gives a seamless unbreakable experience on any mobile device.</p>
+                            <h4>App Design</h4>
+                            <p>Today, customers flock to a highly interactive design that is trendsetting and graceful. The shorter the website's loading time, the better.</p>
                         </div>
                     </div>
 
@@ -39,10 +39,11 @@ const LpthirdSection = () => {
                     <div className="col-md-4 mb-4">
                         <div className="lpiconbox">
                             <img src={lpicon3} alt="Icon 3" className="lpicon-image" />
-                            <h4>Mobile Friendly</h4>
-                            <p>Today, customers look for a website that loads quickly and gives a seamless unbreakable experience on any mobile device.</p>
+                            <h4>SEO</h4>
+                            <p>Boost your digital presence today with our expert SEO services. Unlock the full potential of your website and get ahead of the competition. </p>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>

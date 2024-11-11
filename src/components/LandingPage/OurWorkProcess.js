@@ -20,14 +20,14 @@ const OurWorkProcess = () => {
                                 <img src={planningIcon} alt='Planning Icon' className='img-fluid icon' />
                                 <div className='steps-content'>
                                     <h4>Planning Idea</h4>
-                                    <p className='m-0'>Holisticly architect sustainable meta-services for process-centric core competencies. Enthusiastically re-engineer best-of-breed outsourcing.</p>
+                                    <p className='m-0'>: We proactively streamline scalable digital solutions, driving robust, market-driven innovation that fosters growth, enhances user experiences, and empowers businesses to stay competitive in dynamic markets.</p>
                                 </div>
                             </div>
 
                             <div className='d-flex align-items-center mb-3'>
                                 <div className='text-end steps-content'>
                                     <h4>Developed Final Product</h4>
-                                    <p className='m-0'>Monotonectally harness holistic web-readiness after multimedia based catalysts for change. Completely brand front-end systems before visionary.</p>
+                                    <p className='m-0'>We meticulously refine, test, and finalize products, ensuring market readiness with seamless functionality, user-centric design, and competitive quality to drive success.</p>
                                 </div>
                                 <img src={developedIcon} alt='Planning Icon' className='img-fluid icon' />
                             </div>
@@ -36,7 +36,7 @@ const OurWorkProcess = () => {
                                 <img src={deliverIcon} alt='Planning Icon' className='img-fluid icon' />
                                 <div className='steps-content'>
                                     <h4>Deliver to Customer</h4>
-                                    <p className='m-0'>Monotonectally plagiarize synergistic e-business for stand-alone communities. Professionally enhance visionary manufactured products progressive.</p>
+                                    <p className='m-0'>We conduct comprehensive QA to guarantee optimal functionality, responsiveness, and a consistent user experience across all devices, ensuring top-tier performance and client satisfaction.</p>
                                 </div>
                             </div>
                         </div>

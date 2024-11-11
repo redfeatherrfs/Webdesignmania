@@ -95,7 +95,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                         </div>
 
                         <div className="lp-banner-margin">
-                            <p className="lpbanner-text">Is your brand getting lost in a sea of online noise? Looking for a way to make waves and drive growth?</p>
+                            <p className="lpbanner-text">Web Design Mania is a multifaceted scaffold for fabulous web development agency with cutting-edge options to accelerate your digital growth.</p>
                             <div className="lpbanner-buttons">
                                 <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
