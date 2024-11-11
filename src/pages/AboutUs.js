@@ -3,7 +3,7 @@ import GetStartedSection from "../components/Formsection"
 import HeaderSection from "../components/Header"
 import LogoSection from "../components/logos"
 
-import bannerImage from '../images/app-page-banner.jpg'
+import bannerImage from '../images/About.webp'
 import aboutuslaptop from '../images/aboutuslaptop.png'
 
 import FooterSection from "../components/Footer"

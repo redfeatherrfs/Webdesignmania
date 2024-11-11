@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../LogoDesign.css'; // Import the CSS file
 import BannerSection from "../components/banner"
 import HeaderSection from "../components/Header"
-import bannerImage from '../images/logodesignbg.png'
+import bannerImage from '../images/LogosPage.webp'
 import LogoSection from "../components/logos"
 import GetStartedSection from '../components/Formsection';
 import CustomContainer from '../components/CustomContainerV3';
