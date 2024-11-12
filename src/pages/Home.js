@@ -590,8 +590,8 @@ const Home = () => {
 
             <HeaderSection />
             <BannerSection
-                title='Your Professional Website Designer That Combines Aesthetics With Performance'
-                description="Were you looking for custom web design services tailored to meet a seamless user experience and increase conversions?"
+                title='Crafting High-Impact Websites That Drive Results'
+                description="Customized design and strategy for a seamless user experience and measurable growth—built to elevate your brand"
                 buttontext="Start a Project"
                 image={bannerImage}
                 updatePopupTitle={handleTitleChange}

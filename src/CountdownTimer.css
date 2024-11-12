@@ -1,0 +1,78 @@
+/* Background and container styling */
+.countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  .countdown-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  .countdown-description {
+    font-size: 1.5rem;
+    color: #bbbbbb;
+    margin-bottom: 2rem;
+  }
+  
+  /* Countdown timer styling */
+  .countdown-timer {
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .countdown-item {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .countdown-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ffea;
+    animation: pulse 1s infinite alternate;
+  }
+  
+  .countdown-label {
+    font-size: 1rem;
+    color: #ff69b4;
+    margin-top: 0.5rem;
+  }
+  
+  /* Animation for countdown numbers */
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+      color: #00ffea;
+    }
+    to {
+      transform: scale(1.1);
+      color: #ff69b4;
+    }
+  }
+  
+  /* Confetti styles */
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+  }
+  

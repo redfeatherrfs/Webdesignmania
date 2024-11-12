@@ -1,66 +1,75 @@
 import React from 'react';
 import footer from '../images/lp-footer.png'; // Ensure the image path is correct
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+
 import visa from '../images/visa.png';
 import { Link } from 'react-router-dom';
 import ScrollToTopButton from './Scrolltotop';
-
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
         <div className="row">
+          
           {/* About Section with Logo */}
-          <div className="col-md-4">
+          <div className="col-md-4 mb-4">
             <h5 className="footer-heading-sub">
-              <img src={footer} alt="Web Design Mania Logo" style={{ maxWidth: '150px' }} />
+            <Link to="/"> <img src={footer} alt="Web Design Mania Logo" style={{ maxWidth: '150px' }} /></Link>
             </h5>
-            <p>
+            <p className="text-light">
               As a versatile, full-service agency specializing in website design and development, we create visually striking and cost-effective solutions for businesses of every scale.
             </p>
           </div>
 
           {/* Quick Links Section */}
-          <div className="col-md-3">
+          <div className="col-md-2 mb-4">
             <h5 className="footer-heading">Quick Links</h5>
-            <ul className="footer-links">
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about-us">About Us</Link></li>
-              <li><Link to="/contact-us">Contact Us</Link></li>
-             
+            <ul className="footer-links list-unstyled">
+              <li><Link to="/" className="text-light text-decoration-none">Home</Link></li>
+              <li><Link to="/about-us" className="text-light text-decoration-none">About Us</Link></li>
+              <li><Link to="/contact-us" className="text-light text-decoration-none">Contact Us</Link></li>
             </ul>
           </div>
 
           {/* Our Services Section */}
-          <div className="col-md-3">
+          <div className="col-md-2 mb-4">
             <h5 className="footer-heading">Our Services</h5>
-            <ul className="footer-links">
-            <li><Link to="/logo-design">Logo Design</Link></li>
-            <li><a href="/">Website Design</a></li>
-            <li><Link to="/app-design">App Design</Link></li>
-            <li><Link to="/stationary">Stationary</Link></li>
-            <li><Link to="/seo">SEO</Link></li>
-            <li><Link to="/smm">SMM</Link></li>
-              
+            <ul className="footer-links list-unstyled">
+              <li><Link to="/logo-design" className="text-light text-decoration-none">Logo Design</Link></li>
+              <li><Link to="/" className="text-light text-decoration-none">Website Design</Link></li>
+              <li><Link to="/app-design" className="text-light text-decoration-none">App Design</Link></li>
+              <li><Link to="/stationary" className="text-light text-decoration-none">Stationary</Link></li>
+              <li><Link to="/seo" className="text-light text-decoration-none">SEO</Link></li>
+              <li><Link to="/smm" className="text-light text-decoration-none">SMM</Link></li>
             </ul>
           </div>
 
-          {/* Payment Methods and Social Icons Section */}
-          <div className="col-md-2">
-            <h5 className="footer-heading">Payment Methods</h5>
-            <div className="payment-icons">
-              <img src={visa} alt="Visa" />
-              {/* Uncomment if needed */}
-              {/* <img src="images/mastercard.png" alt="Mastercard" />
-              <img src="images/paypal.png" alt="Paypal" /> */}
+          {/* Follow Us and Contact Section */}
+          <div className="col-md-4 mb-4">
+            <h5 className="footer-heading">Follow Us</h5>
+            <div className="d-flex gap-3 mb-3">
+              <a href="https://www.facebook.com/webdesignmaniaUS" className="text-light"><FaFacebookF size={25} /></a>
+              <a href="https://www.instagram.com/webdesignmania_us/" className="text-light"><FaInstagram size={25} /></a>
+              <a href="https://www.linkedin.com/company/web-design-mania-us/" className="text-light"><FaLinkedinIn size={25} /></a>
             </div>
-            {/* <h5 className="footer-heading mt-3">Follow Us</h5>
-            <div className="social-icons">
-              <a href="#"><i className="bi bi-facebook"></i></a>
-              <a href="#"><i className="bi bi-twitter"></i></a>
-              <a href="#"><i className="bi bi-instagram"></i></a>
-              <a href="#"><i className="bi bi-linkedin"></i></a>
-            </div> */}
+
+            {/* Contact Us Section */}
+            <div className="contact-details p-3" style={{ border: '1px solid rgba(255, 255, 255, 0.5)', borderRadius: '8px' }}>
+              <h4 className="footer-heading">Contact Us</h4>
+              <p className="mb-1 text-light">
+                <FaPhoneAlt /> 
+                <a href="tel:+15515543283" className="text-light text-decoration-none">  +1 (551) 554-3283</a>
+              </p>
+              <p className="mb-1 text-light">
+                <FaEnvelope /> 
+                <a href="mailto:info@webdesignmania.com" className="text-light text-decoration-none"> info@webdesignmania.com</a>
+              </p>
+              <p className="text-light">
+                <FaMapMarkerAlt /> 
+                <a href="https://www.google.com/maps/search/?api=1&query=41+Winthrop+Rd,+Edison,+NJ+08817" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none"> 43 3rd Ave 2nd Floor, Edison, NJ 08837</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -71,14 +80,13 @@ const Footer = () => {
           <div className="row">
             {/* Left Column */}
             <div className="col-6 text-start">
-              <p>©Copyright 2024, <strong>WebDesignMania</strong>. Powered by RFS</p>
+              <p className="text-light">© Copyright 2024, <strong>WebDesignMania</strong>. Powered by RFS</p>
             </div>
             {/* Right Column */}
             <div className="col-6 text-end">
-              <a href="#">Terms & conditions</a> | 
-              <a href="#">Privacy Policy</a>
+              <a href="/terms-condition" className="text-light text-decoration-none">Terms & conditions</a> |   
+              <a href="/privacy-policy" className="text-light text-decoration-none"> Privacy Policy</a>
               <ScrollToTopButton/>
-
             </div>
           </div>
         </div>
