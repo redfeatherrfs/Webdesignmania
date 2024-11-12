@@ -26,9 +26,9 @@ const Header = () => {
     <header className="custom-header">
       <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
-          <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">  
             <img src={header} alt="Logo" width="150" />
-          </a>
+            </Link>
           <button
             className="navbar-toggler"
             type="button"

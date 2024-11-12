@@ -66,7 +66,8 @@ const GetStartedSection = () => {
                 <div className="row justify-content-center">
                     <div className="card p-5 shadow-sm">
                         <div className="text-center mb-4">
-                            <small className="text-uppercase">We Take Pride</small>
+                            <small className="text-uppercase">We Take Pride in What We Do
+                            </small>
                             <h2 className="fw-bold">Let's Get Started</h2>
                             <p>Please enter your email and phone number on our contact form and we will be happy to assist you.</p>
                         </div>

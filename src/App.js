@@ -16,6 +16,7 @@ import Lp from './pages/LandingPage/Lp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsCondition from './pages/TermsCondition';
 import ThankYouPage from './pages/ThankYou';
+import Countdown from './pages/Countdown';
 
 // <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-...your-integrity-hash..." crossorigin="anonymous"></script>
@@ -37,6 +38,7 @@ const App = () => {
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-condition" element={<TermsCondition />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
+                <Route path="/black-friday" element={<Countdown />} />
 
             </Routes>
         </Router>

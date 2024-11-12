@@ -68,9 +68,9 @@ body {
 
 .footer .footer-heading {
     font-weight: bold;
-    font-size: 16px;
+   
     margin-bottom: 10px;
-    margin-top: 40px;
+
 }
 
 .footer p {
@@ -233,6 +233,10 @@ body {
     gap: 15px;
 }
 
+img.icon-image {
+    position: unset;
+    width: 120px;
+}
 .banner-image {
     width: 120px;
     height: auto;

@@ -19,7 +19,7 @@ const OurMissionSection = () => {
                     </div>
                     <div className="col-md-5">
                         <p className="about-desc">
-                        Let’s engineer efficient codes that deliver high-performance websites optimized for speed, SEO, and long-term growth. From front-end frameworks to back-end solutions, our website developers specialize in all. 
+                        Let's create powerful, high-performance websites engineered for speed, SEO, and sustainable growth. From cutting-edge front-end design to robust back-end solutions, our expert developers have you covered.
 
                         </p>
                     </div>
@@ -36,7 +36,7 @@ const OurMissionSection = () => {
                                 <div className="icon-content">
                                     <h4>Our Mission</h4>
                                     <p>
-                                    To develop efficient, secure code for real-time, dynamic websites. We aim to deliver visually stunning websites that focus on fast data handling and provide users with smooth interactions.
+                                    To create secure, efficient code that powers dynamic, real-time websites. We’re committed to delivering visually captivating websites with rapid data handling, ensuring seamless user interactions and optimal performance.
 
                                     </p>
                                 </div>
@@ -48,7 +48,7 @@ const OurMissionSection = () => {
                                 <div className="icon-content">
                                     <h4>Our Vision</h4>
                                     <p>
-                                    To set a new benchmark in web development by combining cutting-edge technology with user-centered design. We envision pushing the boundaries of our website developers to continuously innovate, leveraging the latest in web standards and frameworks.
+                                    To redefine industry standards in web development by merging the latest technology with user-centric design. We envision our team as trailblazers, continuously innovating and leveraging the most advanced web standards and frameworks to inspire change.
                                     </p>
                                 </div>
                             </div>
@@ -59,7 +59,7 @@ const OurMissionSection = () => {
                                 <div className="icon-content">
                                     <h4>Our Value</h4>
                                     <p>
-                                    Transparency and honesty are key to everything we do. Every project we work on is developed with attention to detail and a commitment to excellence. We take pride in building long-lasting relationships that foster trust.
+                                    Honesty and transparency guide all our efforts. Each project is executed with precision and a commitment to excellence, fostering long-lasting relationships built on trust and quality service.
                                     </p>
                                 </div>
                             </div>
