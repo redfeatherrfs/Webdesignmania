@@ -28,11 +28,11 @@ const AppPage = () => {
     const handleTitleChange = newTitle => setTitle(newTitle)
 
     const services = [
-        { id: '01', title: 'Native App Development ', description: 'Develop high-performance apps good for iOS or Android that give speed', imgSrc: serviceImage1, alt: 'Android App Development' },
-        { id: '02', title: 'iOS App Development', description: 'Design and develop your next big idea with iOS, combining stunning visuals', imgSrc: serviceImage2, alt: 'iOS App Development' },
-        { id: '03', title: 'Android App Development', description: 'Transform your ideas into powerful applications - designed for user-friendly experiences', imgSrc: serviceImage3, alt: 'React Native App Development' },
-        { id: '04', title: 'Flutter App Development', description: 'Simplify your life with Flutter, a versatile framework that lets you build visually appealing', imgSrc: serviceImage4, alt: 'Flutter App Development' },
-        { id: '05', title: 'Swift App Development', description: 'Start your journey with Swift app development, a user-friendly', imgSrc: serviceImage5, alt: 'Swift App Development' },
+        { id: '01', title: 'Native App Development ', description: 'Delivering seamless, high-performance native apps tailored for optimal user experiences.', imgSrc: serviceImage1, alt: 'Android App Development' },
+        { id: '02', title: 'iOS App Development', description: 'Creating intuitive, high-quality iOS apps that enhance Apple device experiences.', imgSrc: serviceImage2, alt: 'iOS App Development' },
+        { id: '03', title: 'Android App Development', description: 'Building robust Android apps tailored for diverse devices and user needs.', imgSrc: serviceImage3, alt: 'React Native App Development' },
+        { id: '04', title: 'Flutter App Development', description: 'Cross-platform Flutter apps for smooth, consistent experiences across all devices.', imgSrc: serviceImage4, alt: 'Flutter App Development' },
+        { id: '05', title: 'Swift App Development', description: 'Crafting powerful, scalable Swift apps with unmatched performance and reliability.', imgSrc: serviceImage5, alt: 'Swift App Development' },
     ];
 
     const packages = [

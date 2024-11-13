@@ -29,7 +29,7 @@ const AppPage = () => {
             <HeaderSection />
             <BannerSection
                 title='Contact Us'
-                description="Your Professional Designer & Developer That Combines Aesthetics With Business Success"
+                description="Let’s Build Your Brand with Purpose & Precision"
                 buttonlink='/'
                 buttontext="Start a Project"
                 image={bannerImage}

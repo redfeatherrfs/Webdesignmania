@@ -19,7 +19,7 @@ const ImageIconBox = () => {
                     <div className="col-12">
                         <p className="sub-heading text-muted">OUR SERVICES</p>
                         <h2 className="main-heading">
-                            Creatively led.<br /> Results digital agency
+                        Crafting Digital<br /> Brilliance for Real results
                         </h2>
                     </div>
                 </div>

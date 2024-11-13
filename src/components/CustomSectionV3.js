@@ -10,7 +10,7 @@ const CustomSectionV3 = () => {
                     <img src={MaskGroupImage} alt="Affordable Logo Design" className="img-fluid" />
                 </div>
                 <div className="col-lg-6 custom-content-v3">
-                    <h2>Web Design Mania - You Are Making The Right Choice
+                    <h2>With Web Design Mania, you’re choosing excellence!
                     </h2>
                     <p style={{ textAlign: 'justify' }}>
                     Having the right partner in your business makes all the difference. Whether you have a clear idea of what you want or need help brainstorming, we're here to support you every step of the way. We aim to make the design process enjoyable and stress-free. Our approachable designers and developers await to hear your creative side!

@@ -28,7 +28,6 @@ const AppPage = () => {
 
     return (
         <>
-
             <Helmet>
                 <title>About Us  - Web Design Mania</title>
                 <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />

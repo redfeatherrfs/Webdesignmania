@@ -33,7 +33,7 @@ const CustomLogoProcess = () => {
                     <div className="row align-items-center">
                         <div className="col-md-6">
                         
-                            <h2>Logo Design<br />Made Easy<br />Our Framework</h2>
+                            <h2>Professional logos,<br />crafted simply with<br />our framework</h2>
                         </div>
                         <div className="col-md-6">
                             <p style={{ textAlign: "justify" }}>

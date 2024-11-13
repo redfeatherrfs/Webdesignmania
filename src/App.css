@@ -11,6 +11,37 @@ body {
 
 
 
+/* Custom CSS to ensure the image covers full width */
+.unique-full-width-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Container for centering the button */
+.unique-container-fluid {
+    text-align: center; /* Center-aligns content inside the container */
+    background: linear-gradient(to top, #1E0000, #000000); /* Gradient from light red to dark red */
+
+}
+
+/* Button styling */
+.unique-button {
+    padding: 10px 20px;
+    background-color: #646bd9;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.unique-button:hover {
+    background-color: #4a4db7;
+}
+
+
 
 
 /* Start header */

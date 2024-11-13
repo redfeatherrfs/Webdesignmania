@@ -16,8 +16,8 @@ const LpPortfolio = () => {
     <div className="logo-designs-portfolio">
       <div className="container">
         {/* Heading for the Portfolio */}
-        <h2 className="portfolio-heading">Our Award-Winning <br/>Company Website Portfolio</h2>
-        
+        <h2 className="portfolio-heading">Transforming Brands With <br/>Stunning Websites</h2>
+
         <div className="row filter-button-group"></div>
         
         <div className="row gallery">

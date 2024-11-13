@@ -25,7 +25,10 @@ import serviceImage5 from '../images/Mask group-4.png'
 import serviceImage6 from '../images/Mask group-5.png'
 import PopupForm from '../components/common/PopupForm';
 import LpPortfolio from '../components/LandingPage/LpPortfolio';
+import BlackPosterSec from '../components/BlackPoster';  // Correct casing of the file
 
+
+ 
 
 
 
@@ -582,12 +585,14 @@ const Home = () => {
 
     return (
         <>
+                    <BlackPosterSec />
+
             <Helmet>
                 <title>Full-Service Digital Marketing Agency - Web Design Mania</title>
                 <meta name="description" content="Web Design Mania is a full-service digital marketing agency offering expert web design, SEO, branding, and development services to boost your business worldwide." />
                 <link rel="canonical" href="https://webdesignmania.com" />
             </Helmet>
-
+        
             <HeaderSection />
             <BannerSection
                 title='Crafting High-Impact Websites That Drive Results'
