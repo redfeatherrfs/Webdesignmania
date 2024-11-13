@@ -1,78 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Confetti from 'react-confetti';
 import '../../CountdownTimer.css';
-import bgimg from '../../images/lpbg.png';
-import formbg from '../../images/formbglp.png';
-import formbg2 from '../../images/formbglp2.png';
-import bracket from '../../images/bracket.png';
-import trustpilot from '../../images/truspiloticon.png';
-import clutch from '../../images/clutchicon.png';
-import barkicon from '../../images/barkicon.png';
 
-import '../../LandingPage.css';
-import { useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
-
-
-const CountdownTimerWithConfetti = ({ updatePopupTitle }) => {
-  const navigate = useNavigate()
-  const [loading, setLoading] = useState(false); // Loading state
-  const [formData, setFormData] = useState({
-      name: '',
-      email: '',
-      phone: '',
-      message: ''
-  })
-
-  const handleChange = e => {
-      const { name, value } = e.target;
-      setFormData({
-          ...formData,
-          [name]: value,
-      });
-  };
-
-  const validateEmailAndPhone = () => {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-          phoneRegex = /^\+1\d{10}$/
-
-      let html = ''
-
-      if (!emailRegex.test(formData.email))
-          html = "Invalid email address<br />"
-
-      if (!phoneRegex.test(formData.phone))
-          html += "Invalid phone number. Example: +19876543210"
-
-      if(html.length > 0)
-          Swal.fire('Error', html, 'error')
-
-      return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
-  }
-
-  const handleSubmit = async e => {
-      e.preventDefault()
-
-      // Email & phone validation
-      if(!validateEmailAndPhone())
-          return
-
-      setLoading(true)
-
-      await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/index.php", {
-          method: 'POST',
-          body: JSON.stringify(formData)
-      })
-          .then(r => r.json())
-          .then(({ success, message }) => {
-              setLoading(false)
-              if (success)
-                  navigate('/thank-you')
-              else
-                  Swal.fire('Error', message, 'error')
-          })
-  }
-  const targetDate = new Date("2024-11-30T23:59:59").getTime();
+const CountdownTimerWithConfetti = () => {
+  const targetDate = new Date("2024-12-31T23:59:59").getTime();
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   const [windowDimensions, setWindowDimensions] = useState({
     width: window.innerWidth,
@@ -117,26 +48,21 @@ const CountdownTimerWithConfetti = ({ updatePopupTitle }) => {
   }
 
   return (
-    <div style={{ backgroundImage: `url(${bgimg})`, // Replace 'yourImageURL' with the actual image path or URL
-    backgroundSize: 'cover', // Ensures the image covers the entire div
-    backgroundPosition: 'center', // Centers the image within the div
-    minHeight: '100vh',
-    overflow: 'hidden', minHeight: '100vh', overflow: 'hidden' }}>
+    <div style={{ backgroundColor: 'black', minHeight: '100vh', overflow: 'hidden' }}>
       {/* Confetti Background */}
       <Confetti
         width={windowDimensions.width}
         height={windowDimensions.height}
         numberOfPieces={200}
         gravity={0.2}
-        // colors={['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff']}
-        colors={['#fff', '#fff', '#fff', '#fff', '#fff', '#fff']}
+        colors={['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff']}
       />
 
       <div className="container">
         <div className="row" style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
           
           {/* Left Column with Countdown Timer */}
-          <div className="col-md-7 d-flex " style={{ position: 'relative', color: 'white',  }}>
+          <div className="col-md-7 d-flex justify-content-center align-items-center" style={{ position: 'relative', color: 'white', textAlign: 'center' }}>
             <div style={{ padding: '20px' }}>
               <h1 className="countdown-heading">Black Friday Web Design Mania - Unbeatable Deals Await!</h1>
               <p className="countdown-description">Transform your website with stunning designs at incredible discounts this Black Friday!🎉</p>
