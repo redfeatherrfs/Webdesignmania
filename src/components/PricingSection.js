@@ -35,7 +35,7 @@ const PricingSection = ({ packages, updatePopupTitle }) => {
     return (
         <section className="pricing-section text-center py-5">
             <Container>
-                <h2 className="mb-4">Pocket-Friendly Pricing Solutions </h2>
+                <h2 className="mb-4">Pricing </h2>
                 {/* <h3 className="mt-3">Price: {price}</h3> Display price */}
                 {/* React Bootstrap Tabs with Centered and No Underline */}
                 <Tabs

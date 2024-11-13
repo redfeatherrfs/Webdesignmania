@@ -20,19 +20,19 @@
   
   .countdown-description {
     font-size: 1.5rem;
-    color: #bbbbbb;
+    color: #f1f1f1;
     margin-bottom: 2rem;
   }
   
   /* Countdown timer styling */
   .countdown-timer {
-    justify-content: center;
+   
     display: flex;
     gap: 1rem;
   }
   
   .countdown-item {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgb(255 255 255);
     border-radius: 10px;
     padding: 1rem;
     width: 80px;
