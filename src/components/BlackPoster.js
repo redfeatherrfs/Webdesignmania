@@ -1,19 +1,17 @@
 import React from 'react';
-import blackImage from '../images/Cover3-01.jpg';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 import '../App.css';
 
 const BlackPoster = () => {
     return (
-        <div className="unique-container-fluid text-center">
-            <img src={blackImage} alt="Full Width Black Friday Poster" className="unique-full-width-image" />
-            
-            {/* Button centered below the image */}
-            <Link to="/black-friday">
-                <button className="unique-button mt-3">Explore Now!</button>
-            </Link>
+        <div className="container-fluid black-friday-banner">
+          <div className="black-friday-banner-content">
+            <h6 className="text-uppercase">End of Seasons</h6>
+            <h1 className="display-4 font-weight-bold">BLACK FRIDAY</h1>
+            <Link className="btn black-friday-banner-explore-btn" to='/black-friday'>Explore Now!</Link>
+          </div>
         </div>
-    );
-};
+      );
+    }
 
 export default BlackPoster;

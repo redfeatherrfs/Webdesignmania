@@ -1,9 +1,9 @@
 // Header.js
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min'; // Import Bootstrap JS
-import '../header.css'; // Import the CSS file
-import header from '../images/header logo.png'; // Ensure the image path is correct
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import '../header.css';
+import header from '../images/header logo.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -24,11 +24,12 @@ const Header = () => {
 
   return (
     <header className="custom-header">
-      <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
+      {/* Removed 'fixed-top' from navbar class */}
+      <nav className={`navbar navbar-expand-lg ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
-        <Link className="navbar-brand" to="/">  
+          <Link className="navbar-brand" to="/">  
             <img src={header} alt="Logo" width="150" />
-            </Link>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -55,10 +56,8 @@ const Header = () => {
                   <li><Link to="/" className="dropdown-item">Website Design</Link></li>
                   <li><Link to="/app-design" className="dropdown-item">App Design</Link></li>
                   <li><Link to="/stationary" className="dropdown-item">Stationary</Link></li>
-                
                   <li><Link to="/seo" className="dropdown-item">SEO</Link></li>
                   <li><Link to="/smm" className="dropdown-item">SMM</Link></li>
-
                 </ul>
               </li>
               <li className="nav-item">

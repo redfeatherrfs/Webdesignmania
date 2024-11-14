@@ -10,36 +10,186 @@ body {
 }
 
 
+/* black */
 
-/* Custom CSS to ensure the image covers full width */
-.unique-full-width-image {
+
+
+
+
+
+
+/* Background for the banner */
+.black-friday-banner {
+    background-color: #0a0d16;
+    background-image: url('images/BlackFriday-101.jpg'), radial-gradient(circle, #0a0d16 10%, transparent 10%), radial-gradient(circle, #0a0d16 10%, transparent 10%);
+    background-size: cover, 60px 60px, 60px 60px;
+    background-position: center, 0 0, 30px 30px;
+    padding: 50px 0;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Ensure no content overflows during animations */
+    animation: fadeIn 2s ease-out; /* Fade-in effect for the banner */
+}
+
+/* Fade-in animation for the entire banner */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Confetti animation */
+@keyframes confettiAnimation {
+    0% {
+        transform: translateY(0) rotate(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-100px) rotate(180deg);
+    }
+    100% {
+        transform: translateY(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Colorful confetti-like shapes */
+.black-friday-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    /* background-image: url('path/to/confetti.png'); Replace with your confetti image */
+    animation: confettiAnimation 3s infinite; /* Confetti animation */
+    opacity: 0.5;
+    pointer-events: none;
 }
 
-/* Container for centering the button */
-.unique-container-fluid {
-    text-align: center; /* Center-aligns content inside the container */
-    background: linear-gradient(to top, #1E0000, #000000); /* Gradient from light red to dark red */
-
+/* Text and Button Styling */
+.black-friday-banner h6 {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+    animation: fadeInText 2s ease-out; /* Animation for subtitle text */
 }
 
-/* Button styling */
-.unique-button {
+/* Animation for the header text */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.black-friday-banner h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 2s ease-out; /* Slide-in effect for title */
+}
+
+/* Slide-in effect for the main title */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.black-friday-banner-explore-btn {
+    background-color: #5e33f2;
+    color: #ffffff;
     padding: 10px 20px;
-    background-color: #646bd9;
-    color: white;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
+    font-weight: bold;
     border-radius: 5px;
+    text-decoration: none;
     transition: background-color 0.3s ease;
-    margin-bottom: 50px;
+    animation: fadeInButton 2s ease-out 1s; /* Button fade-in with delay */
 }
 
-.unique-button:hover {
-    background-color: #4a4db7;
+/* Fade-in effect for the button */
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
+
+.black-friday-banner-explore-btn:hover {
+    background-color: #3e23d2;
+    color: #ffffff;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+    .black-friday-banner {
+        padding: 60px 0;
+    }
+
+    .black-friday-banner h1 {
+        font-size: 3.5rem;
+    }
+
+    .black-friday-banner h6 {
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+    }
+
+    .black-friday-banner-explore-btn {
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .black-friday-banner {
+        padding: 40px 0;
+    }
+
+    .black-friday-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    .black-friday-banner h6 {
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .black-friday-banner-explore-btn {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
 
 
 
