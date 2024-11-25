@@ -55,7 +55,7 @@ const Header = () => {
                   <li><Link to="/logo-design" className="dropdown-item">Logo Design</Link></li>
                   <li><Link to="/" className="dropdown-item">Website Design</Link></li>
                   <li><Link to="/app-design" className="dropdown-item">App Design</Link></li>
-                  <li><Link to="/stationary" className="dropdown-item">Stationary</Link></li>
+                  <li><Link to="/stationery" className="dropdown-item">Stationery</Link></li>
                   <li><Link to="/seo" className="dropdown-item">SEO</Link></li>
                   <li><Link to="/smm" className="dropdown-item">SMM</Link></li>
                 </ul>
