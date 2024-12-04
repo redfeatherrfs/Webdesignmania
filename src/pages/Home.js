@@ -585,15 +585,14 @@ const Home = () => {
 
     return (
         <>
-                    <BlackPosterSec />
+                    {/* <BlackPosterSec /> */}
 
             <Helmet>
                 <title>Full-Service Digital Marketing Agency - Web Design Mania</title>
                 <meta name="description" content="Web Design Mania is a full-service digital marketing agency offering expert web design, SEO, branding, and development services to boost your business worldwide." />
-                <link rel="canonical" href="https://webdesignmania.com" />
+                <link rel="canonical" href="https://webdesignmania.com"/>
             </Helmet>
-        
-            <HeaderSection />
+            <HeaderSection/>
             <BannerSection
                 title='Crafting High-Impact Websites That Drive Results'
                 description="Customized design and strategy for a seamless user experience and measurable growth—built to elevate your brand"
@@ -601,8 +600,6 @@ const Home = () => {
                 image={bannerImage}
                 updatePopupTitle={handleTitleChange}
             />
-
-
             <LogoSection />
             <GetStartedSection />
             <OurMissionSection />
