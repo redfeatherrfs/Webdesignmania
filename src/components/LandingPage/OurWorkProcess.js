@@ -10,7 +10,7 @@ const OurWorkProcess = () => {
             <div className="container">
                 <div className="text-center mb-4">
                     <h1 className="about-heading">Our Work Process</h1>
-                    <p className="description">Professional hosting at an affordable price. Distinctively recaptiualize principle-centered core competencies through client-centered core competencies.</p>
+                    <p className="description">Premium hosting, designed for value. Drive success by blending innovation and client-focused efficiency.</p>
                 </div>
 
                 <div className='row justify-content-center'>
@@ -20,14 +20,14 @@ const OurWorkProcess = () => {
                                 <img src={planningIcon} alt='Planning Icon' className='img-fluid icon' />
                                 <div className='steps-content'>
                                     <h4>Planning Idea</h4>
-                                    <p className='m-0'>: We proactively streamline scalable digital solutions, driving robust, market-driven innovation that fosters growth, enhances user experiences, and empowers businesses to stay competitive in dynamic markets.</p>
+                                    <p className='m-0'>: Optimize efficient solutions to drive strong, market-oriented innovation with the expert assistance of our website design company.</p>
                                 </div>
                             </div>
 
                             <div className='d-flex align-items-center mb-3'>
                                 <div className='text-end steps-content'>
                                     <h4>Developed Final Product</h4>
-                                    <p className='m-0'>We meticulously refine, test, and finalize products, ensuring market readiness with seamless functionality, user-centric design, and competitive quality to drive success.</p>
+                                    <p className='m-0'>Our professional website developers refine, test, and finalize the product to ensure it is ready for the market.</p>
                                 </div>
                                 <img src={developedIcon} alt='Planning Icon' className='img-fluid icon' />
                             </div>
@@ -36,7 +36,7 @@ const OurWorkProcess = () => {
                                 <img src={deliverIcon} alt='Planning Icon' className='img-fluid icon' />
                                 <div className='steps-content'>
                                     <h4>Deliver to Customer</h4>
-                                    <p className='m-0'>We conduct comprehensive QA to guarantee optimal functionality, responsiveness, and a consistent user experience across all devices, ensuring top-tier performance and client satisfaction.</p>
+                                    <p className='m-0'>Our website designers conduct comprehensive quality assurance (QA) to guarantee functionality and responsiveness across all devices.</p>
                                 </div>
                             </div>
                         </div>

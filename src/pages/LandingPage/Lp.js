@@ -39,17 +39,17 @@ const iconBoxesData = [
     {
         image: serviceiconbox1,
         heading: '5+ Years’ Experience ',
-        text: 'We have been revolutionizing your marketing with our cool strategies for more than 5 years. In this period, we have catered to the diverse business marketing needs of international clients with unbridled success and critical acclaim. ',
+        text: 'For over five years, we have been transforming marketing with innovative strategies. During this time, we have effectively addressed the diverse marketing needs of international clients, achieving remarkable success and widespread recognition.',
     },
     {
         image: serviceiconbox2,
         heading: '900+ Successful Clients',
-        text: 'We have facilitated more than 1100 customers from every field of life and have always left them satisfied. Our success is down to the dedication, motivation, passion, loyalty, and expertise of our marvelous team.',
+        text: 'We have served over 900 customers from various fields and always ensured their satisfaction. Our professional website designers’ success stems from the dedication, motivation, passion, loyalty, and expertise of our incredible team.',
     },
     {
         image: serviceiconbox3,
-        heading: '800+ Custom Features Developed',
-        text: 'Our company has been the best website development company with a large focus on e-commerce web development. We have harmonized many brands’ rhyme and shine through the years.',
+        heading: '800+ Custom Features',
+        text: 'Our company is a leading website development firm, specializing in e-commerce web development. Over the years, we have enhanced many brands\' presence and appeal.',
     },
   
 ];
@@ -91,8 +91,7 @@ const LpPage = () => {
                     heading="Customized Web Development Services That Talk To Your Audience."
                     description={
                         <>
-                           Make your brand the smartest on the market with our clever custom web design and development services. Stay ahead of the curve with the world’s most popular Content Management System. From dull to cool, our website redesign services make your brand the coolest on the market. We have professional team of web designers and developers.
-                        </>
+Enhance your brand's intelligence in the market with our innovative custom website design. To Stay ahead of the competition one needs a marvelous website developer. Therefore, by utilizing the world's most popular Content Management System. Our website redesign services can transform your brand from bland to standout, ensuring you are the coolest brand in the market.                        </>
                     }
                     imageSrc={lpImage}
                     objectfit="contain"

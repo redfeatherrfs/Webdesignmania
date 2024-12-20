@@ -90,12 +90,12 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             />
                             <h1 className="lpbanner-heading">
                                 Custom Web Design <br />
-                                Starts just <span className="lpbanner-price">$199</span>
+                                Starts from <span className="lpbanner-price">£249</span>
                             </h1>
                         </div>
 
                         <div className="lp-banner-margin">
-                            <p className="lpbanner-text">Web Design Mania is a multifaceted scaffold for fabulous web development agency with cutting-edge options to accelerate your digital growth.</p>
+                            <p className="lpbanner-text">Web Design Mania is your ultimate toolkit for visionary web development, packed with advanced features to supercharge your digital journey. </p>
                             <div className="lpbanner-buttons">
                                 <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>

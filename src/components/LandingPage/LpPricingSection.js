@@ -541,7 +541,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
     return (
         <section className="pricing-section text-center py-5" id='pricing-section'>
             <Container>
-                <h2 className="mb-4">Pocket-Friendly Pricing Solutions </h2>
+                <h2 className="mb-4">Budget Friendly Pricing Solutions </h2>
 
                 {/* React Bootstrap Tabs with Centered and No Underline */}
                 <Tabs
