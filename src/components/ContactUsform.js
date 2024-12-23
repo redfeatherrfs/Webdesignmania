@@ -54,7 +54,7 @@ const ContactUsform = () => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/contact.php", {
+        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.co.uk/lp/php_mailer/contact.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -105,13 +105,13 @@ const ContactUsform = () => {
                                 <h3>Contact Information</h3>
                                 <p>Say something to start a live chat</p>
                                 <address>
-                                    <FaMapMarkerAlt /> 43 3rd Ave 2nd Floor, Edison, NJ 08837<br />
+                                    <FaMapMarkerAlt /> 497 Sunleigh Rd, Wembley HA0 4LY, UK<br />
                                 </address>
-                                <a href="tel:+1 (551) 554-3283" className="contactuspg-link">
-                                    <FaPhoneAlt /> +1 (551) 554-3283
+                                <a href="tel:02045112009" className="contactuspg-link">
+                                    <FaPhoneAlt /> 0204 511 2009
                                 </a><br />
-                                <a href="mailto:info@webdesignmania.com" className="contactuspg-link">
-                                    <FaEnvelope /> info@webdesignmania.com
+                                <a href="mailto:info@webdesignmania.co.uk" className="contactuspg-link">
+                                    <FaEnvelope /> info@webdesignmania.co.uk
                                 </a>
 
                                 {/* Social Icons */}

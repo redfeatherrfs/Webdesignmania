@@ -48,7 +48,7 @@ const ContactForm = () => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/index.php", {
+        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.co.uk/lp/php_mailer/index.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -66,20 +66,20 @@ const ContactForm = () => {
         <section className="ebook-contact-form container">
             <div className="row">
                 <div className="col-md-5 left-column">
-                    <h2>Let's Succeed Together! <br />
+                    <h2>Let’s Connect <br />
                         <br /></h2>
                     <ul className="contact-info">
                         <li>
                             <FaPhoneAlt className="contact-icon" />
-                            <a href="tel:+15515543283">+1 (551) 554-3283</a>
+                            <a href="tel:+02045112009">0204 511 2009</a>
                         </li>
                         <li>
                             <FaEnvelope className="contact-icon" />
-                            <a href="mailto:info@webdesignmania.com">info@webdesignmania.com</a>
+                            <a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>
                         </li>
                         <li>
                             <FaMapMarkerAlt className="contact-icon" />
-                            <span>43 3rd Ave 2nd Floor, Edison, NJ 08837</span>
+                            <span>497 Sunleigh Rd, Wembley HA0 4LY, UK</span>
                         </li>
                     </ul>
                 </div>

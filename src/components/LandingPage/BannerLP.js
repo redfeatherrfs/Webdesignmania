@@ -57,7 +57,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/index.php", {
+        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.co.uk/lp/php_mailer/index.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -90,14 +90,14 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             />
                             <h1 className="lpbanner-heading">
                                 Custom Web Design <br />
-                                Starts from <span className="lpbanner-price">£249</span>
+                                Starts from <span className="lpbanner-price">£199</span>
                             </h1>
                         </div>
 
                         <div className="lp-banner-margin">
                             <p className="lpbanner-text">Web Design Mania is your ultimate toolkit for visionary web development, packed with advanced features to supercharge your digital journey. </p>
                             <div className="lpbanner-buttons">
-                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
+                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - £199')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
                             </div>
                             <div className="lpbanner-badges">

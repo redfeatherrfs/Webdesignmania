@@ -31,7 +31,7 @@ const AppPage = () => {
             <Helmet>
                 <title>About Us  - Web Design Mania</title>
                 <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
-                <link rel="canonical" href="https://webdesignmania.com/about-us" />
+                <link rel="canonical" href="https://webdesignmania.co.uk/lp/about-us" />
             </Helmet>
 
             <HeaderSection />

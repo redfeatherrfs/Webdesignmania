@@ -24,7 +24,7 @@ const AppPage = () => {
             <Helmet>
                 <title>Contact Us  - Web Design Mania</title>
                 <meta name="description" content="Get in touch with Web Design Mania today! Whether you have questions about our services or need a custom quote, our friendly team is here to help." />
-                <link rel="canonical" href="https://webdesignmania.com/contact-us"/>
+                <link rel="canonical" href="https://webdesignmania.co.uk/lp/contact-us"/>
             </Helmet>     
             <HeaderSection />
             <BannerSection

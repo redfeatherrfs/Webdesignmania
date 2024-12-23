@@ -24,17 +24,17 @@ const Footer = () => {
 
           {/* Quick Links Section */}
           <div className="col-md-2 mb-4">
-            <h5 className="footer-heading">Quick Links</h5>
+            {/* <h5 className="footer-heading">Quick Links</h5>
             <ul className="footer-links list-unstyled">
               <li><Link to="/" className="text-light text-decoration-none">Home</Link></li>
               <li><Link to="/about-us" className="text-light text-decoration-none">About Us</Link></li>
               <li><Link to="/contact-us" className="text-light text-decoration-none">Contact Us</Link></li>
-            </ul>
+            </ul> */}
           </div>
 
           {/* Our Services Section */}
           <div className="col-md-2 mb-4">
-            <h5 className="footer-heading">Our Services</h5>
+            {/* <h5 className="footer-heading">Our Services</h5>
             <ul className="footer-links list-unstyled">
               <li><Link to="/logo-design" className="text-light text-decoration-none">Logo Design</Link></li>
               <li><Link to="/" className="text-light text-decoration-none">Website Design</Link></li>
@@ -42,10 +42,10 @@ const Footer = () => {
               <li><Link to="/stationery" className="text-light text-decoration-none">Stationery</Link></li>
               <li><Link to="/seo" className="text-light text-decoration-none">SEO</Link></li>
               <li><Link to="/smm" className="text-light text-decoration-none">SMM</Link></li>
-            </ul>
+            </ul> */}
           </div>
 
-          {/* Follow Us and Contact Section */}
+           
           <div className="col-md-4 mb-4">
             <h5 className="footer-heading">Follow Us</h5>
             <div className="d-flex gap-3 mb-3">
@@ -54,20 +54,20 @@ const Footer = () => {
               <a href="https://www.linkedin.com/company/web-design-mania-us/" className="text-light"><FaLinkedinIn size={25} /></a>
             </div>
 
-            {/* Contact Us Section */}
+            
             <div className="contact-details p-3" style={{ border: '1px solid rgba(255, 255, 255, 0.5)', borderRadius: '8px' }}>
               <h4 className="footer-heading">Contact Us</h4>
               <p className="mb-1 text-light">
                 <FaPhoneAlt /> 
-                <a href="tel:+15515543283" className="text-light text-decoration-none">  +1 (551) 554-3283</a>
+                <a href="tel:+02045112009" className="text-light text-decoration-none">  0204 511 2009</a>
               </p>
               <p className="mb-1 text-light">
                 <FaEnvelope /> 
-                <a href="mailto:info@webdesignmania.com" className="text-light text-decoration-none"> info@webdesignmania.com</a>
+                <a href="mailto:info@webdesignmania.co.uk" className="text-light text-decoration-none"> info@webdesignmania.co.uk</a>
               </p>
               <p className="text-light">
                 <FaMapMarkerAlt /> 
-                <a href="https://www.google.com/maps/search/?api=1&query=41+Winthrop+Rd,+Edison,+NJ+08817" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none"> 43 3rd Ave 2nd Floor, Edison, NJ 08837</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=41+Winthrop+Rd,+Edison,+NJ+08817" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none"> 497 Sunleigh Rd, Wembley HA0 4LY, UK</a>
               </p>
             </div>
           </div>

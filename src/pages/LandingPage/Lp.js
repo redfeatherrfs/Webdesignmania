@@ -88,7 +88,7 @@ const LpPage = () => {
             <div style={{ padding: '100px 0px 0px 0px' }}>
                 <ImageRightBanner
                     // subHeading="ABOUT US"
-                    heading="Customized Web Development Services That Talk To Your Audience."
+                    heading="Customized Web Development Services That Talk To Your Audience"
                     description={
                         <>
 Enhance your brand's intelligence in the market with our innovative custom website design. To Stay ahead of the competition one needs a marvelous website developer. Therefore, by utilizing the world's most popular Content Management System. Our website redesign services can transform your brand from bland to standout, ensuring you are the coolest brand in the market.                        </>

@@ -11,7 +11,7 @@ const AllInOneCombo = () => {
 
                         </h3>
                         <h1 className='title'>All-In-One Combo</h1>
-                        <h1 className='title'>$1199</h1>
+                        <h1 className='title'>£1199</h1>
                         <p>Our website development company gives you a one-pack offer with endless possibilities. With this package, you have the power to explore multiple aspects in one deal. You can infuse energy with a bespoke logo design, create engaging web designs, and develop professional stationery that impresses with innovative creativity. Experience creative logo design paired with effective marketing solutions that resonate with your audience.</p>
 
                         <div className='row'>

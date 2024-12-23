@@ -42,7 +42,7 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul className="navbar-nav">
+            {/* <ul className="navbar-nav">
               <li className="nav-item">
                 <Link to="/" className="nav-link custom-nav-link active">Home</Link>
               </li>
@@ -63,10 +63,10 @@ const Header = () => {
               <li className="nav-item">
                 <Link to="/contact-us" className="nav-link custom-nav-link">Contact Us</Link>
               </li>
-            </ul>
+            </ul> */}
             <div className="custom-phone-number ms-3">
-              <a href="tel:+15515543283" className="nav-link">
-                +1 (551) 554-3283
+              <a href="tel:+02045112009" className="nav-link">
+              0204 511 2009
               </a>
             </div>
           </div>

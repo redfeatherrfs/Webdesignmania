@@ -19,7 +19,7 @@ async function generateSitemap() {
     // Add more routes as needed
   ];
 
-  const stream = new SitemapStream({ hostname: 'https://webdesignmania.com' });
+  const stream = new SitemapStream({ hostname: 'https://webdesignmania.co.uk/lp/' });
   const writeStream = createWriteStream('./public/sitemap.xml');
 
   stream.pipe(writeStream);

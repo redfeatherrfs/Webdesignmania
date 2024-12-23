@@ -32,18 +32,18 @@ const LpContactSec = () => {
 
                     {/* Column 2 - Phone Number */}
                     <div className="col-md-4">
-                        <a href="tel:+15515543283" className="contact-link d-flex align-items-center">
+                        <a href="tel:+02045112009" className="contact-link d-flex align-items-center">
                             <img src={consultIcon} alt="Consult Expert Icon" className=" me-3"/>
                             <div>
                                 <p>Consult Our Expert</p>
-                                <h4>+1 (551) 554-3283</h4>
+                                <h4>0204 511 2009</h4>
                             </div>
                         </a>
                     </div>
 
                     {/* Column 3 - Live Chat */}
                     <div className="col-md-4">
-                        <a href="/live-chat" className="contact-link d-flex align-items-center">
+                        <a  href="https://wa.me/+447491860363"  className="contact-link d-flex align-items-center">
                             <img src={chatIcon} alt="Live Support Icon" className=" me-3"/>
                             <div>
                                 <p>Live Support</p>

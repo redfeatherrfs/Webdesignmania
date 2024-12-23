@@ -10,7 +10,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Custom Website Starter Package",
                     subtitle: "Professional & Unique Designs!",
-                    price: "$399",
+                    price: "£399",
                     features: [
                         "Design Up to 3 Pages",
                         "5 Visual Images",
@@ -108,7 +108,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "E-commerce Website Starter Package",
                     subtitle: "Best Value for Money Guaranteed!",
-                    price: "$1199",
+                    price: "£1199",
                     features: [
                         "eCommerce Integration",
                         "Design Up to 20 Pages",
@@ -228,7 +228,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Basic Logo Package",
                     subtitle: "Get Your Store Online!",
-                    price: "$45",
+                    price: "£45",
                     features: [
                         "2 Logo Design Concepts",
                         "4 Free Revisions",
@@ -278,7 +278,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Stationery Basic Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "$129",
+                    price: "£129",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",

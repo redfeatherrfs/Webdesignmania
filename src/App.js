@@ -27,6 +27,10 @@ const App = () => {
         <Router>
             <Routes>
                 <Route path="/" element={<Lp />} />
+                <Route path="/thank-you" element={<ThankYouPage />} />
+                <Route path="/privacy" element={<PrivacyPolicy />} />
+                <Route path="/terms" element={<TermsCondition />} />
+                
                 {/* <Route path="/about-us" element={<About />} />
                 <Route path="/app-design" element={<AppPage />} />
                 <Route path="/contact-us" element={<ContactUs />} />
@@ -37,7 +41,6 @@ const App = () => {
                 {/* <Route path="/lp" element={<Lp/>} /> */}
                 {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-condition" element={<TermsCondition />} />
-                <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/black-friday" element={<Countdown />} /> */}
 
             </Routes>
