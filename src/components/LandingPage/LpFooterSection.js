@@ -5,7 +5,7 @@ import logo from '../../images/lp-footer.png'; // Replace with actual path to yo
 
 const LpFooterSec = () => {
     return (
-        <section className="lp-footer-sec text-white d-flex flex-column justify-content-center" style={{ backgroundColor: '#3E1DCE' }}>
+        <section className="lp-footer-sec text-white d-flex flex-column justify-content-center" style={{ backgroundColor: '#853101' }}>
             <div className="container">
                 {/* First Row - Logo Centered */}
                 <div className="row justify-content-center py-3">
@@ -22,8 +22,8 @@ const LpFooterSec = () => {
                         </p>
                     </div>
                     <div className="col-md-6 text-md-end text-center">
-                        <a href="/terms" className="footer-link me-3">Terms & Conditions</a>
-                        <a href="/privacy" className="footer-link">Privacy Policy</a>
+                        <a href="/terms" target="_blank" className="footer-link me-3">Terms & Conditions</a>
+                        <a href="/privacy" target="_blank" className="footer-link">Privacy Policy</a>
                     </div>
                 </div>
             </div>

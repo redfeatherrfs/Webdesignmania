@@ -1,6 +1,6 @@
 .top-head {
     color: white;
-	background: #3716C7;
+	background: #853101;
 	padding: 5px 0;
    
 }
@@ -13,7 +13,7 @@
 
 .avail-discount-btn {
 	margin-right: 10px;
-	background: linear-gradient(to right, #9053F5, #6226EE);
+	background: linear-gradient(to right, #F36A3F, #DE5A3E);
 
 	color: #ffffff;
 }
@@ -104,15 +104,15 @@ textarea.lpbanner-input.lpbanner-textarea {
 
   .lpbanner-btn.btn-dark {
     color: #fff;
-    background-color: #0f04ad;
+    background-color: #853101;
   }
 
   .lpbanner-btn.btn-outline-light:hover {
-    color: darkblue; /* Change text color to dark blue on hover */
+    color: #853101; /* Change text color to dark blue on hover */
 }
 
 .lpbanner-submit-btn:hover {
-    background-color: #0f04ad; /* Lighter blue color on hover */
+    background-color: #853101; /* Lighter blue color on hover */
     color: #ffffff; /* Keep text color white on hover */
 }
   
@@ -165,7 +165,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #3716C7;
+    background-color: #853101;
 }
   
 
@@ -314,7 +314,7 @@ textarea.lpbanner-input.lpbanner-textarea {
   
   .cta-buttons .leave-message-btn {
     background-color: white;
-    color: #4B0082;
+    color: #853101;
     border: none;
     padding: 10px 20px;
     font-weight: bold;
@@ -450,7 +450,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 }
 
 .custom-carousel-control {
-  background-color: #4B29DD;
+  background-color: #853101;
   color: #fff;
   border: none;
   padding: 8px 12px;
@@ -463,7 +463,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 }
 
 .custom-carousel-control:hover {
-  background-color: #4B29DD;
+  background-color: #853101;
 }
 
 
@@ -591,7 +591,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 
 	.top-head {
-		background: #3716C7;
+		background: #853101;
 		padding: 5px 0;
 		font-size: 10px;
 	}
@@ -678,7 +678,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 	}
 
     .top-head {
-		background: #3716C7;
+		background: #853101;
 		padding: 5px 0;
 		font-size: 12px;
 	}
@@ -740,7 +740,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     }
 .lpbanner {
     
-    background: #5638DD;
+    background: #853101;
     background-size: cover;
     background-position: center;
     padding: 50px 0;

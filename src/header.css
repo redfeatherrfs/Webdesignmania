@@ -1,6 +1,6 @@
 /* Start header */
 .custom-header .navbar {
-    background: linear-gradient(0deg, #160a48 7.59%, #160a48 82.03%) !important;
+    background: #853101;
     padding: 20px 0;
     transition: background-color 0.3s ease;
 }

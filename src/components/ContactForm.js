@@ -122,6 +122,7 @@ const ContactForm = () => {
                                 value={formData.phone}
                                 onChange={handleChange}
                                 required
+                                 pattern="^\+?\d{10,14}$" title="Phone number format: +3334445555"
                             />
                             <div className="invalid-feedback">
                                 Invalid Phone number. Example: +19876543210

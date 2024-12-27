@@ -17,7 +17,7 @@ const LpCta1 = () => {
             Leave a message. Our website design agency’s professional web designers will get in touch with you.
             </p>
             <div className="cta-buttons">
-              <a href="tel:+02045112009" className="btn btn-primary leave-message-btn">Leave A Message</a>
+              <a target="_blank" href="https://wa.me/+447491860363" className="btn btn-primary leave-message-btn">Leave A Message</a>
               
             </div>
           </div>

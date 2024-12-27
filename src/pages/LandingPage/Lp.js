@@ -31,6 +31,7 @@ import LpFooterSec from "../../components/LandingPage/LpFooterSection"
 import { useState } from "react"
 import PopupForm from "../../components/common/PopupForm"
 
+import { Helmet } from 'react-helmet-async';
 
 
 
@@ -79,6 +80,12 @@ const LpPage = () => {
 
     return (
         <>
+         <Helmet>
+            <title>Custom Web Design Service Starts from £199 - Web Design Mania</title>
+            <meta name="description" content="Get custom web design and development services from UK #1 design company specializes in website design and marketing. Best bespoke web designers and developers team." />
+            <link rel="canonical" href="https://webdesignmania.co.uk/lp/"/>
+        </Helmet>
+        
             <TopHead updatePopupTitle={handleTitleChange} />
             <Lpbanner updatePopupTitle={handleTitleChange} />
             <LanguageLogos />
@@ -115,7 +122,7 @@ Enhance your brand's intelligence in the market with our innovative custom websi
                 />
             </div>
             <OurWorkProcess />
-            <AllInOneCombo />
+            <AllInOneCombo    updatePopupTitle={handleTitleChange} />
             <div style={{ padding: '100px 0px 50px 0px' }}>
                 <LpPortfolio />
             </div>

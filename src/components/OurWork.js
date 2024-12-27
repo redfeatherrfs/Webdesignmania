@@ -27,7 +27,7 @@ const OurWork = () => {
                 {/* First Row */}
                 <div className="row align-items-center mb-4">
                     <div className="col-md-8 text-md-start text-center">
-                        <p className="subheading">Our Work</p>
+                        <p className="subheading">Our Web Design Process</p>
                         <h2 className="main-heading">UI Designs at Web Design Mania</h2>
                     </div>
                     <div className="col-md-4 text-md-end text-center">

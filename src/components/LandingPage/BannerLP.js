@@ -39,8 +39,8 @@ const Lpbanner = ({ updatePopupTitle }) => {
         if (!emailRegex.test(formData.email))
             html = "Invalid email address<br />"
 
-        if (!phoneRegex.test(formData.phone))
-            html += "Invalid phone number. Example: +19876543210"
+        // if (!phoneRegex.test(formData.phone))
+        //     html += "Invalid phone number. Example: +19876543210"
 
         if(html.length > 0)
             Swal.fire('Error', html, 'error')
@@ -97,12 +97,16 @@ const Lpbanner = ({ updatePopupTitle }) => {
                         <div className="lp-banner-margin">
                             <p className="lpbanner-text">Web Design Mania is your ultimate toolkit for visionary web development, packed with advanced features to supercharge your digital journey. </p>
                             <div className="lpbanner-buttons">
-                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Basic Package - £199')}>Get Started</button>
+                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - £199')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
                             </div>
                             <div className="lpbanner-badges">
                                 <img src={clutch} alt="Clutch" />
-                                <img src={trustpilot} alt="Trustpilot" />
+
+                               <a target="_blank" href="https://www.trustpilot.com/review/webdesignmania.co.uk">
+                                    <img src={trustpilot} alt="Trustpilot" />
+                                </a> 
+                                
                                 <img src={barkicon} alt="Bark" />
                             </div>
                         </div>
@@ -124,7 +128,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             <p>Get response from us within 24 hours</p>
                             <form method="POST" onSubmit={handleSubmit} id="bannerForm">
                                 <input type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
-                                <input type="tel" placeholder="Enter your number" name="phone" value={formData.phone} onChange={handleChange} className="lpbanner-input" required />
+                                <input type="tel" placeholder="Enter your number" name="phone" value={formData.phone}  required="" pattern="^\+?\d{10,14}$" title="Phone number format: +3334445555"  onChange={handleChange} className="lpbanner-input" required />
                                 <input type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
                                 <textarea placeholder="Message" name="message" className="lpbanner-input lpbanner-textarea" value={formData.message} onChange={handleChange} required ></textarea>
                                 <button type="submit" className="btn btn-dark lpbanner-submit-btn" disabled={loading}>

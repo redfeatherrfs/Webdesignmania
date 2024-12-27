@@ -10,7 +10,7 @@ const TopHead = ({ updatePopupTitle }) => {
             <div className="container">
                 <div className="row">
                     <div className="top-left col-md-7">
-                        <h5>Limited Time Offer - Activate Your 70% off Coupon!
+                        <h5>Need a Website? You Dream It – We Build It
                             <button
                                 title={title}
                                 className="avail-discount-btn custom-btn common-popup mb-3 mb-md-0"

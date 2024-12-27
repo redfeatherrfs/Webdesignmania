@@ -9,7 +9,7 @@ const ThankYouPage = () => {
         <Col>
           <h1 className="display-4">Thank You!</h1>
           <p className="lead">We appreciate your response. Your submission has been received successfully.</p>
-          <Button variant="primary" href="/" className="mt-3">
+          <Button variant="primary" href="/lp" className="mt-3">
             Return to Home
           </Button>
         </Col>

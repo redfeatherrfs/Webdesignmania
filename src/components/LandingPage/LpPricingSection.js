@@ -9,8 +9,10 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Custom Website Starter Package",
-                    subtitle: "Professional & Unique Designs!",
-                    price: "£399",
+                    subtitle: "Professional & Unique Design",
+                    boldTitle: "  – Get 70% Off",
+                    price: "£199",
+                    originalPrice: "£665",
                     features: [
                         "Design Up to 3 Pages",
                         "5 Visual Images",
@@ -559,14 +561,14 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                                         <div className="package">
                                             <div className="package-header">
                                                 <h5>{item.title}</h5>
-                                                <h6>{item.subtitle}</h6>
+                                                <h6>{item.subtitle} <strong> {item.boldTitle}</strong></h6>
 
                                                 {/* Price section */}
                                                 <div className="price">
                                                     <h2>{item.price}</h2>
-                                                    {/* <div>
+                                                    <div>
                                                         <strike>{item.originalPrice}</strike>
-                                                    </div> */}
+                                                    </div>
                                                 </div>
                                             </div>
 

@@ -26,7 +26,7 @@ const App = () => {
         <HelmetProvider>
         <Router>
             <Routes>
-                <Route path="/" element={<Lp />} />
+                <Route path="/lp" element={<Lp />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsCondition />} />

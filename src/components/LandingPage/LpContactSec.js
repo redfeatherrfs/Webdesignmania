@@ -21,13 +21,13 @@ const LpContactSec = () => {
                 <div className="row text-center">
                     {/* Column 1 - Support Team */}
                     <div className="col-md-4">
-                        <a href="/support" className="contact-link d-flex align-items-center">
+                        {/* <a href="/support" className="contact-link d-flex align-items-center"> */}
                             <img src={supportIcon} alt="Support Team Icon" className=" me-3"/>
                             <div>
                                 <p>Our Support Team</p>
                                 <h4>24/7 Online</h4>
                             </div>
-                        </a>
+                        {/* </a> */}
                     </div>
 
                     {/* Column 2 - Phone Number */}

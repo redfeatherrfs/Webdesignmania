@@ -53,7 +53,7 @@ const PricingSection = ({ packages, updatePopupTitle }) => {
                                         <div className="package">
                                             <div className="package-header">
                                                 <div className='d-flex justify-content-between align-items-center mb-3'>
-                                                    <h5 className='mb-0'>{item.title}</h5>
+                                                    <h5 className='mb-0'>{item.title}   </h5>
                                                     {item?.mostPopular && (
                                                         <span className="badge rounded-pill most-popular">Most Popular</span>
                                                     )}

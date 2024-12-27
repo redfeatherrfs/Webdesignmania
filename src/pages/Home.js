@@ -54,7 +54,7 @@ const Home = () => {
                 {
                     title: "Custom Website Starter Package",
                     subtitle: "Professional & Unique Designs!",
-                    price: "£399",
+                    price: "£199",
                     features: [
                         "Design Up to 3 Pages",
                         "5 Visual Images",

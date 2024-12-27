@@ -77,9 +77,9 @@ const TestimonialSection = ({ updatePopupTitle }) => {
                         ))}
                     </Swiper>
 
-                    <div className="text-center">
+                    {/* <div className="text-center">
                         <button className="package-btn" data-bs-toggle='modal' data-bs-target='#popupForm' onClick={() => updatePopupTitle('Basic Package - £199')}>Get Started</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

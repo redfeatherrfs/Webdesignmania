@@ -5,7 +5,7 @@ body {
 }
 
 .btn-custom {
-    background-color: #3E1DCE !important;
+    background-color: #853101 !important;
     color: #ffffff !important;
 }
 
@@ -197,7 +197,7 @@ body {
 /* Start header */
 
 .custom-header .navbar {
-    background: linear-gradient(0deg, #1E00B200 7.59%, #160a48 82.03%);
+    background: #853101;
     padding: 20px 0;
     transition: background-color 0.3s ease;
 }
@@ -240,7 +240,7 @@ body {
 
 /* Footer Styles */
 .footer {
-    background-color: #3E1DCE;
+    background-color: #853101;
     /* Footer background color */
     padding-top: 40px;
     padding-bottom: 0px;
@@ -293,7 +293,7 @@ body {
 }
 
 .footer-bottom {
-    border-top: 1px solid #2b0f91;
+    border-top: 1px solid #fff;
     padding-top: 15px;
     font-size: 14px;
 }
@@ -929,3 +929,8 @@ img.icon-image {
 }
 
 /* TECHNOLOGY STACK SECTION */
+
+
+.swiper {
+position: none;
+}

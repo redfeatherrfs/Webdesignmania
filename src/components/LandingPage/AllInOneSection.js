@@ -1,8 +1,8 @@
 import './AllInOneSection.css'
 import allInOneBannerImage from '../../images/all-in-one-banner.png'
+const AllInOneCombo = ({ updatePopupTitle }) => {
 
-const AllInOneCombo = () => {
-    return (
+     return (
         <section className="all-in-one-combo-section py-5">
             <div className="container">
                 <div className='row align-items-center'>
@@ -50,8 +50,8 @@ const AllInOneCombo = () => {
                             </div>
                             <div className='col-12'>
                                 <div className='d-flex gap-3 mt-3'>
-                                    <button className='btn btn-primary order-btn'>Order Now</button>
-                                    <button className='btn btn-outline-primary call-btn'>Call Now</button>
+                                    <button className='btn btn-primary order-btn' data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - £199')}>Order Now</button>
+                                    <a href="tel:+02045112009"><button className='btn btn-outline-primary call-btn'>Call Now</button></a>
                                 </div>
                             </div>
                         </div>
