@@ -7,42 +7,42 @@ import header from '../images/webdesignlogowhite.png';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 800;
-      setScrolled(isScrolled);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 800;
+            setScrolled(isScrolled);
+        };
 
-    window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
-  return (
-    <header className="custom-header">
-      {/* Removed 'fixed-top' from navbar class */}
-      <nav className={`navbar navbar-expand-lg ${scrolled ? 'scrolled' : ''}`}>
-        <div className="container">
-          <Link className="navbar-brand" to="/">  
-            <img src={header} alt="Logo" width="150" />
-          </Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-            {/* <ul className="navbar-nav">
+    return (
+        <header className="custom-header">
+            {/* Removed 'fixed-top' from navbar class */}
+            <nav className={`navbar navbar-expand-lg ${scrolled ? 'scrolled' : ''}`}>
+                <div className="container">
+                    <Link className="navbar-brand" to="/lp">
+                        <img src={header} alt="Logo" width="150" />
+                    </Link>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        {/* <ul className="navbar-nav">
               <li className="nav-item">
                 <Link to="/" className="nav-link custom-nav-link active">Home</Link>
               </li>
@@ -64,16 +64,16 @@ const Header = () => {
                 <Link to="/contact-us" className="nav-link custom-nav-link">Contact Us</Link>
               </li>
             </ul> */}
-            <div className="custom-phone-number ms-3">
-              <a href="tel:+02045112009" className="nav-link">
-              0204 511 2009
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-  );
+                        <div className="custom-phone-number ms-3">
+                            <a href="tel:+02045112009" className="nav-link">
+                                0204 511 2009
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    );
 };
 
 export default Header;

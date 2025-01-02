@@ -609,6 +609,11 @@ textarea.lpbanner-input.lpbanner-textarea {
     /* Adjust hover color as needed */
 }
 
+.lp-footer-sec .social-links a {
+    color: white;
+    text-decoration: none;
+}
+
 
 
 

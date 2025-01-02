@@ -20,12 +20,12 @@ const OurWorkProcess = () => {
                                 <img src={planningIcon} alt='Planning Icon' className='img-fluid icon' />
                                 <div className='steps-content'>
                                     <h4>Planning Idea</h4>
-                                    <p className='m-0'>: Optimize efficient solutions to drive strong, market-oriented innovation with the expert assistance of our website design company.</p>
+                                    <p className='m-0'>Optimize efficient solutions to drive strong, market-oriented innovation with the expert assistance of our website design company.</p>
                                 </div>
                             </div>
 
                             <div className='d-flex align-items-center mb-3'>
-                                <div className='text-end steps-content'>
+                                <div className='steps-content'>
                                     <h4>Developed Final Product</h4>
                                     <p className='m-0'>Our professional website developers refine, test, and finalize the product to ensure it is ready for the market.</p>
                                 </div>

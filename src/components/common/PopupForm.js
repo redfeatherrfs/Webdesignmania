@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { isAlphanumeric, isAlphabetic, fieldLengthValidator } from '../../utils/validationHelpers'
+
 
 const PopupForm = ({ title }) => {
     const navigate = useNavigate()
@@ -27,7 +29,7 @@ const PopupForm = ({ title }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^(\+1)?\d{10,14}$/
+            phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
 
         if (!emailRegex.test(formData.email))
             document.querySelector('#popupForm input[name=email]').classList.add('is-invalid')
@@ -42,11 +44,37 @@ const PopupForm = ({ title }) => {
         return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
     }
 
+    const validateFormFields = () => {
+        let isValid = true
+
+        // Name validation
+        if (!isAlphabetic(formData.name) || !isAlphanumeric(formData.name) || !fieldLengthValidator(formData.name, 50)) {
+            document.querySelector('#popupForm input[name=name]').classList.add('is-invalid')
+            isValid = false
+        }
+        else
+            document.querySelector('#popupForm input[name=name]').classList.remove('is-invalid')
+
+        // Message validation
+        if (!fieldLengthValidator(formData.message, 200)) {
+            document.querySelector('#popupForm textarea').classList.add('is-invalid')
+            isValid = false
+        }
+        else
+            document.querySelector('#popupForm textarea').classList.remove('is-invalid')
+
+        return isValid
+    }
+
     const handleSubmit = async e => {
         e.preventDefault()
 
         // Email & phone validation
         if (!validateEmailAndPhone())
+            return
+
+        // Name & message fields validations
+        if (!validateFormFields())
             return
 
         setLoading(true)
@@ -60,7 +88,7 @@ const PopupForm = ({ title }) => {
                 document.querySelector('button[data-bs-dismiss]').click()
                 setLoading(false)
                 if (success)
-                    navigate('/thank-you')
+                    navigate('/lp/thank-you')
                 else
                     Swal.fire('Error', message, 'error')
             })
@@ -78,26 +106,32 @@ const PopupForm = ({ title }) => {
                         <form method='POST' onSubmit={handleSubmit}>
                             <input type='hidden' name='title' value={formData.title} />
                             <div className="mb-3">
-                                <label htmlFor="name" className="form-label">Full name</label>
+                                <label htmlFor="name" className="form-label">Full name <span className='text-danger'>*</span></label>
                                 <input type="text" className="form-control" id="name" placeholder="John Doe" name='name' value={formData.name} onChange={handleChange} required />
+                                <div className="invalid-feedback">
+                                    Name must be alphabetic or alphanumeric & must not be greater than 50 characters.
+                                </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="email" className="form-label">Email address</label>
+                                <label htmlFor="email" className="form-label">Email address <span className='text-danger'>*</span></label>
                                 <input type="email" className="form-control" id="email" placeholder="example@test.com" name='email' value={formData.email} onChange={handleChange} required />
                                 <div className="invalid-feedback">
                                     Invalid Email address
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="phone" className="form-label">Phone number</label>
+                                <label htmlFor="phone" className="form-label">Phone number <span className='text-danger'>*</span></label>
                                 <input type="tel" className="form-control" id="phone" placeholder="1234567890" name='phone' value={formData.phone} onChange={handleChange} required />
                                 <div className="invalid-feedback">
-                                    Invalid Phone number. Example: +19876543210
+                                    Invalid Phone number. Example: 0207 123 456
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="message" className="form-label">Message</label>
+                                <label htmlFor="message" className="form-label">Message <span className='text-danger'>*</span></label>
                                 <textarea className="form-control" id="message" placeholder="Your message..." rows="5" name='message' onChange={handleChange} value={formData.message} required></textarea>
+                                <div className="invalid-feedback">
+                                    Message must not be greater than 200 characters.
+                                </div>
                             </div>
                             <div className="d-grid mb-3">
                                 <button type='submit' className='btn btn-primary' disabled={loading}>

@@ -11,6 +11,8 @@ import barkicon from '../../images/barkicon.png';
 import '../../LandingPage.css';
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
+import { isAlphanumeric, isAlphabetic, fieldLengthValidator } from '../../utils/validationHelpers'
+
 
 const Lpbanner = ({ updatePopupTitle }) => {
     const navigate = useNavigate()
@@ -32,7 +34,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^(\+1)?\d{10,14}$/
+            phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
 
         let html = ''
 
@@ -40,7 +42,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             html = "Invalid email address<br />"
 
         if (!phoneRegex.test(formData.phone))
-            html += "Invalid phone number. Example: +19876543210"
+            html += "Invalid phone number. Example: 0207 123 456"
 
         if (html.length > 0)
             Swal.fire('Error', html, 'error')
@@ -48,11 +50,37 @@ const Lpbanner = ({ updatePopupTitle }) => {
         return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
     }
 
+    const validateFormFields = () => {
+        let isValid = true, html = ''
+
+        // Name validation
+        if (!isAlphabetic(formData.name) || !isAlphanumeric(formData.name) || !fieldLengthValidator(formData.name, 50)) {
+            // document.querySelector('#contactForm input[name=name]').classList.add('is-invalid')
+            html = "Name must be alphabetic or alphanumeric & must not be greater than 50 characters.<br />"
+            isValid = false
+        }
+
+        // Message validation
+        if (!fieldLengthValidator(formData.message, 200)) {
+            html = "Message must not be greater than 200 characters.<br />"
+            isValid = false
+        }
+
+        if (html.length > 0)
+            Swal.fire('Error', html, 'error')
+
+        return isValid
+    }
+
     const handleSubmit = async e => {
         e.preventDefault()
 
         // Email & phone validation
         if (!validateEmailAndPhone())
+            return
+
+        // Name & message fields validations
+        if (!validateFormFields())
             return
 
         setLoading(true)
@@ -65,7 +93,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             .then(({ success, message }) => {
                 setLoading(false)
                 if (success)
-                    navigate('/thank-you')
+                    navigate('/lp/thank-you')
                 else
                     Swal.fire('Error', message, 'error')
             })
@@ -127,10 +155,10 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             <h3 className="lpbanner-form-title">Get a Website Quote</h3>
                             <p>Get response from us within 24 hours</p>
                             <form method="POST" onSubmit={handleSubmit} id="bannerForm">
-                                <input type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
-                                <input type="tel" placeholder="Enter your number" name="phone" value={formData.phone} title="Phone number format: +3334445555" onChange={handleChange} className="lpbanner-input" required />
-                                <input type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
-                                <textarea placeholder="Message" name="message" className="lpbanner-input lpbanner-textarea" value={formData.message} onChange={handleChange} required ></textarea>
+                                <input type="text" placeholder="Enter your name*" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
+                                <input type="tel" placeholder="Enter your number*" name="phone" value={formData.phone} title="Phone number format: 0207 123 456" onChange={handleChange} className="lpbanner-input" required />
+                                <input type="email" placeholder="Enter your email*" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
+                                <textarea placeholder="Message*" name="message" className="lpbanner-input lpbanner-textarea" value={formData.message} onChange={handleChange} required ></textarea>
                                 <button type="submit" className="btn btn-dark lpbanner-submit-btn" disabled={loading}>
                                     {loading ? (
                                         <>

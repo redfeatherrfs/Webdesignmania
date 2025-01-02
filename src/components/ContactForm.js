@@ -3,6 +3,7 @@ import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import '../ContactForm.css';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
+import { isAlphanumeric, isAlphabetic, fieldLengthValidator } from '../utils/validationHelpers'
 
 const ContactForm = () => {
     const navigate = useNavigate()
@@ -24,7 +25,8 @@ const ContactForm = () => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^(\+1)?\d{10,14}$/
+            phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
+        // phoneRegex = /^(\+1)?\d{10,14}$/
 
         if (!emailRegex.test(formData.email))
             document.querySelector('#contactForm input[name=email]').classList.add('is-invalid')
@@ -39,11 +41,39 @@ const ContactForm = () => {
         return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
     }
 
+    const validateFormFields = () => {
+        let isValid = true
+
+        // Name validation
+        if (!isAlphabetic(formData.name) || !isAlphanumeric(formData.name) || !fieldLengthValidator(formData.name, 50)) {
+            document.querySelector('#contactForm input[name=name]').classList.add('is-invalid')
+            isValid = false
+        }
+        else
+            document.querySelector('#contactForm input[name=name]').classList.remove('is-invalid')
+
+        // Message validation
+        if (!fieldLengthValidator(formData.message, 200)) {
+            document.querySelector('#contactForm textarea').classList.add('is-invalid')
+            isValid = false
+        }
+        else
+            document.querySelector('#contactForm textarea').classList.remove('is-invalid')
+
+        return isValid
+    }
+
+
+
     const handleSubmit = async e => {
         e.preventDefault()
 
         // Email & phone validation
         if (!validateEmailAndPhone())
+            return
+
+        // Name & message fields validations
+        if (!validateFormFields())
             return
 
         setLoading(true)
@@ -56,7 +86,7 @@ const ContactForm = () => {
             .then(({ success, message }) => {
                 setLoading(false)
                 if (success)
-                    navigate('/thank-you')
+                    navigate('/lp/thank-you')
                 else
                     Swal.fire('Error', message, 'error')
             })
@@ -80,7 +110,7 @@ const ContactForm = () => {
                         </li>
                         <li>
                             <FaMapMarkerAlt className="contact-icon" />
-                            <span>497 Sunleigh Rd, Wembley HA0 4LY, UK</span>
+                            <a href='https://maps.app.goo.gl/hzEmaUB6sqde6kH28' target='_blank'>497 Sunleigh Rd, Wembley HA0 4LY, UK</a>
                         </li>
                     </ul>
                 </div>
@@ -96,18 +126,21 @@ const ContactForm = () => {
                                 <input
                                     type="text"
                                     className="form-control"
-                                    placeholder="Your full name"
+                                    placeholder="Your full name*"
                                     name='name'
                                     value={formData.name}
                                     onChange={handleChange}
                                     required
                                 />
+                                <div className="invalid-feedback">
+                                    Name must be alphabetic or alphanumeric & must not be greater than 50 characters.
+                                </div>
                             </div>
                             <div className="col">
                                 <input
                                     type="email"
                                     className="form-control"
-                                    placeholder="E-mail address"
+                                    placeholder="E-mail address*"
                                     name='email'
                                     value={formData.email}
                                     onChange={handleChange}
@@ -122,26 +155,29 @@ const ContactForm = () => {
                             <input
                                 type="tel"
                                 className="form-control"
-                                placeholder="Phone Number"
+                                placeholder="Phone Number*"
                                 name='phone'
                                 value={formData.phone}
                                 onChange={handleChange}
-                                required title="Phone number format: +3334445555"
+                                required title="Phone number format: 0207 123 456"
                             />
                             <div className="invalid-feedback">
-                                Invalid Phone number. Example: +19876543210
+                                Invalid Phone number. Example: 0207 123 456
                             </div>
                         </div>
                         <div className="mb-3">
                             <textarea
                                 className="form-control"
                                 rows="5"
-                                placeholder="Your message"
+                                placeholder="Your message*"
                                 name='message'
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
                             />
+                            <div className="invalid-feedback">
+                                Message must not be greater than 200 characters.
+                            </div>
                         </div>
                         <button type="submit" className="btn btn-submit" disabled={loading}>
                             {loading ? (

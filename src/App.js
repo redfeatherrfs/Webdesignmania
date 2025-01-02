@@ -24,27 +24,27 @@ import Countdown from './pages/Countdown';
 const App = () => {
     return (
         <HelmetProvider>
-        <Router>
-            <Routes>
-                <Route path="/lp" element={<Lp />} />
-                <Route path="/thank-you" element={<ThankYouPage />} />
-                <Route path="/privacy" element={<PrivacyPolicy />} />
-                <Route path="/terms" element={<TermsCondition />} />
-                
-                {/* <Route path="/about-us" element={<About />} />
+            <Router>
+                <Routes>
+                    <Route path="/lp" element={<Lp />} />
+                    <Route path="/lp/thank-you" element={<ThankYouPage />} />
+                    <Route path="/lp/privacy" element={<PrivacyPolicy />} />
+                    <Route path="/lp/terms" element={<TermsCondition />} />
+
+                    {/* <Route path="/about-us" element={<About />} />
                 <Route path="/app-design" element={<AppPage />} />
                 <Route path="/contact-us" element={<ContactUs />} />
                 <Route path="/logo-design" element={<LogoDesign />} />
                 <Route path="/smm" element={<SMM />} />
                 <Route path="/seo" element={<Seo />} />
                 <Route path="/stationery" element={<Stationary />} /> */}
-                {/* <Route path="/lp" element={<Lp/>} /> */}
-                {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    {/* <Route path="/lp" element={<Lp/>} /> */}
+                    {/* <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/terms-condition" element={<TermsCondition />} />
                 <Route path="/black-friday" element={<Countdown />} /> */}
 
-            </Routes>
-        </Router>
+                </Routes>
+            </Router>
         </HelmetProvider>
     );
 };

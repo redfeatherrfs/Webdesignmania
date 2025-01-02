@@ -1,5 +1,5 @@
 import PrivacyPolicySection from "../components/PrivacyPolicySection"
-import FooterSection from "../components/Footer"
+import FooterSection from "../components/LandingPage/LpFooterSection"
 import Header from "../components/Header"
 
 

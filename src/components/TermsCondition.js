@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TermsCondition = () => {
     return (
@@ -20,7 +21,7 @@ const TermsCondition = () => {
                             <li>Acceptance of the main design idea.</li>
                             <li>Requesting adjustments to the design.</li>
                             <li>Cancellation for non-company-related reasons.</li>
-                            <li>No contact with the company for over two weeks.</li>   
+                            <li>No contact with the company for over two weeks.</li>
                             <li>Violation of company policies.</li>
                             <li>Engaging with another business or designer for the same job.</li>
                             <li>Missing essential details in the creative brief.</li>
@@ -48,6 +49,7 @@ const TermsCondition = () => {
                         <p>Rest assured, our dedicated customer service team is available 24/7, ready to address any questions or concerns. Your satisfaction is our top priority.</p>
                         <h4>Policy on Communication</h4>
                         <p>For your security, all communication with Web Design Mania should be conducted through “<a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>” or the official phone numbers listed on our website. We cannot be held responsible for messages sent through other platforms. Trust our official channels for accurate and reliable communication.</p>
+                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#853101', border: 'none' }}>Back to Homepage</Link>
                     </p>
                 </div>
             </div>
