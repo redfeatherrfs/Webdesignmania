@@ -66,8 +66,9 @@ const ContactForm = () => {
         <section className="ebook-contact-form container">
             <div className="row">
                 <div className="col-md-5 left-column">
-                    <h2>Let's Start Your Project <br />
+                    <h2>Let's Connect <br />
                         <br /></h2>
+
                     <ul className="contact-info">
                         <li>
                             <FaPhoneAlt className="contact-icon" />
@@ -85,6 +86,10 @@ const ContactForm = () => {
                 </div>
 
                 <div className="col-md-7">
+                    <div className='text-center'>
+                        <h2>Let's Start Your Project <br />
+                            <br /></h2>
+                    </div>
                     <form onSubmit={handleSubmit} method='POST' id='contactForm'>
                         <div className="row mb-3">
                             <div className="col">
