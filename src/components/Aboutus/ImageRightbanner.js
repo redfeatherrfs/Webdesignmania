@@ -17,14 +17,14 @@ const ImageRightBanner = ({ heading, subHeading, description, imageSrc, imageHei
                     </div>
 
                     {/* Right Column: Image or Text based on reverseOrder */}
-                    <div className={`col-12 col-md-6 text-center ${reverseOrder ? 'order-md-1' : ''}`} style={{ minHeight: imageHeight }}>
+                    <div className={`col-12 col-md-6 text-center ${reverseOrder ? 'order-md-1' : ''}`} style={{ /*minHeight: imageHeight*/ }}>
                         <img
                             src={imageSrc}
                             alt="Ghostwriting"
                             className="img-fluid img-animate"
                             style={{
                                 objectFit: objectfit,
-                                height: imageHeight,
+                                // height: imageHeight,
                                 width: imageWidth,
                                 borderRadius: borderRadius,
                             }}

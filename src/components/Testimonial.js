@@ -17,9 +17,17 @@ const TestimonialSection = ({ updatePopupTitle }) => {
             position: 'Assistant',
         },
         {
+            quote: "We chose Web Design Mania for our eCommerce redesign, and it was the best decision we made. Their team was extremely professional, guiding us through every step of the design process. The end result is a stunning website that has improved our user engagement and boosted our online sales. The site is responsive, easy to navigate, and optimized for all devices. Web Design Mania truly understands how to create a high-converting eCommerce platform!",
+            name: 'Charles Parks',
+        },
+        {
             quote: "Web Design Mania transformed our outdated website into a sleek, modern design. The user experience has greatly improved. Mr. Adil and the team delivered a stunning site that exceeded our expectations in both design and functionality.",
             name: 'Rodney Grant',
             position: 'Bussiness Owner',
+        },
+        {
+            quote: "We needed a fully functional e-commerce platform, and Web Design Mania delivered a flawless experience for both us and our customers. The entire process was smooth, and their communication, especially from Mr. Adil, was clear and consistent throughout.",
+            name: 'Brandon',
         },
         {
             quote: "We were blown away by the design concepts Web Design Mania brought to the table. Our site looks fantastic and works seamlessly.",
@@ -27,9 +35,17 @@ const TestimonialSection = ({ updatePopupTitle }) => {
             position: 'Manager',
         },
         {
+            quote: "Working with Web Design Mania was a great decision. Their team delivered a high-quality site that is both visually appealing and functional.",
+            name: 'Alan Harvey',
+        },
+        {
             quote: "Web Design Mania built a site that truly reflects our brand. The functionality and design are perfect for our needs. Thank you for everything from start to end.",
             name: 'Lewis Watkins',
             position: 'Ecommerce Manager',
+        },
+        {
+            quote: "We couldn't be more pleased with the app design provided by Web Design Mania. The interface is intuitive, the design is clean and modern, and the user experience has been dramatically improved. Adil and the team were professional, easy to work with, and consistently delivered on every milestone. Our app now stands out in a competitive market!",
+            name: 'R. Simmons',
         },
     ];
 
@@ -40,9 +56,9 @@ const TestimonialSection = ({ updatePopupTitle }) => {
                     {/* Heading and Text */}
                     <div className="col-12 text-center">
                         <h2>Valued by Experts</h2>
-                        Let’s weave a tapestry of innovation and imagination that dazzles. Ready to break boundaries? Let’s do this together!
+                        Let's weave a tapestry of innovation and imagination that dazzles. Ready to break boundaries? Let's do this together!
 
-                      
+
                     </div>
                 </div>
 
@@ -71,7 +87,9 @@ const TestimonialSection = ({ updatePopupTitle }) => {
                                     </div>
                                     <p className="quote">{testimonial.quote}</p>
                                     <h5 className="name mt-2">{testimonial.name}</h5>
-                                    <p className="position">{testimonial.position}</p>
+                                    {testimonial.position && (
+                                        <p className="position">{testimonial.position}</p>
+                                    )}
                                 </div>
                             </SwiperSlide>
                         ))}

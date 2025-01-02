@@ -32,17 +32,17 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^\+1\d{10}$/
+            phoneRegex = /^(\+1)?\d{10,14}$/
 
         let html = ''
 
         if (!emailRegex.test(formData.email))
             html = "Invalid email address<br />"
 
-        // if (!phoneRegex.test(formData.phone))
-        //     html += "Invalid phone number. Example: +19876543210"
+        if (!phoneRegex.test(formData.phone))
+            html += "Invalid phone number. Example: +19876543210"
 
-        if(html.length > 0)
+        if (html.length > 0)
             Swal.fire('Error', html, 'error')
 
         return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
@@ -52,7 +52,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
         e.preventDefault()
 
         // Email & phone validation
-        if(!validateEmailAndPhone())
+        if (!validateEmailAndPhone())
             return
 
         setLoading(true)
@@ -103,10 +103,10 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             <div className="lpbanner-badges">
                                 <img src={clutch} alt="Clutch" />
 
-                               <a target="_blank" href="https://www.trustpilot.com/review/webdesignmania.co.uk">
+                                <a target="_blank" href="https://www.trustpilot.com/review/webdesignmania.co.uk">
                                     <img src={trustpilot} alt="Trustpilot" />
-                                </a> 
-                                
+                                </a>
+
                                 <img src={barkicon} alt="Bark" />
                             </div>
                         </div>
@@ -123,12 +123,12 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             // height: '600px', // Ensure the height covers the content
                         }}
                     >
-                        <div className="lpbanner-form">
+                        <div className="lpbanner-form mx-3 mx-sm-0">
                             <h3 className="lpbanner-form-title">Get a Website Quote</h3>
                             <p>Get response from us within 24 hours</p>
                             <form method="POST" onSubmit={handleSubmit} id="bannerForm">
                                 <input type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
-                                <input type="tel" placeholder="Enter your number" name="phone" value={formData.phone}  required="" pattern="^\+?\d{10,14}$" title="Phone number format: +3334445555"  onChange={handleChange} className="lpbanner-input" required />
+                                <input type="tel" placeholder="Enter your number" name="phone" value={formData.phone} title="Phone number format: +3334445555" onChange={handleChange} className="lpbanner-input" required />
                                 <input type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
                                 <textarea placeholder="Message" name="message" className="lpbanner-input lpbanner-textarea" value={formData.message} onChange={handleChange} required ></textarea>
                                 <button type="submit" className="btn btn-dark lpbanner-submit-btn" disabled={loading}>

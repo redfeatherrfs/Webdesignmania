@@ -52,7 +52,7 @@ const iconBoxesData = [
         heading: '800+ Custom Features',
         text: 'Our company is a leading website development firm, specializing in e-commerce web development. Over the years, we have enhanced many brands\' presence and appeal.',
     },
-  
+
 ];
 
 const imagesData = [
@@ -80,25 +80,25 @@ const LpPage = () => {
 
     return (
         <>
-         <Helmet>
-            <title>Custom Web Design Service Starts from £199 - Web Design Mania</title>
-            <meta name="description" content="Get custom web design and development services from UK #1 design company specializes in website design and marketing. Best bespoke web designers and developers team." />
-            <link rel="canonical" href="https://webdesignmania.co.uk/lp/"/>
-        </Helmet>
-        
+            <Helmet>
+                <title>Custom Web Design Service Starts from £199 - Web Design Mania</title>
+                <meta name="description" content="Get custom web design and development services from UK #1 design company specializes in website design and marketing. Best bespoke web designers and developers team." />
+                <link rel="canonical" href="https://webdesignmania.co.uk/lp/" />
+            </Helmet>
+
             <TopHead updatePopupTitle={handleTitleChange} />
             <Lpbanner updatePopupTitle={handleTitleChange} />
             <LanguageLogos />
             <LpPricingSection updatePopupTitle={handleTitleChange} />
             <LpthirdSection />
             <LpCta1 />
-            <div style={{ padding: '100px 0px 0px 0px' }}>
+            <div className="py-4 py-md-5">
                 <ImageRightBanner
                     // subHeading="ABOUT US"
                     heading="Customized Web Development Services That Talk To Your Audience"
                     description={
                         <>
-Enhance your brand's intelligence in the market with our innovative custom website design. To Stay ahead of the competition one needs a marvelous website developer. Therefore, by utilizing the world's most popular Content Management System. Our website redesign services can transform your brand from bland to standout, ensuring you are the coolest brand in the market.                        </>
+                            Enhance your brand's intelligence in the market with our innovative custom website design. To Stay ahead of the competition one needs a marvelous website developer. Therefore, by utilizing the world's most popular Content Management System. Our website redesign services can transform your brand from bland to standout, ensuring you are the coolest brand in the market.                        </>
                     }
                     imageSrc={lpImage}
                     objectfit="contain"
@@ -122,13 +122,13 @@ Enhance your brand's intelligence in the market with our innovative custom websi
                 />
             </div>
             <OurWorkProcess />
-            <AllInOneCombo    updatePopupTitle={handleTitleChange} />
+            <AllInOneCombo updatePopupTitle={handleTitleChange} />
             <div style={{ padding: '100px 0px 50px 0px' }}>
-                <LpPortfolio />
+                <LpPortfolio updatePopupTitle={handleTitleChange} />
             </div>
-            <div style={{ padding: '100px 0px 50px 0px' }}>
-                <LpLogoSlider logos={logosData} />
-            </div>
+            {/* <div style={{ padding: '100px 0px 50px 0px' }}>
+            </div> */}
+            <LpLogoSlider logos={logosData} />
             <LpCtaSec2 />
             <TestimonialSection updatePopupTitle={handleTitleChange} />
             <ContactForm />

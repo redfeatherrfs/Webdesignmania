@@ -19,7 +19,7 @@ const LpContactSec = () => {
         >
             <div className="container">
                 <div className="row text-center">
-                    {/* Column 1 - Support Team */}
+                    {/* Column 1 - Support Team */} 
                     <div className="col-md-4">
                         {/* <a href="/support" className="contact-link d-flex align-items-center"> */}
                             <img src={supportIcon} alt="Support Team Icon" className=" me-3"/>
@@ -31,8 +31,8 @@ const LpContactSec = () => {
                     </div>
 
                     {/* Column 2 - Phone Number */}
-                    <div className="col-md-4">
-                        <a href="tel:+02045112009" className="contact-link d-flex align-items-center">
+                    <div className="col-md-4 my-4 my-md-0">
+                        <a href="tel:+02045112009" className="contact-link ">
                             <img src={consultIcon} alt="Consult Expert Icon" className=" me-3"/>
                             <div>
                                 <p>Consult Our Expert</p>
@@ -43,7 +43,7 @@ const LpContactSec = () => {
 
                     {/* Column 3 - Live Chat */}
                     <div className="col-md-4">
-                        <a  href="https://wa.me/+447491860363"  className="contact-link d-flex align-items-center">
+                        <a  href="https://wa.me/+447491860363"  className="contact-link ">
                             <img src={chatIcon} alt="Live Support Icon" className=" me-3"/>
                             <div>
                                 <p>Live Support</p>

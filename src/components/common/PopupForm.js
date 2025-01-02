@@ -27,7 +27,7 @@ const PopupForm = ({ title }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^\+1\d{10}$/
+            phoneRegex = /^(\+1)?\d{10,14}$/
 
         if (!emailRegex.test(formData.email))
             document.querySelector('#popupForm input[name=email]').classList.add('is-invalid')
@@ -46,12 +46,12 @@ const PopupForm = ({ title }) => {
         e.preventDefault()
 
         // Email & phone validation
-        if(!validateEmailAndPhone())
+        if (!validateEmailAndPhone())
             return
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090/packages.php'*//*"https://webdesignmania.co.uk/php/packages.php"*/"https://webdesignmania.co.uk/lp/php_mailer/packages.php", {
+        await fetch(/*'http://localhost:9090/packages.php'*//*"https://webdesignmania.co.uk/php/packages.php"*/"https://webdesignmania.co.uk/lp/php_mailer/package.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })

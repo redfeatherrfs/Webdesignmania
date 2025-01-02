@@ -24,7 +24,7 @@ const ContactForm = () => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^\+1\d{10}$/
+            phoneRegex = /^(\+1)?\d{10,14}$/
 
         if (!emailRegex.test(formData.email))
             document.querySelector('#contactForm input[name=email]').classList.add('is-invalid')
@@ -43,7 +43,7 @@ const ContactForm = () => {
         e.preventDefault()
 
         // Email & phone validation
-        if(!validateEmailAndPhone())
+        if (!validateEmailAndPhone())
             return
 
         setLoading(true)
@@ -66,7 +66,7 @@ const ContactForm = () => {
         <section className="ebook-contact-form container">
             <div className="row">
                 <div className="col-md-5 left-column">
-                    <h2>Let’s Connect <br />
+                    <h2>Let's Start Your Project <br />
                         <br /></h2>
                     <ul className="contact-info">
                         <li>
@@ -121,8 +121,7 @@ const ContactForm = () => {
                                 name='phone'
                                 value={formData.phone}
                                 onChange={handleChange}
-                                required
-                                 pattern="^\+?\d{10,14}$" title="Phone number format: +3334445555"
+                                required title="Phone number format: +3334445555"
                             />
                             <div className="invalid-feedback">
                                 Invalid Phone number. Example: +19876543210
