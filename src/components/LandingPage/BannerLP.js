@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import webdesignlogo from '../../images/webdesignlogowhite.png';
+import webdesignlogo from '../../images/Web-Design-Mania-Logo-White-04-04.svg';
 import bgimg from '../../images/lpbg.png';
 import formbg from '../../images/formbglp.png';
 import formbg2 from '../../images/formbglp2.png';

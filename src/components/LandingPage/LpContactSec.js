@@ -1,60 +1,61 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../LandingPage.css'; 
-import lpcontactsecbg from '../../images/lpcontactsecbg.png';
-import supportIcon from '../../images/lpcontactsec1.png';  // Replace with the actual path to your icon
-import consultIcon from '../../images/lpcontactsec2.png';  // Replace with the actual path to your icon
-import chatIcon from '../../images/lpcontactsec3.png';     // Replace with the actual path to your icon
+import { Row, Col, Container } from 'react-bootstrap';
+import './SupportSection.css';
 
-const LpContactSec = () => {
-    return (
-        <section 
-            className="lp-contact-sec d-flex align-items-center" 
-            style={{
-                backgroundImage: `url(${lpcontactsecbg})`, 
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-            }}
-        >
-            <div className="container">
-                <div className="row text-center">
-                    {/* Column 1 - Support Team */} 
-                    <div className="col-md-4">
-                        {/* <a href="/support" className="contact-link d-flex align-items-center"> */}
-                            <img src={supportIcon} alt="Support Team Icon" className=" me-3"/>
-                            <div>
-                                <p>Our Support Team</p>
-                                <h4>24/7 Online</h4>
-                            </div>
-                        {/* </a> */}
-                    </div>
+// Importing images
+import supportIcon from '../../images/oursupport.png'; // Replace with the actual path to your icon
+import consultIcon from '../../images/consuilt.png';  // Replace with the actual path to your icon
+import chatIcon from '../../images/live.png';        // Replace with the actual path to your icon
 
-                    {/* Column 2 - Phone Number */}
-                    <div className="col-md-4 my-4 my-md-0">
-                        <a href="tel:+02045112009" className="contact-link ">
-                            <img src={consultIcon} alt="Consult Expert Icon" className=" me-3"/>
-                            <div>
-                                <p>Consult Our Expert</p>
-                                <h4>0204 511 2009</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    {/* Column 3 - Live Chat */}
-                    <div className="col-md-4">
-                        <a  href="https://wa.me/+447491860363"  className="contact-link ">
-                            <img src={chatIcon} alt="Live Support Icon" className=" me-3"/>
-                            <div>
-                                <p>Live Support</p>
-                                <h4>Chat Now</h4>
-                            </div>
-                        </a>
-                    </div>
+const SupportSection = () => {
+  return (
+    <div className="support-section">
+      <Container>
+        <Row className="align-items-start justify-content-start">
+          <Col xs={12} md={6} lg={6} xl={4} className="support-col">
+            <div className="support-item">
+              <img src={supportIcon} alt="Support Icon" className="support-icon" />
+              <div className="support-text">
+                <p className="support-heading">Our Support Team</p>
+                <p className="support-detail">24/7 Online</p>
+              </div>
+            </div>
+          </Col>
+          <Col xs={12} md={6} lg={6} xl={4} className="support-col">
+            <div className="support-item">
+              <img src={consultIcon} alt="Consult Expert Icon" className="support-icon" />
+              <div className="support-text">
+                <p className="support-heading">Consult Our Expert</p>
+                <p className="support-detail">+1 (551) 554-3283</p>
+              </div>
+            </div>
+          </Col>
+          <Col xs={12} md={6} lg={6} xl={4} className="support-col support-col-end">
+            <div className="support-item">
+                <img src={chatIcon} alt="Live Support Icon" className="support-icon" />
+                <div className="support-text">
+                <p className="support-heading">Live Support</p>
+                <p className="support-detail">Chat Now</p>
                 </div>
             </div>
-        </section>
-    );
+            </Col>
+
+        </Row>
+        <Row className="footer-row justify-content-center">
+            <Col xs={12} md={6} className="footer-col copyright-text text-md-start text-center">
+                <p>&#169; Copyright 2024, WebDesignMania.</p>
+            </Col>
+            <Col xs={12} md={6} className="footer-col terms-links text-md-end text-center">
+                <p>
+                <a href="https://webdesignmania.co.uk/lp/terms">Terms & conditions</a> | 
+                <a href="https://webdesignmania.co.uk/lp/privacy">Privacy Policy</a>
+                </p>
+            </Col>
+        </Row>
+
+      </Container>
+    </div>
+  );
 };
 
-export default LpContactSec;
+export default SupportSection;

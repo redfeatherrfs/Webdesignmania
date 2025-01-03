@@ -57,7 +57,8 @@
 }
 
 .lpbanner-logo {
-
+    width: 40%;
+    height: auto;
     margin-bottom: 40px;
 }
 
@@ -588,7 +589,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 }
 
 .lp-footer-sec .footer-logo {
-    width: 180px;
+    width: 60%;
     /* Adjust size as needed */
     height: auto;
 }
@@ -668,9 +669,10 @@ textarea.lpbanner-input.lpbanner-textarea {
     }
 
     .lp-footer-sec .footer-logo {
-        width: 150px;
+        width: 60%;
         /* Adjust size as needed */
         height: auto;
+        padding: 10px;
     }
 
     .lp-footer-sec .text-md-start {
@@ -755,6 +757,11 @@ textarea.lpbanner-input.lpbanner-textarea {
         /* Stack image above text on small screens */
         align-items: flex-start;
         /* Align items to the start */
+    }
+    .lpbanner-logo {
+        width: 99%;
+        height: auto;
+        margin-bottom: 30px;
     }
 
     .lpicon-image {

@@ -133,7 +133,7 @@ const LpPage = () => {
             <TestimonialSection updatePopupTitle={handleTitleChange} />
             <ContactForm />
             <LpContactSec />
-            <LpFooterSec />
+            {/* <LpFooterSec /> */}
             <PopupForm title={title} />
         </>
     )

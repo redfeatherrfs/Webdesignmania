@@ -95,30 +95,30 @@ const ContactForm = () => {
     return (
         <section className="ebook-contact-form container">
             <div className="row">
-                <div className="col-md-5 left-column">
-                    <h2>Let's Connect <br />
-                        <br /></h2>
+            <div className="col-md-5 left-column">
+                <h3>Contact Us</h3>
+                <h2>Let's Build Your <br /> Digital Future</h2>
+                <ul className="contact-info">
+                    <li>
+                        <FaPhoneAlt className="contact-icon" />
+                        <a href="tel:+02045112009">0204 511 2009</a>
+                    </li>
+                    <li>
+                        <FaEnvelope className="contact-icon" />
+                        <a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>
+                    </li>
+                    <li>
+                        <FaMapMarkerAlt className="contact-icon" />
+                        <a href="https://maps.app.goo.gl/hzEmaUB6sqde6kH28" target="_blank">497 Sunleigh Rd, Wembley HA0 4LY, UK</a>
+                    </li>
+                </ul>
+            </div>
 
-                    <ul className="contact-info">
-                        <li>
-                            <FaPhoneAlt className="contact-icon" />
-                            <a href="tel:+02045112009">0204 511 2009</a>
-                        </li>
-                        <li>
-                            <FaEnvelope className="contact-icon" />
-                            <a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>
-                        </li>
-                        <li>
-                            <FaMapMarkerAlt className="contact-icon" />
-                            <a href='https://maps.app.goo.gl/hzEmaUB6sqde6kH28' target='_blank'>497 Sunleigh Rd, Wembley HA0 4LY, UK</a>
-                        </li>
-                    </ul>
-                </div>
 
                 <div className="col-md-7">
                     <div className='text-center'>
-                        <h2>Let's Start Your Project <br />
-                            <br /></h2>
+                        {/* <h2>Let's Start Your Project <br />
+                            <br /></h2> */}
                     </div>
                     <form onSubmit={handleSubmit} method='POST' id='contactForm'>
                         <div className="row mb-3">
