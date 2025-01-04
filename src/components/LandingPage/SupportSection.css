@@ -31,13 +31,23 @@
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 0px;
+    text-decoration: none !important;
   }
   
   .support-detail {
     font-size: 27px;
-    color: #ffffff;
+    color: #ffffff; /* White text */
     font-weight: 700;
-  }
+    text-decoration: none; /* Removes underline */
+}
+
+.support-detail:hover,
+.support-detail:focus,
+.support-detail:active {
+    color: #ffffff; /* Ensures text remains white */
+    text-decoration: none; /* Ensures no underline appears */
+}
+
   
   .footer-row {
     margin-top: 20px;
@@ -59,6 +69,8 @@
   }
   .support-col-end {
     justify-content: flex-end; /* Align content to the end */
+    text-decoration: none;
+    color: #fff;
   }
   .footer-row {
     margin-top: 20px;
@@ -68,6 +80,7 @@
     margin: 5px 0;
     color: #ffffff;
     font-size: 16px; /* Set font size to 14px */
+    
   }
   
   .terms-links p {

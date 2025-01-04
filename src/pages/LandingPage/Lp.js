@@ -32,6 +32,8 @@ import { useState } from "react"
 import PopupForm from "../../components/common/PopupForm"
 
 import { Helmet } from 'react-helmet-async';
+import CustomSection from "../../components/LandingPage/CustomSectionScrol"
+import LeftImageSec from "../../components/LandingPage/LeftImageSec"
 
 
 
@@ -109,27 +111,31 @@ const LpPage = () => {
                     updatePopupTitle={handleTitleChange}
                 />
             </div>
-            <LpServiceIconBox
+            {/* <LpServiceIconBox
                 backgroundColor="#f9f9f9" // Example background color
                 servicesTitle="We Specialize In Coding High Performance Websites"
                 // message="Drop us a message, and our experts will get back to you shortly."
                 iconBoxes={iconBoxesData}
-            />
+            /> */}
             <div>
                 <LpImgSec
                     backgroundColor="#f0f0f0" // Example background color
                     images={imagesData}
                 />
             </div>
-            <OurWorkProcess />
-            <AllInOneCombo updatePopupTitle={handleTitleChange} />
+            {/* <OurWorkProcess /> */}
+            {/* <AllInOneCombo updatePopupTitle={handleTitleChange} />
             <div style={{ padding: '100px 0px 50px 0px' }}>
                 <LpPortfolio updatePopupTitle={handleTitleChange} />
-            </div>
+            </div> */}
             {/* <div style={{ padding: '100px 0px 50px 0px' }}>
             </div> */}
+            <CustomSection/>
+            <LeftImageSec/>
+            
             <LpLogoSlider logos={logosData} />
             <LpCtaSec2 />
+
             <TestimonialSection updatePopupTitle={handleTitleChange} />
             <ContactForm />
             <LpContactSec />

@@ -1,9 +1,16 @@
 .testimonial-section {
     /* background-color: #f9f9f9; */
+    padding: 50px 0px;
   }
-  
+  .testimonial-section h2{
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
   .testimonial-card {
-    background-color: #E0E0E0; /* Card color white */
+    background-color: #ffffff; /* Card color white */
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -27,7 +34,9 @@
     opacity: 0.5;
     transition: opacity 0.3s;
   }
-  
+  .swiper {
+    padding: 2px 0px;
+}
   .swiper-pagination-bullet-active {
     opacity: 1;
   }
@@ -35,4 +44,16 @@
   .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
     display: none;
     margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+.testimonial-image {
+  width: 50px; /* Adjust size */
+  height: 50px; /* Adjust size */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+.testimonial-heading {
+  font-size: 1.2rem;  /* Adjust size as needed */
+  font-weight: 700;   /* Bold */
+  color: #010935;     /* Dark color for the heading */
+  margin-bottom: 15px;
+  text-align: left;   /* Left align the heading */
 }
