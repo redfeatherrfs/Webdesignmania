@@ -14,13 +14,13 @@
   }
   
   #pricing-tabs .nav-link {
-    background-color: #853101;
+    background-color: #333333;
     color: #fff;
     border-radius: 5px;
   }
   
   #pricing-tabs .nav-link.active {
-    background-color: #853101;
+    background-color: #ED5E39;
     color: #fff;
   }
   

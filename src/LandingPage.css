@@ -1,8 +1,7 @@
 .top-head {
     color: white;
-    background: #853101;
+    background: #ED5E39;
     padding: 5px 0;
-
 }
 
 
@@ -18,19 +17,29 @@
     color: #ffffff;
 }
 
+
+/* Keyframes for blinking animation */
+@keyframes blinker {
+    50% {
+      opacity: 0; /* Make the icon disappear at the halfway point */
+    }
+  }
+
 .top-left .avail-discount-btn {
-    background: #ffba00;
+    background: #ffffff;
     padding: 5px 20px;
-    color: #000;
+    color: #ED5E39;
     font-weight: bold;
     border-radius: 2px;
     font-size: 15px;
     margin-left: 20px;
+    border-style: none;
+    animation: blinker 1s linear infinite;
 }
 
-.lp-banner-margin {
+/* .lp-banner-margin {
     margin-left: 50px;
-}
+} */
 
 
 .custom-btn {
@@ -84,8 +93,15 @@
 
 .lpbanner-text {
     color: #ffffff;
-    margin: 20px 0;
+    /* margin: 20px 0; */
     font-size: 1.2rem;
+}
+
+img.saleprice {
+    width: 130px;
+    margin-top: -42px;
+    mix-blend-mode: color-dodge;
+    animation: blinker 1s linear infinite;
 }
 
 
@@ -107,16 +123,16 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 .lpbanner-btn.btn-dark {
     color: #fff;
-    background-color: #853101;
+    background-color: #ED5E39;
 }
 
 .lpbanner-btn.btn-outline-light:hover {
-    color: #853101;
+    color: #ED5E39;
     /* Change text color to dark blue on hover */
 }
 
 .lpbanner-submit-btn:hover {
-    background-color: #853101;
+    background-color: #ED5E39;
     /* Lighter blue color on hover */
     color: #ffffff;
     /* Keep text color white on hover */
@@ -124,9 +140,11 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 .lpbanner-badges img {
     margin-top: 20px;
-    width: 120px;
+    width: 270px;
     margin-right: 10px;
 }
+
+
 
 .lpbanner-form {
     background: rgb(255 255 255 / 61%);
@@ -171,7 +189,8 @@ textarea.lpbanner-input.lpbanner-textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #853101;
+    background-color: #ED5E38;
+    border-style: none;
 }
 
 
@@ -701,7 +720,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     }
 
     .lpbanner-badges img {
-        width: 100px !important;
+        width: 234px !important;
     }
 
     .col-md-5.lp-right-column {
@@ -747,6 +766,11 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 /* Lp Third Section */
 @media (max-width: 768px) {
+    img.saleprice {
+        width: 103px;
+        margin-top: -18px;
+        mix-blend-mode: color-dodge;
+    }
     .lpthirdsection h2 {
         font-size: 1.8rem;
         font-weight: 500;

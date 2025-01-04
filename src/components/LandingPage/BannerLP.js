@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import webdesignlogo from '../../images/Web-Design-Mania-Logo-White-04-04.svg';
-import bgimg from '../../images/lpbg.png';
+import bgimg from '../../images/lpbgfinal.png';
+import saleprice from '../../images/saleprice.png';
 import formbg from '../../images/formbglp.png';
 import formbg2 from '../../images/formbglp2.png';
 import bracket from '../../images/bracket.png';
-import trustpilot from '../../images/truspiloticon.png';
+import trustpilot from '../../images/trustpilotfinal.png';
 import clutch from '../../images/clutchicon.png';
 import barkicon from '../../images/barkicon.png';
 
@@ -110,15 +111,15 @@ const Lpbanner = ({ updatePopupTitle }) => {
                     <div className="col-md-7 lp-left-column">
                         <img src={webdesignlogo} alt="Logo" className="lpbanner-logo" />
                         <div className="lpbanner-heading-container" style={{ display: 'flex', alignItems: 'center' }}>
-                            <img
-                                src={bracket} // Make sure this path is correct
+                            {/* <img
+                                src={bracket} 
                                 alt="Bracket"
-                                className="lpbanner-bracket-img" // Optional class for styling
-                                style={{ marginRight: '10px' }} // Space between the image and text
-                            />
+                                className="lpbanner-bracket-img" 
+                                style={{ marginRight: '10px' }} 
+                            /> */}
                             <h1 className="lpbanner-heading">
                                 Custom Web Design <br />
-                                Starts from <span className="lpbanner-price">£199</span>
+                                Starts from <span className="lpbanner-price"><img className="saleprice" src={saleprice} alt="199" /></span>
                             </h1>
                         </div>
 
@@ -129,13 +130,11 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
                             </div>
                             <div className="lpbanner-badges">
-                                <img src={clutch} alt="Clutch" />
-
+                                {/* <img src={clutch} alt="Clutch" /> */}
                                 <a target="_blank" href="https://www.trustpilot.com/review/webdesignmania.co.uk">
                                     <img src={trustpilot} alt="Trustpilot" />
                                 </a>
-
-                                <img src={barkicon} alt="Bark" />
+                                {/* <img src={barkicon} alt="Bark" /> */}
                             </div>
                         </div>
                     </div>

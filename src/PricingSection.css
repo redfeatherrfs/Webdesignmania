@@ -1,11 +1,28 @@
 /* pricing */
 
-.scrollable-content {
-    max-height: 200px;
+.package-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove padding */
+  }
+  
+  .package-list li {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically center the checkmark with the text */
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
+  .check-icon {
+    color: orange; /* Set the color of the checkmark to orange */
+    margin-right: 10px; /* Add space between the checkmark and the text */
+    font-size: 18px; /* Set the size of the checkmark */
+  }
+  
+  .scrollable-content {
+    max-height: 250px;
     overflow-y: auto;
     margin: 15px 0;
     font-size: 12px;
-    color: grey;
+    color: #000000;
     font-weight: 600;
 }
 
@@ -32,13 +49,19 @@
     margin: 10px 0;
 }
 
-.package-list li::before {
-    content: "\2022";
-    color: #0c140e;
-    font-size: 12px;
-    font-weight: bold;
-    margin-right: 5px;
-}
+.package-list {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove padding */
+  }
+  
+  .package-list li {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Vertically center the checkmark with the text */
+    margin-bottom: 10px; /* Space between list items */
+  }
+  
+
+  
 
 .package-header {
     margin-bottom: 15px;
@@ -48,14 +71,15 @@
 
 .package-header h5 {
     text-align: left;
-    color: #853101;
+    color: #ED5E39;
+    font-weight: 500;
 }
 
 
 .package-btn {
     display: inline-block;
     padding: 10px 80px;
-    background: linear-gradient(0deg, #F36A3F 0%, #DE5A3E 96.76%);
+    background: #333333;
     color: #fff;
     border: none;
     border-radius: 25px;
@@ -64,7 +88,15 @@
 }
 
 .package-btn:hover {
-    background-color: #853101;
+    background-color: #ED5E39;
+}
+
+h2.price-heading.mb-4 {
+    font-size: 38px;
+    font-weight: 700;
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+    color: #333333;
 }
 
 .price {
@@ -88,7 +120,7 @@
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
-    background-color: #853101;
+    background-color: #ED5E39;
     border-radius: 5px;
 }
 
