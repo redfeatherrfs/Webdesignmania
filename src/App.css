@@ -14,7 +14,11 @@ body {
 
 
 
-
+p.support-heading {
+    text-decoration: none;
+    color: white;
+    font-style: none;
+}
 
 
 

@@ -50,7 +50,7 @@ const LpLogoSlider = ({ logos }) => {
                                 576: { slidesPerView: 2 },
                                 768: { slidesPerView: 3 },
                                 992: { slidesPerView: 4 },
-                                1200: { slidesPerView: 5 },
+                                1200: { slidesPerView: 5 }, 
                             }}
                         >
                             {logos.map((logo, index) => (

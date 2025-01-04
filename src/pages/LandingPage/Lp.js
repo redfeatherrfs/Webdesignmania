@@ -40,6 +40,8 @@ import PopupForm from "../../components/common/PopupForm"
 import { Helmet } from 'react-helmet-async';
 import WhyChooseService from "../../components/LandingPage/lpservices"
 import AllInOne from "../../components/LandingPage/Allinonenew"
+import CustomSection from "../../components/LandingPage/CustomSectionScrol"
+import LeftImageSec from "../../components/LandingPage/LeftImageSec"
 
 
 
@@ -180,9 +182,9 @@ const LpPage = () => {
                     images={imagesData}
                 />
             </div>
-            <LpthirdSection />
-            <LpCta1 />
-            <div className="py-4 py-md-5">
+            {/* <LpthirdSection /> */}
+            {/* <LpCta1 /> */}
+            {/* <div className="py-4 py-md-5">
                 <ImageRightBanner
                     // subHeading="ABOUT US"
                     heading="Customized Web Development Services That Talk To Your Audience"
@@ -198,8 +200,8 @@ const LpPage = () => {
                     reverseOrder={true}
                     updatePopupTitle={handleTitleChange}
                 />
-            </div>
-            <LpServiceIconBox
+            </div> */}
+            {/* <LpServiceIconBox
                 backgroundColor="#f9f9f9" // Example background color
                 servicesTitle="We Specialize In Coding High Performance Websites"
                 // message="Drop us a message, and our experts will get back to you shortly."
@@ -211,13 +213,29 @@ const LpPage = () => {
      
           
        
+            /> */}
+            {/* <div> */}
+                {/* <LpImgSec
+                    backgroundColor="#f0f0f0" // Example background color
+                    images={imagesData}
+                />
+            </div> */}
+            {/* <OurWorkProcess /> */}
+            {/* <AllInOneCombo updatePopupTitle={handleTitleChange} />
             <div style={{ padding: '100px 0px 50px 0px' }}>
                 <LpPortfolio updatePopupTitle={handleTitleChange} />
-            </div>
+            </div> */}
             {/* <div style={{ padding: '100px 0px 50px 0px' }}>
             </div> */}
+
+       <AllInOne updatePopupTitle={handleTitleChange} />
+
+            <CustomSection/>
+            <LeftImageSec/>
+            
             <LpLogoSlider logos={logosData} />
             <LpCtaSec2 />
+
             <TestimonialSection updatePopupTitle={handleTitleChange} />
             <ContactForm />
             <LpContactSec />

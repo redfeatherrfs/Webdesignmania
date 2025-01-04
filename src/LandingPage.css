@@ -195,7 +195,11 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 
 
-
+@media only screen and (max-width: 768px) {
+    .lp-logo-slider h2 {
+        font-size: 31px !important;
+    }
+}
 
 
 /* languagelogos */
@@ -453,28 +457,33 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 /* Ensure spacing between columns */
 
-
 /***************** Start LpLogo Slider Sections **************/
 
 .lp-logo-slider {
     padding: 50px 0;
     /* Adjust padding as needed */
-    background-color: #f8f9fa;
-    /* Example background color */
 }
 
 .lp-logo-slider h2 {
-    font-size: 2.5rem;
-    /* Adjust font size */
-    margin-bottom: 30px;
-    /* Space below heading */
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
 }
 
 .logo-image {
-    max-width: 100%;
-    /* Ensure logos are responsive */
-    height: auto;
-    /* Maintain aspect ratio */
+    max-width: 50%;
+    height: auto;  /* Set a fixed height for logos */
+    object-fit: contain;  /* Maintain aspect ratio while filling the height */
+}
+
+/* Ensure images are centered and equally spaced */
+.lp-logo-slider .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full height of the swiper container */
 }
 
 /* Adjust Swiper navigation buttons */
@@ -482,10 +491,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 .swiper-button-next {
     color: #00060c;
     /* Change color as needed */
-    /* font-size: 2rem;  */
 }
-
-
 
 .lp-logo-slider .container-fluid {
     position: relative;
@@ -498,6 +504,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
+    display: none;
 }
 
 .custom-carousel-control i {
@@ -508,23 +515,49 @@ textarea.lpbanner-input.lpbanner-textarea {
     background-color: #853101;
 }
 
+/* Make the logos responsive across devices */
+@media (min-width: 320px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 100%; /* Single logo per slide on small screens */
+    }
+}
 
+@media (min-width: 576px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 50%; /* Two logos per slide */
+    }
+}
+
+@media (min-width: 768px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 33.33%; /* Three logos per slide */
+    }
+}
+
+@media (min-width: 992px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 25%; /* Four logos per slide */
+    }
+}
+
+@media (min-width: 1200px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 20%; /* Five logos per slide */
+    }
+}
 
 /***************** End LpLogo Slider Sections **************/
 
-
-
-/***************** Start LP CTA2  ************/
-
 .lp-cta-sec2 {
-
-    padding: 40px 0;
-
+    padding: 100px 0;
+    position: relative; /* Ensures content is positioned above the background */
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the background image */
+    background-image: url('./images/Group 1000009907.png'); /* Adjust the path */
 }
 
-
 .lp-cta-sec2 h2 {
-    font-size: 2.5rem;
+    font-size: 45px;
     color: white;
     margin-bottom: 10px;
     font-weight: 700;
@@ -532,7 +565,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 .lp-cta-sec2 p {
     color: white;
-    font-size: 1rem;
+    font-size: 18px;
     opacity: 0.8;
 }
 
@@ -544,19 +577,46 @@ textarea.lpbanner-input.lpbanner-textarea {
     border-radius: 5px;
     font-weight: bold;
     transition: all 0.3s ease;
-    width: 100%;
-    /* Full width for small devices */
+    width: 100%; /* Full width for small devices */
     max-width: 200px;
+    margin-top: 20px; /* Added margin for spacing */
 }
 
 .cta2-button:hover {
     background-color: #f0f0f0;
     color: #333;
 }
+@media (max-width: 1024px) {
+    .lp-cta-sec2 {
+        height: auto; /* Make height auto to avoid stretching on small screens */
+        background-size: cover; /* Ensures the image still covers the section */
+        background-position: center center; /* Keeps the background centered */
+    }
 
+    .lp-cta-sec2 h2 {
+        font-size: 2rem; /* Adjust the font size for tablets */
+    }
 
+    .lp-cta-sec2 p {
+        font-size: 0.9rem; /* Adjust the font size for smaller screens */
+    }
 
-/***************** End LP CTA2  ************/
+    .cta2-button {
+        max-width: 250px; /* Adjust button size */
+    }
+}
+
+/* Responsive styling to ensure button and text align well on smaller screens */
+@media (max-width: 768px) {
+    .lp-cta-sec2 h2 {
+        font-size: 2rem; /* Adjust the font size for small screens */
+    }
+
+    .lp-cta-sec2 p {
+        font-size: 0.9rem; /* Adjust the font size for small screens */
+    }
+}
+
 
 
 /*****************  Start LP Contact ************/
