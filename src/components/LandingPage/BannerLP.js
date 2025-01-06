@@ -37,9 +37,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
             // phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
             phoneRegex = /^[+]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}$/
-
-
-
+            
 
 
         let html = ''
