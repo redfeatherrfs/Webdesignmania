@@ -17,12 +17,17 @@ import LpImgSec from "../../components/LandingPage/LpImgSec"
 import LpImgSec1 from "../../images/googlepartner.png"
 import LpImgSec2 from "../../images/inc500.png"
 import LpImgSec3 from "../../images/forbes.png"
-import whyservice1 from '../../images/service1.png';
-import whyservice2 from '../../images/service2.png';
-import whyservice3 from '../../images/service3.png';
-import whyservice4 from '../../images/service4.png';
-import whyservice5 from '../../images/service5.png';
-import whyservice6 from '../../images/service6.png';
+import whyservice1 from '../../images/Custom Web.png';
+import whyservice2 from '../../images/Mobile App Developement.png';
+import whyservice3 from '../../images/Ecommerce Solution.png';
+import whyservice4 from '../../images/Responsive Web Design.png';
+import whyservice5 from '../../images/Content Management System.png';
+import whyservice6 from '../../images/Web Application and Development.png';
+import whyservice7 from '../../images/SEO BOX.png';
+import whyservice8 from '../../images/UI-UX.png';
+import whyservice9 from '../../images/CLoud.png';
+
+
 import LpLogoSlider from "../../components/LandingPage/LpLogoSlider"
 import LpLogoSlider1 from "../../images/lplogoslider1.png"
 import LpLogoSlider2 from "../../images/lplogoslider2.png"
@@ -95,19 +100,19 @@ const steps = [
         description: "Building dynamic, interactive web apps for various business functions."
     },
     {
-        image: whyservice2,
+        image: whyservice7,
         alt: "SEO & Digital Marketing",
         title: "SEO & Digital Marketing",
         description: "Optimising websites for search engines and driving online traffic through digital marketing strategies."
     },
     {
-        image: whyservice3,
+        image: whyservice8,
         alt: "UI/UX Design",
         title: "UI/UX Design",
         description: "Designing intuitive user interfaces and experiences to enhance usability and engagement."
     },
     {
-        image: whyservice4,
+        image: whyservice9,
         alt: "Cloud Solutions",
         title: "Cloud Solutions",
         description: " Implementing scalable cloud infrastructure for hosting, storage, and collaboration."
