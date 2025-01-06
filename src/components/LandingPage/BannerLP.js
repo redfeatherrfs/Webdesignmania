@@ -32,7 +32,10 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^\+1\d{10}$/
+            // phoneRegex = /^\+1\d{10}$/
+              phoneRegex = /^\+?\d{10,15}$/
+
+            
 
         let html = ''
 
@@ -125,7 +128,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             <form method="POST" onSubmit={handleSubmit} id="bannerForm">
                                 <input type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
                                 <input type="tel" placeholder="Enter your number" name="phone" value={formData.phone} onChange={handleChange} className="lpbanner-input" required />
-                                <input type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
+                                <input type="email" placeholder="Enter your email" name="email" pattern="^\+?\d{10,15}$" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
                                 <textarea placeholder="Message" name="message" className="lpbanner-input lpbanner-textarea" value={formData.message} onChange={handleChange} required ></textarea>
                                 <button type="submit" className="btn btn-dark lpbanner-submit-btn" disabled={loading}>
                                     {loading ? (
