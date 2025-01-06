@@ -867,7 +867,7 @@ h1.thankyou {
 
 
 .d-flex.justify-content-center.align-items-center.thankyou.container {
-    padding: 200px 0px 200px 0px;
+    padding: 200px 10px 200px 10px;
 }
 
 /* Responsive for mobile */

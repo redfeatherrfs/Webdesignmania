@@ -51,7 +51,7 @@ const SupportSection = () => {
             </Col>
             <Col xs={12} md={6} className="footer-col terms-links text-md-end text-center">
                 <p>
-                <a href="https://webdesignmania.co.uk/lp/terms" target="_blank">Terms & conditions</a> | 
+                <a href="https://webdesignmania.co.uk/lp/terms" target="_blank">Terms & Conditions</a> | 
                 <a href="https://webdesignmania.co.uk/lp/privacy" target="_blank">Privacy Policy</a>
                 </p>
             </Col>

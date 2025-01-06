@@ -29,7 +29,7 @@
     border-radius: 8px;
     padding: 20px;
     color: white;
-    height: 347px;
+    height: 357px;
     text-align: start;
     margin-bottom: 20px;
 }
@@ -111,3 +111,16 @@
       width: 311px;
   }
 }
+
+@media (min-width: 991px) and (max-width: 1208px) {
+  .service-card {
+      background-color: #ee633f;
+      border-radius: 8px;
+      color: #fff;
+      height: 446px;
+      margin-bottom: 20px;
+      padding: 20px;
+      text-align: start;
+  }
+}
+
