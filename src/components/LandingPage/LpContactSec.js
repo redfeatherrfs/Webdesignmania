@@ -47,12 +47,12 @@ const SupportSection = () => {
         </Row>
         <Row className="footer-row justify-content-center">
             <Col xs={12} md={6} className="footer-col copyright-text text-md-start text-center">
-                <p>&#169; Copyright 2024, WebDesignMania.</p>
+                <p>&#169; Copyright 2025, WebDesignMania.</p>
             </Col>
             <Col xs={12} md={6} className="footer-col terms-links text-md-end text-center">
                 <p>
-                <a href="https://webdesignmania.co.uk/lp/terms">Terms & conditions</a> | 
-                <a href="https://webdesignmania.co.uk/lp/privacy">Privacy Policy</a>
+                <a href="https://webdesignmania.co.uk/lp/terms" target="_blank">Terms & conditions</a> | 
+                <a href="https://webdesignmania.co.uk/lp/privacy" target="_blank">Privacy Policy</a>
                 </p>
             </Col>
         </Row>

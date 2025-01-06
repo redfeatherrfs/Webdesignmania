@@ -67,11 +67,11 @@
   .footer-col a:hover {
     color: #fff;
   }
-  .support-col-end {
-    justify-content: flex-end; /* Align content to the end */
+  /* .support-col-end {
+    justify-content: flex-end; 
     text-decoration: none;
     color: #fff;
-  }
+  } */
   .footer-row {
     margin-top: 20px;
   }
@@ -99,6 +99,24 @@
   .terms-links a:hover {
     color: #fff;
   }
+
+
+  .support-col a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .support-col a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+  .support-col a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+  .support-col a.support-item {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
   
   /* Custom responsive styling */
   @media (max-width: 1300px) {
@@ -120,5 +138,6 @@
         gap: 10px;
         justify-content: start;
     }
+
   }
   

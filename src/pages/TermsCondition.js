@@ -1,5 +1,5 @@
 import HeaderSection from "../components/Header"
-import FooterSection from "../components/LandingPage/LpFooterSection"
+import LpContactSec from "../components/LandingPage/LpContactSec"
 import TermsCondition from "../components/TermsCondition"
 
 
@@ -12,7 +12,7 @@ const AppPage = () => {
 
             <TermsCondition />
 
-            <FooterSection />
+            <LpContactSec />
         </>
 
     )

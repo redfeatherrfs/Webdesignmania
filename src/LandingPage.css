@@ -17,6 +17,10 @@
     color: #ffffff;
 }
 
+.swiper-wrapper {
+    align-items: center;
+}
+
 
 /* Keyframes for blinking animation */
 @keyframes blinker {

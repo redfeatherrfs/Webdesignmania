@@ -7,7 +7,7 @@ import '../../LandingPage.css';
 
 const LpLogoSlider = ({ logos }) => {
     return (
-        <section className="lp-logo-slider py-5">
+        <section className="lp-logo-slider mb-4">
             <div className="container-fluid position-relative">
                 {/* Heading */}
                 <div className="row text-center mb-4">
@@ -32,7 +32,7 @@ const LpLogoSlider = ({ logos }) => {
                     </div>
 
                     {/* Swiper for Logos */}
-                    <div className="col-8">
+                    <div className="col-8 text-center">
                         <Swiper
                             modules={[Navigation, Autoplay]}
                             navigation={{
@@ -66,7 +66,7 @@ const LpLogoSlider = ({ logos }) => {
                     </div>
 
                     {/* Custom Next Button */}
-                    <div className="col-2 text-end">
+                    <div className="col-2 text-end ">
                         <button
                             className="custom-carousel-control btn btn-primary mb-3 custom-carousel-control-next"
                             onClick={(e) => {

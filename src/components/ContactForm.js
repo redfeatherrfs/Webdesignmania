@@ -25,8 +25,12 @@ const ContactForm = () => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
+            // phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/         
         // phoneRegex = /^(\+1)?\d{10,14}$/
+        // phoneRegex = /^\+?\d{1,4}\s?\d{3,4}(\s?\d{3}){2,3}$|^\d{10,15}$/
+        phoneRegex = /^[+]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}$/
+
+
 
         if (!emailRegex.test(formData.email))
             document.querySelector('#contactForm input[name=email]').classList.add('is-invalid')
@@ -159,10 +163,10 @@ const ContactForm = () => {
                                 name='phone'
                                 value={formData.phone}
                                 onChange={handleChange}
-                                required title="Phone number format: 0207 123 456"
+                                required title="Phone number format: 02071234564"
                             />
                             <div className="invalid-feedback">
-                                Invalid Phone number. Example: 0207 123 456
+                                Invalid Phone number. Example: 02071234564
                             </div>
                         </div>
                         <div className="mb-3">
@@ -187,6 +191,11 @@ const ContactForm = () => {
                                 </>
                             ) : 'Submit Now'}
                         </button>
+                        {/* <button type="submit" className="btn btn-submit" >Submit Now
+                                                
+                        </button> */}
+
+
                     </form>
                 </div>
             </div>

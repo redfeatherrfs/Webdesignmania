@@ -80,6 +80,9 @@
   
   /* Responsiveness */
   @media (max-width: 768px) {
+    a.callnow {
+      width: 100%;
+  }
     .all-in-one-heading {
         font-size: 2.5rem;
         font-weight: bold;
@@ -96,8 +99,15 @@
     }
   }
 
-  @media (max-width: 400px) {
+  /* @media (max-width: 400px) {
   .all-in-one-heading img {
     display: none;
+  }
+} */
+
+@media (min-width: 375px) and (max-width: 407px) {
+  .all-in-one-heading {
+      font-size: 2rem;
+      width: 311px;
   }
 }

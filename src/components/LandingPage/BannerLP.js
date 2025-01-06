@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import webdesignlogo from '../../images/Web-Design-Mania-Logo-White-04-04.svg';
+import webdesignlogo from '../../images/webdesignlogo.svg';
 import bgimg from '../../images/lpbgfinal.png';
 import saleprice from '../../images/saleprice.png';
 import formbg from '../../images/formbglp.png';
@@ -35,7 +35,12 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
+            // phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
+            phoneRegex = /^[+]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}[\s\(\)-]?[0-9]{1,4}$/
+
+
+
+
 
         let html = ''
 
@@ -43,7 +48,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             html = "Invalid email address<br />"
 
         if (!phoneRegex.test(formData.phone))
-            html += "Invalid phone number. Example: 0207 123 456"
+            html += "Invalid phone number. Example: 02071234564"
 
         if (html.length > 0)
             Swal.fire('Error', html, 'error')

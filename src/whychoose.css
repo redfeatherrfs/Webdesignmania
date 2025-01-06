@@ -9,6 +9,15 @@ h5.choose-service-icon-title.font-weight-bold {
     font-size: 19px;
 }
 
+.choose-service-icon-box {
+    background: white;
+    /* width: 303px; */
+    padding: 30px 5px 5px 23px;
+    height: 304px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
 p.choose-service-description {
     color: white;
 }
@@ -202,13 +211,17 @@ h2.choose-service-heading.font-weight-bold {
 }
 
 @media (max-width: 768px) {
+    a.whychoose-live {
+        width: 100%;
+    }
     .choose-service-icon-box {
         background: white;
         /* width: 303px; */
         padding: 30px 5px 5px 23px;
-        height: 281px;
+        height: 300px;
         border-radius: 10px;
         margin-bottom: 20px;
+        margin-top: 0px;
     }
     h2.choose-service-heading.font-weight-bold {
         font-size: 2rem;

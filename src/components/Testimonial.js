@@ -8,6 +8,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import { SiTrustpilot } from "react-icons/si";
+
 import '../Testimonial.css'; // Custom styles
 
 const TestimonialSection = ({ updatePopupTitle }) => {
@@ -63,7 +65,11 @@ const TestimonialSection = ({ updatePopupTitle }) => {
                                 <div className="testimonial-card p-4">
                                     <div className="d-flex align-items-center mb-3">
                                         {/* Image */}
-                                        <img src={testimonial.image} alt={testimonial.name} className="testimonial-image rounded-circle me-3" />
+                                        {/* <img src={testimonial.image} alt={testimonial.name} className="testimonial-image rounded-circle me-3" /> */}
+                                        <div className="testimonial-image rounded-circle me-3 d-flex justify-content-center align-items-center" style={{ width: '50px', height: '50px', backgroundColor: '#ccc' }}>
+  <span className="text-white" style={{ fontSize: '1rem' }}>{testimonial.name.charAt(0)}</span>
+</div>
+
                                         {/* Name and Position */}
                                         <div>
                                             <h5 className="name">{testimonial.name}</h5>
@@ -73,7 +79,8 @@ const TestimonialSection = ({ updatePopupTitle }) => {
                                     {/* Stars */}
                                     <div className="stars mb-3 ">
                                         {[...Array(5)].map((_, i) => (
-                                            <FaStar key={i} color="#FFBB01" />
+                                            // <FaStar key={i} color="#FFBB01" />
+                                            <SiTrustpilot key={i} color="#00B67A"  />
                                         ))}
                                     </div>
                                     {/* Dynamic Heading and Quote */}

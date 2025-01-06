@@ -1,5 +1,5 @@
 import PrivacyPolicySection from "../components/PrivacyPolicySection"
-import FooterSection from "../components/LandingPage/LpFooterSection"
+import LpContactSec from "../components/LandingPage/LpContactSec"
 import Header from "../components/Header"
 
 
@@ -11,8 +11,7 @@ const AppPage = () => {
            <Header />
 
             <PrivacyPolicySection />
-
-            <FooterSection />
+            <LpContactSec />
         </>
 
     )

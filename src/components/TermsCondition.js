@@ -13,7 +13,7 @@ const TermsCondition = () => {
                         <h4>Ownership and Rights of the Logo</h4>
                         <p>Customer understands that Company retains the rights to all Design and does not transfer any rights to Customer unless and until Customer purchases exclusive rights of the Design. Upon purchasing exclusive rights to a Design, the Company provides a Copyright agreement that indicates that all the rights have been transferred under the (Customer / Company Name). The associated fee is £299 (One-time Cost).</p>
                         <h4>New Order Processing Time</h4>
-                        <p>The turnaround time is between providing design concepts and purchasing the package. For new logos, it is 24 to 48 hours. Orders with four or more logo concepts have a minimum 48-hour turnaround. New website designs have a minimum 48-hour turnaround, and static websites take three to five business days for development. Orders placed on Friday or Saturday begin processing on Monday. The first concept for illustrative logos is sent within 48 to 72 hours of order confirmation.</p>
+                        <p>The turnaround time is between providing design concepts and purchasing the package. For new logos, it is 24 to 48 hours. Orders with four or more logo concepts have a minimum 48-hour turnaround. Orders placed on Friday or Saturday begin processing on Monday. The first concept for illustrative logos is sent within 48 to 72 hours of order confirmation.</p>
                         <h4>Refund Procedure</h4>
                         <p>Our refund policy is applicable under specific conditions:</p>
                         <ul>
@@ -49,7 +49,7 @@ const TermsCondition = () => {
                         <p>Rest assured, our dedicated customer service team is available 24/7, ready to address any questions or concerns. Your satisfaction is our top priority.</p>
                         <h4>Policy on Communication</h4>
                         <p>For your security, all communication with Web Design Mania should be conducted through “<a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>” or the official phone numbers listed on our website. We cannot be held responsible for messages sent through other platforms. Trust our official channels for accurate and reliable communication.</p>
-                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#853101', border: 'none' }}>Back to Homepage</Link>
+                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#ED5E39', border: 'none' }}>Back to Homepage</Link>
                     </p>
                 </div>
             </div>
