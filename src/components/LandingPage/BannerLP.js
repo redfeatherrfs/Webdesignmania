@@ -158,9 +158,9 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             <p>Get response from us within 24 hours</p>
                             <form method="POST" onSubmit={handleSubmit} id="bannerForm">
                                 <input type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
-                                <input type="tel" placeholder="Enter your number" name="phone" value={formData.phone} onChange={handleChange} className="lpbanner-input" required />
-                                <input type="email" placeholder="Enter your email" name="email" pattern="^\+?\d{10,15}$" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
-                                <textarea placeholder="Message" name="message" className="lpbanner-input lpbanner-textarea" value={formData.message} onChange={handleChange} required ></textarea>
+                                <input type="tel" placeholder="Enter your number" name="phone"  pattern="^\+?\d{10,15}$" title="Phone number should be between 10 and 15 digits, with an optional '+' at the start." value={formData.phone} onChange={handleChange} className="lpbanner-input" required />
+                                <input type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
+                                <textarea placeholder="Message" name="message" className="lpbanner-input lpbanner-textarea"  value={formData.message} onChange={handleChange} required ></textarea>
                                 <button type="submit" className="btn btn-dark lpbanner-submit-btn" disabled={loading}>
                                     {loading ? (
                                         <>
