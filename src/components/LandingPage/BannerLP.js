@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import webdesignlogo from '../../images/Web-Design-Mania-Logo-White-04-04.svg';
-import bgimg from '../../images/lpbg.png';
+import webdesignlogo from '../../images/webdesignlogo.svg';
+import bgimg from '../../images/lpbgfinal.png';
+import saleprice from '../../images/saleprice.png';
 import formbg from '../../images/formbglp.png';
 import formbg2 from '../../images/formbglp2.png';
 import bracket from '../../images/bracket.png';
-import trustpilot from '../../images/truspiloticon.png';
+import trustpilot from '../../images/trustpilotfinal.png';
 import clutch from '../../images/clutchicon.png';
 import barkicon from '../../images/barkicon.png';
 
@@ -34,7 +35,10 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
+            // phoneRegex = /^\+1\d{10}$/
+              phoneRegex = /^\+?\d{10,15}$/
+
+            
 
         let html = ''
 
@@ -42,7 +46,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             html = "Invalid email address<br />"
 
         if (!phoneRegex.test(formData.phone))
-            html += "Invalid phone number. Example: 0207 123 456"
+            html += "Invalid phone number. Example: 02071234564"
 
         if (html.length > 0)
             Swal.fire('Error', html, 'error')
@@ -110,15 +114,15 @@ const Lpbanner = ({ updatePopupTitle }) => {
                     <div className="col-md-7 lp-left-column">
                         <img src={webdesignlogo} alt="Logo" className="lpbanner-logo" />
                         <div className="lpbanner-heading-container" style={{ display: 'flex', alignItems: 'center' }}>
-                            <img
-                                src={bracket} // Make sure this path is correct
+                            {/* <img
+                                src={bracket} 
                                 alt="Bracket"
-                                className="lpbanner-bracket-img" // Optional class for styling
-                                style={{ marginRight: '10px' }} // Space between the image and text
-                            />
+                                className="lpbanner-bracket-img" 
+                                style={{ marginRight: '10px' }} 
+                            /> */}
                             <h1 className="lpbanner-heading">
                                 Custom Web Design <br />
-                                Starts from <span className="lpbanner-price">£199</span>
+                                Starts from <span className="lpbanner-price"><img className="saleprice" src={saleprice} alt="199" /></span>
                             </h1>
                         </div>
 
@@ -129,13 +133,11 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
                             </div>
                             <div className="lpbanner-badges">
-                                <img src={clutch} alt="Clutch" />
-
+                                {/* <img src={clutch} alt="Clutch" /> */}
                                 <a target="_blank" href="https://www.trustpilot.com/review/webdesignmania.co.uk">
                                     <img src={trustpilot} alt="Trustpilot" />
                                 </a>
-
-                                <img src={barkicon} alt="Bark" />
+                                {/* <img src={barkicon} alt="Bark" /> */}
                             </div>
                         </div>
                     </div>
@@ -155,10 +157,10 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             <h3 className="lpbanner-form-title">Get a Website Quote</h3>
                             <p>Get response from us within 24 hours</p>
                             <form method="POST" onSubmit={handleSubmit} id="bannerForm">
-                                <input type="text" placeholder="Enter your name*" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
-                                <input type="tel" placeholder="Enter your number*" name="phone" value={formData.phone} title="Phone number format: 0207 123 456" onChange={handleChange} className="lpbanner-input" required />
-                                <input type="email" placeholder="Enter your email*" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
-                                <textarea placeholder="Message*" name="message" className="lpbanner-input lpbanner-textarea" value={formData.message} onChange={handleChange} required ></textarea>
+                                <input type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
+                                <input type="tel" placeholder="Enter your number" name="phone"  pattern="^\+?\d{10,15}$" title="Phone number should be between 10 and 15 digits, with an optional '+' at the start." value={formData.phone} onChange={handleChange} className="lpbanner-input" required />
+                                <input type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
+                                <textarea placeholder="Message" name="message" className="lpbanner-input lpbanner-textarea"  value={formData.message} onChange={handleChange} required ></textarea>
                                 <button type="submit" className="btn btn-dark lpbanner-submit-btn" disabled={loading}>
                                     {loading ? (
                                         <>

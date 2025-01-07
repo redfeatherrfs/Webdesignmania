@@ -1,6 +1,6 @@
 .testimonial-section {
     /* background-color: #f9f9f9; */
-    padding: 50px 0px;
+    padding: 40px 0px 0px 0px;
   }
   .testimonial-section h2{
     font-size: 48px;
@@ -14,7 +14,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    /* text-align: center; */
   }
   
   .stars svg {

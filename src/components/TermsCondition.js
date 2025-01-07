@@ -13,8 +13,8 @@ const TermsCondition = () => {
                         <h4>Ownership and Rights of the Logo</h4>
                         <p>Customer understands that Company retains the rights to all Design and does not transfer any rights to Customer unless and until Customer purchases exclusive rights of the Design. Upon purchasing exclusive rights to a Design, the Company provides a Copyright agreement that indicates that all the rights have been transferred under the (Customer / Company Name). The associated fee is £299 (One-time Cost).</p>
                         <h4>New Order Processing Time</h4>
-                        <p>The turnaround time is between providing design concepts and purchasing the package. For new logos, it is 24 to 48 hours. Orders with four or more logo concepts have a minimum 48-hour turnaround. New website designs have a minimum 48-hour turnaround, and static websites take three to five business days for development. Orders placed on Friday or Saturday begin processing on Monday. The first concept for illustrative logos is sent within 48 to 72 hours of order confirmation.</p>
-                        <h4>Refund Procedure</h4>
+                        <p>The turnaround time is between providing design concepts and purchasing the package. For new logos, it is 24 to 48 hours. Orders with four or more logo concepts have a minimum 48-hour turnaround. Orders placed on Friday or Saturday begin processing on Monday. The first concept for illustrative logos is sent within 48 to 72 hours of order confirmation.</p>
+                        {/* <h4>Refund Procedure</h4>
                         <p>Our refund policy is applicable under specific conditions:</p>
                         <ul>
                             <li>Opting for an all-inclusive plan.</li>
@@ -29,7 +29,40 @@ const TermsCondition = () => {
                             <li>Exceeding the “refund request” timeframe.</li>
                             <li>Changes in the company’s name or operations.</li>
                         </ul>
-                        <p>Refunds are granted for the specific service, not the entire bundle. No return request is accepted after final files are sent. Free items are exempt from returns and revisions. No refund for websites or logos after 30 days. Non-refundable services include social media, SEO, domain registration, and web hosting. No returns once the client accepts the website design. Creative Logo Design may refuse any project or terminate the agreement, retaining exclusive rights to the designs after a refund. The designs legally belong to the company.</p>
+                        <p>Refunds are granted for the specific service, not the entire bundle. No return request is accepted after final files are sent. Free items are exempt from returns and revisions. No refund for websites or logos after 30 days. Non-refundable services include social media, SEO, domain registration, and web hosting. No returns once the client accepts the website design. Creative Logo Design may refuse any project or terminate the agreement, retaining exclusive rights to the designs after a refund. The designs legally belong to the company.</p> */}
+                        <h4>Refund Procedure</h4>
+<p>At Web Design Mania, refunds will not be granted under the following circumstances:</p>
+<ul>
+    <li>Opting for an all-inclusive plan.</li>
+    <li>Acceptance of the main design concept.</li>
+    <li>Requesting adjustments to the approved design.</li>
+    <li>Cancellation for reasons unrelated to the company.</li>
+    <li>Failure to communicate with the company for more than one week.</li>
+    <li>Violation of company policies.</li>
+    <li>Engaging another business or designer for the same project.</li>
+    <li>Failure to provide essential details in the creative brief.</li>
+    <li>Requesting a complete redesign.</li>
+    <li>Exceeding the allowed timeframe for submitting a refund request.</li>
+    <li>Changes in the company’s name or operations.</li>
+</ul>
+<p><strong>Additional Notes on Refunds</strong></p>
+<ul>
+    <li>Refunds are granted only for the specific service, not for an entire bundle.</li>
+    <li>Refund requests are not accepted once final files have been delivered.</li>
+    <li>Free items included in the service are not eligible for refunds or revisions.</li>
+    <li>Websites and logos are non-refundable after 30 days.</li>
+</ul>
+<p><strong>The following services are strictly non-refundable:</strong></p>
+<ul>
+    <li>Social media services</li>
+    <li>SEO services</li>
+    <li>Domain registration</li>
+    <li>Web hosting</li>
+</ul>
+<p>No refund will be issued once the client approves the website design.</p>
+<p><strong>Rights Reserved by Web Design Mania</strong></p>
+<p>Web Design Mania reserves the right to decline any project or terminate an agreement. In the event of a refund, the company retains exclusive ownership of the designs. All designs remain the legal property of Web Design Mania.</p>
+
                         <h4>Request Your Refund</h4>
                         <p>To initiate a refund, follow these steps:</p>
                         <ol>
@@ -49,7 +82,7 @@ const TermsCondition = () => {
                         <p>Rest assured, our dedicated customer service team is available 24/7, ready to address any questions or concerns. Your satisfaction is our top priority.</p>
                         <h4>Policy on Communication</h4>
                         <p>For your security, all communication with Web Design Mania should be conducted through “<a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>” or the official phone numbers listed on our website. We cannot be held responsible for messages sent through other platforms. Trust our official channels for accurate and reliable communication.</p>
-                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#853101', border: 'none' }}>Back to Homepage</Link>
+                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#ED5E39', border: 'none' }}>Back to Homepage</Link>
                     </p>
                 </div>
             </div>

@@ -29,7 +29,10 @@ const PopupForm = ({ title }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
+            // phoneRegex = /^\+1\d{10}$/
+            phoneRegex = /^\+?\d{10,15}$/
+
+            
 
         if (!emailRegex.test(formData.email))
             document.querySelector('#popupForm input[name=email]').classList.add('is-invalid')
@@ -120,10 +123,10 @@ const PopupForm = ({ title }) => {
                                 </div>
                             </div>
                             <div className="mb-3">
-                                <label htmlFor="phone" className="form-label">Phone number <span className='text-danger'>*</span></label>
-                                <input type="tel" className="form-control" id="phone" placeholder="1234567890" name='phone' value={formData.phone} onChange={handleChange} required />
+                                <label htmlFor="phone" className="form-label">Phone number</label>
+                                <input type="tel" className="form-control" id="phone" placeholder="1234567890" pattern="^\+?\d{10,15}$"  name='phone' value={formData.phone} onChange={handleChange} required />
                                 <div className="invalid-feedback">
-                                    Invalid Phone number. Example: 0207 123 456
+                                    Invalid Phone number. Example: 02071234564
                                 </div>
                             </div>
                             <div className="mb-3">

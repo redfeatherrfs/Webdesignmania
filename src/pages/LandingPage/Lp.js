@@ -17,6 +17,17 @@ import LpImgSec from "../../components/LandingPage/LpImgSec"
 import LpImgSec1 from "../../images/googlepartner.png"
 import LpImgSec2 from "../../images/inc500.png"
 import LpImgSec3 from "../../images/forbes.png"
+import whyservice1 from '../../images/Custom Web.png';
+import whyservice2 from '../../images/Mobile App Developement.png';
+import whyservice3 from '../../images/Ecommerce Solution.png';
+import whyservice4 from '../../images/Responsive Web Design.png';
+import whyservice5 from '../../images/Content Management System.png';
+import whyservice6 from '../../images/Web Application and Development.png';
+import whyservice7 from '../../images/SEO BOX.png';
+import whyservice8 from '../../images/UI-UX.png';
+import whyservice9 from '../../images/CLoud.png';
+
+
 import LpLogoSlider from "../../components/LandingPage/LpLogoSlider"
 import LpLogoSlider1 from "../../images/lplogoslider1.png"
 import LpLogoSlider2 from "../../images/lplogoslider2.png"
@@ -32,10 +43,82 @@ import { useState } from "react"
 import PopupForm from "../../components/common/PopupForm"
 
 import { Helmet } from 'react-helmet-async';
+import WhyChooseService from "../../components/LandingPage/lpservices"
+import AllInOne from "../../components/LandingPage/Allinonenew"
 import CustomSection from "../../components/LandingPage/CustomSectionScrol"
 import LeftImageSec from "../../components/LandingPage/LeftImageSec"
 
 
+
+
+
+const heading = {
+    title: (
+        <>
+           Interested in our services?
+        </>
+    ),
+    // highlight:"Animation Video",
+    // title2: "Production Company in the USA"
+};
+const description = "Drop us a message, and our experts will reach out soon!";
+const steps = [
+    {
+        image: whyservice1,
+        alt: "Custom Web Development",
+        title: "Custom Web Development",
+        description: "Custom website websites built from scratch to meet specific business needs."
+    },
+    {
+        image: whyservice2,
+        alt: "Mobile App Development",
+        title: "Mobile App Development",
+        description: "Apps are developed using React Native, Flutter, & Swift, utilising Figma, Adobe XD, & Sketch for prototyping and UI/UX design to ensure optimised performance & seamless user experiences."
+    },
+    {
+        image: whyservice3,
+        alt: "E-Commerce Solutions",
+        title: "E-Commerce Solutions",
+        description: "Building online stores with secure payment systems and inventory management."
+    },
+    {
+        image: whyservice4,
+        alt: "Responsive Web Design",
+        title: "Responsive Web Design",
+        description: "Designing websites that provide optimal viewing experiences across all devices."
+    },
+    {
+        image: whyservice5,
+        alt: "Content Management Systems",
+        title: "Content Management Systems",
+        description: "Creating and integrating platforms like WordPress, Joomla, and Drupal for easy content management."
+    },
+    {
+        image: whyservice6,
+        alt: "Web Application Development",
+        title: "Web Application Development",
+        description: "Building dynamic, interactive web apps for various business functions."
+    },
+    {
+        image: whyservice7,
+        alt: "SEO & Digital Marketing",
+        title: "SEO & Digital Marketing",
+        description: "Optimising websites for search engines and driving online traffic through digital marketing strategies."
+    },
+    {
+        image: whyservice8,
+        alt: "UI/UX Design",
+        title: "UI/UX Design",
+        description: "Designing intuitive user interfaces and experiences to enhance usability and engagement."
+    },
+    {
+        image: whyservice9,
+        alt: "Cloud Solutions",
+        title: "Cloud Solutions",
+        description: " Implementing scalable cloud infrastructure for hosting, storage, and collaboration."
+    },
+ 
+];
 
 
 const iconBoxesData = [
@@ -92,9 +175,21 @@ const LpPage = () => {
             <Lpbanner updatePopupTitle={handleTitleChange} />
             <LanguageLogos />
             <LpPricingSection updatePopupTitle={handleTitleChange} />
-            <LpthirdSection />
-            <LpCta1 />
-            <div className="py-4 py-md-5">
+            <WhyChooseService
+                heading={heading}
+                 description={description}
+                steps={steps}
+            />
+
+<div>
+                <LpImgSec
+                    backgroundColor="#f0f0f0" // Example background color
+                    images={imagesData}
+                />
+            </div>
+            {/* <LpthirdSection /> */}
+            {/* <LpCta1 /> */}
+            {/* <div className="py-4 py-md-5">
                 <ImageRightBanner
                     // subHeading="ABOUT US"
                     heading="Customized Web Development Services That Talk To Your Audience"
@@ -110,19 +205,26 @@ const LpPage = () => {
                     reverseOrder={true}
                     updatePopupTitle={handleTitleChange}
                 />
-            </div>
+            </div> */}
             {/* <LpServiceIconBox
                 backgroundColor="#f9f9f9" // Example background color
                 servicesTitle="We Specialize In Coding High Performance Websites"
                 // message="Drop us a message, and our experts will get back to you shortly."
                 iconBoxes={iconBoxesData}
+            />
+           
+            <OurWorkProcess />
+            <AllInOne updatePopupTitle={handleTitleChange} />
+     
+          
+       
             /> */}
-            <div>
-                <LpImgSec
+            {/* <div> */}
+                {/* <LpImgSec
                     backgroundColor="#f0f0f0" // Example background color
                     images={imagesData}
                 />
-            </div>
+            </div> */}
             {/* <OurWorkProcess /> */}
             {/* <AllInOneCombo updatePopupTitle={handleTitleChange} />
             <div style={{ padding: '100px 0px 50px 0px' }}>
@@ -130,6 +232,9 @@ const LpPage = () => {
             </div> */}
             {/* <div style={{ padding: '100px 0px 50px 0px' }}>
             </div> */}
+
+       <AllInOne updatePopupTitle={handleTitleChange} />
+
             <CustomSection/>
             <LeftImageSec/>
             

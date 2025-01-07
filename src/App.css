@@ -14,7 +14,11 @@ body {
 
 
 
-
+p.support-heading {
+    text-decoration: none;
+    color: white;
+    font-style: none;
+}
 
 
 
@@ -197,7 +201,7 @@ body {
 /* Start header */
 
 .custom-header .navbar {
-    background: #853101;
+    background: #333333;
     padding: 20px 0;
     transition: background-color 0.3s ease;
 }
@@ -850,13 +854,29 @@ img.icon-image {
     text-align: center;
     margin-bottom: 30px;
 }
+h1.thankyou {
+    font-size: 3rem;
+    font-weight: 800;
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+}
 
 /* .toolbar .btn {
     margin: 0 5px;
 } */
 
+
+.d-flex.justify-content-center.align-items-center.thankyou.container {
+    padding: 200px 10px 200px 10px;
+}
+
 /* Responsive for mobile */
 @media (max-width: 768px) {
+    .custom-header .navbar {
+        background: #939393;
+        padding: 20px 0;
+        transition: background-color 0.3s ease;
+    }
     #portfolio {
         column-count: 3;
         /* Reduce to 3 columns on medium screens */
