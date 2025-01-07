@@ -156,7 +156,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                         <div className="lpbanner-form mx-3 mx-sm-0">
                             <h3 className="lpbanner-form-title">Get a Website Quote</h3>
                             <p>Get response from us within 24 hours</p>
-                            <form method="POST" onSubmit={handleSubmit} id="bannerForm">
+                            {/* <form method="POST" onSubmit={handleSubmit} id="bannerForm">
                                 <input type="text" placeholder="Enter your name" name="name" value={formData.name} onChange={handleChange} className="lpbanner-input" required />
                                 <input type="tel" placeholder="Enter your number" name="phone"  pattern="^\+?\d{10,15}$" title="Phone number should be between 10 and 15 digits, with an optional '+' at the start." value={formData.phone} onChange={handleChange} className="lpbanner-input" required />
                                 <input type="email" placeholder="Enter your email" name="email" value={formData.email} onChange={handleChange} className="lpbanner-input" required />
@@ -169,7 +169,90 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                         </>
                                     ) : 'Send Your Query'}
                                 </button>
-                            </form>
+                            </form> */}
+
+<form method="POST" onSubmit={handleSubmit} id="bannerForm" noValidate>
+  <input
+    type="text"
+    placeholder="Enter your name*"
+    name="name"
+    value={formData.name}
+    onChange={handleChange}
+    className="lpbanner-input"
+    required
+    pattern="^[a-zA-Z0-9 ]{1,50}$"
+    maxLength="50"
+    title="Please enter a valid name"
+  />
+  {formData.name && !/^[a-zA-Z0-9 ]{1,50}$/.test(formData.name) && (
+    <div className="error-message">Please enter a valid name</div>
+  )}
+
+  <input
+    type="tel"
+    placeholder="Enter your number"
+    name="phone"
+    value={formData.phone}
+    onChange={handleChange}
+    className="lpbanner-input"
+    required
+    pattern="^\+?\d{10,15}$"
+    title="Please enter valid phone number"
+  />
+  {formData.phone && !/^\+?\d{10,15}$/.test(formData.phone) && (
+    <div className="error-message">Please enter a valid phone number.</div>
+  )}
+
+  <input
+    type="email"
+    placeholder="Enter your email*"
+    name="email"
+    value={formData.email}
+    onChange={handleChange}
+    className="lpbanner-input"
+    required
+    title="Please enter a valid email address."
+  />
+  {formData.email && !/\S+@\S+\.\S+/.test(formData.email) && (
+    <div className="error-message">Please enter a valid email address.</div>
+  )}
+
+  <textarea
+    placeholder="Message"
+    name="message"
+    className="lpbanner-input lpbanner-textarea"
+    value={formData.message}
+    onChange={handleChange}
+    required
+    maxLength="200"
+    title="Message should not exceed 200 characters."
+  ></textarea>
+  {formData.message && formData.message.length > 200 && (
+    <div className="error-message">Message should not exceed 200 characters.</div>
+  )}
+
+  <button
+    type="submit"
+    className="btn btn-dark lpbanner-submit-btn"
+    disabled={loading}
+  >
+    {loading ? (
+      <>
+        <span
+          className="spinner-border spinner-border-sm me-2"
+          aria-hidden="true"
+        ></span>
+        <span role="status">Submitting...</span>
+      </>
+    ) : (
+      'Send Your Query'
+    )}
+  </button>
+</form>
+
+
+
+
                         </div>
                     </div>
 
