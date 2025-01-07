@@ -22,16 +22,16 @@ const SupportSection = () => {
             </div>
           </Col>
           <Col xs={12} md={6} lg={6} xl={4} className="support-col">
-      <a href="tel:+02045112009" target="_blank" rel="noopener noreferrer">
-        <div className="support-item">
-          <img src={consultIcon} alt="Consult Expert Icon" className="support-icon" />
-          <div className="support-text">
-            <p className="support-heading">Consult Our Expert</p>
-            <p className="support-detail">0204 511 2009</p>
-          </div>
-        </div>
-      </a>
-    </Col>
+            <a href="tel:+02045112009" target="_blank" rel="noopener noreferrer">
+              <div className="support-item">
+                <img src={consultIcon} alt="Consult Expert Icon" className="support-icon" />
+                <div className="support-text">
+                  <p className="support-heading">Consult Our Expert</p>
+                  <p className="support-detail">0204 511 2009</p>
+                </div>
+              </div>
+            </a>
+          </Col>
           <Col xs={12} md={6} lg={6} xl={4} className="support-col support-col-end">
             <a href="https://wa.me/+447491860363" target="_blank" rel="noopener noreferrer">
               <div className="support-item">
