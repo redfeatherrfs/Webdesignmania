@@ -67,11 +67,7 @@
   .footer-col a:hover {
     color: #fff;
   }
-  /* .support-col-end {
-    justify-content: flex-end; 
-    text-decoration: none;
-    color: #fff;
-  } */
+ 
   .footer-row {
     margin-top: 20px;
   }
@@ -140,4 +136,22 @@
     }
 
   }
-  
+    .support-col a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .support-col a:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .support-col a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .support-col a.support-item {
+      text-decoration: none !important;
+      color: inherit !important;
+    }

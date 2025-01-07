@@ -149,7 +149,7 @@ h2.choose-service-heading.font-weight-bold {
     border-radius: 5px; /* Rounded corners */
     font-size: 1rem; /* Text size */
     font-weight: bold; /* Bold text */
-    padding: 12px 20px; /* Padding inside the button */
+    padding: 12px 40px; /* Padding inside the button */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
     cursor: pointer; /* Pointer cursor on hover */
     transition: all 0.3s ease; /* Smooth hover effect */
@@ -169,7 +169,7 @@ h2.choose-service-heading.font-weight-bold {
     border-radius: 5px; /* Rounded corners */
     font-size: 1rem; /* Text size */
     font-weight: bold; /* Bold text */
-    padding: 12px 20px; /* Padding inside the button */
+    padding: 12px 40px; /* Padding inside the button */
     cursor: pointer; /* Pointer cursor on hover */
     transition: all 0.3s ease; /* Smooth hover effect */
   }
@@ -180,7 +180,14 @@ h2.choose-service-heading.font-weight-bold {
     color: #ED5E39; /* Change text color */
     border-color: #ED5E39; /* Change border color */
   }
-  
+
+
+  @media (max-width: 870px) and (min-width: 768px) {
+    .choose-service-icon-box {
+        height: 370px;
+    }
+}
+
   /* Responsive Design */
   @media (max-width: 768px) {
     .button-container {
@@ -210,7 +217,7 @@ h2.choose-service-heading.font-weight-bold {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     a.whychoose-live {
         width: 100%;
     }

@@ -116,7 +116,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 .lpbanner-buttons .lpbanner-btn {
     margin-right: 15px;
-    padding: 10px 20px;
+    padding: 12px 40px;
     border-radius: 5px;
 }
 
@@ -210,6 +210,11 @@ textarea.lpbanner-input.lpbanner-textarea {
 @media only screen and (max-width: 768px) {
     .lp-logo-slider h2 {
         font-size: 31px !important;
+    }
+    .lpbanner-buttons .lpbanner-btn {
+        margin-right: 15px;
+        padding: 10px 20px !important;
+        border-radius: 5px;
     }
 }
 
@@ -544,6 +549,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     .lp-logo-slider .swiper-slide {
         flex: 0 0 33.33%; /* Three logos per slide */
     }
+  
 }
 
 @media (min-width: 992px) {

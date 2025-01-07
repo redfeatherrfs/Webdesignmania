@@ -28,7 +28,7 @@ const WhyChooseService = ({
   {/* First Row: 3 Icon Boxes */}
   <div className="row">
     {steps.slice(0, 3).map((step, index) => (
-      <div className="col-lg-4 col-md-6" key={index}>
+      <div className="col-lg-4 col-md-4" key={index}>
         <div className="choose-service-icon-box">
           <img src={step.image} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
           <h5 className="choose-service-icon-title font-weight-bold">{step.title}</h5>

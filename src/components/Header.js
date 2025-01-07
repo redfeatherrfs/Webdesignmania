@@ -5,6 +5,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import '../header.css';
 import header from '../images/webdesignlogo.svg';
 import { Link } from 'react-router-dom';
+import { FaPhone, FaComment } from 'react-icons/fa';
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -30,7 +31,7 @@ const Header = () => {
                     <Link className="navbar-brand" to="/lp">
                         <img src={header} alt="Logo" width="150" />
                     </Link>
-                    <button
+                    {/* <button
                         className="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
@@ -40,7 +41,7 @@ const Header = () => {
                         aria-label="Toggle navigation"
                     >
                         <span className="navbar-toggler-icon"></span>
-                    </button>
+                    </button> */}
                     <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                         {/* <ul className="navbar-nav">
               <li className="nav-item">
@@ -65,9 +66,28 @@ const Header = () => {
               </li>
             </ul> */}
                         <div className="custom-phone-number ms-3">
-                            <a href="tel:+02045112009" className="nav-link">
-                                0204 511 2009
-                            </a>
+                           <ul style={{ listStyleType: 'none', marginTop: '14px', textAlign: 'center' }}>
+                                                      <li style={{ display: 'inline-block', marginRight: '20px' }}>
+                                                          <a
+                                                              className="toll_icon"
+                                                              href="tel:+02045112009"
+                                                              style={{ color: 'white', display: 'flex', alignItems: 'center' , textDecoration:'none'}}
+                                                          >
+                                                              <FaPhone style={{ marginRight: '8px' }} />
+                                                              0204 511 2009
+                                                          </a>
+                                                      </li>
+                                                      <li style={{ display: 'inline-block' }}>
+                                                          <a
+                                                              href="https://wa.me/+447380100492"
+                                                              className="chat_icon chat"
+                                                              style={{ color: 'white', display: 'flex', alignItems: 'center', textDecoration:'none'}}
+                                                          >
+                                                              <FaComment style={{ marginRight: '8px' }} />
+                                                              Live Chat with Expert
+                                                          </a>
+                                                      </li>
+                                                  </ul>
                         </div>
                     </div>
                 </div>

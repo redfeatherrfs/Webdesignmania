@@ -13,10 +13,10 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                     title: "Custom Website Starter Package",
                     subtitle: (
                         <>
-                            Professional & Unique Design
+                            Professional & Unique Design <br></br>
                         </>
                     ),
-                    boldTitle: "  – Get 70% Off",
+                    boldTitle: " Get 70% Off",
                     price: "£199",
                     originalPrice: "£665",
                     features: [
@@ -31,7 +31,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -69,7 +69,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -111,7 +111,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -153,7 +153,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -190,7 +190,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -231,7 +231,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -399,7 +399,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "100% Ownership Rights",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee *",
+                        "100% Money Back Guarantee",
                     ],
                 },
                 {
@@ -438,7 +438,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "100% Ownership Rights",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee *",
+                        "100% Money Back Guarantee",
                     ],
                 },
                 {
@@ -479,7 +479,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "100% Ownership Rights",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee *",
+                        "100% Money Back Guarantee ",
                     ],
                 },
             ],

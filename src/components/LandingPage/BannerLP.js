@@ -190,7 +190,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
   <input
     type="tel"
-    placeholder="Enter your number"
+    placeholder="Enter your number*"
     name="phone"
     value={formData.phone}
     onChange={handleChange}
