@@ -5,7 +5,7 @@ const TermsCondition = () => {
     return (
         <div className="container simple-section">
             <div className="row align-items-center justify-content-center text-center">
-                <div className="col-lg-10 mt-5 custom-content-v3">
+                <div className="col-lg-12 py-5 custom-content-v3">
                     <h2>Terms & Conditions</h2>
                     <p style={{ textAlign: 'justify' }}>
                         <h4>Revision Policy</h4>

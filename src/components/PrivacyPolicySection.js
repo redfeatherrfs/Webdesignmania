@@ -7,7 +7,7 @@ const PrivacyPolicySection = () => {
     return (
         <div className="container simple-section">
             <div className="row align-items-center justify-content-center text-center">
-                <div className="col-lg-10 mt-5 custom-content-v3">
+                <div className="col-lg-12 py-5 custom-content-v3">
                     <h2>Privacy Policy</h2>
                     <p style={{ textAlign: 'justify' }}>
                         <p><strong>Information Collection and Use</strong></p>

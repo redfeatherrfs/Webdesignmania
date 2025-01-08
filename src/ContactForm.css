@@ -43,7 +43,7 @@ section.ebook-contact-form.container
 
       .form-control {
         font-weight: 400;
-        line-height: 2.5;
+        /* line-height: 2.5; */
         border: 1px solid #f7b09d;
     }
       /* .ebook-contact-form .btn-submit {

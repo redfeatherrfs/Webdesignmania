@@ -870,6 +870,12 @@ h1.thankyou {
     padding: 200px 10px 200px 10px;
 }
 
+
+button.btn.orange-button {
+    color: white;
+    background-color: #ED5E39;
+}
+
 /* Responsive for mobile */
 @media (max-width: 768px) {
     .custom-header .navbar {

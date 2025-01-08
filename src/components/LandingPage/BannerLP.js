@@ -38,8 +38,6 @@ const Lpbanner = ({ updatePopupTitle }) => {
             // phoneRegex = /^\+1\d{10}$/
               phoneRegex = /^\+?\d{10,15}$/
 
-            
-
         let html = ''
 
         if (!emailRegex.test(formData.email))
@@ -60,7 +58,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
         // Name validation
         if (!isAlphabetic(formData.name) || !isAlphanumeric(formData.name) || !fieldLengthValidator(formData.name, 50)) {
             // document.querySelector('#contactForm input[name=name]').classList.add('is-invalid')
-            html = "Name must be alphabetic or alphanumeric & must not be greater than 50 characters.<br />"
+            html = "Must be alphabetic and not be greater than 50 characters.<br />"
             isValid = false
         }
 
@@ -224,7 +222,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
     value={formData.message}
     onChange={handleChange}
     required
-    maxLength="200"
+    maxLength='210'
     title="Message should not exceed 200 characters."
   ></textarea>
   {formData.message && formData.message.length > 200 && (
