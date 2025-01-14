@@ -41,7 +41,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
         let html = ''
 
         if (!emailRegex.test(formData.email))
-            html = "Invalid email address<br />"
+            html = "Invalid email address. Example: example@gmail.com<br />"
 
         if (!phoneRegex.test(formData.phone))
             html += "Invalid phone number. Example: 02071234564"
@@ -169,22 +169,42 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                 </button>
                             </form> */}
 
+
+                            {/* <input
+  type="text"
+  placeholder="Enter your name*"
+  name="name"
+  value={formData.name}
+  onChange={handleChange}
+  className="lpbanner-input"
+  required
+  pattern="^[a-zA-Z0-9 ]{1,50}$"
+  maxLength="50"
+  title="Please enter a valid name (letters, numbers, and spaces only, up to 50 characters)."
+/>
+{formData.name && !/^[a-zA-Z0-9 ]{1,50}$/.test(formData.name) && (
+  <div className="error-message">Please enter a valid name (letters, numbers, and spaces only, up to 50 characters).</div>
+)} */}
+
 <form method="POST" onSubmit={handleSubmit} id="bannerForm" noValidate>
-  <input
-    type="text"
-    placeholder="Enter your name*"
-    name="name"
-    value={formData.name}
-    onChange={handleChange}
-    className="lpbanner-input"
-    required
-    pattern="^[a-zA-Z0-9 ]{1,50}$"
-    maxLength="50"
-    title="Please enter a valid name"
-  />
-  {formData.name && !/^[a-zA-Z0-9 ]{1,50}$/.test(formData.name) && (
-    <div className="error-message">Please enter a valid name</div>
-  )}
+
+
+<input
+                                    type="text"
+                                    placeholder="Enter your name*"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleChange}
+                                    className="lpbanner-input"
+                                    required
+                                    pattern="^[a-zA-Z][a-zA-Z ]{0,55}$"
+                                    maxLength="55"
+                                    title="Please enter a valid name"
+                                />
+                                {formData.name && !/^[a-zA-Z][a-zA-Z ]{0,60}$/.test(formData.name) && (
+                                    <div className="error-message">Not allowed more than 50 characters and it must be in alphabet</div>
+                                )}
+
 
   <input
     type="tel"
@@ -195,25 +215,26 @@ const Lpbanner = ({ updatePopupTitle }) => {
     className="lpbanner-input"
     required
     pattern="^\+?\d{10,15}$"
-    title="Please enter valid phone number"
+    title="Please enter a valid phone number"
   />
   {formData.phone && !/^\+?\d{10,15}$/.test(formData.phone) && (
-    <div className="error-message">Please enter a valid phone number.</div>
+    <div className="error-message">Please enter a valid phone number (between 10 and 15 digits, with an optional '+').</div>
   )}
 
-  <input
-    type="email"
-    placeholder="Enter your email*"
-    name="email"
-    value={formData.email}
-    onChange={handleChange}
-    className="lpbanner-input"
-    required
-    title="Please enter a valid email address."
-  />
-  {formData.email && !/\S+@\S+\.\S+/.test(formData.email) && (
-    <div className="error-message">Please enter a valid email address.</div>
-  )}
+<input
+  type="email"
+  placeholder="Enter your email*"
+  name="email"
+  value={formData.email}
+  onChange={handleChange}
+  className="lpbanner-input"
+  required
+  title="Please enter a valid email address."
+/>
+{formData.email && !/^[^\s][^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) && (
+  <div className="error-message">Please enter a valid email address (no spaces at the beginning).</div>
+)}
+
 
   <textarea
     placeholder="Message"
@@ -222,11 +243,11 @@ const Lpbanner = ({ updatePopupTitle }) => {
     value={formData.message}
     onChange={handleChange}
     required
-    maxLength='210'
+    maxLength="20002"
     title="Message should not exceed 200 characters."
   ></textarea>
-  {formData.message && formData.message.length > 200 && (
-    <div className="error-message">Message should not exceed 200 characters.</div>
+  {formData.message && formData.message.length > 2000 && (
+    <div className="error-message">Message should not exceed 2000 characters.</div>
   )}
 
   <button
@@ -236,10 +257,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
   >
     {loading ? (
       <>
-        <span
-          className="spinner-border spinner-border-sm me-2"
-          aria-hidden="true"
-        ></span>
+        <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
         <span role="status">Submitting...</span>
       </>
     ) : (
@@ -247,6 +265,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
     )}
   </button>
 </form>
+
 
 
 

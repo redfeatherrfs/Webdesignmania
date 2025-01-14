@@ -125,78 +125,89 @@ const ContactForm = () => {
                             <br /></h2> */}
                     </div>
                     <form onSubmit={handleSubmit} method='POST' id='contactForm'>
-                        <div className="row mb-3">
-                            <div className="col">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="Your full name*"
-                                    name='name'
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    required
-                                />
-                                <div className="invalid-feedback">
-                                    Name must be alphabetic or alphanumeric & must not be greater than 50 characters.
-                                </div>
-                            </div>
-                            <div className="col">
-                                <input
-                                    type="email"
-                                    className="form-control"
-                                    placeholder="E-mail address*"
-                                    name='email'
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    required
-                                />
-                                <div className="invalid-feedback">
-                                    Invalid Email address
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mb-3">
-                            <input
-                                type="tel"
-                                className="form-control"
-                                placeholder="Phone Number*"
-                                name='phone'
-                                value={formData.phone}
-                                onChange={handleChange}
-                                required title="Phone number format: 02071234564"
-                            />
-                            <div className="invalid-feedback">
-                                Invalid Phone number. Example: 02071234564
-                            </div>
-                        </div>
-                        <div className="mb-3">
-                            <textarea
-                                className="form-control"
-                                rows="5"
-                                placeholder="Your message*"
-                                name='message'
-                                value={formData.message}
-                                onChange={handleChange}
-                                required
-                            />
-                            <div className="invalid-feedback">
-                                Message must not be greater than 200 characters.
-                            </div>
-                        </div>
-                        <button type="submit" className="btn btn-submit" disabled={loading}>
-                            {loading ? (
-                                <>
-                                    <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
-                                    <span role="status">Submitting...</span>
-                                </>
-                            ) : 'Submit Now'}
-                        </button>
-                        {/* <button type="submit" className="btn btn-submit" >Submit Now
-                                                
-                        </button> */}
+    <div className="row mb-3">
+        <div className="col">
+            <input
+                type="text"
+                className={`form-control ${formData.name && !/^[a-zA-Z][a-zA-Z ]{0,50}$/.test(formData.name) ? 'is-invalid' : ''}`}
+                placeholder="Your full name*"
+                name='name'
+                value={formData.name}
+                onChange={handleChange}
+                required
+                pattern="^[a-zA-Z][a-zA-Z ]{0,50}$"
+                title="Please enter a valid name (only alphabets and spaces allowed, no special characters, and max 50 characters)."
+            />
+            {formData.name && !/^[a-zA-Z][a-zA-Z ]{0,50}$/.test(formData.name) && (
+                <div className="invalid-feedback">
+                    Name must only contain alphabets and spaces, and cannot exceed 50 characters.
+                </div>
+            )}
+        </div>
+        <div className="col">
+            <input
+                type="email"
+                className={`form-control ${formData.email && !/^[^\s][^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) ? 'is-invalid' : ''}`}
+                placeholder="E-mail address*"
+                name='email'
+                value={formData.email}
+                onChange={handleChange}
+                required
+                title="Please enter a valid email address."
+            />
+            {formData.email && !/^[^\s][^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) && (
+                <div className="invalid-feedback">
+                    Invalid email address (no spaces at the beginning).
+                </div>
+            )}
+        </div>
+    </div>
+    <div className="mb-3">
+        <input
+            type="tel"
+            className={`form-control ${formData.phone && !/^\+?\d{10,15}$/.test(formData.phone) ? 'is-invalid' : ''}`}
+            placeholder="Phone Number*"
+            name='phone'
+            value={formData.phone}
+            onChange={handleChange}
+            required
+            pattern="^\+?\d{10,15}$"
+            title="Phone number format: 02071234564"
+        />
+        {formData.phone && !/^\+?\d{10,15}$/.test(formData.phone) && (
+            <div className="invalid-feedback">
+                Invalid phone number. Example: 02071234564
+            </div>
+        )}
+    </div>
+    <div className="mb-3">
+        <textarea
+            className={`form-control ${formData.message && formData.message.length > 2000 ? 'is-invalid' : ''}`}
+            rows="5"
+            placeholder="Your message*"
+            name='message'
+            value={formData.message}
+            onChange={handleChange}
+            required
+            maxLength="2002"
+            title="Message should not exceed 2000 characters."
+        />
+        {formData.message && formData.message.length > 2000 && (
+            <div className="invalid-feedback">
+                Message must not exceed 2000 characters.
+            </div>
+        )}
+    </div>
+    <button type="submit" className="btn btn-submit" disabled={loading}>
+        {loading ? (
+            <>
+                <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                <span role="status">Submitting...</span>
+            </>
+        ) : 'Submit Now'}
+    </button>
+</form>
 
-
-                    </form>
                 </div>
             </div>
         </section>

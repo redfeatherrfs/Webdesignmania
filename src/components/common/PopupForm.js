@@ -154,22 +154,24 @@ const PopupForm = ({ title }) => {
             Full name <span className="text-danger">*</span>
         </label>
         <input
-            type="text"
-            className={`form-control ${formData.name && !/^[a-zA-Z0-9 ]{1,50}$/.test(formData.name) ? 'is-invalid' : ''}`}
-            id="name"
-            placeholder="John Doe"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-            pattern="^[a-zA-Z0-9 ]{1,50}$"
-            title="Name must be alphabetic or alphanumeric & must not be greater than 50 characters."
-        />
-        {formData.name && !/^[a-zA-Z0-9 ]{1,50}$/.test(formData.name) && (
-            <div className="invalid-feedback">
-                Name must be alphabetic or alphanumeric & must not be greater than 50 characters.
-            </div>
-        )}
+  type="text"
+  className={`form-control ${formData.name && !/^[A-Za-z]{1,50}$/.test(formData.name) ? 'is-invalid' : ''}`}
+  id="name"
+  placeholder="John Doe"
+  name="name"
+  value={formData.name}
+  onChange={handleChange}
+  required
+  pattern="^[A-Za-z]{1,50}$"
+  title="Name must only contain alphabetic characters (A-Z, a-z) and cannot exceed 50 characters."
+/>
+{formData.name && !/^[A-Za-z]{1,50}$/.test(formData.name) && (
+  <div className="invalid-feedback">
+    Name must only contain alphabetic characters (A-Z, a-z) and cannot exceed 50 characters.
+  </div>
+)}
+
+
     </div>
     <div className="mb-3">
         <label htmlFor="email" className="form-label">
