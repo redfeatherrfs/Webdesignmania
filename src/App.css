@@ -961,4 +961,7 @@ button.btn.orange-button {
 position: none;
 }
 
+.simple-section h4 {
+    margin-bottom: 0px;
+}
 

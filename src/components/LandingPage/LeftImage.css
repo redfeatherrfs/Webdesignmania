@@ -81,9 +81,19 @@
 
 
 @media (max-width: 768px) {
+ 
+    .image-column-food img {
+        max-width: 99% !important; /* Ensures the image doesn't exceed its container size */
+    }
+}
+
+@media (max-width: 767px) {
     .content-row-food {
         flex-direction: column;
         text-align: center;
+    }
+    .image-column-food img {
+        max-width: 99%; /* Ensures the image doesn't exceed its container size */
     }
 
     .image-column-food {
@@ -96,6 +106,7 @@
 
     .content-title-food {
         font-size: 26px; /* Smaller font size for mobile */
+        padding-right: 0px;
     }
 
     .content-description-food {

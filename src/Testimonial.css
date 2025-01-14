@@ -57,3 +57,12 @@
   margin-bottom: 15px;
   text-align: left;   /* Left align the heading */
 }
+
+
+@media (max-width: 767px) {
+
+.testimonial-section h2 {
+  font-size: 26px;  /* Adjust size as needed */
+
+}
+}

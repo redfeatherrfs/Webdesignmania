@@ -43,13 +43,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .content-row {
     flex-direction: column;
   }
 }
 .custom-section h3 {
-  font-size: 40px;
+  font-size: 31px;
   font-weight: 700;
   line-height: 1.1; /* Adjust line height for better readability */
   margin-bottom: 10px; /* Optional spacing */
@@ -82,7 +82,7 @@
   margin-bottom: 50px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-heading {
     font-size: 38px;
     
