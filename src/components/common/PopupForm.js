@@ -155,21 +155,20 @@ const PopupForm = ({ title }) => {
         </label>
         <input
   type="text"
-  className={`form-control ${formData.name && !/^[A-Za-z]{1,50}$/.test(formData.name) ? 'is-invalid' : ''}`}
+  className="form-control"
   id="name"
   placeholder="John Doe"
   name="name"
   value={formData.name}
   onChange={handleChange}
   required
-  pattern="^[A-Za-z]{1,50}$"
-  title="Name must only contain alphabetic characters (A-Z, a-z) and cannot exceed 50 characters."
+    pattern="^[a-zA-Z][a-zA-Z ]{0,55}$"
+                                    maxLength="55"
+  title="Please enter a valid name"
 />
-{formData.name && !/^[A-Za-z]{1,50}$/.test(formData.name) && (
-  <div className="invalid-feedback">
-    Name must only contain alphabetic characters (A-Z, a-z) and cannot exceed 50 characters.
-  </div>
-)}
+{formData.name && !/^[a-zA-Z][a-zA-Z ]{0,60}$/.test(formData.name) && (
+                                    <div className="error-message">Not allowed more than 50 characters and it must be in alphabet</div>
+                                )}
 
 
     </div>
@@ -179,7 +178,7 @@ const PopupForm = ({ title }) => {
         </label>
         <input
             type="email"
-            className={`form-control ${formData.email && !/\S+@\S+\.\S+/.test(formData.email) ? 'is-invalid' : ''}`}
+           className="form-control"
             id="email"
             placeholder="example@test.com"
             name="email"
@@ -189,34 +188,36 @@ const PopupForm = ({ title }) => {
             pattern="[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}"
             title="Please enter a valid email address"
         />
-        {formData.email && !/\S+@\S+\.\S+/.test(formData.email) && (
-            <div className="invalid-feedback">Invalid Email address</div>
-        )}
+        {formData.email && !/^[^\s][^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) && (
+                                    <div className="error-message">Please enter a valid email address (no spaces at the beginning).</div>
+                                )}
     </div>
     <div className="mb-3">
         <label htmlFor="phone" className="form-label">Phone number</label>
         <input
             type="tel"
-            className={`form-control ${formData.phone && !/^\+?\d{10,15}$/.test(formData.phone) ? 'is-invalid' : ''}`}
+          className="form-control"
             id="phone"
             placeholder="1234567890"
             pattern="^\+?\d{10,15}$"
+                                    title="Please enter a valid phone number"
+                                    maxLength="16"
             name="phone"
             value={formData.phone}
             onChange={handleChange}
             required
-            title="Phone number must be between 10-15 digits (can start with +)"
+           
         />
-        {formData.phone && !/^\+?\d{10,15}$/.test(formData.phone) && (
-            <div className="invalid-feedback">Invalid Phone number. Example: 02071234564</div>
-        )}
+          {formData.phone && !/^\+?\d{10,15}$/.test(formData.phone) && (
+                                    <div className="error-message">Please enter a valid phone number (between 10 and 15 digits, with an optional '+').</div>
+                                )}
     </div>
     <div className="mb-3">
         <label htmlFor="message" className="form-label">
             Message <span className="text-danger">*</span>
         </label>
         <textarea
-            className={`form-control ${formData.message && formData.message.length > 200 ? 'is-invalid' : ''}`}
+           className="form-control"
             id="message"
             placeholder="Your message..."
             rows="5"
@@ -224,12 +225,12 @@ const PopupForm = ({ title }) => {
             onChange={handleChange}
             value={formData.message}
             required
-            maxLength="210"
-            title="Message must not exceed 200 characters."
+            maxLength="2002"
+            title="Message must not exceed 2000 characters."
         ></textarea>
-        {formData.message && formData.message.length > 200 && (
-            <div className="invalid-feedback">Message must not be greater than 200 characters.</div>
-        )}
+        {formData.message && formData.message.length > 2000 && (
+                                    <div className="error-message">Message should not exceed 2000 characters.</div>
+                                )}
     </div>
     <div className="d-grid mb-3">
         <button type="submit" className="btn orange-button" disabled={loading}>
