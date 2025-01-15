@@ -192,7 +192,7 @@ const ContactForm = () => {
                                     <div className="error-message">Message should not exceed 2000 characters.</div>
                                 )}
     </div>
-    <button type="submit" className="btn btn-submit" disabled={loading}>
+    <button type="submit" className="btn btn-submit"  >
         {loading ? (
             <>
                 <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
