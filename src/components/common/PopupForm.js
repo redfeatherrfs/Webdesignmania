@@ -59,7 +59,7 @@ const PopupForm = ({ title }) => {
             document.querySelector('#popupForm input[name=name]').classList.remove('is-invalid')
 
         // Message validation
-        if (!fieldLengthValidator(formData.message, 200)) {
+        if (!fieldLengthValidator(formData.message, 2000)) {
             document.querySelector('#popupForm textarea').classList.add('is-invalid')
             isValid = false
         }
