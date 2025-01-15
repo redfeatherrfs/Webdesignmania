@@ -57,7 +57,7 @@ const ContactForm = () => {
             document.querySelector('#contactForm input[name=name]').classList.remove('is-invalid')
 
         // Message validation
-        if (!fieldLengthValidator(formData.message, 200)) {
+        if (!fieldLengthValidator(formData.message, 2000)) {
             document.querySelector('#contactForm textarea').classList.add('is-invalid')
             isValid = false
         }
