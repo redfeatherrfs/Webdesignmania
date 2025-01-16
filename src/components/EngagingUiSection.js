@@ -1,7 +1,7 @@
 import listImage from "../images/list-item.png"
 import iphonesImage from "../images/iphones.png"
 
-const EngagingUISection = ({updatePopupTitle}) => {
+const EngagingUISection = ({ updatePopupTitle }) => {
     return (
         <section className="my-5 py-5 engaging-ui-section">
             <div className="container">
@@ -40,7 +40,7 @@ const EngagingUISection = ({updatePopupTitle}) => {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <img src={iphonesImage} />
+                        <img src={iphonesImage} className="img-fluid" />
                     </div>
                 </div>
             </div>

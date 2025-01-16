@@ -35,6 +35,12 @@ const GetStartedSection = () => {
 
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const emailField = document.querySelector('.get-started-section input[name=email]');
+        if (!emailRegex.test(email)) {
+            emailField.classList.add('is-invalid');
+        } else {
+            emailField.classList.remove('is-invalid');
+        }
         return emailRegex.test(email);
     };
 
@@ -44,32 +50,6 @@ const GetStartedSection = () => {
             ...formData,
             [name]: value,
         });
-        // Validation feedback
-        // if (name === 'name') {
-        //     const nameField = document.querySelector('.get-started-section input[name=name]');
-        //     if (!validateName(value)) {
-        //         nameField.classList.add('is-invalid');
-        //     } else {
-        //         nameField.classList.remove('is-invalid');
-        //     }
-        // }
-        // if (name === 'phone') {
-        //     const phoneField = document.querySelector('.get-started-section input[name=phone]');
-        //     if (!validatePhone(value)) {
-        //         phoneField.classList.add('is-invalid');
-        //     } else {
-        //         phoneField.classList.remove('is-invalid');
-        //     }
-        // }
-        // if (name === 'email') {
-        //     const emailField = document.querySelector('.get-started-section input[name=email]');
-        //     if (!validateEmail(value)) {
-        //         emailField.classList.add('is-invalid');
-        //     } else {
-        //         emailField.classList.remove('is-invalid');
-        //     }
-        // }
-
     };
     const validateForm = () => {
         const isNameValid = validateName(formData.name);
@@ -125,7 +105,7 @@ const GetStartedSection = () => {
                                         name="name"
                                         placeholder="Full Name*"
                                         value={formData.name}
-                                        onInput={() => {validateName(formData.name)}}
+                                        onInput={() => { validateName(formData.name) }}
                                         onChange={handleChange}
                                         required
                                     />
@@ -140,7 +120,7 @@ const GetStartedSection = () => {
                                         placeholder="Contact Number*"
                                         name="phone"
                                         value={formData.phone}
-                                        onInput={() => {validatePhone(formData.phone)}}
+                                        onInput={() => { validatePhone(formData.phone) }}
                                         onChange={handleChange}
                                         required
                                     />
@@ -156,6 +136,7 @@ const GetStartedSection = () => {
                                         name="email"
                                         placeholder="Email Address*"
                                         value={formData.email}
+                                        onInput={() => { validateEmail(formData.email) }}
                                         onChange={handleChange}
                                         required
                                     />

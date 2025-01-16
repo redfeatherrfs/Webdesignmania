@@ -11,7 +11,7 @@ const AppDevelopmentProcessSection = () => {
                 </div>
 
                 <div className="row mt-5">
-                    <div className="col-md-5">
+                    <div className="col-lg-5">
                         <div className='text-end mt-3'>
                             <h1 className='steps-heading mb-4'>Step 1</h1>
                             <h1 className='mb-3'>Blueprinting</h1>
@@ -19,16 +19,35 @@ const AppDevelopmentProcessSection = () => {
                             </p>
                         </div>
 
-                        <div className='text-end step-3'>
+                        <div className='d-block d-lg-none'>
+                            <h1 className='steps-heading mb-4'>Step 2</h1>
+                            <h1 className='mb-3'> UI/UX Design</h1>
+                            <p>Once we have a solid plan in place, our design team will create wireframes and mockups to visualize how your app will look and feel, keeping the focus on user experience (UX) and user interface (UI). At this stage, your feedback will be highly acknowledgeable which will help us refine the app before we start the development process.</p>
+                        </div>
+
+                        <div className='text-end step-3 d-none d-lg-block'>
                             <h1 className='steps-heading mb-4'>Step 3</h1>
                             <h1 className='mb-3'>Development</h1>
                             <p>Our expert developers will start coding your app, integrating all the necessary features, and setting up the back-end infrastructure. Our team will keep you informed at every stage of the process, ensuring you're always in the loop. We will conduct regular testing to minimize the possibility of any errors and maintain the highest quality standards. </p>
                         </div>
+
+                        <div className='text-end d-block d-lg-none'>
+                            <h1 className='steps-heading mb-4'>Step 3</h1>
+                            <h1 className='mb-3'>Development</h1>
+                            <p>Our expert developers will start coding your app, integrating all the necessary features, and setting up the back-end infrastructure. Our team will keep you informed at every stage of the process, ensuring you're always in the loop. We will conduct regular testing to minimize the possibility of any errors and maintain the highest quality standards. </p>
+                        </div>
+
+                        <div className='d-block d-lg-none'>
+                            <h1 className='steps-heading mb-4'>Step 4</h1>
+                            <h1 className='mb-3'>Testing & Launch</h1>
+                            <p>Our developers will conduct thorough testing to ensure your app functions smoothly and meets all design specifications. Your app will run on different devices for usability testing and performance checks. Once everything is in perfect shape, we'll prepare to launch your app on the relevant app stores, like Google Play or the Apple App Store.
+                            </p>
+                        </div>
                     </div>
-                    <div className="col-md-1">
+                    <div className="col-md-auto d-none d-lg-block">
                         <img src={iconWithLinesImg} />
                     </div>
-                    <div className="col-md-5">
+                    <div className="col-lg-5 d-none d-lg-block">
                         <div className='step-2'>
                             <h1 className='steps-heading mb-4'>Step 2</h1>
                             <h1 className='mb-3'> UI/UX Design</h1>
@@ -38,7 +57,7 @@ const AppDevelopmentProcessSection = () => {
                         <div className='step-4'>
                             <h1 className='steps-heading mb-4'>Step 4</h1>
                             <h1 className='mb-3'>Testing & Launch</h1>
-                            <p>Our developers will conduct thorough testing to ensure your app functions smoothly and meets all design specifications. Your app will run on different devices for usability testing and performance checks. Once everything is in perfect shape, we’ll prepare to launch your app on the relevant app stores, like Google Play or the Apple App Store.
+                            <p>Our developers will conduct thorough testing to ensure your app functions smoothly and meets all design specifications. Your app will run on different devices for usability testing and performance checks. Once everything is in perfect shape, we'll prepare to launch your app on the relevant app stores, like Google Play or the Apple App Store.
                             </p>
                         </div>
                     </div>

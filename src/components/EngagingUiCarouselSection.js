@@ -39,11 +39,12 @@ const EngagingUiCarouselSection = () => {
                         </div>
                     </div>
 
-                    <div className="row position-relative">
+                    <div className="position-relative">
                         <Swiper
                             spaceBetween={30}
                             navigation={true} // Enable default navigation
-                            autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay settings
+                            // autoplay={{ delay: 2000, disableOnInteraction: false }} // Autoplay settings
+                            autoplay={false}
                             modules={[Navigation, Autoplay]} // Add Navigation and Autoplay to modules
                             breakpoints={{
                                 1200: { slidesPerView: 3 }, // Show 3 slides on large screens
@@ -52,27 +53,27 @@ const EngagingUiCarouselSection = () => {
                             }}
                         >
                             <SwiperSlide>
-                                <div className="col-12 mb-4">
+                                <div className="mb-4">
                                     <img src={image1} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="col-12 mb-4">
+                                <div className="mb-4">
                                     <img src={image2} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="col-12 mb-4">
+                                <div className="mb-4">
                                     <img src={image3} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="col-12 mb-4">
+                                <div className="mb-4">
                                     <img src={image4} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
                             <SwiperSlide>
-                                <div className="col-12 mb-4">
+                                <div className="mb-4">
                                     <img src={image5} className="our-work-img img-fluid" />
                                 </div>
                             </SwiperSlide>
