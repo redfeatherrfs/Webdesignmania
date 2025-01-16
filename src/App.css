@@ -618,6 +618,9 @@ img.icon-image {
 
 @media screen and (min-width: 360px) and (max-width: 767px) {
 
+    .banner-section {
+        height: 68vh;
+    }
     .banner-content {
         padding: 0px;
     }
@@ -688,9 +691,27 @@ img.icon-image {
     .unique-ui-designs-section{
         padding: 0px !important;
     }
+    
+    .portfolio-heading {
+        font-weight: 700;
+        font-size: 32px !important;
+        text-align: center;
+    }
+    .custom-text-section-v3 h2 {
+        font-size: 24px !important;
+    }
+    .custom-logo-process h2 {
+        font-size: 30px !important;
+    }
+    .custom-logo-process p {
+        font-size: 16px !important;
+    }
+    .custom-content-v3 h2 {
+        font-size: 24px !important;
+    }
     .unique-ui-designs-section h2 {
         font-weight: 700;
-        font-size: 38px !important;
+        font-size: 30px !important;
         color: #000000;
     }
 

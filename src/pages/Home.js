@@ -585,8 +585,7 @@ const Home = () => {
 
     return (
         <>
-                    {/* <BlackPosterSec /> */}
-
+            {/* <BlackPosterSec /> */}
             <Helmet>
                 <title>Full-Service Digital Marketing Agency - Web Design Mania</title>
                 <meta name="description" content="Web Design Mania is a full-service digital marketing agency offering expert web design, SEO, branding, and development services to boost your business worldwide." />
@@ -611,14 +610,10 @@ const Home = () => {
             {/* <LpPortfolio/> */}
             <Pricing packages={packages} updatePopupTitle={handleTitleChange} />
             <AllInOnePkgs updatePopupTitle={handleTitleChange} />
-
             <TestimonialSection updatePopupTitle={handleTitleChange} />
             <ContactForm />
-
             <FooterSection />
             <PopupForm title={title} />
-
-
             {/* <div>
                 <h1>Home Page</h1>
                 <p>Welcome to our website!</p>
