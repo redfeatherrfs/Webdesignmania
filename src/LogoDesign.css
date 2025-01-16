@@ -186,8 +186,6 @@
     border: none;
 }
 
-
-
 @media (max-width: 1198px) and (min-width: 992px) {
     .box-heading-number {
         font-size: 34px;
@@ -197,5 +195,23 @@
     .box-heading {
         font-size: 22px;
         /* Adjusted size for screens in this range */
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1081px) and (orientation: portrait) {
+
+    .custom-logo-process h2 {
+        font-weight: 700;
+        color: #010935;
+        font-size: 32px;
+    }
+    .custom-logo-process p {
+        font-size: 16px;
+        color: #000;
+    }
+    .portfolio-heading {
+        font-weight: 700;
+        font-size: 40px;
+        text-align: center;
     }
 }

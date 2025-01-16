@@ -24,7 +24,7 @@ import serviceImage4 from '../images/Mask group-3.png'
 import serviceImage5 from '../images/Mask group-4.png'
 import serviceImage6 from '../images/Mask group-5.png'
 import PopupForm from '../components/common/PopupForm';
-import LpPortfolio from '../components/LandingPage/LpPortfolio';
+// import LpPortfolio from '../components/LandingPage/LpPortfolio';
 import BlackPosterSec from '../components/BlackPoster';  // Correct casing of the file
 
 
@@ -67,7 +67,7 @@ const Home = () => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -100,7 +100,7 @@ const Home = () => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -136,7 +136,7 @@ const Home = () => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -178,7 +178,7 @@ const Home = () => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -215,7 +215,7 @@ const Home = () => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -256,7 +256,7 @@ const Home = () => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -585,8 +585,7 @@ const Home = () => {
 
     return (
         <>
-                    {/* <BlackPosterSec /> */}
-
+            {/* <BlackPosterSec /> */}
             <Helmet>
                 <title>Full-Service Digital Marketing Agency - Web Design Mania</title>
                 <meta name="description" content="Web Design Mania is a full-service digital marketing agency offering expert web design, SEO, branding, and development services to boost your business worldwide." />
@@ -608,17 +607,13 @@ const Home = () => {
             {/* <CustomCarousel/> */}
             <UniqueUIDesignsSection services={services} page='home' />
             {/* <HomeGallery /> */}
-            <LpPortfolio/>
+            {/* <LpPortfolio/> */}
             <Pricing packages={packages} updatePopupTitle={handleTitleChange} />
             <AllInOnePkgs updatePopupTitle={handleTitleChange} />
-
             <TestimonialSection updatePopupTitle={handleTitleChange} />
             <ContactForm />
-
             <FooterSection />
             <PopupForm title={title} />
-
-
             {/* <div>
                 <h1>Home Page</h1>
                 <p>Welcome to our website!</p>

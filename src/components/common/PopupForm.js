@@ -29,7 +29,10 @@ const PopupForm = ({ title }) => {
 
     const validateEmailAndPhone = () => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^(\+44\s?|0)\d{3}\s?\d{3}\s?\d{3,4}$/
+            // phoneRegex = /^\+1\d{10}$/
+            phoneRegex = /^\+?\d{10,15}$/
+
+            
 
         if (!emailRegex.test(formData.email))
             document.querySelector('#popupForm input[name=email]').classList.add('is-invalid')

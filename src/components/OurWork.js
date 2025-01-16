@@ -22,7 +22,7 @@ const OurWork = () => {
     ];
 
     return (
-        <section className="our-work-section py-5">
+        <section className="our-work-section">
             <div className="container">
                 {/* First Row */}
                 <div className="row align-items-center mb-4">

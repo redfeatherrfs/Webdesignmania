@@ -551,6 +551,180 @@ img.icon-image {
 
 }
 
+
+
+/* ------------START DOC QA--------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1081px) and (orientation: portrait) {
+    .col-md-7 {
+        flex: 0 0 auto;
+        width: 99%;
+    }
+
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 99%;
+    }
+
+    .about-heading {
+        margin-bottom: 0px; 
+    }
+    .about-desc {
+        margin-top: 18px;
+        margin-left: 0px;
+        margin-bottom: 20px; 
+    }
+    .my-abouts {
+        padding-bottom: 0px;
+    }
+    .custom-carousel-control {
+        margin-right: 8px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+    .unique-ui-designs-section{
+        padding: 0px !important;
+    }
+    .unique-ui-designs-section h3 {
+        font-weight: 700 !important;
+        font-size: 22px !important;
+    }
+    .footer .col-md-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .footer .col-md-2 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .about-heading {
+        font-weight: 700;
+        font-size: 30px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    .d-md-block {
+        display: none !important;
+    }
+    .unique-ui-designs-section h2 {
+        font-weight: 700;
+        font-size: 38px !important;
+        color: #000000;
+    }
+
+}
+/* for mobile */
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+    .banner-section {
+        height: 68vh;
+    }
+    .banner-content {
+        padding: 0px;
+    }
+    .banner-content h1 {
+        font-size: 32px;
+    }
+    .about-heading {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+    .about-desc {
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-top: 11px;
+        margin-left: 0px;
+        color: #666666;
+        font-weight: 400;
+        text-align: justify;
+    }
+    img.icon-image {
+        position: unset;
+        width: 60px;
+    }
+    .icon-box {
+        align-items: center;
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .my-abouts {
+        padding: 0px;
+    }
+    .main-heading {
+        font-size: 27px !important;
+        margin-bottom: 10px !important;
+    }
+    .custom-carousel-control {
+        margin-right: 10px !important;
+    }
+    .pricing-heading-one {
+        font-weight: 700;
+        font-size: 32px !important;
+        margin-bottom: 0px !important;
+    }
+    .our-work-section{
+        padding-top: 40px;
+        padding-bottom: 0px !important;
+    }
+    .unique-number {
+        font-size: 14px !important;
+        font-weight: bold;
+        color: #999;
+    }
+    .unique-number {
+        font-size: 14px !important;
+        font-weight: bold;
+        color: #999;
+    }
+    .unique-ui-designs-section h3 {
+        font-weight: 700 !important;
+        font-size: 14px !important;
+    }
+    .unique-ui-designs-section p {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    .unique-ui-designs-section{
+        padding: 0px !important;
+    }
+    
+    .portfolio-heading {
+        font-weight: 700;
+        font-size: 32px !important;
+        text-align: center;
+    }
+    .custom-text-section-v3 h2 {
+        font-size: 24px !important;
+    }
+    .custom-logo-process h2 {
+        font-size: 30px !important;
+    }
+    .custom-logo-process p {
+        font-size: 16px !important;
+    }
+    .custom-content-v3 h2 {
+        font-size: 24px !important;
+    }
+    .unique-ui-designs-section h2 {
+        font-weight: 700;
+        font-size: 30px !important;
+        color: #000000;
+    }
+
+
+}
+/* ------------END DOC QA--------------*/
+
+
+
+
+
+
+
 /* Privacy policy page css */
 .simple-section{
     margin-top: 100px;
@@ -590,6 +764,7 @@ img.icon-image {
     background-color: #000;
     padding: 10px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 /* Custom carousel slide */
@@ -716,10 +891,10 @@ img.icon-image {
     color: #000000;
 }
 
-.unique-ui-designs-section h3 {
+/* .unique-ui-designs-section h3 {
     font-weight: 500;
     font-size: 32px;
-}
+} */
 
 .unique-number {
     font-size: 20px;
@@ -727,11 +902,11 @@ img.icon-image {
     color: #999;
 }
 
-.unique-ui-designs-section p {
+/* .unique-ui-designs-section p {
     margin: 0;
     font-size: 18px;
     text-align: center;
-}
+} */
 
 .section-divider {
     border: none;

@@ -2,10 +2,8 @@ import BannerSection from "../components/banner"
 import GetStartedSection from "../components/Formsection"
 import HeaderSection from "../components/Header"
 import LogoSection from "../components/logos"
-
 import bannerImage from '../images/About.webp'
 import aboutuslaptop from '../images/aboutuslaptop.png'
-
 import FooterSection from "../components/Footer"
 import ContactForm from "../components/ContactForm"
 import TestimonialSection from "../components/Testimonial"
@@ -14,7 +12,6 @@ import ImageIconBox from "../components/Aboutus/ImageIconBox"
 import OurMission from "../components/Aboutus/OurMission"
 import ourMissionImage from '../images/ourmission.png';
 import ourVisionImage from '../images/ourvission.png';
-
 import { Helmet } from 'react-helmet-async';
 import { useState } from "react"
 import PopupForm from "../components/common/PopupForm"
@@ -50,7 +47,7 @@ const AppPage = () => {
 
             <GetStartedSection />
 
-            <div style={{ padding: '100px 0px 0px 0px' }}>
+            <div style={{ padding: '50px 0px 0px 0px' }}>
                 <ImageRightBanner
                     subHeading="ABOUT US"
                     heading="Your Digital Partner In Exceling Your Brand "

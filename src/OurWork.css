@@ -103,7 +103,7 @@
 }
 
 .swiper-button-prev, .swiper-button-next {
-  display: inline-block;
+  display: none;
   color: #000; /* Adjust arrow color */
   font-size: 20px;
   margin: 0 10px;
@@ -125,3 +125,5 @@
 .our-work-card:hover {
   transform: translateY(-10px); /* Move the card up by 10 pixels on hover */
 }
+
+
