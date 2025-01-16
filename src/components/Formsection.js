@@ -113,15 +113,23 @@ const GetStartedSection = () => {
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-lg-3">
-                                    <input
-                                        type="text"
-                                        className="form-control"
-                                        name="message"
-                                        placeholder="Select Services*"
-                                        value={formData.services}
-                                        onChange={handleChange}
-                                        required
-                                    />
+                                <select
+    className="form-control"
+    name="service"
+    value={formData.services || "Select Service"} // Default value
+    onChange={handleChange}
+    required
+>
+    <option value="" >Select Service*</option>
+    <option value="Logo Design">Logo Design</option>
+    <option value="Website Design">Website Design</option>
+    <option value="App Design">App Design</option>
+    <option value="Stationery">Stationery</option>
+    <option value="SEO">SEO</option>
+    <option value="SMM">SMM</option>
+</select>
+
+
                                 </div>
                             </div>
                             <div className="text-center mt-4">
