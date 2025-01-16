@@ -162,11 +162,11 @@ const PopupForm = ({ title }) => {
   value={formData.name}
   onChange={handleChange}
   required
-    pattern="^[a-zA-Z][a-zA-Z ]{0,55}$"
-                                    maxLength="55"
+    pattern="^[a-zA-Z][a-zA-Z ]{0,50}$"
+                                    maxLength="52"
   title="Please enter a valid name"
 />
-{formData.name && !/^[a-zA-Z][a-zA-Z ]{0,60}$/.test(formData.name) && (
+{formData.name && !/^[a-zA-Z][a-zA-Z ]{0,50}$/.test(formData.name) && (
                                     <div className="error-message">Not allowed more than 50 characters and it must be in alphabet</div>
                                 )}
 
@@ -180,7 +180,7 @@ const PopupForm = ({ title }) => {
             type="email"
            className="form-control"
             id="email"
-            placeholder="example@test.com"
+            placeholder="example@gmail.com"
             name="email"
             value={formData.email}
             onChange={handleChange}
