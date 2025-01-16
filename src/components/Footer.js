@@ -22,18 +22,8 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Quick Links Section */}
-          <div className="col-md-2 mb-4">
-            <h5 className="footer-heading">Quick Links</h5>
-            <ul className="footer-links list-unstyled">
-              <li><Link to="/" className="text-light text-decoration-none">Home</Link></li>
-              <li><Link to="/about-us" className="text-light text-decoration-none">About Us</Link></li>
-              <li><Link to="/contact-us" className="text-light text-decoration-none">Contact Us</Link></li>
-            </ul>
-          </div>
-
-          {/* Our Services Section */}
-          <div className="col-md-2 mb-4">
+           {/* Our Services Section */}
+           <div className="col-md-2 mb-4">
             <h5 className="footer-heading">Our Services</h5>
             <ul className="footer-links list-unstyled">
               <li><Link to="/logo-design" className="text-light text-decoration-none">Logo Design</Link></li>
@@ -44,6 +34,18 @@ const Footer = () => {
               <li><Link to="/smm" className="text-light text-decoration-none">SMM</Link></li>
             </ul>
           </div>
+
+          {/* Quick Links Section */}
+          <div className="col-md-2 mb-4">
+            <h5 className="footer-heading">Quick Links</h5>
+            <ul className="footer-links list-unstyled">
+              <li><Link to="/" className="text-light text-decoration-none">Home</Link></li>
+              <li><Link to="/about-us" className="text-light text-decoration-none">About Us</Link></li>
+              <li><Link to="/contact-us" className="text-light text-decoration-none">Contact Us</Link></li>
+            </ul>
+          </div>
+
+         
 
           {/* Follow Us and Contact Section */}
           <div className="col-md-4 mb-4">

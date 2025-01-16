@@ -551,6 +551,114 @@ img.icon-image {
 
 }
 
+
+
+/* ------------START DOC QA--------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 1081px) and (orientation: portrait) {
+    .col-md-7 {
+        flex: 0 0 auto;
+        width: 99%;
+    }
+
+    .col-md-5 {
+        flex: 0 0 auto;
+        width: 99%;
+    }
+
+    .about-heading {
+        margin-bottom: 0px; 
+    }
+    .about-desc {
+        margin-top: 18px;
+        margin-left: 0px;
+        margin-bottom: 20px; 
+    }
+    .my-abouts {
+        padding-bottom: 0px;
+    }
+    .custom-carousel-control {
+        margin-right: 8px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+    .unique-ui-designs-section{
+        padding: 0px !important;
+    }
+    .unique-ui-designs-section h3 {
+        font-weight: 700 !important;
+        font-size: 22px !important;
+    }
+    .footer .col-md-4 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .footer .col-md-2 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+}
+/* for mobile */
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+
+    .banner-content {
+        padding: 0px;
+    }
+    .banner-content h1 {
+        font-size: 32px;
+    }
+    .about-heading {
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+    .about-desc {
+        font-size: 14px;
+        margin-bottom: 20px;
+        margin-top: 11px;
+        margin-left: 0px;
+        color: #666666;
+        font-weight: 400;
+        text-align: justify;
+    }
+    img.icon-image {
+        position: unset;
+        width: 60px;
+    }
+    .icon-box {
+        align-items: center;
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .my-abouts {
+        padding: 0px;
+    }
+    .main-heading {
+        font-size: 27px !important;
+        margin-bottom: 10px !important;
+    }
+    .custom-carousel-control {
+        margin-right: 10px !important;
+    }
+    .pricing-heading-one {
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 0px;
+    }
+
+
+}
+/* ------------END DOC QA--------------*/
+
+
+
+
+
+
+
 /* Privacy policy page css */
 .simple-section{
     margin-top: 100px;
@@ -590,6 +698,7 @@ img.icon-image {
     background-color: #000;
     padding: 10px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
 /* Custom carousel slide */
