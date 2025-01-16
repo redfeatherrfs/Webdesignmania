@@ -197,11 +197,11 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                     onChange={handleChange}
                                     className="lpbanner-input"
                                     required
-                                    pattern="^[a-zA-Z][a-zA-Z ]{0,55}$"
-                                    maxLength="55"
+                                    pattern="^[a-zA-Z][a-zA-Z ]{0,50}$"
+                                    maxLength="52"
                                     title="Please enter a valid name"
                                 />
-                                {formData.name && !/^[a-zA-Z][a-zA-Z ]{0,60}$/.test(formData.name) && (
+                                {formData.name && !/^[a-zA-Z][a-zA-Z ]{0,50}$/.test(formData.name) && (
                                     <div className="error-message">Not allowed more than 50 characters and it must be in alphabet</div>
                                 )}
 
@@ -234,7 +234,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                     title="Please enter a valid email address."
                                 />
                                 {formData.email && !/^[^\s][^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) && (
-                                    <div className="error-message">Please enter a valid email address (no spaces at the beginning).</div>
+                                    <div className="error-message">Please enter a valid email address.</div>
                                 )}
 
 
