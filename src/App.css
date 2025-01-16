@@ -598,6 +598,20 @@ img.icon-image {
         flex: 0 0 auto;
         width: 50%;
     }
+    .about-heading {
+        font-weight: 700;
+        font-size: 30px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+    .d-md-block {
+        display: none !important;
+    }
+    .unique-ui-designs-section h2 {
+        font-weight: 700;
+        font-size: 38px !important;
+        color: #000000;
+    }
 
 }
 /* for mobile */
@@ -645,8 +659,39 @@ img.icon-image {
     }
     .pricing-heading-one {
         font-weight: 700;
-        font-size: 32px;
-        margin-bottom: 0px;
+        font-size: 32px !important;
+        margin-bottom: 0px !important;
+    }
+    .our-work-section{
+        padding-top: 40px;
+        padding-bottom: 0px !important;
+    }
+    .unique-number {
+        font-size: 14px !important;
+        font-weight: bold;
+        color: #999;
+    }
+    .unique-number {
+        font-size: 14px !important;
+        font-weight: bold;
+        color: #999;
+    }
+    .unique-ui-designs-section h3 {
+        font-weight: 700 !important;
+        font-size: 14px !important;
+    }
+    .unique-ui-designs-section p {
+        margin: 0;
+        font-size: 12px;
+        text-align: center;
+    }
+    .unique-ui-designs-section{
+        padding: 0px !important;
+    }
+    .unique-ui-designs-section h2 {
+        font-weight: 700;
+        font-size: 38px !important;
+        color: #000000;
     }
 
 
@@ -825,10 +870,10 @@ img.icon-image {
     color: #000000;
 }
 
-.unique-ui-designs-section h3 {
+/* .unique-ui-designs-section h3 {
     font-weight: 500;
     font-size: 32px;
-}
+} */
 
 .unique-number {
     font-size: 20px;
@@ -836,11 +881,11 @@ img.icon-image {
     color: #999;
 }
 
-.unique-ui-designs-section p {
+/* .unique-ui-designs-section p {
     margin: 0;
     font-size: 18px;
     text-align: center;
-}
+} */
 
 .section-divider {
     border: none;
