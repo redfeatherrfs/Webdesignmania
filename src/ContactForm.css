@@ -44,7 +44,7 @@ section.ebook-contact-form.container
       .form-control {
         font-weight: 400;
         /* line-height: 2.5; */
-        border: 1px solid #f7b09d;
+        border: 1px solid #3e1ec999;
     }
       /* .ebook-contact-form .btn-submit {
           background: linear-gradient(90deg, #F36A3F, #DE5A3E);
@@ -106,7 +106,7 @@ section.ebook-contact-form.container
     background-color: #eaf2fc00; /* Light blue background for the icon circle */
     border: 1px solid;
     border-radius: 50%;
-    color: #ED5E39; /* Icon color */
+    color: #3E1EC9; /* Icon color */
     padding: 12px; /* Padding to give circular shape */
     font-size: 18px; /* Size of the icon */
     width: 40px;
@@ -134,7 +134,16 @@ section.ebook-contact-form.container
   }
   
   .btn-submit {
-    background-color: #ED5E39;
+    background-color: #3E1EC9;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  .btn-submit:hover {
+    background-color: #3E1EC9 !important;
     color: white !important;
     padding: 10px 20px;
     border: none;
@@ -142,14 +151,7 @@ section.ebook-contact-form.container
     cursor: pointer;
   }
   
-  .btn-submit:hover {
-    background-color: #ED5E39;
-  }
   
-  
-      
-
-
         @media (max-width: 1000px) 
 
 {

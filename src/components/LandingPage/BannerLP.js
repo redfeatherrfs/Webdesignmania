@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import webdesignlogo from '../../images/webdesignlogo.svg';
-import bgimg from '../../images/lpbgfinal.png';
-import saleprice from '../../images/saleprice.png';
+import webdesignlogo from '../../images/webdesignpurplelogo.svg';
+import bgimg from '../../images/lpbgblue.png';
+import saleprice from '../../images/saleprice.svg';
 import formbg from '../../images/formbglp.png';
 import formbg2 from '../../images/formbglp2.png';
 import bracket from '../../images/bracket.png';
@@ -127,7 +127,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                         <div className="lp-banner-margin">
                             <p className="lpbanner-text">Web Design Mania is your ultimate toolkit for visionary web development, packed with advanced features to supercharge your digital journey. </p>
                             <div className="lpbanner-buttons">
-                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - £199')}>Get Started</button>
+                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - $199')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
                             </div>
                             <div className="lpbanner-badges">

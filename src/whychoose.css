@@ -181,6 +181,9 @@ h2.choose-service-heading.font-weight-bold {
     border-color: #ED5E39; /* Change border color */
   }
 
+  button.letsdiscuss {
+    color: #3E1EC9;
+}
 
   @media (max-width: 870px) and (min-width: 768px) {
     .choose-service-icon-box {

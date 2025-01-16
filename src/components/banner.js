@@ -38,7 +38,7 @@ const BannerSection = ({
                                 className="cta-button" 
                                 data-bs-toggle="modal" 
                                 data-bs-target="#popupForm" 
-                                onClick={() => updatePopupTitle('Custom Website Starter Package - £199')}
+                                onClick={() => updatePopupTitle('Custom Website Starter Package - $199')}
                             >
                                 {buttontext}
                             </button>

@@ -12,7 +12,7 @@
   }
   
   .check-icon {
-    color: orange; /* Set the color of the checkmark to orange */
+    color: #3E1EC9; /* Set the color of the checkmark to orange */
     margin-right: 10px; /* Add space between the checkmark and the text */
     font-size: 18px; /* Set the size of the checkmark */
   }
@@ -71,7 +71,7 @@
 
 .package-header h5 {
     text-align: left;
-    color: #ED5E39;
+    color: #3E1EC9;
     font-weight: 500;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .package-btn:hover {
-    background-color: #ED5E39;
+    background-color: #3E1EC9;
 }
 
 h2.price-heading.mb-4 {
@@ -120,7 +120,7 @@ h2.price-heading.mb-4 {
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
-    background-color: #ED5E39;
+    background-color: #3E1EC9;
     border-radius: 5px;
 }
 

@@ -1,6 +1,6 @@
 .top-head {
     color: white;
-    background: #ED5E39;
+    background: #3E1EC9;
     padding: 5px 0;
 }
 
@@ -12,7 +12,7 @@
 
 .avail-discount-btn {
     margin-right: 10px;
-    background: linear-gradient(to right, #F36A3F, #DE5A3E);
+    background: linear-gradient(to right, #3E1EC9, #3E1EC9);
 
     color: #ffffff;
 }
@@ -32,7 +32,7 @@
 .top-left .avail-discount-btn {
     background: #ffffff;
     padding: 5px 20px;
-    color: #ED5E39;
+    color: #3E1EC9;
     font-weight: bold;
     border-radius: 2px;
     font-size: 15px;
@@ -127,16 +127,16 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 .lpbanner-btn.btn-dark {
     color: #fff;
-    background-color: #ED5E39;
+    background-color: #3E1EC9;
 }
 
 .lpbanner-btn.btn-outline-light:hover {
-    color: #ED5E39;
+    color: #6752c4;
     /* Change text color to dark blue on hover */
 }
 
 .lpbanner-submit-btn:hover {
-    background-color: #ED5E39;
+    background-color: #3E1EC9;
     /* Lighter blue color on hover */
     color: #ffffff;
     /* Keep text color white on hover */
@@ -193,7 +193,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #ED5E38;
+    background-color: #3E1EC9;
     border-style: none;
 }
 
@@ -571,7 +571,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     position: relative; /* Ensures content is positioned above the background */
     background-size: cover; /* Ensures the image covers the whole area */
     background-position: center; /* Centers the background image */
-    background-image: url('./images/Group 1000009907.png'); /* Adjust the path */
+    background-image: url('./images/lpctapurple.png'); /* Adjust the path */
 }
 
 .lp-cta-sec2 h2 {

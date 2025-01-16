@@ -36,7 +36,7 @@ const LpPortfolio = ({ updatePopupTitle }) => {
                 </div>
 
                 <div className='text-center mt-4'>
-                    <button className='btn btn-lg btn-primary rounded-pill' data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - £199')}>Get Started</button>
+                    <button className='btn btn-lg btn-primary rounded-pill' data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - $199')}>Get Started</button>
                 </div>
             </div>
 

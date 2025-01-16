@@ -34,7 +34,7 @@ const EngagingUISection = ({updatePopupTitle}) => {
                         </div>
 
                         <div>
-                            <button className="btn btn-custom" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - £199')}>
+                            <button className="btn btn-custom" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - $199')}>
                                 Get Started
                             </button>
                         </div>

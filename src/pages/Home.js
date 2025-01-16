@@ -54,7 +54,7 @@ const Home = () => {
                 {
                     title: "Custom Website Starter Package",
                     subtitle: "Professional & Unique Designs!",
-                    price: "£199",
+                    price: "$199",
                     features: [
                         "Design Up to 3 Pages",
                         "5 Visual Images",
@@ -153,7 +153,7 @@ const Home = () => {
                 {
                     title: "E-commerce Website Starter Package",
                     subtitle: "Best Value for Money Guaranteed!",
-                    price: "£1199",
+                    price: "$1199",
                     features: [
                         "eCommerce Integration",
                         "Design Up to 20 Pages",
@@ -273,7 +273,7 @@ const Home = () => {
                 {
                     title: "Basic Logo Package",
                     subtitle: "Get Your Store Online!",
-                    price: "£45",
+                    price: "$45",
                     features: [
                         "2 Logo Design Concepts",
                         "4 Free Revisions",
@@ -323,7 +323,7 @@ const Home = () => {
                 {
                     title: "Stationery Basic Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "£129",
+                    price: "$129",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -391,7 +391,7 @@ const Home = () => {
                 {
                     title: "Basic SEO Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "£250",
+                    price: "$250",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -515,7 +515,7 @@ const Home = () => {
                 {
                     title: "Starter Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "£199",
+                    price: "$199",
                     features: [
                         "3 postings per week (per network) Facebook + Twitter + Instagram",
                         "Content Creation",

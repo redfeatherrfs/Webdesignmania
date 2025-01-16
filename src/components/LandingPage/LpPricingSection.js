@@ -17,8 +17,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    price: "£199",
-                    originalPrice: "£665",
+                    price: "$199",
+                    originalPrice: "$665",
                     features: [
                         "Design Up to 3 Pages",
                         "5 Visual Images",
@@ -128,7 +128,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "E-commerce Website Starter Package",
                     subtitle: "Best Value for Money Guaranteed!",
-                    price: "£1199",
+                    price: "$1199",
                     features: [
                         "eCommerce Integration",
                         "Design Up to 20 Pages",
@@ -248,7 +248,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Basic Logo Package",
                     subtitle: "Get Your Store Online!",
-                    price: "£45",
+                    price: "$45",
                     features: [
                         "2 Logo Design Concepts",
                         "4 Free Revisions",
@@ -298,7 +298,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Stationery Basic Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "£129",
+                    price: "$129",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -366,7 +366,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Basic SEO Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "£250",
+                    price: "$250",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -490,7 +490,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Starter Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "£199",
+                    price: "$199",
                     features: [
                         "3 postings per week (per network) Facebook + Twitter + Instagram",
                         "Content Creation",
@@ -595,7 +595,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
       <ul className="package-list">
         {item.features.map((feature, index) => (
           <li key={index}>
-            <IoCheckmarkOutline style={{ color: '#ED5E38', fontSize: '20px', marginRight: '10px' }} />
+            <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
             {feature}
           </li>
         ))}
@@ -607,7 +607,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             </div>
             {item.VAS.map((service, index) => (
               <li key={index}>
-                <IoCheckmarkOutline style={{ color: '#ED5E38', fontSize: '20px', marginRight: '10px' }} />
+                <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
                 {service}
               </li>
             ))}
@@ -621,7 +621,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             </div>
             {item.whatYouWillGet.map((service, index) => (
               <li key={index}>
-                <IoCheckmarkOutline style={{ color: '#ED5E38', fontSize: '20px', marginRight: '10px' }} />
+                <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
                 {service}
               </li>
             ))}

@@ -1,7 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../LandingPage.css';
-import lpcta2 from "../../images/Group 1000009907.png"; // Ensure this path is correct
+import lpcta2 from "../../images/lpctapurple.png"; // Ensure this path is correct
 
 const LpCtaSec2 = () => {
     console.log(lpcta2); // Debugging line to check if the path is correct
