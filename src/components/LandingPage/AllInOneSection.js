@@ -1,16 +1,18 @@
 import './AllInOneSection.css'
 import allInOneBannerImage from '../../images/all-in-one-banner.png'
+const AllInOneCombo = ({ updatePopupTitle }) => {
 
-const AllInOneCombo = () => {
-    return (
+     return (
         <section className="all-in-one-combo-section py-5">
             <div className="container">
                 <div className='row align-items-center'>
                     <div className='col-xl-6'>
-                        <h3 className="sub-title">Need a Website with Complete Branding Solutions?</h3>
+                        <h3 className="sub-title">Ultimate Value for Start-Ups & Businesses
+
+                        </h3>
                         <h1 className='title'>All-In-One Combo</h1>
-                        <h1 className='title'>$1199</h1>
-                        <p>Our all-in-one combo package offers comprehensive solutions: custom logo design, engaging web design, and professional stationery design. Let Creative Logo Design ensure your brand presents a cohesive and standout image across all platforms and materials.</p>
+                        <h1 className='title'>£1199</h1>
+                        <p>Our website development company gives you a one-pack offer with endless possibilities. With this package, you have the power to explore multiple aspects in one deal. You can infuse energy with a bespoke logo design, create engaging web designs, and develop professional stationery that impresses with innovative creativity. Experience creative logo design paired with effective marketing solutions that resonate with your audience.</p>
 
                         <div className='row'>
                             <div className='col-md-6'>
@@ -48,8 +50,8 @@ const AllInOneCombo = () => {
                             </div>
                             <div className='col-12'>
                                 <div className='d-flex gap-3 mt-3'>
-                                    <button className='btn btn-primary order-btn'>Order Now</button>
-                                    <button className='btn btn-outline-primary call-btn'>Call Now</button>
+                                    <button className='btn btn-primary order-btn' data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - $199')}>Order Now</button>
+                                    <a href="tel:+15515543283"><button className='btn btn-outline-primary call-btn'>Call Now</button></a>
                                 </div>
                             </div>
                         </div>

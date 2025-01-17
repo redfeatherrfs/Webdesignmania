@@ -10,7 +10,7 @@ const TopHead = ({ updatePopupTitle }) => {
             <div className="container">
                 <div className="row">
                     <div className="top-left col-md-7">
-                        <h5>Limited Time Offer - Activate Your 70% off Coupon!
+                        <h5>Need a Website? You Dream It – We Build It
                             <button
                                 title={title}
                                 className="avail-discount-btn custom-btn common-popup mb-3 mb-md-0"
@@ -26,16 +26,16 @@ const TopHead = ({ updatePopupTitle }) => {
                             <li style={{ display: 'inline-block', marginRight: '20px' }}>
                                 <a
                                     className="toll_icon"
-                                    href="tel:+02045112054"
+                                    href="tel:+15515543283"
                                     style={{ color: 'white', display: 'flex', alignItems: 'center' }}
                                 >
                                     <FaPhone style={{ marginRight: '8px' }} />
-                                    0204-511-2054
+                                    +1 (551) 554-3283
                                 </a>
                             </li>
                             <li style={{ display: 'inline-block' }}>
                                 <a
-                                    href="https://wa.me/+447380100492"
+                                    href="https://wa.me/18482369397"
                                     className="chat_icon chat"
                                     style={{ color: 'white', display: 'flex', alignItems: 'center' }}
                                 >

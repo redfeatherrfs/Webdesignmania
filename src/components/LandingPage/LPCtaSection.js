@@ -14,11 +14,11 @@ const LpCta1 = () => {
           <div className="col-12">
             <h2 className="cta-heading">Ignite curiosity, and inspire action with our classy web design services. </h2>
             <p className="cta-text">
-            Leave a message. Our professional web designers will get in touch with you.
+            Leave a message. Our website design agency’s professional web designers will get in touch with you.
             </p>
             <div className="cta-buttons">
-              <button className="btn btn-primary leave-message-btn">Leave A Message</button>
-              <button className="btn btn-outline-light live-chat-btn">Live Chat</button>
+              <a target="_blank" href="https://wa.me/18482369397" className="btn btn-primary leave-message-btn">Leave A Message</a>
+              
             </div>
           </div>
         </div>

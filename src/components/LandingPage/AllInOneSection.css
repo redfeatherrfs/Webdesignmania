@@ -22,24 +22,25 @@
 
 .all-in-one-combo-section .order-btn {
     background-color: white !important;
-    color: #3A19CB !important;
+    color: #e9623e !important;
+    border: 1px salmon;
 }
 
 .all-in-one-combo-section .order-btn:hover {
-    background-color: #3A19CB !important;
+    background-color: #e9623e !important;
     border: 1px solid white !important;
     color: white !important;
 }
 
 .all-in-one-combo-section .call-btn {
-    background-color: #3A19CB !important;
+    background-color: #e9623e !important;
     border: 1px solid white !important;
     color: white !important;
 }
 
 .all-in-one-combo-section .call-btn:hover {
     background-color: white !important;
-    color: #3A19CB !important;
+    color: #e9623e !important;
 }
 
 /* For screen 1400px & up */

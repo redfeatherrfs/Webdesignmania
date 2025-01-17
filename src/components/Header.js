@@ -64,11 +64,11 @@ const Header = () => {
                 <Link to="/contact-us" className="nav-link custom-nav-link">Contact Us</Link>
               </li>
             </ul>
-            <div className="custom-phone-number ms-3">
+            {/* <div className="custom-phone-number ms-3">
               <a href="tel:+15515543283" className="nav-link">
                 +1 (551) 554-3283
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

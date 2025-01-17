@@ -1,4 +1,6 @@
 import { Tabs, Tab, Container, Row, Col } from 'react-bootstrap';
+import { IoCheckmarkOutline } from 'react-icons/io5'; // Import the desired checkmark icon
+
 import '../../PricingSection.css'; // Import the CSS file
 
 
@@ -9,8 +11,14 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Custom Website Starter Package",
-                    subtitle: "Professional & Unique Designs!",
-                    price: "$399",
+                    subtitle: (
+                        <>
+                            Professional & Unique Design <br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    price: "$199",
+                    originalPrice: "$665",
                     features: [
                         "Design Up to 3 Pages",
                         "5 Visual Images",
@@ -23,7 +31,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -33,7 +41,13 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Custom Website Essential Package",
-                    subtitle: "Professional & Unique Designs!",
+                    subtitle: (
+                        <>
+                            Professional & Unique Design <br></br><br></br>
+
+
+                        </>
+                    ),
                     price: "Let's talk!",
                     features: [
                         "Design Up to 6 Pages",
@@ -55,7 +69,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -66,7 +80,13 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Custom Website Business Package",
-                    subtitle: "Professional & Unique Designs!",
+                    subtitle: (
+                        <>
+                            Professional & Unique Design <br></br><br></br>
+
+
+                        </>
+                    ),
                     price: "Let's talk!",
                     features: [
                         "Design Up to 10 Pages",
@@ -91,7 +111,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Complete Deployment",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -133,7 +153,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -170,7 +190,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -211,7 +231,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee*",
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -379,7 +399,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "100% Ownership Rights",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee *",
+                        "100% Money Back Guarantee",
                     ],
                 },
                 {
@@ -418,7 +438,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "100% Ownership Rights",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee *",
+                        "100% Money Back Guarantee",
                     ],
                 },
                 {
@@ -459,7 +479,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         "100% Ownership Rights",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee *",
+                        "100% Money Back Guarantee ",
                     ],
                 },
             ],
@@ -541,7 +561,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
     return (
         <section className="pricing-section text-center py-5" id='pricing-section'>
             <Container>
-                <h2 className="mb-4">Pocket-Friendly Pricing Solutions </h2>
+                <h2 className="price-heading mb-4">Budget Friendly Pricing Solutions </h2>
 
                 {/* React Bootstrap Tabs with Centered and No Underline */}
                 <Tabs
@@ -559,43 +579,58 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                                         <div className="package">
                                             <div className="package-header">
                                                 <h5>{item.title}</h5>
-                                                <h6>{item.subtitle}</h6>
+                                                <h6>{item.subtitle} <strong> {item.boldTitle}</strong></h6>
 
                                                 {/* Price section */}
                                                 <div className="price">
                                                     <h2>{item.price}</h2>
-                                                    {/* <div>
+                                                    <div>
                                                         <strike>{item.originalPrice}</strike>
-                                                    </div> */}
+                                                    </div>
                                                 </div>
                                             </div>
 
                                             {/* Scrollable Div for Package Details */}
                                             <div className="scrollable-content">
-                                                <ul className="package-list">
-                                                    {item.features.map((feature, index) => (
-                                                        <li key={index}>{feature}</li>
-                                                    ))}
+      <ul className="package-list">
+        {item.features.map((feature, index) => (
+          <li key={index}>
+            <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
+            {feature}
+          </li>
+        ))}
 
-                                                    {item?.VAS?.length && (
-                                                        <>
-                                                            <div className='text-center text-dark'><b>Value Added Services</b></div>
-                                                            {item.VAS.map((service, index) => (
-                                                                <li key={index}>{service}</li>
-                                                            ))}
-                                                        </>
-                                                    )}
+        {item?.VAS?.length && (
+          <>
+            <div className="text-center text-dark">
+              <b>Value Added Services</b>
+            </div>
+            {item.VAS.map((service, index) => (
+              <li key={index}>
+                <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
+                {service}
+              </li>
+            ))}
+          </>
+        )}
 
-                                                    {item?.whatYouWillGet?.length && (
-                                                        <>
-                                                            <div className='text-center text-dark'><b>What will you Get?</b></div>
-                                                            {item.whatYouWillGet.map((service, index) => (
-                                                                <li key={index}>{service}</li>
-                                                            ))}
-                                                        </>
-                                                    )}
-                                                </ul>
-                                            </div>
+        {item?.whatYouWillGet?.length && (
+          <>
+            <div className="text-center text-dark">
+              <b>What will you Get?</b>
+            </div>
+            {item.whatYouWillGet.map((service, index) => (
+              <li key={index}>
+                <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
+                {service}
+              </li>
+            ))}
+          </>
+        )}
+      </ul>
+    </div>
+
+
 
                                             {/* Button */}
                                             <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updatePopupTitle(item.price.includes('$') ? `${item.title} - ${item.price}` : item.title)} className="package-btn">START PROJECT</button>

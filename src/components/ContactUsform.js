@@ -126,7 +126,47 @@ const ContactUsform = () => {
 
                         {/* Second Column - Form */}
                         <div className="col-lg-7 contactuspg-form bg-light p-4">
-                            <form method='POST' onSubmit={handleSubmit}>
+                            {/* <form method='POST' onSubmit={handleSubmit}>
+                                <div className="row">
+                                    <div className="col-md-6 mb-3">
+                                        <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.firstName} name='firstName' placeholder="First Name" required />
+                                    </div>
+                                    <div className="col-md-6 mb-3">
+                                        <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.lastName} name='lastName' placeholder="Last Name" required />
+                                    </div>
+                                </div>
+                                <div className="row">
+                                    <div className="col-md-6 mb-3">
+                                        <input type="email" className="form-control contactuspg-input" onChange={handleChange} value={formData.email} name='email' placeholder="Email" required />
+                                        <div className="invalid-feedback">
+                                            Invalid Email address
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6 mb-3">
+                                        <input type="tel" className="form-control contactuspg-input" onChange={handleChange} value={formData.phone} name='phone' placeholder="Phone Number" required />
+                                        <div className="invalid-feedback">
+                                            Invalid Phone number. Example: +19876543210
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="mb-3">
+                                    <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.subject} name='subject' placeholder="Subject" required />
+                                </div>
+                                <div className="mb-3">
+                                    <textarea className="form-control contactuspg-input" rows="5" onChange={handleChange} value={formData.message} name='message' placeholder="Message" required></textarea>
+                                </div>
+                                <div className="text-end">
+                                    <button type="submit" className="btn btn-submit" disabled={loading}>
+                                        {loading ? (
+                                            <>
+                                                <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+                                                <span role="status">Submitting...</span>
+                                            </>
+                                        ) : 'Submit Now'}
+                                    </button>
+                                </div>
+                            </form> */}
+                             <form method='POST' onSubmit={handleSubmit}>
                                 <div className="row">
                                     <div className="col-md-6 mb-3">
                                         <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.firstName} name='firstName' placeholder="First Name" required />

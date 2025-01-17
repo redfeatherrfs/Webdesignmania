@@ -1,51 +1,64 @@
 .top-head {
     color: white;
-	background: #3716C7;
-	padding: 5px 0;
-   
+    background: #3E1EC9;
+    padding: 5px 0;
 }
 
 
-.top-head a{
-    
+.top-head a {
+
     text-decoration: none;
 }
 
 .avail-discount-btn {
-	margin-right: 10px;
-	background: linear-gradient(to right, #9053F5, #6226EE);
+    margin-right: 10px;
+    background: linear-gradient(to right, #3E1EC9, #3E1EC9);
 
-	color: #ffffff;
+    color: #ffffff;
 }
 
+.swiper-wrapper {
+    align-items: center;
+}
+
+
+/* Keyframes for blinking animation */
+@keyframes blinker {
+    50% {
+      opacity: 0; /* Make the icon disappear at the halfway point */
+    }
+  }
+
 .top-left .avail-discount-btn {
-    background: #ffba00;
+    background: #ffffff;
     padding: 5px 20px;
-    color: #000;
+    color: #3E1EC9;
     font-weight: bold;
     border-radius: 2px;
     font-size: 15px;
-        margin-left: 20px;
+    margin-left: 20px;
+    border-style: none;
+    animation: blinker 1s linear infinite;
 }
 
-.lp-banner-margin{
+/* .lp-banner-margin {
     margin-left: 50px;
-}
+} */
 
 
 .custom-btn {
-	padding: 10px;
-	border-radius: 10px;
-	display: inline-block;
-	font-size: 18px;
-	text-decoration: none;
-	text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
 }
 
 
 .top-left.col-md-7 {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -55,84 +68,99 @@
     background-position: center;
     padding: 50px 0;
 }
-  .lpbanner-logo {
-    
+
+.lpbanner-logo {
+    width: 40%;
+    height: auto;
     margin-bottom: 40px;
-  }
-  
-  .lpbanner-heading {
+}
+
+.lpbanner-heading {
     font-size: 3.5rem;
     color: #fff;
     font-weight: bold;
     /* display: flex; */
     align-items: center;
-  }
+}
 
-  
-  .lpbanner-bracket {
-    color: #f39c12; /* Customize the color for brackets */
+
+.lpbanner-bracket {
+    color: #f39c12;
+    /* Customize the color for brackets */
     font-size: 6rem;
     margin-right: 10px;
-  }
-  
-  .lpbanner-price {
+}
+
+.lpbanner-price {
     color: #FFBD35;
-  }
-  
-  .lpbanner-text {
+}
+
+.lpbanner-text {
     color: #ffffff;
-    margin: 20px 0;
+    /* margin: 20px 0; */
     font-size: 1.2rem;
+}
+
+img.saleprice {
+    width: 130px;
+    margin-top: -42px;
+    mix-blend-mode: color-dodge;
+    animation: blinker 1s linear infinite;
 }
 
 
 textarea.lpbanner-input.lpbanner-textarea {
- 
+
     height: 80px !important;
 }
-  
-  .lpbanner-buttons .lpbanner-btn {
+
+.lpbanner-buttons .lpbanner-btn {
     margin-right: 15px;
-    padding: 10px 20px;
+    padding: 12px 40px;
     border-radius: 5px;
-  }
-  
-  .lpbanner-btn.btn-outline-light {
+}
+
+.lpbanner-btn.btn-outline-light {
     border-color: #fff;
     color: #fff;
-  }
+}
 
-  .lpbanner-btn.btn-dark {
+.lpbanner-btn.btn-dark {
     color: #fff;
-    background-color: #0f04ad;
-  }
+    background-color: #3E1EC9;
+}
 
-  .lpbanner-btn.btn-outline-light:hover {
-    color: darkblue; /* Change text color to dark blue on hover */
+.lpbanner-btn.btn-outline-light:hover {
+    color: #6752c4;
+    /* Change text color to dark blue on hover */
 }
 
 .lpbanner-submit-btn:hover {
-    background-color: #0f04ad; /* Lighter blue color on hover */
-    color: #ffffff; /* Keep text color white on hover */
+    background-color: #3E1EC9;
+    /* Lighter blue color on hover */
+    color: #ffffff;
+    /* Keep text color white on hover */
 }
-  
+
 .lpbanner-badges img {
     margin-top: 20px;
-    width: 120px;
+    width: 270px;
     margin-right: 10px;
 }
-  
-  .lpbanner-form {
+
+
+
+.lpbanner-form {
     background: rgb(255 255 255 / 61%);
     padding: 30px;
     border-radius: 10px;
     backdrop-filter: blur(10px);
     color: #fff;
-  }
-  
- 
+}
 
-  .lpbanner-form-title {
+
+
+.lpbanner-form-title {
     font-size: 1.5rem;
     color: #000000;
     margin-bottom: 10px;
@@ -140,14 +168,14 @@ textarea.lpbanner-input.lpbanner-textarea {
 }
 
 .lpbanner-form p {
- 
+
     color: #696969;
     margin-bottom: 10px;
     justify-self: center;
 }
-  
-  
-  .lpbanner-input {
+
+
+.lpbanner-input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -155,22 +183,40 @@ textarea.lpbanner-input.lpbanner-textarea {
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 100%);
     color: #333;
-  }
-  
+}
 
 
 
-  .lpbanner-submit-btn {
+
+.lpbanner-submit-btn {
     color: #ffffff;
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #3716C7;
+    background-color: #3E1EC9;
+    border-style: none;
 }
-  
 
 
+.error-message {
+    padding: 0px;
+    margin: 0px;
+    margin-top: -6px;
+    padding: 10px 0px 10px 0px;
+    color: red;
+}
 
+
+@media only screen and (max-width: 768px) {
+    .lp-logo-slider h2 {
+        font-size: 31px !important;
+    }
+    .lpbanner-buttons .lpbanner-btn {
+        margin-right: 15px;
+        padding: 10px 20px !important;
+        border-radius: 5px;
+    }
+}
 
 
 /* languagelogos */
@@ -178,36 +224,37 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 .languagelogos {
-  overflow: hidden;
-  padding: 20px 0;
-  background: #ffffff;
-  white-space: nowrap;
-  position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    background: #ffffff;
+    white-space: nowrap;
+    position: relative;
 }
 
 .languagelogos:before,
 .languagelogos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
 }
 
 /* Uncomment these if you want the gradient effect at the edges
@@ -223,18 +270,18 @@ textarea.lpbanner-input.lpbanner-textarea {
 */
 
 .languagelogos:hover .languagelogos-slide {
-  animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .languagelogos-slide {
-  display: inline-block;
-  animation: 35s slide infinite linear;
+    display: inline-block;
+    animation: 35s slide infinite linear;
 }
 
 .languagelogos-slide img {
-  height: 100%;
-  margin: 0 40px;
-  border-radius: 15px;
+    height: 100%;
+    margin: 0 40px;
+    border-radius: 15px;
 }
 
 
@@ -246,19 +293,20 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 .lpthirdsection {
     background-color: #FAFAFA;
-    padding: 50px 0; /* Add some padding for top and bottom */
+    padding: 50px 0;
+    /* Add some padding for top and bottom */
 }
 
-.lpiconbox h4{
+.lpiconbox h4 {
     margin-top: 10px;
 }
 
-.lpthird-head{
+.lpthird-head {
     align-items: center;
     width: 600px;
 }
 
-.lpthirdsection h2{
+.lpthirdsection h2 {
     font-size: 2.8rem;
     font-weight: 700;
 }
@@ -276,9 +324,12 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 
 .lpicon-image {
-    width: 50px; /* Set width for the icon image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Space between image and text */
+    width: 50px;
+    /* Set width for the icon image */
+    height: auto;
+    /* Maintain aspect ratio */
+    margin-right: 15px;
+    /* Space between image and text */
 }
 
 
@@ -298,39 +349,39 @@ textarea.lpbanner-input.lpbanner-textarea {
     color: white;
     padding: 60px 0;
     text-align: center;
-  }
-  
-  
-  .cta-heading {
+}
+
+
+.cta-heading {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .cta-text {
+}
+
+.cta-text {
     font-size: 1rem;
     margin-bottom: 30px;
-  }
-  
-  .cta-buttons .leave-message-btn {
+}
+
+.cta-buttons .leave-message-btn {
     background-color: white;
-    color: #4B0082;
+    color: #853101;
     border: none;
     padding: 10px 20px;
     font-weight: bold;
     margin-right: 15px;
-  }
-  
-  .cta-buttons .live-chat-btn {
+}
+
+.cta-buttons .live-chat-btn {
     background-color: transparent;
     color: white;
     border: 2px solid white;
     padding: 10px 20px;
     font-weight: bold;
-  }
-  
+}
 
-  
+
+
 
 /* End Landing Page CTA */
 
@@ -338,49 +389,52 @@ textarea.lpbanner-input.lpbanner-textarea {
 /* Start LpIconServiceBox */
 
 .lp-service-icon-box {
-  padding: 50px 0; /* Adjust padding as needed */
+    padding: 50px 0;
+    /* Adjust padding as needed */
 }
 
 .lp-service-icon-box h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
 .lp-service-icon-box p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
 .lp-icon-box {
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 .lp-icon-box img {
-  max-width: 100px; /* Adjust size as needed */
-  margin-bottom: 15px;
+    max-width: 100px;
+    /* Adjust size as needed */
+    margin-bottom: 15px;
 }
 
 .lp-icon-box {
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box; /* Ensure padding is included in width */
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    /* Ensure padding is included in width */
 }
 
 .lp-icon-image {
-  max-width: 100%; 
-  height: auto; 
+    max-width: 100%;
+    height: auto;
 }
 
 
 
 .lp-icon-box h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .lp-icon-box p {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 
@@ -408,147 +462,217 @@ textarea.lpbanner-input.lpbanner-textarea {
 /**************** Start LpImgSec *****************/
 
 .lp-img-sec {
-  padding: 50px 0; /* Adjust padding as needed */
+    padding: 50px 0;
+    /* Adjust padding as needed */
 }
 
 .lp-img-sec img {
-  border-radius: 10px; /* Optional: Add rounded corners to images */
-  
+    border-radius: 10px;
+    /* Optional: Add rounded corners to images */
+
 }
 
 /* Ensure spacing between columns */
 
-
 /***************** Start LpLogo Slider Sections **************/
 
 .lp-logo-slider {
-  padding: 50px 0; /* Adjust padding as needed */
-  background-color: #f8f9fa; /* Example background color */
+    padding: 50px 0;
+    /* Adjust padding as needed */
 }
 
 .lp-logo-slider h2 {
-  font-size: 2.5rem; /* Adjust font size */
-  margin-bottom: 30px; /* Space below heading */
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
 }
 
 .logo-image {
-  max-width: 100%; /* Ensure logos are responsive */
-  height: auto; /* Maintain aspect ratio */
+    max-width: 80%;
+    height: auto;  /* Set a fixed height for logos */
+    object-fit: contain;  /* Maintain aspect ratio while filling the height */
+}
+
+/* Ensure images are centered and equally spaced */
+.lp-logo-slider .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* Full height of the swiper container */
 }
 
 /* Adjust Swiper navigation buttons */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #00060c; /* Change color as needed */
-  /* font-size: 2rem;  */
+    color: #00060c;
+    /* Change color as needed */
 }
 
-
-
 .lp-logo-slider .container-fluid {
-  position: relative;
+    position: relative;
 }
 
 .custom-carousel-control {
-  background-color: #4B29DD;
-  color: #fff;
-  border: none;
-  padding: 8px 12px;
-  border-radius: 5px;
-  cursor: pointer;
+    background-color: #853101;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
 }
 
 .custom-carousel-control i {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .custom-carousel-control:hover {
-  background-color: #4B29DD;
+    background-color: #853101;
 }
 
+/* Make the logos responsive across devices */
+@media (min-width: 320px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 100%; /* Single logo per slide on small screens */
+    }
+}
 
+@media (min-width: 576px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 50%; /* Two logos per slide */
+    }
+}
 
-/***************** End LpLogo Slider Sections **************/
-
-
-
-/***************** Start LP CTA2  ************/
-
-.lp-cta-sec2 {
- 
-  padding: 40px 0;
+@media (min-width: 768px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 33.33%; /* Three logos per slide */
+    }
   
 }
 
+@media (min-width: 992px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 25%; /* Four logos per slide */
+    }
+}
+
+@media (min-width: 1200px) {
+    .lp-logo-slider .swiper-slide {
+        flex: 0 0 20%; /* Five logos per slide */
+    }
+}
+
+/***************** End LpLogo Slider Sections **************/
+
+.lp-cta-sec2 {
+    padding: 100px 0;
+    position: relative; /* Ensures content is positioned above the background */
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the background image */
+    background-image: url('./images/lpctapurple.png'); /* Adjust the path */
+}
 
 .lp-cta-sec2 h2 {
-  font-size: 2.5rem;
-  color: white;
-  margin-bottom: 10px;
-  font-weight: 700;
+    font-size: 45px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .lp-cta-sec2 p {
-  color: white;
-  font-size: 1rem;
-  opacity: 0.8;
+    color: white;
+    font-size: 18px;
+    opacity: 0.8;
 }
 
 .cta2-button {
-  background-color: white;
-  color: #333;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: all 0.3s ease;
-  width: 100%; /* Full width for small devices */
-  max-width: 200px;
+    background-color: white;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width for small devices */
+    max-width: 200px;
+    margin-top: 20px; /* Added margin for spacing */
 }
 
 .cta2-button:hover {
-  background-color: #f0f0f0;
-  color: #333;
+    background-color: #f0f0f0;
+    color: #333;
+}
+@media (max-width: 1024px) {
+    .lp-cta-sec2 {
+        height: auto; /* Make height auto to avoid stretching on small screens */
+        background-size: cover; /* Ensures the image still covers the section */
+        background-position: center center; /* Keeps the background centered */
+    }
+
+    .lp-cta-sec2 h2 {
+        font-size: 2rem; /* Adjust the font size for tablets */
+    }
+
+    .lp-cta-sec2 p {
+        font-size: 0.9rem; /* Adjust the font size for smaller screens */
+    }
+
+    .cta2-button {
+        max-width: 250px; /* Adjust button size */
+    }
 }
 
+/* Responsive styling to ensure button and text align well on smaller screens */
+@media (max-width: 768px) {
+    .lp-cta-sec2 h2 {
+        font-size: 2rem; /* Adjust the font size for small screens */
+    }
 
+    .lp-cta-sec2 p {
+        font-size: 0.9rem; /* Adjust the font size for small screens */
+    }
+}
 
-/***************** End LP CTA2  ************/
 
 
 /*****************  Start LP Contact ************/
 
 .lp-contact-sec {
-  padding: 30px 0;
-  color: white;
+    padding: 30px 0;
+    color: white;
 }
 
 .lp-contact-sec .icon-image {
-  width: 60px;
-  height: 60px;
+    width: 60px;
+    height: 60px;
 }
 
 .lp-contact-sec .contact-link {
-  color: inherit;
+    /* color: inherit;
   text-decoration: none;
   display: flex;
   align-items: center;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease; */
+    text-decoration: none;
+    color: white;
 }
 
 .lp-contact-sec .contact-link:hover {
-  color: #f0f0f0; /* Adjust hover color as needed */
+    color: #f0f0f0;
+    /* Adjust hover color as needed */
 }
 
 .lp-contact-sec p {
-  font-size: 1rem;
-  margin: 0;
+    font-size: 1rem;
+    margin: 0;
 }
 
 .lp-contact-sec h4 {
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin: 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
 }
 
 
@@ -557,28 +681,35 @@ textarea.lpbanner-input.lpbanner-textarea {
 /*****************  Start LP Footer ************/
 
 .lp-footer-sec {
-  padding: 20px 0;
-  color: white;
+    padding: 20px 0;
+    color: white;
 }
 
 .lp-footer-sec .footer-logo {
-  width: 180px; /* Adjust size as needed */
-  height: auto;
+    width: 60%;
+    /* Adjust size as needed */
+    height: auto;
 }
 
 .lp-footer-sec p {
-  font-size: 0.9rem;
-  margin: 0;
+    font-size: 0.9rem;
+    margin: 0;
 }
 
 .lp-footer-sec .footer-link {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .lp-footer-sec .footer-link:hover {
-  color: #f0f0f0; /* Adjust hover color as needed */
+    color: #f0f0f0;
+    /* Adjust hover color as needed */
+}
+
+.lp-footer-sec .social-links a {
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -590,11 +721,11 @@ textarea.lpbanner-input.lpbanner-textarea {
 @media(max-width: 376px) {
 
 
-	.top-head {
-		background: #3716C7;
-		padding: 5px 0;
-		font-size: 10px;
-	}
+    .top-head {
+        background: #3E1EC9;
+        padding: 5px 0;
+        font-size: 10px;
+    }
 
 }
 
@@ -602,69 +733,82 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 @media (max-width: 576px) {
     .cta-heading {
-      font-size: 1.5rem;
-    }
-  
-    .cta-buttons .leave-message-btn, 
-    .cta-buttons .live-chat-btn {
-      padding: 8px 16px;
-      font-size: 0.9rem;
+        font-size: 1.5rem;
     }
 
-   /**************** Start LpImgSec *****************/
-      .lp-img-sec .col-md-4 {
-          padding: 0 15px; /* Add horizontal space between columns */
-      }
+    .cta-buttons .leave-message-btn,
+    .cta-buttons .live-chat-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /**************** Start LpImgSec *****************/
+    .lp-img-sec .col-md-4 {
+        padding: 0 15px;
+        /* Add horizontal space between columns */
+    }
+
     /**************** End LpImgSec *****************/
 
     /***************** Start LpLogo Slider Sections **************/
     .lp-logo-slider h2 {
-      font-size: 2rem; /* Smaller font size on mobile */
-  }
-   /***************** End LpLogo Slider Sections **************/
-  }
+        font-size: 2rem;
+        /* Smaller font size on mobile */
+    }
+
+    /***************** End LpLogo Slider Sections **************/
+}
 
 @media only screen and (max-width: 768px) {
-  .lp-footer-sec {
-    padding: 20px 0px 80px 0px;
-    color: white;
-  }
-  .lp-footer-sec .footer-logo {
-    width: 150px; /* Adjust size as needed */
-    height: auto;
-  }
-  .lp-footer-sec .text-md-start {
-    text-align: center !important;
-}
-.lp-footer-sec .text-md-end {
-    text-align: center !important;
-}
-  .lp-cta-sec2 {
-    padding: 40px 0;
-    text-align: center;
-}
+    .lp-footer-sec {
+        padding: 20px 0px 80px 0px;
+        color: white;
+    }
 
-  .lp-cta-sec2 h2 {
-    font-size: 1.5rem;
-}
-.lp-cta-sec2 p {
-    font-size: 0.9rem;
-}
+    .lp-footer-sec .footer-logo {
+        width: 60%;
+        /* Adjust size as needed */
+        height: auto;
+        padding: 10px;
+    }
 
-  .col-8.lp-lg-slider {
-    text-align: center;
-}
+    .lp-footer-sec .text-md-start {
+        text-align: center !important;
+    }
+
+    .lp-footer-sec .text-md-end {
+        text-align: center !important;
+    }
+
+    .lp-cta-sec2 {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .lp-cta-sec2 h2 {
+        font-size: 1.5rem;
+    }
+
+    .lp-cta-sec2 p {
+        font-size: 0.9rem;
+    }
+
+    .col-8.lp-lg-slider {
+        text-align: center;
+    }
 
     .lpbanner-badges img {
-        width: 100px !important;
+        width: 234px !important;
     }
+
     .col-md-5.lp-right-column {
         padding: 0px !important;
     }
-    .lp-banner-margin{
+
+    .lp-banner-margin {
         margin-left: 0px !important;
     }
-    
+
     .lpbanner-heading {
         font-size: 1.8rem;
         color: #fff;
@@ -672,41 +816,59 @@ textarea.lpbanner-input.lpbanner-textarea {
         /* display: flex; */
         align-items: center;
     }
+
     .top-left.col-md-7 {
 
-		display: none;
-	}
+        display: none;
+    }
 
     .top-head {
-		background: #3716C7;
-		padding: 5px 0;
-		font-size: 12px;
-	}
+        background: #160A48;
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
     img.lpbanner-bracket-img {
         display: none;
     }
-/***************** Start LpLogo Slider Sections **************/
+
+    /***************** Start LpLogo Slider Sections **************/
     .lp-logo-slider h2 {
-      font-size: 2.5rem; /* Medium font size on tablets */
+        font-size: 2.5rem;
+        /* Medium font size on tablets */
 
-  }
+    }
 
-  /***************** End LpLogo Slider Sections **************/
+    /***************** End LpLogo Slider Sections **************/
 }
 
 /* Lp Third Section */
 @media (max-width: 768px) {
-    .lpthirdsection h2{
+    img.saleprice {
+        width: 103px;
+        margin-top: -18px;
+        mix-blend-mode: color-dodge;
+    }
+    .lpthirdsection h2 {
         font-size: 1.8rem;
         font-weight: 500;
     }
+
     .lpiconbox {
-        flex-direction: column; /* Stack image above text on small screens */
-        align-items: flex-start; /* Align items to the start */
+        flex-direction: column;
+        /* Stack image above text on small screens */
+        align-items: flex-start;
+        /* Align items to the start */
+    }
+    .lpbanner-logo {
+        width: 99%;
+        height: auto;
+        margin-bottom: 30px;
     }
 
     .lpicon-image {
-        margin-bottom: 10px; /* Space below image */
+        margin-bottom: 10px;
+        /* Space below image */
     }
 }
 
@@ -721,15 +883,17 @@ textarea.lpbanner-input.lpbanner-textarea {
         color: #fff;
     }
 
-    
-    .lp-right-column{
+
+    .lp-right-column {
         width: 100%;
         background-image: none !important;
     }
-    .lp-right-column .img{
+
+    .lp-right-column .img {
         display: none;
     }
-    .top-left .avail-discount-btn{
+
+    .top-left .avail-discount-btn {
         display: none;
     }
 
@@ -738,13 +902,14 @@ textarea.lpbanner-input.lpbanner-textarea {
         width: 100%;
         place-items: center;
     }
-.lpbanner {
-    
-    background: #5638DD;
-    background-size: cover;
-    background-position: center;
-    padding: 50px 0;
-    /* height: 800px; */
-    text-align: -webkit-center;
-}
+
+    .lpbanner {
+
+        /* background: #853101; */
+        background-size: cover;
+        background-position: center;
+        padding: 50px 0;
+        /* height: 800px; */
+        text-align: -webkit-center;
+    }
 }

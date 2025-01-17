@@ -195,9 +195,10 @@ body {
 
 
 /* Start header */
+/* Start header */
 
 .custom-header .navbar {
-    background: linear-gradient(0deg, #1E00B200 7.59%, #160a48 82.03%);
+    background:  #160a48;
     padding: 20px 0;
     transition: background-color 0.3s ease;
 }
@@ -234,8 +235,47 @@ body {
     background: #00000075;
 }
 
+/* Scrollbar track (background of the scrollbar) */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
+    height: 8px; /* Set the height for horizontal scrollbar */
+}
 
+/* Scrollbar thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: #6A48FF; /* Set the color */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 2px solid #6A48FF; /* Optional: adding border for more contrast */
+}
+
+/* Scrollbar track when hovered */
+::-webkit-scrollbar:hover {
+    width: 10px; /* Optional: Increase width when hovered */
+}
+
+/* Scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5e3de7; /* Slightly darker shade on hover */
+}
 /* End header */
+
+h1.thankyou {
+    font-size: 3rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.navbar-toggler {
+    padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+    font-size: var(--bs-navbar-toggler-font-size);
+    line-height: 1;
+    color: rgb(0 0 0);
+    background-color: #ffffffc2;
+    border: var(--bs-border-width) solid rgb(255 255 255);
+    border-radius: var(--bs-navbar-toggler-border-radius);
+    transition: var(--bs-navbar-toggler-transition);
+}
 
 
 /* Footer Styles */

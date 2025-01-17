@@ -7,7 +7,7 @@ import '../../LandingPage.css';
 
 const LpLogoSlider = ({ logos }) => {
     return (
-        <section className="lp-logo-slider py-5">
+        <section className="lp-logo-slider mb-4">
             <div className="container-fluid position-relative">
                 {/* Heading */}
                 <div className="row text-center mb-4">
@@ -19,7 +19,7 @@ const LpLogoSlider = ({ logos }) => {
                 {/* Swiper with Custom Navigation Buttons */}
                 <div className="row position-relative align-items-center">
                     {/* Custom Previous Button */}
-                    <div className="col-2 text-end ">
+                    <div className="col-2 text-start">
                         <button
                             className="custom-carousel-control btn btn-primary mb-3 mr-1 custom-carousel-control-prev"
                             onClick={(e) => {
@@ -32,7 +32,7 @@ const LpLogoSlider = ({ logos }) => {
                     </div>
 
                     {/* Swiper for Logos */}
-                    <div className="col-8">
+                    <div className="col-8 text-center">
                         <Swiper
                             modules={[Navigation, Autoplay]}
                             navigation={{
@@ -50,19 +50,23 @@ const LpLogoSlider = ({ logos }) => {
                                 576: { slidesPerView: 2 },
                                 768: { slidesPerView: 3 },
                                 992: { slidesPerView: 4 },
-                                1200: { slidesPerView: 5 },
+                                1200: { slidesPerView: 5 }, 
                             }}
                         >
                             {logos.map((logo, index) => (
                                 <SwiperSlide key={index}>
-                                    <img src={logo.src} alt={logo.alt} className="logo-image img-fluid" />
+                                    <div className='d-flex h-100 align-items-center justify-content-center'>
+                                        <div>
+                                            <img src={logo.src} alt={logo.alt} className="logo-image img-fluid" />
+                                        </div>
+                                    </div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
                     </div>
 
                     {/* Custom Next Button */}
-                    <div className="col-2  text-start">
+                    <div className="col-2 text-end ">
                         <button
                             className="custom-carousel-control btn btn-primary mb-3 custom-carousel-control-next"
                             onClick={(e) => {

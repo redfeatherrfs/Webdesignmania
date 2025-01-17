@@ -1,53 +1,48 @@
 // Import Swiper styles and necessary modules
-import { Swiper, SwiperSlide } from 'swiper/react'; // Import Swiper and SwiperSlide
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'; // Correct modules path
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import download from '../images/download.png'; // Replace with the actual image path
 
-import 'swiper/css'; // Import core Swiper styles
-import 'swiper/css/navigation'; // Navigation styles
-import 'swiper/css/pagination'; // Pagination styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import { SiTrustpilot } from "react-icons/si";
+
 import '../Testimonial.css'; // Custom styles
 
 const TestimonialSection = ({ updatePopupTitle }) => {
     const testimonials = [
         {
-            quote: "Web Design Mania did an outstanding job designing our app from scratch. They took the time to understand our goals and turned them into a high-quality, functional design that's been a hit with users. Their ability to balance creativity with functionality is unmatched, and their communication was top-notch throughout the project.",
-            name: 'Gladys Burgess',
-            position: 'Assistant',
+            heading: "We couldn't be more pleased with the...",
+            quote: "We couldn't be more pleased with the app design provided by Web Design Mania. The interface is intuitive, the design is clean and modern, and the user experience has been dramatically improved. Adil and the team were professional, easy to work with, and consistently delivered on every milestone. Our app now stands out in a competitive market!",
+            name: 'R. Simmons',
+            image: download,
         },
         {
-            quote: "We saw immediate results after partnering with Web Design Mania for our SEO efforts. They conducted a thorough audit, optimized our website, and implemented a strategic link-building plan. The boost in organic traffic and leads has been impressive. Their team is responsive and truly understands SEO best practices!",
-            name: 'Lucy Kaur',
-            position: 'Bussiness Owner',
+            heading: "Web Design Mania did an amazing job...",
+            quote: "Web Design Mania did an amazing job with our logo and stationery design. They created a cohesive and elegant brand package that perfectly aligns with our business vision. The designs were delivered quickly, and they exceeded our expectations in both creativity and quality. We've received so many compliments on our new branding!",
+            name: 'Victor Watson',
+            image: download,
         },
         {
-            quote: "I've worked with several web design companies, but none have been as reliable and innovative as Web Design Mania. Our site is performing better than ever! Also thinking about hiring for SEO services!",
-            name: 'Harry Bariston',
-            position: 'Manager',
+            heading: "We chose Web Design Mania for our...",
+            quote: "We chose Web Design Mania for our eCommerce redesign, and it was the best decision we made. Their team was extremely professional, guiding us through every step of the design process. The end result is a stunning website that has improved our user engagement and boosted our online sales. The site is responsive, easy to navigate, and optimized for all devices. Web Design Mania truly understands how to create a high-converting eCommerce platform!",
+            name: 'Charles Parks',
+            image: download,
         },
-        {
-            quote: "The design is sleek, and the functionality is spot-on. Our customers now enjoy a seamless shopping experience, and the back-end is easy for us to manage. They also optimized the site for faster loading times, which has improved customer retention. Overall, they delivered a high-quality product that's helped us grow our online business.",
-            name: 'Janet Hodgson',
-            position: 'Ecommerce Manager',
-        },
-        {
-            quote: "Web Design Mania did an incredible job redesigning our eCommerce website. It's mobile-responsive, user-friendly, and perfectly aligned with our brand identity.",
-            name: 'Darren Jordan',
-            position: 'Brand Ambasador',
-        },
+        // Add more testimonials with images...
     ];
 
     return (
-        <section className="testimonial-section py-5">
+        <section className="testimonial-section">
             <div className="container">
                 <div className="row">
                     {/* Heading and Text */}
                     <div className="col-12 text-center">
-                        <h2>Trusted by Professionals</h2>
-                        With a proven track record of success, our skilled logo designers and web developer bring years of experience to every logo design & web project. Let’s build your project with collaborative creativity!
-
-                      
+                        <h2>Voices of Satisfaction</h2>
+                        <p>See what our clients say about their experiences and the success we’ve<br/> achieved together, inspiring us to deliver excellence every day.</p>
                     </div>
                 </div>
 
@@ -60,31 +55,41 @@ const TestimonialSection = ({ updatePopupTitle }) => {
                         modules={[Navigation, Pagination, Autoplay]} // Use Pagination module
                         autoplay={{ delay: 2500, disableOnInteraction: false }} // Autoplay
                         breakpoints={{
-                            // Set the number of slides based on screen width
                             320: { slidesPerView: 1 },   // Mobile view: 1 slide
                             768: { slidesPerView: 2 },   // Tablet view: 2 slides
-                            1024: { slidesPerView: 3 },  // Laptop and desktop: 3 slides
+                            1024: { slidesPerView: 2 },  // Laptop and desktop: 3 slides
                         }}
                     >
                         {testimonials.map((testimonial, index) => (
                             <SwiperSlide key={index}>
                                 <div className="testimonial-card p-4">
-                                    <div className="stars mb-3">
+                                    <div className="d-flex align-items-center mb-3">
+                                        {/* Image */}
+                                        {/* <img src={testimonial.image} alt={testimonial.name} className="testimonial-image rounded-circle me-3" /> */}
+                                        <div className="testimonial-image rounded-circle me-3 d-flex justify-content-center align-items-center" style={{ width: '50px', height: '50px', backgroundColor: '#ccc' }}>
+  <span className="text-white" style={{ fontSize: '1rem' }}>{testimonial.name.charAt(0)}</span>
+</div>
+
+                                        {/* Name and Position */}
+                                        <div>
+                                            <h5 className="name">{testimonial.name}</h5>
+                                            {testimonial.position && <p className="position">{testimonial.position}</p>}
+                                        </div>
+                                    </div>
+                                    {/* Stars */}
+                                    <div className="stars mb-3 ">
                                         {[...Array(5)].map((_, i) => (
-                                            <FaStar key={i} color="#FFBB01" />
+                                            // <FaStar key={i} color="#FFBB01" />
+                                            <SiTrustpilot key={i} color="#00B67A"  />
                                         ))}
                                     </div>
-                                    <p className="quote">{testimonial.quote}</p>
-                                    <h5 className="name mt-2">{testimonial.name}</h5>
-                                    <p className="position">{testimonial.position}</p>
+                                    {/* Dynamic Heading and Quote */}
+                                    <h4 className="testimonial-heading mb-3">{testimonial.heading}</h4>
+                                    <p className="quote ">{testimonial.quote}</p>
                                 </div>
                             </SwiperSlide>
                         ))}
                     </Swiper>
-
-                    <div className="text-center">
-                        <button className="package-btn" data-bs-toggle='modal' data-bs-target='#popupForm' onClick={() => updatePopupTitle('Basic Package - $199')}>Get Started</button>
-                    </div>
                 </div>
             </div>
         </section>
@@ -92,3 +97,4 @@ const TestimonialSection = ({ updatePopupTitle }) => {
 };
 
 export default TestimonialSection;
+

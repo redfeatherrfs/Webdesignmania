@@ -1,36 +1,50 @@
 /* Start header */
+
+/* Start header */
+
 .custom-header .navbar {
-    background: linear-gradient(0deg, #160a48 7.59%, #160a48 82.03%) !important;
+    background:#160A48;
     padding: 20px 0;
     transition: background-color 0.3s ease;
 }
 
 .custom-header .navbar-brand img {
-    max-width: 150px; /* Adjust logo size */
+    max-width: 150px;
+    /* Adjust logo size */
 }
 
 .custom-header .custom-nav-link {
-    color: #ffffff !important; /* White text for navigation links */
+    color: #ffffff !important;
+    /* White text for navigation links */
     font-weight: 600;
     margin-right: 15px;
 }
 
 .custom-header .custom-nav-link:hover {
-    color: #dbe1ff !important; /* Hover effect */
+    color: #dbe1ff !important;
+    /* Hover effect */
 }
 
 .custom-header .custom-phone-number a {
-    color: #ffffff !important; /* White color for the phone number */
+    color: #ffffff !important;
+    /* White color for the phone number */
     font-weight: 600;
 }
 
 .custom-header .custom-phone-number a:hover {
-    color: #dbe1ff !important; /* Hover effect for phone number */
+    color: #dbe1ff !important;
+    /* Hover effect for phone number */
 }
 
 .custom-header .navbar.fixed-top.scrolled {
-    background: #00000075; /* Background color when scrolled */
+    background: #00000075;
 }
+
+
+/* End header */
+
+
+/* End header */
 
 /* Show dropdown on hover */
 .custom-dropdown:hover .dropdown-menu {

@@ -1,60 +1,81 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../LandingPage.css'; 
-import lpcontactsecbg from '../../images/lpcontactsecbg.png';
-import supportIcon from '../../images/lpcontactsec1.png';  // Replace with the actual path to your icon
-import consultIcon from '../../images/lpcontactsec2.png';  // Replace with the actual path to your icon
-import chatIcon from '../../images/lpcontactsec3.png';     // Replace with the actual path to your icon
+import { Row, Col, Container } from 'react-bootstrap';
+import './SupportSection.css';
+import {  FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
-const LpContactSec = () => {
-    return (
-        <section 
-            className="lp-contact-sec d-flex align-items-center" 
-            style={{
-                backgroundImage: `url(${lpcontactsecbg})`, 
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-            }}
-        >
-            <div className="container">
-                <div className="row text-center">
-                    {/* Column 1 - Support Team */}
-                    <div className="col-md-4">
-                        <a href="/support" className="contact-link d-flex align-items-center">
-                            <img src={supportIcon} alt="Support Team Icon" className=" me-3"/>
-                            <div>
-                                <p>Our Support Team</p>
-                                <h4>24/7 Online</h4>
-                            </div>
-                        </a>
-                    </div>
+// Importing images
+import supportIcon from '../../images/oursupport.png'; // Replace with the actual path to your icon
+import consultIcon from '../../images/consuilt.png';  // Replace with the actual path to your icon
+import chatIcon from '../../images/live.png';        // Replace with the actual path to your icon
 
-                    {/* Column 2 - Phone Number */}
-                    <div className="col-md-4">
-                        <a href="tel:+15515543283" className="contact-link d-flex align-items-center">
-                            <img src={consultIcon} alt="Consult Expert Icon" className=" me-3"/>
-                            <div>
-                                <p>Consult Our Expert</p>
-                                <h4>+1 (551) 554-3283</h4>
-                            </div>
-                        </a>
-                    </div>
-
-                    {/* Column 3 - Live Chat */}
-                    <div className="col-md-4">
-                        <a href="/live-chat" className="contact-link d-flex align-items-center">
-                            <img src={chatIcon} alt="Live Support Icon" className=" me-3"/>
-                            <div>
-                                <p>Live Support</p>
-                                <h4>Chat Now</h4>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+const SupportSection = () => {
+  return (
+    <div className="support-section">
+      <Container>
+        <Row className="align-items-start">
+          <Col xs={12} md={6} lg={6} xl={4} className="support-col">
+          
+          <a href="https://wa.me/18482369397" target="_blank" rel="noopener noreferrer">
+            <div className="support-item">
+              <img src={supportIcon} alt="Support Icon" className="support-icon" />
+              <div className="support-text">
+                <p className="support-heading">Our Support Team</p>
+                <p className="support-detail">24/7 Online</p>
+              </div>
             </div>
-        </section>
-    );
+            </a>
+          </Col>
+          <Col xs={12} md={6} lg={6} xl={4} className="support-col">
+            <a href="tel:+15515543283" target="_blank" rel="noopener noreferrer">
+              <div className="support-item">
+                <img src={consultIcon} alt="Consult Expert Icon" className="support-icon" />
+                <div className="support-text">
+                  <p className="support-heading">Consult Our Expert</p>
+                  <p className="support-detail">+1 (551) 554-3283</p>
+                </div>
+              </div>
+            </a>
+          </Col>
+          <Col xs={12} md={6} lg={6} xl={4} className="support-col support-col-end">
+            <a href="https://wa.me/18482369397" target="_blank" rel="noopener noreferrer">
+              <div className="support-item">
+                <img src={chatIcon} alt="Live Support Icon" className="support-icon" />
+                <div className="support-text">
+                  <p className="support-heading">Live Support</p>
+                  <p className="support-detail">Chat Now</p>
+                </div>
+              </div>
+            </a>
+          </Col>
+
+        </Row>
+        <Row className="footer-row justify-content-center">
+  
+            <Col xs={12} md={4} className="footer-col copyright-text text-md-start text-center">
+                
+                <div className="social-icons d-flex text-center">
+          
+          <Link to="https://www.facebook.com/webdesignmaniaUS" target='blank' className="text-light"><FaFacebookF size={25} /></Link>
+          <Link to="https://www.linkedin.com/company/web-design-mania-us/" target='blank'  className="text-light"><FaLinkedinIn size={25} /></Link>
+          <Link to="https://www.instagram.com/webdesignmania_us/" target='blank' className="text-light"><FaInstagram size={25} /></Link>
+          {/* <Link to="#" className="text-light"><FaYoutube size={25} /></Link> */}
+        </div>
+            </Col>
+            <Col xs={12} md={4} className="footer-col terms-links text-md-end text-center">
+            <p>&#169; Copyright 2025, WebDesignMania.</p>
+            </Col>
+            <Col xs={12} md={4} className="footer-col terms-links text-md-end text-center">
+                <p>
+                <a href="/terms-condition" target="_blank">Terms & Conditions</a> | 
+                <a href="/privacy-policy" target="_blank">Privacy Policy</a>
+                </p>
+            </Col>
+        </Row>
+
+      </Container>
+    </div>
+  );
 };
 
-export default LpContactSec;
+export default SupportSection;

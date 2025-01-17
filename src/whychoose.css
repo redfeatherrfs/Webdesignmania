@@ -1,0 +1,277 @@
+/* AwardsLogo Section */
+.choose-service-icon-box img {
+    width: 71px;
+}
+
+
+h5.choose-service-icon-title.font-weight-bold {
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.choose-service-icon-box {
+    background: white;
+    /* width: 303px; */
+    padding: 30px 5px 5px 23px;
+    height: 304px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+p.choose-service-description {
+    color: white;
+}
+.choose-service-icon-box {
+    background: white;
+    /* width: 303px; */
+    padding: 30px 5px 5px 23px;
+    height: 304px;
+    border-radius: 10px;
+}
+
+.awards-logo-section {
+    padding: 5rem 0;
+    background: #E5FBFC;
+}
+
+h2.experience-heading {
+    font-size: 38px;
+    font-weight: 700;
+    /* text-transform: capitalize; */
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    box-sizing: content-box;
+}
+
+.awards-logo-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.awards-logo-section .swiper-container {
+    margin-top: 30px;
+}
+
+.awards-logo-section .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards-logo-section .awards-logo-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.awards-logo-section .swiper-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.awards-logo-section .swiper-container img:hover {
+    transform: scale(1.05);
+}
+
+/* Make images responsive */
+.awards-logo-section .img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/*  start whychooseservice css */
+.lightblue-h2 {
+    color: #3DD8E0;
+}
+
+h2.choose-service-heading.font-weight-bold {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* end whychoose service */
+
+/* Start uniquesection */
+.unique-section-container {
+    background: linear-gradient(to right, #F8F9FA, #F3F4F6);
+    border-radius: 50px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.unique-section-text {
+    font-size: 30px;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+.unique-section-button {
+    border-radius: 50px;
+    background-color: #3DD8E0;
+    border-color: white;
+}
+
+.unique-section-button:hover {
+    background-color: #2780C3;
+}
+
+.unique-section-link:hover {
+    text-decoration: underline;
+}
+
+/* Container Styling */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+    gap: 20px; /* Space between the buttons */
+    margin: 20px 0; /* Add vertical spacing */
+  }
+  
+  /* Let's Discuss Button Styling */
+  .letsdiscuss {
+    background-color: #ffffff; /* White background */
+    color: #ED5E39; /* Text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Text size */
+    font-weight: bold; /* Bold text */
+    padding: 12px 40px; /* Padding inside the button */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Let's Discuss Hover Effect */
+  .letsdiscuss:hover {
+    background-color: #2c2c2c; /* Change background color */
+    color: #ffffff; /* Change text color */
+  }
+  
+  /* Live Chat Button Styling */
+  .live-chat {
+    background-color: transparent; /* Transparent background */
+    color: #ffffff; /* White text */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Text size */
+    font-weight: bold; /* Bold text */
+    padding: 12px 40px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Live Chat Hover Effect */
+  .live-chat:hover {
+    background-color: #ffffff; /* Change background color */
+    color: #ED5E39; /* Change text color */
+    border-color: #ED5E39; /* Change border color */
+  }
+
+  button.letsdiscuss {
+    color: #3E1EC9;
+}
+
+  @media (max-width: 870px) and (min-width: 768px) {
+    .choose-service-icon-box {
+        height: 370px;
+    }
+}
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 10px; /* Adjust spacing for smaller screens */
+    }
+  
+    .letsdiscuss,
+    .live-chat {
+      width: 100%; /* Make buttons full-width */
+    }
+  }
+  
+
+/* End uniquesection */
+
+/* Media Queries for Responsiveness */
+@media (max-width: 640px) {
+    h2.choose-service-heading.font-weight-bold {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .awards-logo-section h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    a.whychoose-live {
+        width: 100%;
+    }
+    .choose-service-icon-box {
+        background: white;
+        /* width: 303px; */
+        padding: 30px 5px 5px 23px;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    h2.choose-service-heading.font-weight-bold {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .awards-logo-section h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* For screen 768px to 991px */
+@media (max-width: 991.98px) {
+    .unique-section-text {
+        font-size: 25px;
+    }
+}
+
+/* For screen 576px to 767px */
+@media (max-width: 767.98px) {
+    .unique-section-text {
+        font-size: 17px;
+    }
+}
+
+/* For screen 480px to 575px */
+@media (max-width: 575.98px) {
+    .unique-section-text {
+        font-size: 14px;
+    }
+
+    .unique-section-button {
+        font-size: 14px;
+    }
+}
+
+/* For screen 320px to 479px */
+@media (max-width: 479.98px) {
+    .unique-section-text {
+        width: 56%;
+    }
+}
