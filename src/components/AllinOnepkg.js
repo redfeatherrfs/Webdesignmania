@@ -10,7 +10,7 @@ const AllInOnePkg = ({ updatePopupTitle }) => {
                 <div className="row text-center">
                     <div className="col-12">
                         {/* <p className="pricing-one">ABOUT US</p> */}
-                        <h6 className="sub-heading m-0">ABOUT US</h6>
+                        {/* <h6 className="sub-heading m-0">ABOUT US</h6> */}
                         <h2 className="pricing-heading-one">All In One Combo</h2>
                     </div>
                 </div>
