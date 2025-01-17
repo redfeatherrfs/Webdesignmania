@@ -70,16 +70,16 @@ const Header = () => {
                                                       <li style={{ display: 'inline-block', marginRight: '20px' }}>
                                                           <a
                                                               className="toll_icon"
-                                                              href="tel:+02045112009"
+                                                              href="tel:+15515543283"
                                                               style={{ color: 'white', display: 'flex', alignItems: 'center' , textDecoration:'none'}}
                                                           >
                                                               <FaPhone style={{ marginRight: '8px' }} />
-                                                              0204 511 2009
+                                                              +1 (551) 554-3283
                                                           </a>
                                                       </li>
                                                       <li style={{ display: 'inline-block' }}>
                                                           <a
-                                                              href="https://wa.me/+447380100492"
+                                                              href="https://wa.me/18482369397"
                                                               className="chat_icon chat"
                                                               style={{ color: 'white', display: 'flex', alignItems: 'center', textDecoration:'none'}}
                                                           >

@@ -105,15 +105,15 @@ const ContactForm = () => {
                 <ul className="contact-info">
                     <li>
                         <FaPhoneAlt className="contact-icon" />
-                        <a href="tel:+02045112009">0204 511 2009</a>
+                        <a href="tel:+15515543283">+1 (551) 554-3283</a>
                     </li>
                     <li>
                         <FaEnvelope className="contact-icon" />
-                        <a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>
+                        <a href="mailto:info@webdesignmania.com">info@webdesignmania.com</a>
                     </li>
                     <li>
                         <FaMapMarkerAlt className="contact-icon" />
-                        <a href="https://maps.app.goo.gl/hzEmaUB6sqde6kH28" target="_blank">497 Sunleigh Rd, Wembley HA0 4LY, UK</a>
+                        <a href="https://maps.app.goo.gl/xsut4n4JGQAfFaSk9" target="_blank">43 3rd Ave 2nd Floor, Edison, NJ 08837</a>
                     </li>
                 </ul>
             </div>

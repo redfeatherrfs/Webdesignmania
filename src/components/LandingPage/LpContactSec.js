@@ -16,7 +16,7 @@ const SupportSection = () => {
         <Row className="align-items-start">
           <Col xs={12} md={6} lg={6} xl={4} className="support-col">
           
-          <a href="https://wa.me/+447491860363" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/18482369397" target="_blank" rel="noopener noreferrer">
             <div className="support-item">
               <img src={supportIcon} alt="Support Icon" className="support-icon" />
               <div className="support-text">
@@ -27,18 +27,18 @@ const SupportSection = () => {
             </a>
           </Col>
           <Col xs={12} md={6} lg={6} xl={4} className="support-col">
-            <a href="tel:+02045112009" target="_blank" rel="noopener noreferrer">
+            <a href="tel:+15515543283" target="_blank" rel="noopener noreferrer">
               <div className="support-item">
                 <img src={consultIcon} alt="Consult Expert Icon" className="support-icon" />
                 <div className="support-text">
                   <p className="support-heading">Consult Our Expert</p>
-                  <p className="support-detail">0204 511 2009</p>
+                  <p className="support-detail">+1 (551) 554-3283</p>
                 </div>
               </div>
             </a>
           </Col>
           <Col xs={12} md={6} lg={6} xl={4} className="support-col support-col-end">
-            <a href="https://wa.me/+447491860363" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/18482369397" target="_blank" rel="noopener noreferrer">
               <div className="support-item">
                 <img src={chatIcon} alt="Live Support Icon" className="support-icon" />
                 <div className="support-text">
@@ -56,9 +56,9 @@ const SupportSection = () => {
                 
                 <div className="social-icons d-flex text-center">
           
-          <Link to="https://www.facebook.com/webdesignmaniauk/" target='blank' className="text-light"><FaFacebookF size={25} /></Link>
-          <Link to="https://www.linkedin.com/company/web-design-mania/" target='blank'  className="text-light"><FaLinkedinIn size={25} /></Link>
-          <Link to="https://www.instagram.com/web_design_mania_uk/" target='blank' className="text-light"><FaInstagram size={25} /></Link>
+          <Link to="https://www.facebook.com/webdesignmaniaUS" target='blank' className="text-light"><FaFacebookF size={25} /></Link>
+          <Link to="https://www.linkedin.com/company/web-design-mania-us/" target='blank'  className="text-light"><FaLinkedinIn size={25} /></Link>
+          <Link to="https://www.instagram.com/webdesignmania_us/" target='blank' className="text-light"><FaInstagram size={25} /></Link>
           {/* <Link to="#" className="text-light"><FaYoutube size={25} /></Link> */}
         </div>
             </Col>
@@ -67,8 +67,8 @@ const SupportSection = () => {
             </Col>
             <Col xs={12} md={4} className="footer-col terms-links text-md-end text-center">
                 <p>
-                <a href="https://webdesignmania.co.uk/lp/terms" target="_blank">Terms & Conditions</a> | 
-                <a href="https://webdesignmania.co.uk/lp/privacy" target="_blank">Privacy Policy</a>
+                <a href="/lp/terms" target="_blank">Terms & Conditions</a> | 
+                <a href="/lp/privacy" target="_blank">Privacy Policy</a>
                 </p>
             </Col>
         </Row>

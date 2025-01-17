@@ -67,8 +67,8 @@ const TermsCondition = () => {
                         <h4>Request Your Refund</h4>
                         <p>To initiate a refund, follow these steps:</p>
                         <ol>
-                            <li>Contact us via live chat at our toll-free number <a href="tel:+02045112009">0204 511 2009</a></li>
-                            <li>Send an email to <a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a></li>
+                            <li>Contact us via live chat at our toll-free number <a href="tel:+15515543283">0204 511 2009</a></li>
+                            <li>Send an email to <a href="mailto:info@webdesignmania.com">info@webdesignmania.com</a></li>
                         </ol>
                         <p>Upon receiving your refund request, we’ll promptly begin the analysis and processing. Please note that after receiving a refund, you won’t retain ownership rights to designs from Web Design Mania. The designs will be submitted to Government Copyright Agencies for legal copyright acquisition.</p>
                         <h4>Quality Assurance Policy</h4>
