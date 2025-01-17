@@ -82,7 +82,7 @@ const PopupForm = ({ title }) => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090/packages.php'*//*"https://webdesignmania.co.uk/php/packages.php"*/"https://webdesignmania.com/php_mailer/package.php", {
+        await fetch("https://webdesignmania.com/php_mailer/package.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })

@@ -52,7 +52,7 @@ const Home = () => {
             category: 'Custom Website Packages',
             items: [
                 {
-                    title: "Custom Website Starter Package",
+                    title: "Website Starter Package",
                     subtitle: "Professional & Unique Designs!",
                     price: "$399",
                     features: [
