@@ -108,6 +108,7 @@ const GetStartedSection = () => {
                                         onInput={() => { validateName(formData.name) }}
                                         onChange={handleChange}
                                         required
+                                        maxLength="52"
                                     />
                                     <div className="invalid-feedback">
                                         Name must be alphabets only and less than 50 characters.
@@ -123,6 +124,7 @@ const GetStartedSection = () => {
                                         onInput={() => { validatePhone(formData.phone) }}
                                         onChange={handleChange}
                                         required
+                                        maxLength="15"
                                     />
                                     <div className="invalid-feedback">
                                         Please enter a valid phone number (10-15 digits, optional

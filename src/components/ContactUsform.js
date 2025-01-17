@@ -15,69 +15,109 @@ const ContactUsform = () => {
         phone: '',
         subject: '',
         message: '',
-    })
+    });
 
+    // State to store error messages
+    const [errors, setErrors] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+    });
+
+    // Handle input change and trigger validation
     const handleChange = e => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
             [name]: value,
         });
+
+        // Trigger validation on each input change
+        if (name === 'firstName') validateName(value);
+        if (name === 'lastName') validateName(value);
+        if (name === 'email') validateEmail(value);
+        if (name === 'phone') validatePhone(value);
+        if (name === 'message') validateMessage(value);
     };
 
-    const validateEmailAndPhone = () => {
-        console.log(document.querySelector('.contactuspg-form input[name=email]'));
-        console.log(document.querySelector('.contactuspg-form input[name=phone]'));
+    // Name validation
+    const validateName = (value) => {
+        if (!value.trim()) {
+            setErrors(prev => ({ ...prev, [value]: 'This field is required.' }));
+        } else {
+            setErrors(prev => ({ ...prev, [value]: '' }));
+        }
+    };
 
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
-            phoneRegex = /^\+1\d{10}$/
+    // Email validation
+    const validateEmail = (email) => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setErrors(prev => ({ ...prev, email: 'Please enter a valid email address.' }));
+        } else {
+            setErrors(prev => ({ ...prev, email: '' }));
+        }
+    };
 
-        if (!emailRegex.test(formData.email))
-            document.querySelector('.contactuspg-form input[name=email]').classList.add('is-invalid')
-        else
-            document.querySelector('.contactuspg-form input[name=email]').classList.remove('is-invalid')
+    // Phone validation
+    const validatePhone = (phone) => {
+        const phoneRegex = /^\+1\d{10}$/;
+        if (!phoneRegex.test(phone)) {
+            setErrors(prev => ({ ...prev, phone: 'Invalid phone number. Example: +19876543210' }));
+        } else {
+            setErrors(prev => ({ ...prev, phone: '' }));
+        }
+    };
 
-        if (!phoneRegex.test(formData.phone))
-            document.querySelector('.contactuspg-form input[name=phone]').classList.add('is-invalid');
-        else
-            document.querySelector('.contactuspg-form input[name=phone]').classList.remove('is-invalid');
+    // Message validation
+    const validateMessage = (message) => {
+        if (!message.trim()) {
+            setErrors(prev => ({ ...prev, message: 'Message is required.' }));
+        } else if (message.length > 2000) {
+            setErrors(prev => ({ ...prev, message: 'Message cannot exceed 2000 characters.' }));
+        } else {
+            setErrors(prev => ({ ...prev, message: '' }));
+        }
+    };
 
-        return phoneRegex.test(formData.phone) && emailRegex.test(formData.email)
-    }
-
+    // Submit form
     const handleSubmit = async e => {
-        e.preventDefault()
+        e.preventDefault();
 
-        // Email & phone validation
-        if (!validateEmailAndPhone())
-            return
+        // Validate all fields before submission
+        if (Object.values(errors).some(error => error)) {
+            Swal.fire('Validation Error', 'Please fix the errors in the form.', 'error');
+            return;
+        }
 
-        setLoading(true)
+        setLoading(true);
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/contact.php", {
+        await fetch("https://webdesignmania.com/php_mailer/contact.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
             .then(r => r.json())
             .then(({ success, message }) => {
-                setLoading(false)
+                setLoading(false);
                 if (success)
-                    navigate('/thank-you')
+                    navigate('/thank-you');
                 else
-                    Swal.fire('Error', message, 'error')
-            })
-    }
+                    Swal.fire('Error', message, 'error');
+            });
+    };
+
     return (
         <section className="contactuspg-section py-5">
             <div className="container">
                 <div className="row justify-content-center">
-                    {/* Heading and Text */}
                     <div className="col-12 text-center py-5">
                         <h2 className="contactuspg-heading-row">Want a Guide Contact Us today</h2>
-                        <p className="contactuspg-subtext">A place where talent and ambition can soar. Unleash your creativity and let your talents take center stage.  <br />When you work with us, you step into a world where your passion meets our purpose.</p>
+                        <p className="contactuspg-subtext">A place where talent and ambition can soar. Unleash your creativity and let your talents take center stage.</p>
                     </div>
                 </div>
-                {/* First Row - Heading and Subtext */}
 
                 <div className="contactuspg-bg py-5">
                     <div className="contactuspg-heading-row text-center mb-4">
@@ -85,36 +125,23 @@ const ContactUsform = () => {
                         <p className="contactuspg-subtext">Any question or remarks? Just write us a message!</p>
                     </div>
 
-                    {/* Second Row - 2 Columns */}
                     <div className="row">
-                        {/* First Column - Contact Information */}
                         <div className="col-lg-5 contactuspg-info mb-4">
-
-                            <div
-                                className="contactuspg-info-box p-4"
-                                style={{
-                                    backgroundImage: `url(${contactusbg})`,
-                                    backgroundSize: 'cover',
-                                    backgroundPosition: 'center',
-                                    borderRadius: '10px',
-
-                                    color: '#fff',
-                                }}
-                            >
-
+                            <div className="contactuspg-info-box p-4" style={{
+                                backgroundImage: `url(${contactusbg})`,
+                                backgroundSize: 'cover',
+                                backgroundPosition: 'center',
+                                borderRadius: '10px',
+                                color: '#fff',
+                            }}>
                                 <h3>Contact Information</h3>
                                 <p>Say something to start a live chat</p>
                                 <address>
-                                    <FaMapMarkerAlt /> 43 3rd Ave 2nd Floor, Edison, NJ 08837<br />
+                                    <FaMapMarkerAlt /> 43 3rd Ave 2nd Floor, Edison, NJ 08837
                                 </address>
-                                <a href="tel:+1 (551) 554-3283" className="contactuspg-link">
-                                    <FaPhoneAlt /> +1 (551) 554-3283
-                                </a><br />
-                                <a href="mailto:info@webdesignmania.com" className="contactuspg-link">
-                                    <FaEnvelope /> info@webdesignmania.com
-                                </a>
+                                <a href="tel:+1 (551) 554-3283" className="contactuspg-link"><FaPhoneAlt /> +1 (551) 554-3283</a><br />
+                                <a href="mailto:info@webdesignmania.com" className="contactuspg-link"><FaEnvelope /> info@webdesignmania.com</a>
 
-                                {/* Social Icons */}
                                 <div className="contactuspg-social-icons d-flex">
                                     <a href="#" className="contactuspg-icon"><FaFacebookF /></a>
                                     <a href="#" className="contactuspg-icon"><FaInstagram /></a>
@@ -124,76 +151,77 @@ const ContactUsform = () => {
                             </div>
                         </div>
 
-                        {/* Second Column - Form */}
                         <div className="col-lg-7 contactuspg-form bg-light p-4">
-                            {/* <form method='POST' onSubmit={handleSubmit}>
+                            <form method='POST' onSubmit={handleSubmit}>
                                 <div className="row">
                                     <div className="col-md-6 mb-3">
-                                        <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.firstName} name='firstName' placeholder="First Name" required />
+                                        <input
+                                            type="text"
+                                            className={`form-control contactuspg-input ${errors.firstName ? 'is-invalid' : ''}`}
+                                            onChange={handleChange}
+                                            value={formData.firstName}
+                                            name='firstName'
+                                            placeholder="First Name"
+                                        />
+                                        {errors.firstName && <div className="invalid-feedback">{errors.firstName}</div>}
                                     </div>
                                     <div className="col-md-6 mb-3">
-                                        <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.lastName} name='lastName' placeholder="Last Name" required />
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-6 mb-3">
-                                        <input type="email" className="form-control contactuspg-input" onChange={handleChange} value={formData.email} name='email' placeholder="Email" required />
-                                        <div className="invalid-feedback">
-                                            Invalid Email address
-                                        </div>
-                                    </div>
-                                    <div className="col-md-6 mb-3">
-                                        <input type="tel" className="form-control contactuspg-input" onChange={handleChange} value={formData.phone} name='phone' placeholder="Phone Number" required />
-                                        <div className="invalid-feedback">
-                                            Invalid Phone number. Example: +19876543210
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="mb-3">
-                                    <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.subject} name='subject' placeholder="Subject" required />
-                                </div>
-                                <div className="mb-3">
-                                    <textarea className="form-control contactuspg-input" rows="5" onChange={handleChange} value={formData.message} name='message' placeholder="Message" required></textarea>
-                                </div>
-                                <div className="text-end">
-                                    <button type="submit" className="btn btn-submit" disabled={loading}>
-                                        {loading ? (
-                                            <>
-                                                <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
-                                                <span role="status">Submitting...</span>
-                                            </>
-                                        ) : 'Submit Now'}
-                                    </button>
-                                </div>
-                            </form> */}
-                             <form method='POST' onSubmit={handleSubmit}>
-                                <div className="row">
-                                    <div className="col-md-6 mb-3">
-                                        <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.firstName} name='firstName' placeholder="First Name" required />
-                                    </div>
-                                    <div className="col-md-6 mb-3">
-                                        <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.lastName} name='lastName' placeholder="Last Name" required />
+                                        <input
+                                            type="text"
+                                            className={`form-control contactuspg-input ${errors.lastName ? 'is-invalid' : ''}`}
+                                            onChange={handleChange}
+                                            value={formData.lastName}
+                                            name='lastName'
+                                            placeholder="Last Name"
+                                        />
+                                        {errors.lastName && <div className="invalid-feedback">{errors.lastName}</div>}
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6 mb-3">
-                                        <input type="email" className="form-control contactuspg-input" onChange={handleChange} value={formData.email} name='email' placeholder="Email" required />
-                                        <div className="invalid-feedback">
-                                            Invalid Email address
-                                        </div>
+                                        <input
+                                            type="email"
+                                            className={`form-control contactuspg-input ${errors.email ? 'is-invalid' : ''}`}
+                                            onChange={handleChange}
+                                            value={formData.email}
+                                            name='email'
+                                            placeholder="Email"
+                                        />
+                                        {errors.email && <div className="invalid-feedback">{errors.email}</div>}
                                     </div>
                                     <div className="col-md-6 mb-3">
-                                        <input type="tel" className="form-control contactuspg-input" onChange={handleChange} value={formData.phone} name='phone' placeholder="Phone Number" required />
-                                        <div className="invalid-feedback">
-                                            Invalid Phone number. Example: +19876543210
-                                        </div>
+                                        <input
+                                            type="tel"
+                                            className={`form-control contactuspg-input ${errors.phone ? 'is-invalid' : ''}`}
+                                            onChange={handleChange}
+                                            value={formData.phone}
+                                            name='phone'
+                                            placeholder="Phone Number"
+                                        />
+                                        {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
                                     </div>
                                 </div>
                                 <div className="mb-3">
-                                    <input type="text" className="form-control contactuspg-input" onChange={handleChange} value={formData.subject} name='subject' placeholder="Subject" required />
+                                    <input
+                                        type="text"
+                                        className={`form-control contactuspg-input ${errors.subject ? 'is-invalid' : ''}`}
+                                        onChange={handleChange}
+                                        value={formData.subject}
+                                        name='subject'
+                                        placeholder="Subject"
+                                    />
+                                    {errors.subject && <div className="invalid-feedback">{errors.subject}</div>}
                                 </div>
                                 <div className="mb-3">
-                                    <textarea className="form-control contactuspg-input" rows="5" onChange={handleChange} value={formData.message} name='message' placeholder="Message" required></textarea>
+                                    <textarea
+                                        className={`form-control contactuspg-input ${errors.message ? 'is-invalid' : ''}`}
+                                        rows="5"
+                                        onChange={handleChange}
+                                        value={formData.message}
+                                        name='message'
+                                        placeholder="Message"
+                                    />
+                                    {errors.message && <div className="invalid-feedback">{errors.message}</div>}
                                 </div>
                                 <div className="text-end">
                                     <button type="submit" className="btn btn-submit" disabled={loading}>

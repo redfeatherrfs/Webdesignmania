@@ -13,38 +13,52 @@ const ContactForm = () => {
         phone: '',
         message: ''
     });
+    const [errors, setErrors] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
 
     const validateName = (name) => {
         const nameRegex = /^[A-Za-z\s]{1,50}$/; // Only alphabets, max 50 characters
-        const nameField = document.querySelector('#contactForm input[name=name]');
         if (!nameRegex.test(name)) {
-            nameField.classList.add('is-invalid');
+            setErrors((prevErrors) => ({ ...prevErrors, name: 'Not allowed more than 50 characters and it must be alphabetic.' }));
         } else {
-            nameField.classList.remove('is-invalid');
+            setErrors((prevErrors) => ({ ...prevErrors, name: '' }));
         }
         return nameRegex.test(name);
     };
 
     const validatePhone = (phone) => {
         const phoneRegex = /^(\+?\d{1,3}[-.\s]?)?(\(?\d{1,4}\)?[-.\s]?)?[\d\s]{10,15}$/; // Updated regex for flexible phone format
-        const phoneField = document.querySelector('#contactForm input[name=phone]');
-        
         if (!phoneRegex.test(phone)) {
-            phoneField.classList.add('is-invalid');
+            setErrors((prevErrors) => ({ ...prevErrors, phone: 'Please enter a valid phone number (between 10 and 15 digits, with an optional "+").' }));
         } else {
-            phoneField.classList.remove('is-invalid');
+            setErrors((prevErrors) => ({ ...prevErrors, phone: '' }));
         }
-    
         return phoneRegex.test(phone);
     };
 
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setErrors((prevErrors) => ({ ...prevErrors, email: 'Please enter a valid email address.' }));
+        } else {
+            setErrors((prevErrors) => ({ ...prevErrors, email: '' }));
+        }
         return emailRegex.test(email);
     };
 
     const validateMessage = (message) => {
-        return message.trim().length > 0; // Check if message is not empty
+        if (message.trim().length === 0) {
+            setErrors((prevErrors) => ({ ...prevErrors, message: 'Message cannot be empty.' }));
+        } else if (message.length > 2000) {
+            setErrors((prevErrors) => ({ ...prevErrors, message: 'Message should not exceed 2000 characters.' }));
+        } else {
+            setErrors((prevErrors) => ({ ...prevErrors, message: '' }));
+        }
+        return message.trim().length > 0 && message.length <= 2000;
     };
 
     const handleChange = e => {
@@ -53,6 +67,12 @@ const ContactForm = () => {
             ...formData,
             [name]: value,
         });
+
+        // Trigger validation on each input change
+        if (name === 'name') validateName(value);
+        if (name === 'phone') validatePhone(value);
+        if (name === 'email') validateEmail(value);
+        if (name === 'message') validateMessage(value);
     };
 
     const validateForm = () => {
@@ -116,64 +136,51 @@ const ContactForm = () => {
                             <div className="col">
                                 <input
                                     type="text"
-                                    className="form-control"
-                                    placeholder="Your full name"
+                                    className={`form-control ${errors.name ? 'is-invalid' : ''}`}
+                                    placeholder="Your full name*"
                                     name='name'
                                     value={formData.name}
                                     onChange={handleChange}
-                                    onInput={() => validateName(formData.name)}
-                                    required
+                                    maxLength="52"
                                 />
-                                <div className="invalid-feedback">
-                                    Name must be alphabets only and less than 50 characters.
-                                </div>
+                                {errors.name && <div className="error-message">{errors.name}</div>}
                             </div>
                             <div className="col">
                                 <input
                                     type="email"
-                                    className="form-control"
-                                    placeholder="E-mail address"
+                                    className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                                    placeholder="E-mail address*"
                                     name='email'
                                     value={formData.email}
                                     onChange={handleChange}
-                                    onInput={() => validateEmail(formData.email)}
-                                    required
                                 />
-                                <div className="invalid-feedback">
-                                    Invalid Email address
-                                </div>
+                                {errors.email && <div className="error-message">{errors.email}</div>}
                             </div>
                         </div>
                         <div className="mb-3">
                             <input
                                 type="tel"
-                                className="form-control"
-                                placeholder="Phone Number"
+                                className={`form-control ${errors.phone ? 'is-invalid' : ''}`}
+                                placeholder="Phone Number*"
                                 name='phone'
                                 value={formData.phone}
                                 onChange={handleChange}
-                                onInput={() => validatePhone(formData.phone)}
-                                required
+                                maxLength="15"
                             />
-                           <div className="invalid-feedback">
-                                Please enter a valid phone number (10-15 digits, optional '+').
-                            </div>
-
+                            {errors.phone && <div className="error-message">{errors.phone}</div>}
                         </div>
                         <div className="mb-3">
                             <textarea
-                                className="form-control"
+                                className={`form-control ${errors.message ? 'is-invalid' : ''}`}
                                 rows="5"
-                                placeholder="Your message"
+                                placeholder="Your message*"
                                 name='message'
                                 value={formData.message}
                                 onChange={handleChange}
-                                onInput={() => validateMessage(formData.message)}
+                                maxLength="2002"
                                 required
                             />
-                            <div className="invalid-feedback">
-                                Please provide a message.
-                            </div>
+                            {errors.message && <div className="error-message">{errors.message}</div>}
                         </div>
                         <button type="submit" className="btn btn-submit" disabled={loading}>
                             {loading ? (

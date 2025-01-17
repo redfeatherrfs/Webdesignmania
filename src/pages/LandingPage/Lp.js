@@ -65,9 +65,9 @@ const description = "Drop us a message, and our experts will reach out soon!";
 const steps = [
     {
         image: whyservice1,
-        alt: "Custom Web Development",
-        title: "Custom Web Development",
-        description: "Custom website websites built from scratch to meet specific business needs."
+        alt: "Web Development",
+        title: "Web Development",
+        description: "website websites built from scratch to meet specific business needs."
     },
     {
         image: whyservice2,
@@ -166,7 +166,7 @@ const LpPage = () => {
     return (
         <>
             <Helmet>
-                <title>Custom Web Design Service Starts from £199 - Web Design Mania</title>
+                <title>Web Design Service Starts from £199 - Web Design Mania</title>
                 <meta name="description" content="Get custom web design and development services from UK #1 design company specializes in website design and marketing. Best bespoke web designers and developers team." />
                 <link rel="canonical" href="https://webdesignmania.co.uk/lp/" />
             </Helmet>

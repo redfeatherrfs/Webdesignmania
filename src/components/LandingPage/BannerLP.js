@@ -87,7 +87,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.co.uk/lp/php_mailer/index.php", {
+        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.com/php_mailer/index.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -119,7 +119,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                 style={{ marginRight: '10px' }} 
                             /> */}
                             <h1 className="lpbanner-heading">
-                                Custom Web Design <br />
+                                Web Design <br />
                                 Starts from <span className="lpbanner-price"><img className="saleprice" src={saleprice} alt="199" /></span>
                             </h1>
                         </div>
