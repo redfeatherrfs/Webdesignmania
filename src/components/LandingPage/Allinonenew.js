@@ -23,9 +23,9 @@ const AllInOne = ({ updatePopupTitle }) => {
 
       {/* First Row */}
       <div className="container">
-        <div className="subtext">Ultimate Value for Start-ups and Businesses</div>
+        <div className="subtext">We Provide Ultimate Value for New Businesses and Start-ups</div>
         <div className="all-in-one-heading">
-          ALL-IN-ONE COMBO <img className="priceall" src={saleprice} alt="Combo Icon" />
+        All in One Package Starts from <img className="priceall" src={saleprice} alt="Combo Icon" />
         </div>
       </div>
 

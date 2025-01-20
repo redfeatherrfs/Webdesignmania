@@ -55,67 +55,67 @@ import LeftImageSec from "../../components/LandingPage/LeftImageSec"
 const heading = {
     title: (
         <>
-           Interested in our services?
+        Want to know more about our services? 
         </>
     ),
     // highlight:"Animation Video",
     // title2: "Production Company in the USA"
 };
-const description = "Drop us a message, and our experts will reach out soon!";
+const description = "If you have any queries, drop us a message, our team will get back to you shortly. ";
 const steps = [
     {
         image: whyservice1,
-        alt: "Web Development",
-        title: "Web Development",
-        description: "website websites built from scratch to meet specific business needs."
+        alt: "Custom Web Development ",
+        title: "Custom Web Development ",
+        description: "We built custom websites to meet and fulfill the business requirement. "
     },
     {
         image: whyservice2,
         alt: "Mobile App Development",
         title: "Mobile App Development",
-        description: "Apps are developed using React Native, Flutter, & Swift, utilising Figma, Adobe XD, & Sketch for prototyping and UI/UX design to ensure optimised performance & seamless user experiences."
+        description: "The developing process of apps using React Native, Flutter, and Swift, leveraging tools like Figma, Adobe XD, and Sketch for prototyping and UI/UX design, ensures top-level performance with smooth user experiences. "
     },
     {
         image: whyservice3,
         alt: "E-Commerce Solutions",
         title: "E-Commerce Solutions",
-        description: "Building online stores with secure payment systems and inventory management."
+        description: "Developing e-commerce platforms with safe payment options and proper security of inventory. "
     },
     {
         image: whyservice4,
         alt: "Responsive Web Design",
         title: "Responsive Web Design",
-        description: "Designing websites that provide optimal viewing experiences across all devices."
+        description: "Creating websites that deliver seamless and user-friendly experiences on any device. "
     },
     {
         image: whyservice5,
-        alt: "Content Management Systems",
-        title: "Content Management Systems",
-        description: "Creating and integrating platforms like WordPress, Joomla, and Drupal for easy content management."
+        alt: "Content Management System (CMS)",
+        title: "Content Management System (CMS)",
+        description: "To simplify content management systems, we develop and implement platforms such as WordPress, Joomla, and Drupal. "
     },
     {
         image: whyservice6,
         alt: "Web Application Development",
         title: "Web Application Development",
-        description: "Building dynamic, interactive web apps for various business functions."
+        description: "Developing engaging, interactive web applications for different business operations. "
     },
     {
         image: whyservice7,
         alt: "SEO & Digital Marketing",
         title: "SEO & Digital Marketing",
-        description: "Optimising websites for search engines and driving online traffic through digital marketing strategies."
+        description: "Strengthening websites for better search engine ranking and increasing web traffic through digital marketing techniques."
     },
     {
         image: whyservice8,
         alt: "UI/UX Design",
         title: "UI/UX Design",
-        description: "Designing intuitive user interfaces and experiences to enhance usability and engagement."
+        description: "Creating user-friendly interfaces and experiences to improve usability and boost engagement."
     },
     {
         image: whyservice9,
         alt: "Cloud Solutions",
         title: "Cloud Solutions",
-        description: " Implementing scalable cloud infrastructure for hosting, storage, and collaboration."
+        description: "Building flexible cloud infrastructure for hosting, storage, and seamless collaboration."
     },
  
 ];
@@ -151,7 +151,7 @@ const logosData = [
     { src: LpLogoSlider1, alt: 'Logo 1' },
     { src: LpLogoSlider2, alt: 'Logo 2' },
     { src: LpLogoSlider3, alt: 'Logo 3' },
-    // { src: LpLogoSlider4, alt: 'Logo 4'  },
+    //  { src: LpLogoSlider4, alt: 'Logo 4'  },
     { src: LpLogoSlider5, alt: 'Logo 5' },
     { src: LpLogoSlider1, alt: 'Logo 6' },
     { src: LpLogoSlider2, alt: 'Logo 7' },

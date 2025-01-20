@@ -12,8 +12,8 @@ const LpCtaSec2 = () => {
             <div class="row align-items-center">
                 {/* <!-- Column 1: Heading and Text --> */}
                 <div class="col-md-8 text-white">
-                    <h2>Let’s Build Bespoke Web<br/>
-                    Solutions for Your Business</h2>
+                    <h2>Ultimate Web Solutions to <br/>
+                    Transform Online Presence!</h2>
                     <p>Drop us a message, and our experts will get back to you shortly</p>
                 </div>
     

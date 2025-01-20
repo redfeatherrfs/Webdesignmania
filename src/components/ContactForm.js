@@ -112,7 +112,7 @@ const ContactForm = () => {
         <section className="ebook-contact-form container">
             <div className="row">
                 <div className="col-md-5 left-column">
-                    <h2>Let's Succeed Together! <br />
+                    <h2>Reach Us Out!<br />
                         <br /></h2>
                     <ul className="contact-info">
                         <li>

@@ -6,7 +6,7 @@ import './LeftImage.css';
 const contents = [
   {
     title: "Food Delivery Application",
-    description: "A food delivery application is a mobile platform that allows users to conveniently order food from local restaurants for delivery or pick-up. The app features an intuitive interface where users can browse through restaurant menus, customize their orders, and view real-time GPS tracking of their deliveries. It supports multiple payment options, including credit/debit cards and digital wallets, ensuring secure transactions. Customers can also receive push notifications for order updates, promotions, and new menu items. Additionally, the app includes a review and rating system, enabling users to share feedback on their dining experiences, enhancing the overall service quality and customer satisfaction."
+    description: "A food delivery app is a mobile platform that enables users to easily order food from local restaurants for delivery or pick-up. The app features a user-friendly interface where customers can explore restaurant menus, personalize their orders, and track deliveries in real-time using GPS. It supports various payment methods, including credit/debit cards and digital wallets, ensuring secure transactions. Users also receive push notifications for order updates, special offers, and new menu items. Additionally, the app includes a review and rating system, allowing customers to provide feedback on their dining experience, which helps improve service quality and customer satisfaction."
   }
 ];
 

@@ -12,7 +12,7 @@ const LpLogoSlider = ({ logos }) => {
                 {/* Heading */}
                 <div className="row text-center mb-4">
                     <div className="col-12">
-                        <h2>Award-Winning Web Design Company</h2>
+                        <h2>Received Recognition for Best Web Design Company </h2>
                     </div>
                 </div>
 
@@ -33,37 +33,38 @@ const LpLogoSlider = ({ logos }) => {
 
                     {/* Swiper for Logos */}
                     <div className="col-8 text-center">
-                        <Swiper
-                            modules={[Navigation, Autoplay]}
-                            navigation={{
-                                prevEl: '.custom-carousel-control-prev',
-                                nextEl: '.custom-carousel-control-next',
-                            }}
-                            autoplay={{
-                                delay: 3000,
-                                disableOnInteraction: false,
-                            }}
-                            spaceBetween={30}
-                            slidesPerView={5}
-                            breakpoints={{
-                                320: { slidesPerView: 1 },
-                                576: { slidesPerView: 2 },
-                                768: { slidesPerView: 3 },
-                                992: { slidesPerView: 4 },
-                                1200: { slidesPerView: 5 }, 
-                            }}
-                        >
-                            {logos.map((logo, index) => (
-                                <SwiperSlide key={index}>
-                                    <div className='d-flex h-100 align-items-center justify-content-center'>
-                                        <div>
-                                            <img src={logo.src} alt={logo.alt} className="logo-image img-fluid" />
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
+    <Swiper
+        modules={[Navigation, Autoplay]}
+        navigation={{
+            prevEl: '.custom-carousel-control-prev',
+            nextEl: '.custom-carousel-control-next',
+        }}
+        autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+        }}
+        spaceBetween={30}
+        slidesPerView={5}
+        loop={true}  // Enable infinite loop
+        breakpoints={{
+            320: { slidesPerView: 1 },
+            576: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            992: { slidesPerView: 4 },
+            1200: { slidesPerView: 5 }, 
+        }}
+    >
+        {logos.map((logo, index) => (
+            <SwiperSlide key={index}>
+                <div className='d-flex h-100 align-items-center justify-content-center'>
+                    <div>
+                        <img src={logo.src} alt={logo.alt} className="logo-image img-fluid" />
                     </div>
+                </div>
+            </SwiperSlide>
+        ))}
+    </Swiper>
+</div>
 
                     {/* Custom Next Button */}
                     <div className="col-2 text-end ">

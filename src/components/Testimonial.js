@@ -41,8 +41,8 @@ const TestimonialSection = ({ updatePopupTitle }) => {
                 <div className="row">
                     {/* Heading and Text */}
                     <div className="col-12 text-center">
-                        <h2>Voices of Satisfaction</h2>
-                        <p>See what our clients say about their experiences and the success we’ve<br/> achieved together, inspiring us to deliver excellence every day.</p>
+                        <h2>Client Testimonials</h2>
+                        <p>See Why Our Clients Trust Us!</p>
                     </div>
                 </div>
 

@@ -10,19 +10,19 @@ const images = [supportIcon, consultIcon, chatIcon, Website];
 const contents = [
   {
     title: "Healthcare</br>Management System",
-    description: "The project focuses on creating a robust platform for hospitals, clinics, and healthcare providers to manage their operations and patient data securely. It features online appointment scheduling, secure patient record management compliant with HIPAA and GDPR, and telemedicine integrations for virtual consultations. The system includes doctor and department directories, automated reminders for follow-ups and prescriptions, and health tracking dashboards for patients."
+    description: "The project aims to develop a reliable platform for hospitals, clinics, and healthcare providers to efficiently manage operations and securely handle patient data. It offers features like online appointment booking, secure management of patient records in compliance with HIPAA and GDPR, and integration of telemedicine for virtual consultations. The system also includes directories for doctors and departments, automated reminders for follow-ups and prescriptions, along with health tracking dashboards for patients."
   },
   {
     title: "Corporate Website</br> with Custom Features",
-    description: "The website features an interactive homepage with animations, detailed service pages showcasing case studies and testimonials, and a career section with job postings and application forms. It also includes an integrated blog or knowledge hub for sharing insights and updates, as well as a custom analytics dashboard to monitor website performance. Built using WordPress for content management, JavaScript and CSS for interactive elements, and Google Analytics for performance tracking."
+    description: "The website includes an engaging homepage with animations, comprehensive service pages highlighting case studies and testimonials, and a careers section with job listings and application forms. It also features an integrated blog or knowledge center for sharing insights and updates, alongside a custom analytics dashboard to track website performance. The site is built on WordPress for content management, utilizes JavaScript and CSS for interactive components, and incorporates Google Analytics for performance monitoring. "
   },
   {
     title: "Learning</br> Management System (LMS)",
-    description: "This project involved developing an LMS for educational institutions and corporate training programs to deliver courses online. It includes user registration and role management, a searchable course catalog, interactive lessons with videos, quizzes, and assignments, and progress tracking. The system supports payment gateway integration, mobile-friendly design, and third-party tool integrations like Zoom and Google Meet for live sessions. Built with React, Node.js, and MongoDB, it offers a scalable and user-friendly platform for online learning."
+    description: "This project is based on building an LMS for educational institutions and for multiple corporate training programs to deliver their online services. It provides different functions such as user registration, course catalog, interactive lessons, quizzes, and assignments. It also supports payment integration with user-friendly mobile design and third-party applications like Google Meet and Zoom that were built with software like React, Node, JS, and MongoDB for flexible online learning."
   },
   {
     title: "Custom E-commerce</br> Website",
-    description: "E-commerce platform designed to help businesses sell products or services online. The project features a unique design aligned with the brand identity, advanced product search and filtering, secure checkout, and streamlined inventory and order management. It includes integrations with CRM and ERP systems, supports multi-vendor functionality, and is SEO-optimized for enhanced online visibility and growth."
+    description: "An e-commerce platform developed to enable businesses to sell products or services online. The project offers a distinctive design that reflects the brand identity, advanced search and filtering options for products, secure checkout, and efficient inventory and order management. It also includes integrations with CRM and ERP systems, supports multi-vendor capabilities, and is SEO-optimized to boost online visibility and growth."
   }
 ];
 
@@ -45,8 +45,8 @@ function CustomSection() {
   return (
     <section className="custom-section" id="scroll-section">
         <Col md={12} className="main-heading-col">
-              <h2 className="main-heading">Our Work Speaks</h2> {/* Updated to h2 */}
-              <p className="main-description text-center">Our innovative web design and development services drive success across all industries</p> {/* Description */}
+              <h2 className="main-heading">Here's Our Work that Defines Perfection!</h2> {/* Updated to h2 */}
+              <p className="main-description text-center">Our superior web designs and development services increase growth across all industries. </p> {/* Description */}
             </Col>
       <Container>
         <div className={`transition-row ${transitioning ? "active" : ""}`}>
