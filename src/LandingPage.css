@@ -490,7 +490,7 @@ textarea.lpbanner-input.lpbanner-textarea {
 }
 
 .logo-image {
-    max-width: 80%;
+    max-width: 55%;
     height: auto;  /* Set a fixed height for logos */
     object-fit: contain;  /* Maintain aspect ratio while filling the height */
 }

@@ -14,9 +14,9 @@ import TestimonialSection from "../../components/Testimonial"
 import ContactForm from "../../components/ContactForm"
 import LpPortfolio from "../../components/LandingPage/LpPortfolio"
 import LpImgSec from "../../components/LandingPage/LpImgSec"
-import LpImgSec1 from "../../images/googlepartner.png"
-import LpImgSec2 from "../../images/inc500.png"
-import LpImgSec3 from "../../images/forbes.png"
+import LpImgSec1 from "../../images/googlepartner.webp"
+import LpImgSec2 from "../../images/inc500.webp"
+import LpImgSec3 from "../../images/forbes.webp"
 import whyservice1 from '../../images/whyservice1.svg';
 import whyservice2 from '../../images/whyservice2.svg';
 import whyservice3 from '../../images/whyservice3.svg';
@@ -29,11 +29,11 @@ import whyservice9 from '../../images/whyservice9.svg';
 
 
 import LpLogoSlider from "../../components/LandingPage/LpLogoSlider"
-import LpLogoSlider1 from "../../images/lplogoslider1.png"
-import LpLogoSlider2 from "../../images/lplogoslider2.png"
-import LpLogoSlider3 from "../../images/lplogoslider3.png"
-import LpLogoSlider4 from "../../images/lplogoslider4.png"
-import LpLogoSlider5 from "../../images/lplogoslider5.png"
+import LpLogoSlider1 from "../../images/lplogoslider1.webp"
+import LpLogoSlider2 from "../../images/lplogoslider2.webp"
+import LpLogoSlider3 from "../../images/lplogoslider3.webp"
+import LpLogoSlider4 from "../../images/lplogoslider4.webp"
+import LpLogoSlider5 from "../../images/lplogoslider5.webp"
 import OurWorkProcess from "../../components/LandingPage/OurWorkProcess"
 import AllInOneCombo from "../../components/LandingPage/AllInOneSection"
 import LpCtaSec2 from "../../components/LandingPage/LpCtaSec2"
@@ -151,7 +151,7 @@ const logosData = [
     { src: LpLogoSlider1, alt: 'Logo 1' },
     { src: LpLogoSlider2, alt: 'Logo 2' },
     { src: LpLogoSlider3, alt: 'Logo 3' },
-    { src: LpLogoSlider4, alt: 'Logo 4' },
+    // { src: LpLogoSlider4, alt: 'Logo 4'  },
     { src: LpLogoSlider5, alt: 'Logo 5' },
     { src: LpLogoSlider1, alt: 'Logo 6' },
     { src: LpLogoSlider2, alt: 'Logo 7' },

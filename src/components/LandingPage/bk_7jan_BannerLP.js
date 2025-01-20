@@ -102,6 +102,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                     Swal.fire('Error', message, 'error')
             })
     }
+    
 
     return (
         <section
