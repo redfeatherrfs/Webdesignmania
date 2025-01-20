@@ -22,7 +22,12 @@ button.btn.orange-button:hover {
     background: #6A48FF;
 }
 
-
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    display: none;
+    pointer-events: none;
+}
 
 
 

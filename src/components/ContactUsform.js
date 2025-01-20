@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
-import contactusbg from '../images/contactpgbg.png'
+import contactusbg from '../images/contactpgbg.png';
 import '../ContactUspg.css';
 import { useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
 const ContactUsform = () => {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const [loading, setLoading] = useState(false); // Loading state
     const [formData, setFormData] = useState({
         firstName: '',
@@ -36,19 +36,24 @@ const ContactUsform = () => {
         });
 
         // Trigger validation on each input change
-        if (name === 'firstName') validateName(value);
-        if (name === 'lastName') validateName(value);
+        if (name === 'firstName') validateName(value, 'firstName');
+        if (name === 'lastName') validateName(value, 'lastName');
         if (name === 'email') validateEmail(value);
         if (name === 'phone') validatePhone(value);
         if (name === 'message') validateMessage(value);
     };
 
-    // Name validation
-    const validateName = (value) => {
+    // Name validation (only alphabets, max length 50)
+    const validateName = (value, field) => {
+        const nameRegex = /^[A-Za-z\s]+$/;  // Allow only alphabets and spaces
         if (!value.trim()) {
-            setErrors(prev => ({ ...prev, [value]: 'This field is required.' }));
+            setErrors(prev => ({ ...prev, [field]: 'This field is required.' }));
+        } else if (value.length > 50) {
+            setErrors(prev => ({ ...prev, [field]: 'Not allowed more than 50 characters and it must be in alphabet' }));
+        } else if (!nameRegex.test(value)) {
+            setErrors(prev => ({ ...prev, [field]: 'Not allowed more than 50 characters and it must be in alphabet.' }));
         } else {
-            setErrors(prev => ({ ...prev, [value]: '' }));
+            setErrors(prev => ({ ...prev, [field]: '' }));
         }
     };
 
@@ -62,17 +67,21 @@ const ContactUsform = () => {
         }
     };
 
-    // Phone validation
+    // Phone validation (10-15 digits with optional + or - signs)
     const validatePhone = (phone) => {
-        const phoneRegex = /^\+1\d{10}$/;
-        if (!phoneRegex.test(phone)) {
-            setErrors(prev => ({ ...prev, phone: 'Invalid phone number. Example: +19876543210' }));
+        const phoneRegex = /^[\+\-]?\d{10,15}$/;  // + and - are optional, 10-15 digits
+        if (!phone) {
+            setErrors(prev => ({ ...prev, phone: 'Phone number is required.' }));
+        } else if (phone.length > 16) {
+            setErrors(prev => ({ ...prev, phone: 'Phone number cannot exceed 16 characters.' }));
+        } else if (!phoneRegex.test(phone)) {
+            setErrors(prev => ({ ...prev, phone: 'Phone number must be between 10 to 15 digits and can include "+" or "-" symbols.' }));
         } else {
             setErrors(prev => ({ ...prev, phone: '' }));
         }
     };
 
-    // Message validation
+    // Message validation (max 2000 characters)
     const validateMessage = (message) => {
         if (!message.trim()) {
             setErrors(prev => ({ ...prev, message: 'Message is required.' }));
@@ -161,6 +170,7 @@ const ContactUsform = () => {
                                             onChange={handleChange}
                                             value={formData.firstName}
                                             name='firstName'
+                                            maxLength="51"
                                             placeholder="First Name"
                                         />
                                         {errors.firstName && <div className="invalid-feedback">{errors.firstName}</div>}
@@ -171,6 +181,7 @@ const ContactUsform = () => {
                                             className={`form-control contactuspg-input ${errors.lastName ? 'is-invalid' : ''}`}
                                             onChange={handleChange}
                                             value={formData.lastName}
+                                             maxLength="51"
                                             name='lastName'
                                             placeholder="Last Name"
                                         />
@@ -196,6 +207,7 @@ const ContactUsform = () => {
                                             onChange={handleChange}
                                             value={formData.phone}
                                             name='phone'
+                                             maxLength="16"
                                             placeholder="Phone Number"
                                         />
                                         {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}

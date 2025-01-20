@@ -67,10 +67,9 @@
 .main-heading {
   font-size: 48px;
   font-weight: 800;
-  text-align: center;
+ 
   margin-top: 0px;
   color: #333;
-  text-transform: uppercase;
 }
 
 /* Style for the main description */
@@ -85,6 +84,7 @@
 @media (max-width: 767px) {
   .main-heading {
     font-size: 38px;
+    text-align: center;
     
   }
   .custom-section h3 {

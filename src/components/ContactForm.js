@@ -125,7 +125,7 @@ const ContactForm = () => {
                         </li>
                         <li>
                             <FaMapMarkerAlt className="contact-icon" />
-                            <span>43 3rd Ave 2nd Floor, Edison, NJ 08837</span>
+                            <a href="https://maps.app.goo.gl/7j6Djm3BYcqoTi4i9" ><span>43 3rd Ave 2nd Floor, Edison, NJ 08837</span></a>
                         </li>
                     </ul>
                 </div>

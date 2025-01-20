@@ -82,7 +82,7 @@ const Footer = () => {
           <div className="row">
             {/* Left Column */}
             <div className="col-6 text-start">
-              <p className="text-light">© Copyright 2024, <strong>WebDesignMania</strong>. Powered by RFS</p>
+              <p className="text-light">© Copyright 2025, <strong>WebDesignMania</strong>. Powered by RFS</p>
             </div>
             {/* Right Column */}
             <div className="col-6 text-end">
