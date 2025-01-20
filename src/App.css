@@ -12,7 +12,15 @@ body {
 
 /* black */
 
+button.btn.orange-button {
+    color: #fff;
+    background: #6A48FF;
+}
 
+button.btn.orange-button:hover {
+    color: #fff;
+    background: #6A48FF;
+}
 
 
 

@@ -182,14 +182,24 @@ const ContactForm = () => {
                             />
                             {errors.message && <div className="error-message">{errors.message}</div>}
                         </div>
-                        <button type="submit" className="btn btn-submit" disabled={loading}>
+                        {/* <button type="submit" className="btn btn-submit" disabled={loading}>
                             {loading ? (
                                 <>
                                     <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
                                     <span role="status">Submitting...</span>
                                 </>
                             ) : 'Submit Now'}
-                        </button>
+                        </button> */}
+                                <button type="submit" className="btn orange-button" disabled={loading} style={{ visibility: loading ? 'visible' : 'visible' }}>
+    {loading ? (
+        <>
+            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            <span role="status">Submitting...</span>
+        </>
+    ) : (
+        'Submit'
+    )}
+</button>
                     </form>
                 </div>
             </div>

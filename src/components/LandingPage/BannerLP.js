@@ -44,7 +44,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             html = "Invalid email address. Example: example@gmail.com<br />"
 
         if (!phoneRegex.test(formData.phone))
-            html += "Invalid phone number. Example: 02071234564"
+            html += "Invalid phone number. Example: +15551234567"
 
         if (html.length > 0)
             Swal.fire('Error', html, 'error')
@@ -95,7 +95,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             .then(({ success, message }) => {
                 setLoading(false)
                 if (success)
-                    navigate('/lp/thank-you')
+                    navigate('/thank-you')
                 else
                     Swal.fire('Error', message, 'error')
             })
@@ -252,7 +252,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                     <div className="error-message">Message should not exceed 2000 characters.</div>
                                 )}
 
-                                <button
+                                {/* <button
                                     type="submit"
                                     className="btn btn-dark lpbanner-submit-btn"
                                     disabled={loading}
@@ -265,7 +265,25 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                     ) : (
                                         'Send Your Query'
                                     )}
-                                </button>
+                                </button> */}
+                                <button
+    type="submit"
+    className="btn btn-dark lpbanner-submit-btn"
+    disabled={loading}
+    style={{ visibility: loading ? 'visible' : 'visible' }}  // Make sure visibility is set correctly
+>
+    {loading ? (
+        <>
+            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            <span role="status">Submitting...</span>
+        </>
+    ) : (
+        'Send Your Query'
+    )}
+</button>
+
+
+                                
                             </form>
 
 

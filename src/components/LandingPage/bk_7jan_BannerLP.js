@@ -46,7 +46,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             html = "Invalid email address<br />"
 
         if (!phoneRegex.test(formData.phone))
-            html += "Invalid phone number. Example: 02071234564"
+            html += "Invalid phone number. Example: +15551234567"
 
         if (html.length > 0)
             Swal.fire('Error', html, 'error')

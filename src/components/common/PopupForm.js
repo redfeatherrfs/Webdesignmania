@@ -82,7 +82,7 @@ const PopupForm = ({ title }) => {
 
         setLoading(true)
 
-        await fetch("https://webdesignmania.com/php_mailer/package.php", {
+        await fetch("https://webdesignmania.com/php_mailer/packages.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -91,7 +91,7 @@ const PopupForm = ({ title }) => {
                 document.querySelector('button[data-bs-dismiss]').click()
                 setLoading(false)
                 if (success)
-                    navigate('/lp/thank-you')
+                    navigate('/thank-you')
                 else
                     Swal.fire('Error', message, 'error')
             })
@@ -126,7 +126,9 @@ const PopupForm = ({ title }) => {
                                 <label htmlFor="phone" className="form-label">Phone number</label>
                                 <input type="tel" className="form-control" id="phone" placeholder="1234567890" pattern="^\+?\d{10,15}$"  name='phone' value={formData.phone} onChange={handleChange} required />
                                 <div className="invalid-feedback">
-                                    Invalid Phone number. Example: 02071234564
+                                    Invalid Phone number. Example: | +15551234567
+
+
                                 </div>
                             </div>
                             <div className="mb-3">
@@ -233,7 +235,7 @@ const PopupForm = ({ title }) => {
                                 )}
     </div>
     <div className="d-grid mb-3">
-        <button type="submit" className="btn orange-button" disabled={loading}>
+        {/* <button type="submit" className="btn orange-button" disabled={loading}>
             {loading ? (
                 <>
                     <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
@@ -242,7 +244,18 @@ const PopupForm = ({ title }) => {
             ) : (
                 'Submit'
             )}
-        </button>
+        </button> */}
+        <button type="submit" className="btn orange-button" disabled={loading} style={{ visibility: loading ? 'visible' : 'visible' }}>
+    {loading ? (
+        <>
+            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            <span role="status">Submitting...</span>
+        </>
+    ) : (
+        'Submit'
+    )}
+</button>
+
     </div>
 </form>
 
