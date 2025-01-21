@@ -4,6 +4,12 @@ section.ebook-contact-form.container
 }
 
 
+.btn-submit {
+  display: block; /* Ensure the button is visible */
+}
+
+
+
 .ebook-contact-form {
   padding-bottom: 50px !important;
 }

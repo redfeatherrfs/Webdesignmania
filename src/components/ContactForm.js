@@ -192,14 +192,24 @@ const ContactForm = () => {
                                     <div className="error-message">Message should not exceed 2000 characters.</div>
                                 )}
     </div>
-    <button type="submit" className="btn btn-submit"  >
+    {/* <button type="submit" className="btn btn-submit"  >
         {loading ? (
             <>
                 <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
                 <span role="status">Submitting...</span>
             </>
         ) : 'Submit Now'}
-    </button>
+    </button> */}
+    
+    <button type="submit" className="btn-submit" disabled={loading}>
+    {loading ? (
+        <>
+            <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>
+            <span role="status">Submitting...</span>
+        </>
+    ) : 'Submit Now'}
+</button>
+
 </form>
 
                 </div>

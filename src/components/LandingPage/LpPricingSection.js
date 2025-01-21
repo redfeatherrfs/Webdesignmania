@@ -7,10 +7,10 @@ import '../../PricingSection.css'; // Import the CSS file
 const LpPricingSection = ({ updatePopupTitle }) => {
     const packages = [
         {
-            category: 'Custom Website Packages',
+            category: 'Website Packages',
             items: [
                 {
-                    title: "Custom Website Starter Package",
+                    title: "Website Starter Package",
                     subtitle: (
                         <>
                             Professional & Unique Design <br></br>
@@ -565,7 +565,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
 
                 {/* React Bootstrap Tabs with Centered and No Underline */}
                 <Tabs
-                    defaultActiveKey="Custom Website Packages"
+                    defaultActiveKey="Website Packages"
                     id="pricing-tabs"
                     className="mb-3 justify-content-center" // Center the tabs
                     style={{ borderBottom: 'none' }} // Remove the underline
