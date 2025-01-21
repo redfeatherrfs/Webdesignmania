@@ -4,7 +4,7 @@ import HeaderSection from "../components/Header"
 import LogoSection from "../components/logos"
 
 import bannerImage from '../images/SMM.webp'
-import smm2 from '../images/smm2.png'
+import smm2 from '../images/smmnew.webp'
 
 import FooterSection from "../components/Footer"
 import ContactForm from "../components/ContactForm"

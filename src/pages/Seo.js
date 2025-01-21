@@ -4,7 +4,7 @@ import HeaderSection from "../components/Header"
 import LogoSection from "../components/logos"
 
 import bannerImage from '../images/SEO.webp'
-import smm2 from '../images/smm2.png'
+import smm2 from '../images/smm2.webp'
 import seo3 from '../images/seo3.png'
 import seo2 from '../images/seo2.png'
 

@@ -14,7 +14,7 @@ import { Helmet } from 'react-helmet-async';
 import PricingSection from '../components/PricingSection';
 import OurWork from '../components/OurWork';
 import stationarybg from '../images/Stationery.webp'
-import stationary1 from '../images/stationary1.png'
+import stationary1 from '../images/stationary1.webp'
 import ImageRightBanner from '../components/Aboutus/ImageRightbanner';
 import IconTextBox from '../components/SMM/IconTextBox';
 import socialMediaIcon from '../images/smmic1.png';

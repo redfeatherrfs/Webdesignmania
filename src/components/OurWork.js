@@ -3,8 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules'; // Import Navigation and Autoplay modules
 import 'swiper/css';
 import 'swiper/css/navigation';
-import ourworkimg1 from '../images/our-work1.png';
-import ourworkimg2 from '../images/our-work2.png';
+import ourworkimg1 from '../images/our-work1.webp';
+import ourworkimg2 from '../images/our-work2.webp';
 import ourworkimg3 from '../images/our-work3.png'; // Example import for images
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap CSS is loaded
 import '../OurWork.css';

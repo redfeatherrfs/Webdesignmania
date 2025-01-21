@@ -236,7 +236,7 @@ const ContactUsform = () => {
                                     {errors.message && <div className="invalid-feedback">{errors.message}</div>}
                                 </div>
                                 <div className="text-end">
-                                    <button type="submit" className="btn btn-submit" disabled={loading}>
+                                    <button type="submit" className="btn-submit" disabled={loading}>
                                         {loading ? (
                                             <>
                                                 <span className="spinner-border spinner-border-sm me-2" aria-hidden="true"></span>

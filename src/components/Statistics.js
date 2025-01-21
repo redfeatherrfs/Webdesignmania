@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImage from '../images/div.diag_slides.png';
+import bannerImage from '../images/companystatistics.webp';
 
 const StatisticsSection = () => {
   return (
