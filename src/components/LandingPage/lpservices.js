@@ -68,7 +68,7 @@ const WhyChooseService = ({
 <div className="container">
   <div className="button-container">
       <a href="tel:+02045112009" className="whychoose-live"> <button className="letsdiscuss">Let’s Discuss Your Project</button></a>
-      <a href="https://wa.me/+447380100492" className="whychoose-live"><button className="live-chat">Live Chat</button></a>
+      <a href="https://wa.me/+447309931252" className="whychoose-live"><button className="live-chat">Live Chat</button></a>
     </div>
     </div>
 

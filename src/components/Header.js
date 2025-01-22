@@ -79,7 +79,7 @@ const Header = () => {
                                                       </li>
                                                       <li style={{ display: 'inline-block' }}>
                                                           <a
-                                                              href="https://wa.me/+447380100492"
+                                                              href="https://wa.me/+447309931252"
                                                               className="chat_icon chat"
                                                               style={{ color: 'white', display: 'flex', alignItems: 'center', textDecoration:'none'}}
                                                           >

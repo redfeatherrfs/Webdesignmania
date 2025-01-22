@@ -13,7 +13,7 @@ const SupportSection = () => {
       <Container>
         <Row className="align-items-start justify-content-start">
           <Col xs={12} md={6} lg={6} xl={4} className="support-col">
-          <a href="https://wa.me/+447491860363" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/+447309931252" target="_blank" rel="noopener noreferrer">
             <div className="support-item">
               <img src={supportIcon} alt="Support Icon" className="support-icon" />
               <div className="support-text">
@@ -35,7 +35,7 @@ const SupportSection = () => {
             </a>
           </Col>
           <Col xs={12} md={6} lg={6} xl={4} className="support-col support-col-end">
-            <a href="https://wa.me/+447491860363" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/+447309931252" target="_blank" rel="noopener noreferrer">
               <div className="support-item">
                 <img src={chatIcon} alt="Live Support Icon" className="support-icon" />
                 <div className="support-text">
