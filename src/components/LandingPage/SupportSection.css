@@ -18,6 +18,10 @@
     justify-content: center;
 }
   
+.social-icons {
+  place-content: center;
+  margin-bottom: 14px;
+}
   .support-icon {
     width: 20%;
     height: auto;

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Row, Col, Container } from 'react-bootstrap';
 import './SupportSection.css';
+import {  FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 // Importing images
 import supportIcon from '../../images/oursupport.png'; // Replace with the actual path to your icon
@@ -11,8 +13,9 @@ const SupportSection = () => {
   return (
     <div className="support-section">
       <Container>
-        <Row className="align-items-start justify-content-start">
+        <Row className="align-items-start">
           <Col xs={12} md={6} lg={6} xl={4} className="support-col">
+          
           <a href="https://wa.me/+447309931252" target="_blank" rel="noopener noreferrer">
             <div className="support-item">
               <img src={supportIcon} alt="Support Icon" className="support-icon" />
@@ -48,10 +51,21 @@ const SupportSection = () => {
 
         </Row>
         <Row className="footer-row justify-content-center">
-            <Col xs={12} md={6} className="footer-col copyright-text text-md-start text-center">
-                <p>&#169; Copyright 2025, WebDesignMania.</p>
+  
+            <Col xs={12} md={4} className="footer-col copyright-text text-md-start text-center">
+                
+                <div className="social-icons d-flex text-center">
+          
+          <Link to="https://www.facebook.com/webdesignmaniauk/" target='blank' className="text-light"><FaFacebookF size={25} /></Link>
+          <Link to="https://www.linkedin.com/company/web-design-mania/" target='blank'  className="text-light"><FaLinkedinIn size={25} /></Link>
+          <Link to="https://www.instagram.com/web_design_mania_uk/" target='blank' className="text-light"><FaInstagram size={25} /></Link>
+          {/* <Link to="#" className="text-light"><FaYoutube size={25} /></Link> */}
+        </div>
             </Col>
-            <Col xs={12} md={6} className="footer-col terms-links text-md-end text-center">
+            <Col xs={12} md={4} className="footer-col terms-links text-md-end text-center">
+            <p>&#169; Copyright 2025, WebDesignMania.</p>
+            </Col>
+            <Col xs={12} md={4} className="footer-col terms-links text-md-end text-center">
                 <p>
                 <a href="https://webdesignmania.co.uk/lp/terms" target="_blank">Terms & Conditions</a> | 
                 <a href="https://webdesignmania.co.uk/lp/privacy" target="_blank">Privacy Policy</a>

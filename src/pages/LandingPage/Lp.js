@@ -166,11 +166,21 @@ const LpPage = () => {
     return (
         <>
             <Helmet>
-                <title>Custom Web Design Service Starts from £199 - Web Design Mania</title>
+                <title>Web Design Service Starts from £199 - Web Design Mania</title>
                 <meta name="description" content="Get custom web design and development services from UK #1 design company specializes in website design and marketing. Best bespoke web designers and developers team." />
                 <link rel="canonical" href="https://webdesignmania.co.uk/lp/" />
             </Helmet>
-
+            {/* <!--  ClickCease.com tracking--> */}
+      <script type='text/javascript'>var script = document.createElement('script');
+      script.async = true; script.type = 'text/javascript';
+      var target = 'https://www.clickcease.com/monitor/stat.js';
+      script.src = target;var elem = document.head;elem.appendChild(script);
+      </script>
+      <noscript>
+      <a href='https://www.clickcease.com' rel='nofollow'><img src='https://monitor.clickcease.com' alt='ClickCease'/></a>
+      </noscript>
+      {/* <!--  ClickCease.com tracking--> */}
+          
             <TopHead updatePopupTitle={handleTitleChange} />
             <Lpbanner updatePopupTitle={handleTitleChange} />
             <LanguageLogos />
