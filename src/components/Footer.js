@@ -69,7 +69,7 @@ const Footer = () => {
               </p>
               <p className="text-light">
                 <FaMapMarkerAlt /> 
-                <a href="https://www.google.com/maps/search/?api=1&query=41+Winthrop+Rd,+Edison,+NJ+08817" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none"> 43 3rd Ave 2nd Floor, Edison, NJ 08837</a>
+                <a href="https://www.google.com/maps/search/?api=1&query=41+Winthrop+Rd,+Edison,+NJ+08817" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none"> 41 Winthrop Rd, Edison, NJ 08817</a>
               </p>
             </div>
           </div>
