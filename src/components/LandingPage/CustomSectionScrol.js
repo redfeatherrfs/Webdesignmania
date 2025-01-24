@@ -37,14 +37,14 @@ function CustomSection() {
         setIndex((prevIndex) => (prevIndex + 1) % contents.length); // Update index
         setTransitioning(false); // End transition after animation
       }, 1000); // Matches CSS animation duration
-    }, 5000); // Change content every 5 seconds
+    }, 9000); // Change content every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="custom-section" id="scroll-section">
-        <Col md={12} className="main-heading-col">
+        <Col md={12} className="main-heading-col text-center">
               <h2 className="main-heading">Here's Our Work that Defines Perfection!</h2> {/* Updated to h2 */}
               <p className="main-description text-center">Our superior web designs and development services increase growth across all industries. </p> {/* Description */}
             </Col>
