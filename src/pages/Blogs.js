@@ -15,56 +15,78 @@ const BlogsPage = () => {
     const [page, setPage] = useState(1);
     const [isFetchingBlogs, setIsFetchingBlogs] = useState(false);
     const [isLastPage, setIsLastPage] = useState(false);
-// alert(`${API_URL}/blogs/${BRAND}?featured`)
-    // Fetch featured blogs and the initial 6 blogs on load
-    useEffect(() => {
-        // Fetch featured blogs
-        axios.get(`${API_URL}/blogs/${BRAND}?featured`).then((response) => {
-           // alert(response.data.data);  
-            setFeaturedBlogs(response.data.data);
-        });
 
-        // Fetch initial blogs (6 blogs)
-        loadMoreBlogs(); // Pass `page = 1` and `perPage = 6` for the first load
+    const perPage = 6; // Number of blogs to fetch per page
+
+    // Fetch featured blogs and initial blogs on component mount
+    useEffect(() => {
+        const fetchInitialData = async () => {
+            try {
+                // Fetch featured blogs
+                const featuredResponse = await axios.get(`${API_URL}/blogs/${BRAND}?featured`);
+                setFeaturedBlogs(featuredResponse.data.data);
+
+                // Fetch initial blogs
+                loadMoreBlogs(1); // Load the first page explicitly
+            } catch (error) {
+                console.error('Error fetching initial data:', error);
+            }
+        };
+
+        fetchInitialData();
     }, []);
 
-    // Load more blogs on button click
-    const loadMoreBlogs = (currentPage = page, perPage = 6) => {
-        if (isFetchingBlogs || isLastPage) return; // Prevent multiple calls or fetching if last page reached
+    // Load more blogs function
+    const loadMoreBlogs = async (currentPage) => {
+        if (isFetchingBlogs || isLastPage) return;
 
-        setIsFetchingBlogs(true); 
+        setIsFetchingBlogs(true);
 
-        axios.get(`${API_URL}/blogs/${BRAND}`, { params: { page: currentPage, perPage } })
-            .then((response) => {
-                setBlogs((prevBlogs) => [...prevBlogs, ...response.data.data]);
-
-                // Check if this is the last page
-                if (response.data.last_page === currentPage)
-                    setIsLastPage(true);
-                else
-                    setPage(currentPage + 1); // Increment the page for the next fetch
-
-                setIsFetchingBlogs(false);
-            })
-            .catch(() => {
-                setIsFetchingBlogs(false);
+        try {
+            const response = await axios.get(`${API_URL}/blogs/${BRAND}`, {
+                params: { page: currentPage, perPage },
             });
+
+            const newBlogs = response.data.data;
+
+            // Append only unique blogs to the state
+            setBlogs((prevBlogs) => {
+                const uniqueBlogs = newBlogs.filter(
+                    (newBlog) => !prevBlogs.some((blog) => blog.id === newBlog.id)
+                );
+                return [...prevBlogs, ...uniqueBlogs];
+            });
+
+            // Update the page and check if it is the last page
+            if (response.data.last_page === currentPage) {
+                setIsLastPage(true);
+            } else {
+                setPage(currentPage + 1);
+            }
+        } catch (error) {
+            console.error('Error loading more blogs:', error);
+        } finally {
+            setIsFetchingBlogs(false);
+        }
     };
+
+
+
 
     return (
         <div className="blogs-page">
             <Helmet>
-                <title>The Content Writing Pulse blog - Insights & Tips</title>
+                <title>webdesignmania - Insights & Tips</title>
                 <meta name="description" content="Explore content creation tips for agencies, SEO best practices, and guides for freelance writers." />
-                <link rel="canonical" href="https://contentwritingpulse.com/blogs" />
+                <link rel="canonical" href="https://webdesignmania.com/blogs" />
                 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
                 <meta property="og:locale" content="en_US" />
                 <meta property="og:type" content="article" />
-                <meta property="og:title" content="The Content Writing Pulse blog - Insights & Tips" />
+                <meta property="og:title" content="Webdesignmania - Insights & Tips" />
                 <meta property="og:description" content="Explore content creation tips for agencies, SEO best practices, and guides for freelance writers." />
-                <meta property="og:url" content="https://contentwritingpulse.com/blogs" />
-                <meta property="og:site_name" content="ContentWritingPulse" />
-                <meta property="article:publisher" content="https://www.facebook.com/Contentwritingpulse/" />
+                <meta property="og:url" content="https://webdesignmania.com/blogs" />
+                <meta property="og:site_name" content="Webdesignmania" />
+                <meta property="article:publisher" content="https://www.facebook.com/Webdesignmania/" />
                 <meta property="article:modified_time" content="2024-08-20T07:39:16+00:00" />
             </Helmet>
 
@@ -127,17 +149,20 @@ const BlogsPage = () => {
             </section>
 
             {/* Latest Article section */}
+            <div className="blogs-page">
+            {/* Other sections */}
+
+            {/* Latest Article Section */}
             <section className="latest-article-section py-5">
                 <div className="container">
-                    <h3 className="gray-font fw-semibold text-uppercase mb-5">Latest article</h3>
+                    <h3 className="gray-font fw-semibold text-uppercase mb-5">Latest Articles</h3>
 
                     <div className="row g-4">
-                        {blogs.map((blog, index) => (
-                            
-                            <div className="col-lg-6 col-xl-4" key={index}>
+                        {blogs.map((blog) => (
+                            <div className="col-lg-6 col-xl-4" key={blog.id}>
                                 <div className="article-container">
                                     <Link to={blog.slug}>
-                                        <img src={blog.image_url} alt={blog.title} className='img-fluid' />
+                                        <img src={blog.image_url} alt={blog.title} className="img-fluid" />
                                         <h3 className="gray-font fw-semibold text-uppercase mt-3">{blog.title}</h3>
                                         <p className="gray-font fw-light">{blog.content.slice(0, 100)}</p>
                                     </Link>
@@ -148,20 +173,27 @@ const BlogsPage = () => {
 
                     {!isLastPage && (
                         <div className="text-center mt-4">
-                            <button className="btn custom-btn-primary text-uppercase" disabled={isFetchingBlogs} onClick={() => loadMoreBlogs()}>
+                            <button
+                                className="btn custom-btn-primary text-uppercase"
+                                disabled={isFetchingBlogs}
+                                onClick={() => loadMoreBlogs(page)} // Pass the current page state
+                            >
                                 {isFetchingBlogs ? (
-                                    <div className='d-flex align-items-center'>
+                                    <div className="d-flex align-items-center">
                                         <div className="spinner-border text-success me-2" role="status">
                                             <span className="visually-hidden">Loading...</span>
                                         </div>
-                                        loading...
+                                        Loading...
                                     </div>
-                                ) : 'load more'}
+                                ) : (
+                                    'Load More'
+                                )}
                             </button>
                         </div>
                     )}
                 </div>
             </section>
+        </div>
 
      
 
