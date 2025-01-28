@@ -16,6 +16,8 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsCondition from './pages/TermsCondition';
 import ThankYouPage from './pages/ThankYou';
 import Countdown from './pages/Countdown';
+import BlogPage from './pages/Blog';
+import BlogsPage from './pages/Blogs';
 // <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-...your-integrity-hash..." crossorigin="anonymous"></script>
 const App = () => {
@@ -36,6 +38,9 @@ const App = () => {
                 <Route path="/terms-condition" element={<TermsCondition />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/black-friday" element={<Countdown />} />
+                <Route path="/blogs/:slug" element={<BlogPage />} />
+                <Route path="/blogs" element={<BlogsPage />} />
+                
             </Routes>
         </Router>
         </HelmetProvider>
