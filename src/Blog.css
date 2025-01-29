@@ -117,6 +117,34 @@
 }
 
 
+.bg-green {
+    background-color: #5331E5; /* Bootstrap's "success" green color */
+  }
+/* Custom CSS */
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+  }
+  
+  .rounded-pill {
+    border-radius: 50rem !important;
+  }
+  
+  .bg-green {
+    background-color: #5331E5; /* Green color */
+    color: white; /* Text color */
+  }
+  
+  .px-3 { padding-left: 1rem; padding-right: 1rem; }
+  .py-2 { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
 /* For screen 768px to 991px */
 @media (max-width: 991.98px) {
     .blogs-page .hero-section .blog-container-2,
