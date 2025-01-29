@@ -38,7 +38,7 @@ const App = () => {
                 <Route path="/terms-condition" element={<TermsCondition />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/black-friday" element={<Countdown />} />
-                <Route path="/blogs/:slug" element={<BlogPage />} />
+                <Route path="/:slug" element={<BlogPage />} />
                 <Route path="/blogs" element={<BlogsPage />} />
                 
             </Routes>

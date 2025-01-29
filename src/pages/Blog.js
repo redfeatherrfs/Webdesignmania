@@ -7,6 +7,9 @@ import axios from 'axios';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import DOMPurify from 'dompurify'
+import parse from 'html-react-parser'
+
 
 
 const BlogPage = () => {
@@ -33,9 +36,7 @@ const BlogPage = () => {
     return (
         <div className="blog-page">
             <Helmet>
-                <title>The Content Writing Pulse blog - Insights & Tips</title>
-                <meta name="description" content="Explore content creation tips for agencies, SEO best practices, and guides for freelance writers." />
-                <link rel="canonical" href={`https://contentwritingpulse.com/blogs/${blog?.slug}`} />
+            {parse(blog?.meta_tags ?? '')}
             </Helmet>
 
          <Header/>
@@ -68,7 +69,9 @@ const BlogPage = () => {
                         </div>
                     </div>
 
-                    <p className="gray-font fw-light">{blog?.content}</p>
+                    <div className="gray-font">
+                        {parse(DOMPurify.sanitize(blog.content))}
+                    </div>
                 </div>
                 
             </section>
