@@ -95,7 +95,7 @@ h2.price-heading.mb-4 {
     font-size: 38px;
     font-weight: 700;
     /* text-transform: capitalize; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #333333;
 }
 

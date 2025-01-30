@@ -43,7 +43,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                     title: "Custom Website Essential Package",
                     subtitle: (
                         <>
-                            Professional & Unique Design <br></br>
+                            Professional & Unique Design <br></br><br></br>
 
 
                         </>
@@ -84,7 +84,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                     title: "Custom Website Business Package",
                     subtitle: (
                         <>
-                            Professional & Unique Design <br></br>
+                            Professional & Unique Design <br></br><br></br>
                         </>
                     ),
                     boldTitle: " Get 70% Off",
@@ -128,29 +128,34 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             category: 'E-commerce Website Packages',
             items: [
                 {
-                    title: " E-commerce Website Starter Package",
-                    subtitle: (
-                        <>
-                            Ideal for small business and start Ups <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
+                    title: "E-commerce Website Starter Package",
+                    subtitle: "Best Value for Money Guaranteed!",
                     price: "$749",
-                    originalPrice: "$2496",
                     features: [
-                        "Up-To 10 Unique Pages Website",
-                        "Customized Design",
-                        "Up-To 100 Products",
-                        "Content Management System (CMS)",
-                        "Mini Shopping Cart Integration",
-                        "Payment Module Integration",
-                        "Easy Product Search",
+                        "eCommerce Integration",
+                        "Design Up to 20 Pages",
+                        "Graphic Design",
+                        "Logo Design",
+                        "Professional Web Design",
+                        "Mobile Responsive Design",
                         "Chatbot/Livechat Setup",
-                        "Dedicated Designer & Developer",
-                        "Unlimited Revisions",
+                        "Reputation Management Setup",
+                        "Newsletter Integration",
+                        "Social Media Integration",
+                        "Event Calendar Integration",
+                        "Schema Optimization",
+                        "Image Optimization",
+                        "Search Engine Optimized",
+                        "Formidable Pro Forms",
+                        "Keyword Research",
+                        "Market & Competitor Analysis",
+                        "Google Analytics Setup",
+                        "Submission to Search Engines",
+                        "Google Search Console Setup",
+                        "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee"
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -161,30 +166,33 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "E-commerce Website Business Package",
-                    subtitle: (
-                        <>
-                            Perfect for Small Businesses! <br></br>
-                        </>
-                    ),
-
-                    boldTitle: " Get 70% Off",
-                    price: "$1349",
-                    originalPrice: "$4496",
+                    subtitle: "Perfect for Small Businesses!",
+                    price: "Let's talk!",
                     features: [
-                        "Up-To 15 Unique Pages Website",
-                        "Customized Design",
-                        "Up-To 500 Products",
-                        "Content Management System (CMS)",
-                        "Full Shopping Cart Integration",
-                        "Payment Module Integration",
-                        "Easy Product Search",
-                        "Product Reviews",
+                        "eCommerce Integration",
+                        "Design Up to 100 Pages",
+                        "Graphic Design",
+                        "Logo Design",
+                        "Professional Web Design",
+                        "Mobile Responsive Design",
                         "Chatbot/Livechat Setup",
-                        "Team of Expert Designers & Developers",
-                        "Unlimited Revisions",
+                        "Reputation Management Setup",
+                        "Newsletter Integration",
+                        "Social Media Integration",
+                        "Event Calendar Integration",
+                        "Schema Optimization",
+                        "Image Optimization",
+                        "Search Engine Optimized",
+                        "Formidable Pro Forms",
+                        "Keyword Research",
+                        "Market & Competitor Analysis",
+                        "Google Analytics Setup",
+                        "Submission to Search Engines",
+                        "Google Search Console Setup",
+                        "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee"
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -194,52 +202,38 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                     ],
                 },
                 {
-                    title: "Business E-Commerce Package",
-                    subtitle: (
-                        <>
-                            A comprehensive solution for Business and SMEs <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$4994",
-                    originalPrice: "$16645",
+                    title: "E-commerce Website Enterprise Package",
+                    subtitle: "Advanced Features Included!",
+                    price: "Let's talk!",
                     features: [
-                        "Complete Custom Design & Development",
-                        "Unique, User Friendly, Interactive, Dynamic, High End UI Design",
-                        "Unlimited Banner Designs",
-                        "Interactive Sliding Banners",
-                        "Special Hover Effects",
-                        "Customized Contact us Form",
-                        "Multiple Filtration Option (Search by Age, Experience, Talent, Industry etc)",
-                        "Client/User Dashboard Area",
-                        "Vendor / Agency Dashboard Area",
-                        "Custom Coding and Development",
-                        "Content Management System (Custom)",
-                        "Online Appointment/Scheduling integration (Optional)",
-                        "Online Payment Integration",
-                        "Invoicing System",
-                        "Automated Email Notifications",
-                        "Multi Lingual (Optional)",
-                        "Custom Dynamic Forms",
-                        "Complete Database Creation",
-                        "Signup Automated Email Authentication",
-                        "Signup Area (For Newsletters, Offers etc.)",
-                        "Search Bar for Easy Search",
-                        "Live Feeds of Social Networks integration (Optional)",
-                        "Search Engine Submission",
-                        "SEO friendly",
-                        "Mobile Responsive",
-                        "Master Admin Panel",
-                        "SSL Certification (to make the website and its information secured)",
-                        "1 Year Free Hosting",
-                        "6 Months of Free Maintenance",
-                        "Complete Deployment",
-                        "Complete W3C Validation",
+                        "eCommerce Integration",
+                        "Advanced Order Management",
+                        "Design Up to 100 to 1000 Pages",
+                        "Product reviews and rating",
+                        "Website Content Writing",
+                        "Graphic Design",
+                        "Logo Design",
+                        "Professional Web Design",
+                        "Mobile Responsive Design",
+                        "Knowledgebase Setup",
                         "Chatbot/Livechat Setup",
-                        "Dedicated Team of Designers and Developers",
+                        "Reputation Management Setup",
+                        "Newsletter Integration",
+                        "Social Media Integration",
+                        "Event Calendar Integration",
+                        "Schema Optimization",
+                        "Image Optimization",
+                        "Search Engine Optimized",
+                        "Formidable Pro Forms",
+                        "Keyword Research",
+                        "Market & Competitor Analysis",
+                        "Google Analytics Setup",
+                        "Submission to Search Engines",
+                        "Google Search Console Setup",
+                        "Google My Business Optimization",
                         "100% Satisfaction Guarantee",
                         "100% Unique Design Guarantee",
-                        "100% Money Back Guarantee"
+                        "100% Money Back Guarantee",
                     ],
                     VAS: [
                         "Cross-Browser Compatibility",
@@ -255,14 +249,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Basic Logo Package",
-                    subtitle: (
-                        <>
-                            Best Value for Money Guaranteed! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
+                    subtitle: "Get Your Store Online!",
                     price: "$45",
-                    originalPrice: "$139",
                     features: [
                         "2 Logo Design Concepts",
                         "4 Free Revisions",
@@ -276,14 +264,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Professional Logo Package",
-                    subtitle: (
-                        <>
-                            Best Value for Money Guaranteed! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$85",
-                    originalPrice: "$285",
+                    subtitle: "Get Your Store Online!",
+                    price: "Let's Talk",
                     features: [
                         "4 Logo Design Concepts",
                         "8 Free Revisions",
@@ -297,14 +279,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Infinite Logo Package",
-                    subtitle: (
-                        <>
-                            Best Value for Money Guaranteed! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$145",
-                    originalPrice: "$490",
+                    subtitle: "Get Your Store Online!",
+                    price: "Let's Talk",
                     features: [
                         "6 Logo Design Concepts",
                         "Unlimited Revisions",
@@ -323,14 +299,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Stationery Basic Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
+                    subtitle: "Complete Branding Solution!",
                     price: "$129",
-                    originalPrice: "$415",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -347,14 +317,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Stationery Startup Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$179",
-                    originalPrice: "$574",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -374,14 +338,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Stationery Infinite Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$315",
-                    originalPrice: "$1035",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -409,14 +367,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Basic SEO Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
+                    subtitle: "Complete Branding Solution!",
                     price: "$250",
-                    originalPrice: "$799",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -454,14 +406,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Premium SEO Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$499",
-                    originalPrice: "$1650",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -499,14 +445,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Platinum SEO Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$749",
-                    originalPrice: "$2599",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -551,14 +491,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Starter Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
+                    subtitle: "Complete Branding Solution!",
                     price: "$199",
-                    originalPrice: "$665",
                     features: [
                         "3 postings per week (per network) Facebook + Twitter + Instagram",
                         "Content Creation",
@@ -571,47 +505,61 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Scaling Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$399",
-                    originalPrice: "$1250",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
                     features: [
-                        "4 postings per week (per network) Facebook + Twitter + Instagram + LinkedIn",
-                        "Content Creation",
-                        "Business Page Optimization",
-                        "Social Media Strategy (Overview)",
-                        "Facebook Likes Campaign",
-                        "Monthly Progress report",
-                        "Copywriting"
+                        "Prior Analysis",
+                        "Business Analysis",
+                        "Consumer Analysis",
+                        "Competitor Analysis",
+                        "30 Selected Keywords Targeting",
+                        "30 Pages Keyword Targeted",
+                        "Web Page Optimization",
+                        "Meta Tags Creation",
+                        "Keyword Optimization",
+                        "Image Optimization",
+                        "Inclusion of anchors",
+                        "Tracking & Analysis",
+                        "Google Places Inclusions",
+                        "Google Analytics Installation",
+                        "Google Webmaster Installation",
+                        "Call To Action Plan",
+                        "Creation of Sitemaps",
+                        "Reporting",
+                        "Monthly Reporting",
+                        "Recommendation",
+                        "Email Support",
+                        "Phone Support",
+                        "Off-Page Optimization",
+                        "Social Bookmarking",
+                        "Slideshare Marketing",
+                        "Forums/FAQ's",
+                        "Link Building",
+                        "Directory Submission",
+                        "Local Business Listings",
                     ],
                 },
                 {
                     title: "Venture Package",
-                    subtitle: (
-                        <>
-                            Complete Branding Solution! <br></br>
-                        </>
-                    ),
-                    boldTitle: " Get 70% Off",
-                    price: "$549",
-                    originalPrice: "$1799",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
                     features: [
-                            "5 postings per week (per network) Facebook + Twitter + Instagram + LinkedIn + TikTok",
-                            "Content Creation",
-                            "Business Page Optimization",
-                            "Social Media Strategy (Overview)",
-                            "Facebook Likes Campaign",
-                            "Monthly Progress report",
-                            "Copywriting"
+                        "Copywriting and visual designs",
+                        "Business Page Optimization",
+                        "Ad Campaign Management",
+                        "Spam monitoring",
+                        "6 postings per week Facebook + Twitter + Instagram + Google+",
+                        "Reputation Management",
+                        "Social Account Setup",
+                        "Content Creation",
+                        "Social Media Hearing",
+                        "Query and comments reply",
                     ],
                 },
             ],
         },
     ];
+
     return (
         <section className="pricing-section text-center py-5" id='pricing-section'>
             <Container>
@@ -646,43 +594,43 @@ const LpPricingSection = ({ updatePopupTitle }) => {
 
                                             {/* Scrollable Div for Package Details */}
                                             <div className="scrollable-content">
-                                                <ul className="package-list">
-                                                    {item.features.map((feature, index) => (
-                                                        <li key={index}>
-                                                            <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
-                                                            {feature}
-                                                        </li>
-                                                    ))}
+      <ul className="package-list">
+        {item.features.map((feature, index) => (
+          <li key={index}>
+            <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
+            {feature}
+          </li>
+        ))}
 
-                                                    {item?.VAS?.length && (
-                                                        <>
-                                                            <div className="text-center text-dark">
-                                                                <b>Value Added Services</b>
-                                                            </div>
-                                                            {item.VAS.map((service, index) => (
-                                                                <li key={index}>
-                                                                    <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
-                                                                    {service}
-                                                                </li>
-                                                            ))}
-                                                        </>
-                                                    )}
+        {item?.VAS?.length && (
+          <>
+            <div className="text-center text-dark">
+              <b>Value Added Services</b>
+            </div>
+            {item.VAS.map((service, index) => (
+              <li key={index}>
+                <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
+                {service}
+              </li>
+            ))}
+          </>
+        )}
 
-                                                    {item?.whatYouWillGet?.length && (
-                                                        <>
-                                                            <div className="text-center text-dark">
-                                                                <b>What will you Get?</b>
-                                                            </div>
-                                                            {item.whatYouWillGet.map((service, index) => (
-                                                                <li key={index}>
-                                                                    <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
-                                                                    {service}
-                                                                </li>
-                                                            ))}
-                                                        </>
-                                                    )}
-                                                </ul>
-                                            </div>
+        {item?.whatYouWillGet?.length && (
+          <>
+            <div className="text-center text-dark">
+              <b>What will you Get?</b>
+            </div>
+            {item.whatYouWillGet.map((service, index) => (
+              <li key={index}>
+                <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
+                {service}
+              </li>
+            ))}
+          </>
+        )}
+      </ul>
+    </div>
 
 
 

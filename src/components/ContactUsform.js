@@ -145,17 +145,17 @@ const ContactUsform = () => {
                             }}>
                                 <h3>Contact Information</h3>
                                 <p>Say something to start a live chat</p>
-                                <address>
-                                    <FaMapMarkerAlt /> 41 Winthrop Rd, Edison, NJ 08817
-                                </address>
+                                <a href="https://www.google.com/maps/search/?api=1&query=41+Winthrop+Rd,+Edison,+NJ+08817" target="_blank" className="contactuspg-link">
+                                    <FaMapMarkerAlt /> 41 Winthrop Rd, Edison, NJ 08817<br />
+                               </a>
                                 <a href="tel:+1 (551) 554-3283" className="contactuspg-link"><FaPhoneAlt /> +1 (551) 554-3283</a><br />
                                 <a href="mailto:info@webdesignmania.com" className="contactuspg-link"><FaEnvelope /> info@webdesignmania.com</a>
 
                                 <div className="contactuspg-social-icons d-flex">
-                                    <a href="#" className="contactuspg-icon"><FaFacebookF /></a>
-                                    <a href="#" className="contactuspg-icon"><FaInstagram /></a>
-                                    <a href="#" className="contactuspg-icon"><FaTwitter /></a>
-                                    <a href="#" className="contactuspg-icon"><FaLinkedin /></a>
+                                    <a href="https://www.facebook.com/webdesignmaniaUS" target="_blank" className="contactuspg-icon"><FaFacebookF /></a>
+                                    <a href="https://www.instagram.com/webdesignmania_us/" target="_blank" className="contactuspg-icon"><FaInstagram /></a>
+                               
+                                    <a href="https://www.linkedin.com/company/web-design-mania-us/" target="_blank" className="contactuspg-icon"><FaLinkedin /></a>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +171,8 @@ const ContactUsform = () => {
                                             value={formData.firstName}
                                             name='firstName'
                                             maxLength="51"
-                                            placeholder="First Name"
+                                            placeholder="First Name*"
+                                            required
                                         />
                                         {errors.firstName && <div className="invalid-feedback">{errors.firstName}</div>}
                                     </div>
@@ -183,7 +184,8 @@ const ContactUsform = () => {
                                             value={formData.lastName}
                                              maxLength="51"
                                             name='lastName'
-                                            placeholder="Last Name"
+                                            placeholder="Last Name*"
+                                            required
                                         />
                                         {errors.lastName && <div className="invalid-feedback">{errors.lastName}</div>}
                                     </div>
@@ -196,7 +198,8 @@ const ContactUsform = () => {
                                             onChange={handleChange}
                                             value={formData.email}
                                             name='email'
-                                            placeholder="Email"
+                                            placeholder="Email*"
+                                            required
                                         />
                                         {errors.email && <div className="invalid-feedback">{errors.email}</div>}
                                     </div>
@@ -208,7 +211,8 @@ const ContactUsform = () => {
                                             value={formData.phone}
                                             name='phone'
                                              maxLength="16"
-                                            placeholder="Phone Number"
+                                            placeholder="Phone Number*"
+                                            required
                                         />
                                         {errors.phone && <div className="invalid-feedback">{errors.phone}</div>}
                                     </div>

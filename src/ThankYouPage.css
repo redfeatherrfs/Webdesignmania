@@ -1,0 +1,39 @@
+/* ThankYouPage.css */
+.thank-you-container {
+    min-height: 75vh;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 767px) {
+    .thank-you-container {
+      min-height: calc(100vh - 150px); /* Adjust based on your footer height */
+      padding: 1rem;
+    }
+  }
+  
+  .thankyou-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .home-button {
+    background-color: #6A48FF !important;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 767px) {
+    .thankyou-heading {
+      font-size: 2rem;
+    }
+    
+    .lead {
+      font-size: 1rem;
+    }
+    
+    .home-button {
+      width: 100%;
+      max-width: 300px;
+    }
+  }

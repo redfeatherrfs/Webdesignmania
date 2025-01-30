@@ -53,9 +53,9 @@ const Footer = () => {
           <div className="col-md-4 mb-4">
             <h5 className="footer-heading">Follow Us</h5>
             <div className="d-flex gap-3 mb-3">
-              <a href="https://www.facebook.com/webdesignmaniaUS" className="text-light"><FaFacebookF size={25} /></a>
-              <a href="https://www.instagram.com/webdesignmania_us/" className="text-light"><FaInstagram size={25} /></a>
-              <a href="https://www.linkedin.com/company/web-design-mania-us/" className="text-light"><FaLinkedinIn size={25} /></a>
+              <a href="https://www.facebook.com/webdesignmaniaUS" target="_blank" className="text-light"><FaFacebookF size={25} /></a>
+              <a href="https://www.instagram.com/webdesignmania_us/" target="_blank" className="text-light"><FaInstagram size={25} /></a>
+              <a href="https://www.linkedin.com/company/web-design-mania-us/" target="_blank" className="text-light"><FaLinkedinIn size={25} /></a>
             </div>
 
             {/* Contact Us Section */}
