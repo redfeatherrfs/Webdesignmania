@@ -13,6 +13,8 @@ import Seo from './pages/Seo';
 import Stationary from './pages/Stationary';
 import Lp from './pages/LandingPage/Lp';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import LpPrivacyPolicy from './pages/LpPrivacyPolicy';
+import LpTermsCondition from './pages/LpTermsCondition';
 import TermsCondition from './pages/TermsCondition';
 import ThankYouPage from './pages/ThankYou';
 import Countdown from './pages/Countdown';
@@ -35,7 +37,9 @@ const App = () => {
                 <Route path="/stationery" element={<Stationary />} />
                 <Route path="/lp" element={<Lp/>} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/lp/privacy-policy" element={<LpPrivacyPolicy />} />
                 <Route path="/terms-condition" element={<TermsCondition />} />
+                <Route path="/lp/terms-condition" element={<LpTermsCondition />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/black-friday" element={<Countdown />} />
                 <Route path="/:slug" element={<BlogPage />} />

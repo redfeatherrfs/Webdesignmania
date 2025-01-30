@@ -5,7 +5,7 @@ import TopHead from "../components/LandingPage/TopBar"
 import { useState } from "react"
 import PopupForm from "../components/common/PopupForm"
 import SupportSection from "../components/LandingPage/LpContactSec"
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const AppPage = () => {
@@ -18,11 +18,11 @@ const AppPage = () => {
         <> 
           <TopHead updatePopupTitle={handleTitleChange} />
             <TermsCondition />
-            <div className="container simple-section">
+                 <div className="container simple-section">
                                 <div className="row align-items-center justify-content-center text-center">
                                     <div className="col-lg-12 mb-5 custom-content-v3">
                                       
-                                            <Link className='btn btn-primary' to='/' style={{ backgroundColor: '#160A48', border: 'none' }}>Back to Homepage</Link>
+                                            <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#160A48', border: 'none' }}>Back to Homepage</Link>
                                     
                                     </div>
                                 </div>

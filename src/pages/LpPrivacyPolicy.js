@@ -23,7 +23,7 @@ const [title, setTitle] = useState('')
                     <div className="row align-items-center justify-content-center text-center">
                         <div className="col-lg-12 mb-5 custom-content-v3">
                           
-                                <Link className='btn btn-primary' to='/' style={{ backgroundColor: '#160A48', border: 'none' }}>Back to Homepage</Link>
+                                <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#160A48', border: 'none' }}>Back to Homepage</Link>
                         
                         </div>
                     </div>

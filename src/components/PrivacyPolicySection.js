@@ -25,7 +25,6 @@ const PrivacyPolicySection = () => {
                     <h4>Contact Us</h4>
                     <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:support@webdesignmania.com">support@webdesignmania.com</a>. Thank you for choosing Web Design Mania!</p>
                     <p>Last updated: April 2, 2024</p>
-                    <Link className='btn btn-primary' to='/' style={{ backgroundColor: '#160A48', border: 'none' }}>Back to Homepage</Link>
                 </p>
             </div>
         </div>
