@@ -18,6 +18,7 @@ import SMMProcess from "../components/SMM/SMMProcess"
 import PricingSection from "../components/PricingSection"
 import { useState } from "react"
 import PopupForm from "../components/common/PopupForm"
+import { Helmet } from "react-helmet"
 
 
 const AppPage = () => {
@@ -168,6 +169,21 @@ const AppPage = () => {
 
     return (
         <>
+          <Helmet>
+    <title>SEO Services for Traffic & Revenue Generation</title>
+    <meta name="description" content="Boost leads and sales with affordable search engine optimization services! Web Design Mania helps businesses grow with proven strategies. Get a quote now!" />
+    <link rel="canonical" href="https://webdesignmania.com/search-engine-optimization-services" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="SEO Services for Traffic & Revenue Generation" />
+    <meta property="og:description" content="Boost leads and sales with affordable search engine optimization services! Web Design Mania helps businesses grow with proven strategies. Get a quote now!" />
+    <meta property="og:url" content="https://webdesignmania.com/search-engine-optimization-services" />
+    <meta property="og:site_name" content="WebDesignMania" />
+    <meta property="article:publisher" content="https://www.facebook.com/webdesignmaniaUS" />
+    <meta property="article:modified_time" content="2024-08-20T07:36:14+00:00" />
+  </Helmet>
             <HeaderSection />
             <BannerSection
                 title='Rank Higher, Reach More People, And Grow Faster'

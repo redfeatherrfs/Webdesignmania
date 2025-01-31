@@ -25,11 +25,21 @@ const AppPage = () => {
 
     return (
         <>
-            <Helmet>
-                <title>About Us  - Web Design Mania</title>
-                <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
-                <link rel="canonical" href="https://webdesignmania.com/about-us" />
-            </Helmet>
+        <Helmet>
+    <title>About Us | Web Design Mania</title>
+    <meta name="description" content="Get to know us! We’re passionate about designing beautiful, user-friendly websites and helping businesses succeed online with creative, effective solutions." />
+    <link rel="canonical" href="https://webdesignmania.com/about-us" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="About Us | Web Design Mania" />
+    <meta property="og:description" content="Get to know us! We’re passionate about designing beautiful, user-friendly websites and helping businesses succeed online with creative, effective solutions." />
+    <meta property="og:url" content="https://webdesignmania.com/about-us" />
+    <meta property="og:site_name" content="WebDesignMania" />
+    <meta property="article:publisher" content="https://www.facebook.com/webdesignmaniaUS" />
+    <meta property="article:modified_time" content="2024-08-20T07:34:29+00:00" />
+  </Helmet>
 
             <HeaderSection />
             <BannerSection

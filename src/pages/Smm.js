@@ -189,10 +189,21 @@ const AppPage = () => {
 
     return (
         <>
-            <Helmet>
-                <title>Result Driven Social Media Marketing (SMM) Services</title>
-                <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
-            </Helmet>
+           <Helmet>
+    <title>Social Media Marketing Services for Small Business</title>
+    <meta name="description" content="Share your brand story, connect with your audience, and stand out as an industry leader with WebDesignMania's expert social media advertising services." />
+    <link rel="canonical" href="https://webdesignmania.com/social-media-marketing-services" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Social Media Marketing Services for Small Business" />
+    <meta property="og:description" content="Share your brand story, connect with your audience, and stand out as an industry leader with WebDesignMania's expert social media advertising services." />
+    <meta property="og:url" content="https://webdesignmania.com/social-media-marketing-services" />
+    <meta property="og:site_name" content="WebDesignMania" />
+    <meta property="article:publisher" content="https://www.facebook.com/webdesignmaniaUS" />
+    <meta property="article:modified_time" content="2024-08-20T07:35:23+00:00" />
+  </Helmet>
             <HeaderSection />
             <BannerSection
                 title='We Harness The Power Of Social Platforms And Make Your Brand Stay Relevant'

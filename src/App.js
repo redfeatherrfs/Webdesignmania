@@ -29,12 +29,12 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about-us" element={<About />} />
-                <Route path="/app-design" element={<AppPage />} />
+                <Route path="/mobile-app-design-services" element={<AppPage />} />
                 <Route path="/contact-us" element={<ContactUs />} />
                 <Route path="/logo-design" element={<LogoDesign />} />
                 <Route path="/smm" element={<SMM />} />
-                <Route path="/seo" element={<Seo />} />
-                <Route path="/stationery" element={<Stationary />} />
+                <Route path="/search-engine-optimization-services" element={<Seo />} />
+                <Route path="/affordable-stationery-design-services" element={<Stationary />} />
                 <Route path="/lp" element={<Lp/>} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/lp/privacy-policy" element={<LpPrivacyPolicy />} />

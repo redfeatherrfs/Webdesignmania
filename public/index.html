@@ -16,6 +16,7 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="google-site-verification" content="dW31zfBPkaAoLS90f6y097Y5drn0AYZXm5_onXhj4-k" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -43,28 +44,20 @@
     gtag('config', 'AW-16485403310');
   </script>
   
-  <script>
-
-
-(function(d, w, c) {
-        w.BrevoConversationsID = '65eb4c58149bb809250724f4';
-        w[c] = w[c] || function() {
-            (w[c].q = w[c].q || []).push(arguments);
-        };
-        var s = d.createElement('script');
-        s.async = true;
-        s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
-        if (d.head) d.head.appendChild(s);
-    })(document, window, 'BrevoConversations');
-
-
-    gtag('consent', 'default', {
-  'ad_storage': 'denied',
-  'ad_user_data': 'denied',
-  'ad_personalization': 'denied',
-  'analytics_storage': 'denied'
-});
+<!-- Brevo Conversations {literal} -->
+<script>
+  (function(d, w, c) {
+      w.BrevoConversationsID = '679bcdb7de5f065bf40e2ccb';
+      w[c] = w[c] || function() {
+          (w[c].q = w[c].q || []).push(arguments);
+      };
+      var s = d.createElement('script');
+      s.async = true;
+      s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+      if (d.head) d.head.appendChild(s);
+  })(document, window, 'BrevoConversations');
 </script>
+<!-- /Brevo Conversations {/literal} -->
   </head>
   <body>
     <!--  ClickCease.com tracking-->

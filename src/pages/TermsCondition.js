@@ -6,8 +6,7 @@ import { useState } from "react"
 import PopupForm from "../components/common/PopupForm"
 import SupportSection from "../components/LandingPage/LpContactSec"
 import { Link } from 'react-router-dom';
-
-
+import { Helmet } from 'react-helmet-async';
 const AppPage = () => {
     const [title, setTitle] = useState('')
     
@@ -16,6 +15,21 @@ const AppPage = () => {
 
     return (
         <> 
+                <Helmet>
+               <title>Terms & Conditions | Web Design Mania</title>
+    <meta name="description" content="Understand the terms that guide our services. Our Terms and Conditions ensure transparency and a smooth experience for all your web design needs." />
+    <link rel="canonical" href="https://webdesignmania.com/terms-conditions" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Terms & Conditions | Web Design Mania" />
+    <meta property="og:description" content="Understand the terms that guide our services. Our Terms and Conditions ensure transparency and a smooth experience for all your web design needs." />
+    <meta property="og:url" content="https://webdesignmania.com/terms-conditions" />
+    <meta property="og:site_name" content="WebDesignMania" />
+    <meta property="article:publisher" content="https://www.facebook.com/webdesignmaniaUS" />
+    <meta property="article:modified_time" content="2024-08-20T07:31:49+00:00" />
+  </Helmet>
           <TopHead updatePopupTitle={handleTitleChange} />
             <TermsCondition />
             <div className="container simple-section">

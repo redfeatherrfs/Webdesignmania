@@ -52,11 +52,11 @@ const Header = () => {
               <li className="nav-item dropdown custom-dropdown">
                 <Link to="/services" className="nav-link dropdown-toggle custom-nav-link" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</Link>
                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-                  <li><Link to="/logo-design" className="dropdown-item">Logo Design</Link></li>
+                  <li><Link to="/professional-logo-design-services" className="dropdown-item">Logo Design</Link></li>
                   <li><Link to="/" className="dropdown-item">Website Design</Link></li>
-                  <li><Link to="/app-design" className="dropdown-item">App Design</Link></li>
-                  <li><Link to="/stationery" className="dropdown-item">Stationery</Link></li>
-                  <li><Link to="/seo" className="dropdown-item">SEO</Link></li>
+                  <li><Link to="/mobile-app-design-services" className="dropdown-item">App Design</Link></li>
+                  <li><Link to="/affordable-stationery-design-services" className="dropdown-item">Stationery</Link></li>
+                  <li><Link to="/search-engine-optimization-services" className="dropdown-item">SEO</Link></li>
                   <li><Link to="/smm" className="dropdown-item">SMM</Link></li>
                 </ul>
               </li>

@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const TermsCondition = () => {
     return (
+
+    
+        
         <div className="container simple-section">
         <div className="row align-items-center justify-content-center text-center">
             <div className="col-lg-12 py-5 custom-content-v3">

@@ -164,10 +164,21 @@ const LogoDesign = () => {
 
     return (
         <>
-        <Helmet>
-            <title>Custom Logo Design Services by Expert Logo Designers</title>
-            <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
-        </Helmet>     
+  <Helmet>
+    <title>Professional Logo Design Company in USA: Hire Logo Designer</title>
+    <meta name="description" content="Our professional logo design company in the USA creates logos that capture hearts and drive results. Get custom logo design services at affordable prices." />
+    <link rel="canonical" href="https://webdesignmania.com/professional-logo-design-services" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Professional Logo Design Company in USA: Hire Logo Designer" />
+    <meta property="og:description" content="Our professional logo design company in the USA creates logos that capture hearts and drive results. Get custom logo design services at affordable prices." />
+    <meta property="og:url" content="https://webdesignmania.com/professional-logo-design-services" />
+    <meta property="og:site_name" content="WebDesignMania" />
+    <meta property="article:publisher" content="https://www.facebook.com/webdesignmaniaUS" />
+    <meta property="article:modified_time" content="2024-08-22T06:49:19+00:00" />
+  </Helmet>   
          <HeaderSection />
          <BannerSection
                 title='Precision-Crafted Logos That Speaks Volume'

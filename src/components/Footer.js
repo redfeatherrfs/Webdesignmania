@@ -26,11 +26,11 @@ const Footer = () => {
            <div className="col-md-2 mb-4">
             <h5 className="footer-heading">Our Services</h5>
             <ul className="footer-links list-unstyled">
-              <li><Link to="/logo-design" className="text-light text-decoration-none">Logo Design</Link></li>
+              <li><Link to="/professional-logo-design-services" className="text-light text-decoration-none">Logo Design</Link></li>
               <li><Link to="/" className="text-light text-decoration-none">Website Design</Link></li>
-              <li><Link to="/app-design" className="text-light text-decoration-none">App Design</Link></li>
-              <li><Link to="/stationery" className="text-light text-decoration-none">Stationery</Link></li>
-              <li><Link to="/seo" className="text-light text-decoration-none">SEO</Link></li>
+              <li><Link to="/mobile-app-design-services" className="text-light text-decoration-none">App Design</Link></li>
+              <li><Link to="/affordable-stationery-design-services" className="text-light text-decoration-none">Stationery</Link></li>
+              <li><Link to="/search-engine-optimization-services" className="text-light text-decoration-none">SEO</Link></li>
               <li><Link to="/smm" className="text-light text-decoration-none">SMM</Link></li>
             </ul>
           </div>

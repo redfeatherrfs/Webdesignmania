@@ -78,7 +78,7 @@ const BlogsPage = () => {
     return (
         <div className="blogs-page">
             <Helmet>
-                <title>webdesignmania - Insights & Tips</title>
+                <title>Webdesignmania - Insights & Tips</title>
                 <meta name="description" content="Explore content creation tips for agencies, SEO best practices, and guides for freelance writers." />
                 <link rel="canonical" href="https://webdesignmania.com/blogs" />
                 <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
@@ -100,10 +100,10 @@ const BlogsPage = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5">
-                            <h1 className="gray-font fw-semibold text-uppercase">Mastering Content Writing: Strategies for Success</h1>
+                            <h1 className="gray-font fw-semibold text-uppercase">Web Design Mania Blog</h1>
                         </div>
                         <div className="col-lg-7">
-                            <p className="gray-font fw-light">Nibh enim habitant dictum interdum egestas nostra ornare aliquam ultrices curae imperdiet. A pretium etiam pulvinar nascetur dapibus. Nibh enim habitant dictum interdum egestas nostra ornare aliquam ultrices curae imperdiet.</p>
+                            <p className="gray-font fw-light">Welcome to the blog section of Web Design Mania USA, your trusted source for web design trends, UI/UX strategies, and expert insights to create high-performance websites.</p>
                         </div>
                     </div>
 
@@ -112,16 +112,16 @@ const BlogsPage = () => {
                             <div className="blog-container mb-4">
                                 <Link to={`/${featuredBlogs[0]?.slug}`}>
                                     <div className="row">
-                                        <div className="col-md-12 col-lg-auto">
-                                            <img src={featuredBlogs[0]?.image_url} alt={featuredBlogs[0]?.title} className="img-fluid" />
+                                        <div className="col-12">
+                                            <img src={featuredBlogs[0]?.image_url} alt={featuredBlogs[0]?.title} className="img-fluid w-100" />
                                         </div>
                                         <div className="col-md-12 col-lg">
                                             <div className="d-flex h-100 align-items-center">
                                                 <div>
                                                     <h3 className="gray-font fw-semibold text-uppercase mt-3">{featuredBlogs[0]?.title}</h3>
-                                                    <div className="gray-font">
+                                                    {/* <div className="gray-font">
                                                         {parse(DOMPurify.sanitize(featuredBlogs[0]?.content.slice(0, 400) + '...'))}
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>
@@ -138,9 +138,9 @@ const BlogsPage = () => {
                                 <Link to={`/${featuredBlogs[1]?.slug}`}>
                                     <img src={featuredBlogs[1]?.image_url} alt={featuredBlogs[1]?.title} className="img-fluid" />
                                     <h3 className="gray-font fw-semibold text-uppercase mt-3">{featuredBlogs[1]?.title}</h3>
-                                    <div className="gray-font">
+                                    {/* <div className="gray-font">
                                         {parse(DOMPurify.sanitize(featuredBlogs[1]?.content.slice(0, 250) + '...'))}
-                                    </div>
+                                    </div> */}
                                 </Link>
                             </div>
                         </div>
@@ -149,9 +149,9 @@ const BlogsPage = () => {
                                 <Link to={`/${featuredBlogs[2]?.slug}`}>
                                     <img src={featuredBlogs[2]?.image_url} alt={featuredBlogs[2]?.title} className="img-fluid" />
                                     <h3 className="gray-font fw-semibold text-uppercase mt-3">{featuredBlogs[2]?.title}</h3>
-                                    <div className="gray-font">
+                                    {/* <div className="gray-font">
                                         {parse(DOMPurify.sanitize(featuredBlogs[2]?.content.slice(0, 250) + '...'))}
-                                    </div>
+                                    </div> */}
                                 </Link>
                             </div>
                         </div>
@@ -175,9 +175,9 @@ const BlogsPage = () => {
                                     <Link to={`/${blog.slug}`}>
                                         <img src={blog.image_url} alt={blog.title} className="img-fluid" />
                                         <h3 className="gray-font fw-semibold text-uppercase mt-3">{blog.title}</h3>
-                                        <div className="gray-font">
+                                        {/* <div className="gray-font">
                                             {parse(DOMPurify.sanitize(blog.content.slice(0, 100) + '...'))}
-                                        </div>
+                                        </div> */}
                                     </Link>
                                 </div>
                             </div>

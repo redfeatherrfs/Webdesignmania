@@ -587,10 +587,22 @@ const Home = () => {
         <>
             {/* <BlackPosterSec /> */}
             <Helmet>
-                <title>Full-Service Digital Marketing Agency - Web Design Mania</title>
-                <meta name="description" content="Web Design Mania is a full-service digital marketing agency offering expert web design, SEO, branding, and development services to boost your business worldwide." />
-                <link rel="canonical" href="https://webdesignmania.com"/>
-            </Helmet>
+    <title>Affordable Web Design & Development Services in USA</title>
+    <meta name="description" content="Looking for a website design and development agency partner? We help small businesses with on-budget web design, development, hosting, and support." />
+    <link rel="canonical" href="https://webdesignmania.com/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Affordable Web Design & Development Services in USA" />
+    <meta property="og:description" content="Looking for a website design and development agency partner? We help small businesses with on-budget web design, development, hosting, and support." />
+    <meta property="og:url" content="https://webdesignmania.com/" />
+    <meta property="og:site_name" content="WebDesignMania" />
+    <meta property="article:publisher" content="https://www.facebook.com/webdesignmaniaUS" />
+    <meta property="article:modified_time" content="2024-08-22T12:09:56+00:00" />
+    
+    <meta name="google-site-verification" content="dW31zfBPkaAoLS90f6y097Y5drn0AYZXm5_onXhj4-k" />
+  </Helmet>
             <HeaderSection/>
             <BannerSection
                 title='Crafting High-Impact Websites That Drive Results'

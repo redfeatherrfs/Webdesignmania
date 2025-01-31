@@ -176,10 +176,21 @@ const AppPage = () => {
 
     return (
         <>
-            <Helmet>
-                <title>App Design and Development Services by top App Designers</title>
-                <meta name="description" content="Get top-notch app design and development services by leading app designers at Web Design Mania. We create user-friendly, innovative apps to your business needs." />
-            </Helmet>
+             <Helmet>
+    <title>Affordable App Design Services | Hire Mobile App Developers</title>
+    <meta name="description" content="Get affordable mobile app development services with Web Design Mania. We design, develop, and deploy mobile applications for Android and iOS platforms." />
+    <link rel="canonical" href="https://webdesignmania.com/mobile-app-design-services" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Affordable App Design Services | Hire Mobile App Developers" />
+    <meta property="og:description" content="Get affordable mobile app development services with Web Design Mania. We design, develop, and deploy mobile applications for Android and iOS platforms." />
+    <meta property="og:url" content="https://webdesignmania.com/mobile-app-design-services" />
+    <meta property="og:site_name" content="WebDesignMania" />
+    <meta property="article:publisher" content="https://www.facebook.com/webdesignmaniaUS" />
+    <meta property="article:modified_time" content="2024-08-23T06:56:32+00:00" />
+  </Helmet>
             <HeaderSection />
             <BannerSection
                 title='Your Partner in Creating Innovative Mobile App Design'
