@@ -148,7 +148,7 @@ const ContactUsform = () => {
                                 <a href="https://www.google.com/maps/search/?api=1&query=41+Winthrop+Rd,+Edison,+NJ+08817" target="_blank" className="contactuspg-link">
                                     <FaMapMarkerAlt /> 41 Winthrop Rd, Edison, NJ 08817<br />
                                </a>
-                                <a href="tel:+1 (551) 554-3283" className="contactuspg-link"><FaPhoneAlt /> +1 (551) 554-3283</a><br />
+                                <a href="tel:+15515543283" className="contactuspg-link"><FaPhoneAlt /> +15515543283</a><br />
                                 <a href="mailto:info@webdesignmania.com" className="contactuspg-link"><FaEnvelope /> info@webdesignmania.com</a>
 
                                 <div className="contactuspg-social-icons d-flex">

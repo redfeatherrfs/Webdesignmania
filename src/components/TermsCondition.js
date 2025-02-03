@@ -70,7 +70,7 @@ const TermsCondition = () => {
                     <h4>Request Your Refund</h4>
                     <p>To initiate a refund, follow these steps:</p>
                     <ol>
-                        <li>Contact us via live chat at our toll-free number <a href="tel:+15515543283">+1 (551) 554-3283
+                        <li>Contact us via live chat at our toll-free number <a href="tel:+15515543283">+15515543283
                         </a></li>
                         <li>Send an email to <a href="mailto:info@webdesignmania.com">info@webdesignmania.com</a></li>
                     </ol>

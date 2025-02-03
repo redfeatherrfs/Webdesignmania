@@ -31,7 +31,7 @@ const Footer = () => {
               <li><Link to="/mobile-app-design-services" className="text-light text-decoration-none">App Design</Link></li>
               <li><Link to="/affordable-stationery-design-services" className="text-light text-decoration-none">Stationery</Link></li>
               <li><Link to="/search-engine-optimization-services" className="text-light text-decoration-none">SEO</Link></li>
-              <li><Link to="/smm" className="text-light text-decoration-none">SMM</Link></li>
+              <li><Link to="/social-media-marketing-services" className="text-light text-decoration-none">SMM</Link></li>
             </ul>
           </div>
 
@@ -63,7 +63,7 @@ const Footer = () => {
               <h4 className="footer-heading">Contact Us</h4>
               <p className="mb-1 text-light">
                 <FaPhoneAlt /> 
-                <a href="tel:+15515543283" className="text-light text-decoration-none">  +1 (551) 554-3283</a>
+                <a href="tel:+15515543283" className="text-light text-decoration-none">  +15515543283</a>
               </p>
               <p className="mb-1 text-light">
                 <FaEnvelope /> 
@@ -88,7 +88,7 @@ const Footer = () => {
             </div>
             {/* Right Column */}
             <div className="col-6 text-end">
-              <a href="/terms-condition" className="text-light text-decoration-none">Terms & conditions</a> |   
+              <a href="/terms-conditions" className="text-light text-decoration-none">Terms & conditions</a> |   
               <a href="/privacy-policy" className="text-light text-decoration-none"> Privacy Policy</a>
               <ScrollToTopButton/>
             </div>

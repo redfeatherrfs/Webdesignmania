@@ -30,7 +30,7 @@ const TopHead = ({ updatePopupTitle }) => {
                                     style={{ color: 'white', display: 'flex', alignItems: 'center' }}
                                 >
                                     <FaPhone style={{ marginRight: '8px' }} />
-                                    +1 (551) 554-3283
+                                    +15515543283
                                 </a>
                             </li>
                             <li style={{ display: 'inline-block' }}>

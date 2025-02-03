@@ -117,7 +117,7 @@ const ContactForm = () => {
                     <ul className="contact-info">
                         <li>
                             <FaPhoneAlt className="contact-icon" />
-                            <a href="tel:+15515543283">+1 (551) 554-3283</a>
+                            <a href="tel:+15515543283">+15515543283</a>
                         </li>
                         <li>
                             <FaEnvelope className="contact-icon" />

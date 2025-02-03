@@ -59,7 +59,7 @@ const LpFooter = () => {
           <div className="col-md-6 col-12">
             <p>
               <a href="/privacy-policy" target="_blank" className="text-light">Privacy Policy</a> | 
-              <a href="/terms-condition" target="_blank" className="text-light"> Terms & Conditions</a>
+              <a href="/terms-conditions" target="_blank" className="text-light"> Terms & Conditions</a>
             </p>
           </div>
         </div>

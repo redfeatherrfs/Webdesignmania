@@ -207,8 +207,7 @@ const AppPage = () => {
             <HeaderSection />
             <BannerSection
                 title='We Harness The Power Of Social Platforms And Make Your Brand Stay Relevant'
-                description="Thinking about how to implement social media analytics to your brand and generate quality leads? Why not out-source your worries!
-"
+                description={<span style={{ color: 'white' }}>Thinking about how to implement social media analytics to your brand and generate quality leads? Why not out-source your worries!</span>}
                 updatePopupTitle={handleTitleChange}
                 buttontext="Start a Project"
                 image={bannerImage}

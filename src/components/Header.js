@@ -57,7 +57,7 @@ const Header = () => {
                   <li><Link to="/mobile-app-design-services" className="dropdown-item">App Design</Link></li>
                   <li><Link to="/affordable-stationery-design-services" className="dropdown-item">Stationery</Link></li>
                   <li><Link to="/search-engine-optimization-services" className="dropdown-item">SEO</Link></li>
-                  <li><Link to="/smm" className="dropdown-item">SMM</Link></li>
+                  <li><Link to="/social-media-marketing-services" className="dropdown-item">SMM</Link></li>
                 </ul>
               </li>
               <li className="nav-item">
@@ -66,7 +66,7 @@ const Header = () => {
             </ul>
             {/* <div className="custom-phone-number ms-3">
               <a href="tel:+15515543283" className="nav-link">
-                +1 (551) 554-3283
+                +15515543283
               </a>
             </div> */}
           </div>

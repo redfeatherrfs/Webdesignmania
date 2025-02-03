@@ -32,7 +32,7 @@ const SupportSection = () => {
                 <img src={consultIcon} alt="Consult Expert Icon" className="support-icon" />
                 <div className="support-text">
                   <p className="support-heading">Consult Our Expert</p>
-                  <p className="support-detail">+1 (551) 554-3283</p>
+                  <p className="support-detail">+15515543283</p>
                 </div>
               </div>
             </a>

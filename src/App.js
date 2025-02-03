@@ -31,14 +31,14 @@ const App = () => {
                 <Route path="/about-us" element={<About />} />
                 <Route path="/mobile-app-design-services" element={<AppPage />} />
                 <Route path="/contact-us" element={<ContactUs />} />
-                <Route path="/logo-design" element={<LogoDesign />} />
-                <Route path="/smm" element={<SMM />} />
+                <Route path="/professional-logo-design-services" element={<LogoDesign />} />
+                <Route path="/social-media-marketing-services" element={<SMM />} />
                 <Route path="/search-engine-optimization-services" element={<Seo />} />
                 <Route path="/affordable-stationery-design-services" element={<Stationary />} />
                 <Route path="/lp" element={<Lp/>} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/lp/privacy-policy" element={<LpPrivacyPolicy />} />
-                <Route path="/terms-condition" element={<TermsCondition />} />
+                <Route path="/terms-conditions" element={<TermsCondition />} />
                 <Route path="/lp/terms-condition" element={<LpTermsCondition />} />
                 <Route path="/thank-you" element={<ThankYouPage />} />
                 <Route path="/black-friday" element={<Countdown />} />
