@@ -33,6 +33,11 @@
 <priority>0.8</priority>
 </url>
 <url>
+<loc>https://webdesignmania.com/blogs</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
 <loc>https://webdesignmania.com/about-us</loc>
 <changefreq>weekly</changefreq>
 <priority>0.6</priority>
