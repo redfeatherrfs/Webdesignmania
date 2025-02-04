@@ -4,7 +4,7 @@ import customimages1 from '../images/Mask group55.png';
 
 
 
-const CustomContainerV3 = () => {
+const CustomContainerV3 = ({updatePopupTitle}) => {
     return (
         <div className="container custom-container-margin-v3">
             <div className="row align-items-center">
@@ -15,7 +15,14 @@ const CustomContainerV3 = () => {
                     <p>Our collaborative design process allows you to have a hand in shaping the final product. Let’s establish your brand identity together! 
 
                     </p>
-                    <div className="custom-bold-text-v3">Get Started!</div>
+                    <button 
+                                className="cta-button" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#popupForm" 
+                                onClick={() => updatePopupTitle('Basic Package - $199')}
+                            >
+                               Get Started
+                            </button>
                 </div>
                 <div className="col-lg-6 custom-image-section-v3">
                     <img src= {customimages1} alt="Descriptive Image Text" />

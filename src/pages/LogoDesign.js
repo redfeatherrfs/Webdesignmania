@@ -190,7 +190,7 @@ const LogoDesign = () => {
             />
             <LogoSection />
             <GetStartedSection />
-            <CustomContainer />
+            <CustomContainer updatePopupTitle={handleTitleChange} />
             <LogoPortfolio />
             <LogoProcess />
             <CustomSection />

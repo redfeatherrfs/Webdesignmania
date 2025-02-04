@@ -5,6 +5,7 @@
   right: 0;
   border-top: 2px dotted #bbb;
   z-index: 0;
+  display: none;
 }
   
   .smmprocess .process-step {

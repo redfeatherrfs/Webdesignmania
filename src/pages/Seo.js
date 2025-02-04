@@ -197,7 +197,7 @@ const AppPage = () => {
 
             <GetStartedSection />
 
-            <div style={{ padding: '100px 0px 0px 0px' }}>
+            <div style={{ padding: '80px 0px 0px 0px' }}>
 <ImageRightBanner
     subHeading="SEO"
     heading="Unlocking The Power Of Seo For Your Brand's Success"
@@ -216,7 +216,7 @@ Imagine your business being the go-to choice whenever someone searches for what 
 />
 </div>
 
-<div style={{ padding: '100px 0px 0px 0px' }}>
+<div >
 <ImageRightBanner
     subHeading="SEO"
     heading="Your Online Growth With Targeted SEO"
@@ -237,7 +237,7 @@ We create strategies that work uniquely for your business growth. We build a cus
 />
 </div>
 
-<div style={{ padding: '100px 0px 0px 0px' }}>
+<div >
 <ImageRightBanner
     subHeading="SEO"
     heading="Future-Proofing Your Business With Latest SEO Trends  "
