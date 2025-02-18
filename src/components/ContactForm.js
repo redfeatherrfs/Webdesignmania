@@ -113,7 +113,8 @@ const ContactForm = () => {
                     </li>
                     <li>
                         <FaMapMarkerAlt className="contact-icon" />
-                        <a href="https://maps.app.goo.gl/hzEmaUB6sqde6kH28" target="_blank">497 Sunleigh Rd, Wembley HA0 4LY, UK</a>
+                        <a href="https://maps.app.goo.gl/hzEmaUB6sqde6kH28" target="_blank">Continental House, 497 Sunleigh Road,
+                        Wembley, England, HA0 4LY</a>
                     </li>
                 </ul>
             </div>
