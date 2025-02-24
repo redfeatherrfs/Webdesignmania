@@ -8,7 +8,7 @@ import ImageRightBanner from "../../components/Aboutus/ImageRightbanner"
 import lpImage from "../../images/lpimageleft.png"
 import LpServiceIconBox from "../../components/LandingPage/LpServiceIconBox"
 import serviceiconbox1 from "../../images/lpicon1.png"
-import serviceiconbox2 from "../../images/lpicon2.png"
+import serviceiconbox2 from "../../images/inc500.png"
 import serviceiconbox3 from "../../images/lpicon3.png"
 import TestimonialSection from "../../components/Testimonial"
 import ContactForm from "../../components/ContactForm"
@@ -67,7 +67,7 @@ const steps = [
         image: whyservice1,
         alt: "Custom Web Development",
         title: "Custom Web Development",
-        description: "Custom website websites built from scratch to meet specific business needs."
+        description: "We specialise in building custom websites designed to meet and fulfill the unique requirements of your business. Each website is meticulously crafted to align with your goals, ensuring a seamless online presence."
     },
     {
         image: whyservice2,
