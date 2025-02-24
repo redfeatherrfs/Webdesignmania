@@ -170,6 +170,9 @@ section.ebook-contact-form.container
 
 @media (max-width: 658px) 
 {
+  .btn-submit {
+   width: 100%;
+  }
 section.ebook-contact-form.container
         {
         padding: 0px 20px 20px 20px;

@@ -41,14 +41,17 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Custom Website Essential Package",
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£1320",
                     subtitle: (
                         <>
-                            Professional & Unique Design <br></br><br></br>
+                            Professional & Unique Design <br></br> 
 
 
                         </>
                     ),
-                    price: "Let's talk!",
+                   
+                    price: "£399",
                     features: [
                         "Design Up to 6 Pages",
                         "8 Visual Images",
@@ -80,14 +83,16 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Custom Website Business Package",
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£1995",
                     subtitle: (
                         <>
-                            Professional & Unique Design <br></br><br></br>
+                            Professional & Unique Design <br></br>
 
 
                         </>
                     ),
-                    price: "Let's talk!",
+                    price: "£599",
                     features: [
                         "Design Up to 10 Pages",
                         "Logo Design",
@@ -127,8 +132,16 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "E-commerce Website Starter Package",
-                    subtitle: "Best Value for Money Guaranteed!",
-                    price: "£1199",
+                    subtitle: (
+                        <>
+                            Ideal for small business and start Ups <br></br>
+
+
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£2496",
+                    price: "£749",
                     features: [
                         "eCommerce Integration",
                         "Design Up to 20 Pages",
@@ -164,8 +177,17 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "E-commerce Website Business Package",
-                    subtitle: "Perfect for Small Businesses!",
-                    price: "Let's talk!",
+                    subtitle: (
+                        <>
+                            Perfect for Small Businesses! <br></br>
+
+
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£4496",
+                    price: "£1349",
+                
                     features: [
                         "eCommerce Integration",
                         "Design Up to 100 Pages",
@@ -202,7 +224,15 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "E-commerce Website Enterprise Package",
                     subtitle: "Advanced Features Included!",
-                    price: "Let's talk!",
+                    subtitle: (
+                        <>
+                           Advanced Features Included! <br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£16645",
+                    price: "£4994",
+                    
                     features: [
                         "eCommerce Integration",
                         "Advanced Order Management",
@@ -247,8 +277,19 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Basic Logo Package",
-                    subtitle: "Get Your Store Online!",
+                    
+                    
+                     subtitle: (
+                        <>
+                           Best Value for Money Guaranteed! <br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£139",
                     price: "£45",
+
+
+
                     features: [
                         "2 Logo Design Concepts",
                         "4 Free Revisions",
@@ -262,8 +303,15 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Professional Logo Package",
-                    subtitle: "Get Your Store Online!",
-                    price: "Let's Talk",
+                    subtitle: (
+                        <>
+                          Best Value for Money Guaranteed! <br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£285",
+                    price: "£85",
+                    
                     features: [
                         "4 Logo Design Concepts",
                         "8 Free Revisions",
@@ -277,8 +325,14 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Infinite Logo Package",
-                    subtitle: "Get Your Store Online!",
-                    price: "Let's Talk",
+                    subtitle: (
+                        <>
+                         Best Value for Money Guaranteed! <br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£490",
+                    price: "£145",
                     features: [
                         "6 Logo Design Concepts",
                         "Unlimited Revisions",
@@ -297,7 +351,14 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Stationery Basic Package",
-                    subtitle: "Complete Branding Solution!",
+                    subtitle: (
+                        <>
+                         Complete Branding Solution! <br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£415",
+                   
                     price: "£129",
                     features: [
                         "Business Card Design",
@@ -315,8 +376,16 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Stationery Startup Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "Let's Talk",
+                    
+                    subtitle: (
+                        <>
+                         Complete Branding Solution!<br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£630",
+                   
+                    price: "£199",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -336,8 +405,16 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Stationery Infinite Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "Let's Talk",
+                      
+                    subtitle: (
+                        <>
+                         Complete Branding Solution!<br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "1035",
+                   
+                    price: "£315",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -365,8 +442,14 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Basic SEO Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "£250",
+                     subtitle: (
+                        <>
+                         Complete Branding Solution!<br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£799",
+                    price: "£249",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -404,8 +487,14 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Premium SEO Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "Let's Talk",
+                    subtitle: (
+                        <>
+                         Complete Branding Solution!<br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£1650",
+                    price: "£499",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -443,8 +532,14 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Platinum SEO Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "Let's Talk",
+                    subtitle: (
+                        <>
+                         Complete Branding Solution!<br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£2599",
+                    price: "£749",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -489,8 +584,16 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             items: [
                 {
                     title: "Starter Package",
-                    subtitle: "Complete Branding Solution!",
+                    
+                    subtitle: (
+                        <>
+                         Complete Branding Solution!<br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£665",
                     price: "£199",
+
                     features: [
                         "3 postings per week (per network) Facebook + Twitter + Instagram",
                         "Content Creation",
@@ -503,44 +606,57 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 },
                 {
                     title: "Scaling Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "Let's Talk",
+                    subtitle: (
+                        <>
+                         Complete Branding Solution!<br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£1250",
+                    price: "£399",
+
                     features: [
-                        "Prior Analysis",
-                        "Business Analysis",
-                        "Consumer Analysis",
-                        "Competitor Analysis",
-                        "30 Selected Keywords Targeting",
-                        "30 Pages Keyword Targeted",
-                        "Web Page Optimization",
-                        "Meta Tags Creation",
-                        "Keyword Optimization",
-                        "Image Optimization",
-                        "Inclusion of anchors",
-                        "Tracking & Analysis",
-                        "Google Places Inclusions",
-                        "Google Analytics Installation",
-                        "Google Webmaster Installation",
-                        "Call To Action Plan",
-                        "Creation of Sitemaps",
-                        "Reporting",
-                        "Monthly Reporting",
-                        "Recommendation",
-                        "Email Support",
-                        "Phone Support",
-                        "Off-Page Optimization",
-                        "Social Bookmarking",
-                        "Slideshare Marketing",
-                        "Forums/FAQ's",
-                        "Link Building",
-                        "Directory Submission",
-                        "Local Business Listings",
+                        "4 postings per week (per network) Facebook + Twitter + Instagram + LinkedIn",
+                        "Content Creation",
+                        "Business Page Optimization",
+                        "Social Media Strategy (Overview)",
+                        "Facebook Likes Campaign",
+                        "Monthly Progress report",
+                        "Copywriting",
+                        // "Meta Tags Creation",
+                        // "Keyword Optimization",
+                        // "Image Optimization",
+                        // "Inclusion of anchors",
+                        // "Tracking & Analysis",
+                        // "Google Places Inclusions",
+                        // "Google Analytics Installation",
+                        // "Google Webmaster Installation",
+                        // "Call To Action Plan",
+                        // "Creation of Sitemaps",
+                        // "Reporting",
+                        // "Monthly Reporting",
+                        // "Recommendation",
+                        // "Email Support",
+                        // "Phone Support",
+                        // "Off-Page Optimization",
+                        // "Social Bookmarking",
+                        // "Slideshare Marketing",
+                        // "Forums/FAQ's",
+                        // "Link Building",
+                        // "Directory Submission",
+                        // "Local Business Listings",
                     ],
                 },
                 {
                     title: "Venture Package",
-                    subtitle: "Complete Branding Solution!",
-                    price: "Let's Talk",
+                    subtitle: (
+                        <>
+                         Complete Branding Solution!<br></br>
+                        </>
+                    ),
+                    boldTitle: " Get 70% Off",
+                    originalPrice: "£1799",
+                    price: "£549",
                     features: [
                         "Copywriting and visual designs",
                         "Business Page Optimization",
@@ -562,6 +678,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
         <section className="pricing-section text-center py-5" id='pricing-section'>
             <Container>
                 <h2 className="price-heading mb-4">Budget Friendly Pricing Solutions </h2>
+                <h6  >Our premium design packages provide bespoke website and branding solutions for small businesses and startups. We create unique brand identities and striking visuals, offering high-quality results with unlimited revisions, fast turnaround times, and a satisfaction guarantee.</h6>
+                
 
                 {/* React Bootstrap Tabs with Centered and No Underline */}
                 <Tabs
