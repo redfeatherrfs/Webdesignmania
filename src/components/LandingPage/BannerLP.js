@@ -119,13 +119,21 @@ const Lpbanner = ({ updatePopupTitle }) => {
                                 style={{ marginRight: '10px' }} 
                             /> */}
                             <h1 className="lpbanner-heading">
-                                Web Design <br />
+                                Custom Web Design <br />
                                 Starts from <span className="lpbanner-price"><img className="saleprice" src={saleprice} alt="199" /></span>
                             </h1>
                         </div>
 
                         <div className="lp-banner-margin">
-                            <p className="lpbanner-text">Web Design Mania is your ultimate toolkit for visionary web development, packed with advanced features to supercharge your digital journey. </p>
+                            <p className="lpbanner-text">Web Design Mania delivers visionary web design and development services, including 
+                                custom websites, responsive design, e-commerce solutions, SEO optimization, and user-friendly interfaces to 
+                                enhance your digital presence.</p>
+                                <ul className="lpbanner-points">
+                                <li>Top-Ranked Web Design Agency in the UK</li>
+                                <li>Recognised for Award-Winning Web Designers</li>
+                                <li>Reliable performance with top-notch security measures</li>
+                                <li>Custom Web Design Solutions for Every Industry</li>
+                            </ul>
                             <div className="lpbanner-buttons">
                                 <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Website Starter Package - £199')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
