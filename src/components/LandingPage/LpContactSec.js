@@ -67,8 +67,8 @@ const SupportSection = () => {
             </Col>
             <Col xs={12} md={4} className="footer-col terms-links text-md-end text-center">
                 <p>
-                <a href="/lp/terms-condition" target="_blank">Terms & Conditions</a> | 
-                <a href="/lp/privacy-policy" target="_blank">Privacy Policy</a>
+                <a href="terms-conditions" target="_blank">Terms & Conditions</a> | 
+                <a href="privacy-policy" target="_blank">Privacy Policy</a>
                 </p>
             </Col>
         </Row>
