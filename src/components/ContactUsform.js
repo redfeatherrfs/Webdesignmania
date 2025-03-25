@@ -54,7 +54,7 @@ const ContactUsform = () => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.co.uk/lp/php_mailer/contact.php", {
+        await fetch(/*'http://localhost:9090'*//*"https://creativelogodesign.co.uk/php/index.php"*/"https://creativelogodesign.co.uk/lp/php_mailer/contact.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -108,10 +108,10 @@ const ContactUsform = () => {
                                     <FaMapMarkerAlt /> 497 Sunleigh Rd, Wembley HA0 4LY, UK<br />
                                 </address>
                                 <a href="tel:02045112009" className="contactuspg-link">
-                                    <FaPhoneAlt /> 0204 511 2009
+                                    <FaPhoneAlt /> 0204-511-2054
                                 </a><br />
-                                <a href="mailto:info@webdesignmania.co.uk" className="contactuspg-link">
-                                    <FaEnvelope /> info@webdesignmania.co.uk
+                                <a href="mailto:support@creativelogodesign.co.uk" className="contactuspg-link">
+                                    <FaEnvelope /> support@creativelogodesign.co.uk
                                 </a>
 
                                 {/* Social Icons */}

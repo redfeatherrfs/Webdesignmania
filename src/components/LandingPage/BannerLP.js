@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import webdesignlogo from '../../images/webdesignlogo.svg';
+import webdesignlogo from '../../images/creativeorangelogo.svg';
 import bgimg from '../../images/lpbgfinal.png';
 import saleprice from '../../images/saleprice.png';
 import formbg from '../../images/formbglp.png';
@@ -87,7 +87,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.co.uk/lp/php_mailer/index.php", {
+        await fetch(/*'http://localhost:9090'*//*"https://creativelogodesign.co.uk/php/index.php"*/"https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -95,7 +95,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             .then(({ success, message }) => {
                 setLoading(false)
                 if (success)
-                    navigate('/lp/thank-you')
+                    navigate('https://creativelogodesign.co.uk/thanks.php')
                 else
                     Swal.fire('Error', message, 'error')
             })
@@ -125,7 +125,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                         </div>
 
                         <div className="lp-banner-margin">
-                            <p className="lpbanner-text">Web Design Mania delivers visionary web design and development services, including 
+                            <p className="lpbanner-text">Creative Logo Design delivers visionary web design and development services, including 
                                 custom websites, responsive design, e-commerce solutions, SEO optimization, and user-friendly interfaces to 
                                 enhance your digital presence.</p>
                                 <ul className="lpbanner-points">

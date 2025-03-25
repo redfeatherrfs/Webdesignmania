@@ -751,7 +751,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
 
 
                                             {/* Button */}
-                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updatePopupTitle(item.price.includes('$') ? `${item.title} - ${item.price}` : item.title)} className="package-btn">START PROJECT</button>
+                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updatePopupTitle(item.price.includes('£') ? `${item.title} - ${item.price}` : item.title)} className="package-btn">START PROJECT</button>
                                         </div>
                                     </Col>
                                 ))}

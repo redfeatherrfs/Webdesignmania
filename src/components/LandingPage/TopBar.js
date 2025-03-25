@@ -26,16 +26,16 @@ const TopHead = ({ updatePopupTitle }) => {
                             <li style={{ display: 'inline-block', marginRight: '20px' }}>
                                 <a
                                     className="toll_icon"
-                                    href="tel:+02045112009"
+                                    href="tel:+442045112054"
                                     style={{ color: 'white', display: 'flex', alignItems: 'center' }}
                                 >
                                     <FaPhone style={{ marginRight: '8px' }} />
-                                    0204 511 2009
+                                    0204-511-2054
                                 </a>
                             </li>
                             <li style={{ display: 'inline-block' }}>
                                 <a
-                                    href="https://wa.me/+447309931252"
+                                    href="https://wa.me/+447380107663"
                                     className="chat_icon chat"
                                     style={{ color: 'white', display: 'flex', alignItems: 'center' }}
                                 >

@@ -51,7 +51,7 @@ const AllInOneCombo = ({ updatePopupTitle }) => {
                             <div className='col-12'>
                                 <div className='d-flex gap-3 mt-3'>
                                     <button className='btn btn-primary order-btn' data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - £199')}>Order Now</button>
-                                    <a href="tel:+02045112009"><button className='btn btn-outline-primary call-btn'>Call Now</button></a>
+                                    <a href="tel:+442045112054"><button className='btn btn-outline-primary call-btn'>Call Now</button></a>
                                 </div>
                             </div>
                         </div>

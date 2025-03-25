@@ -12,14 +12,14 @@ const StatisticsSection = () => {
             <div className="col-md-7">
               <h2 className="sub-heading">Company Statistics</h2>
               <h2 className="about-heading">
-              Grow With Exceptional UI Designs At Web Design Mania
+              Grow With Exceptional UI Designs At Creative Logo Design
 
               </h2>
             </div>
             {/* Right Side: Description */}
             <div className="col-md-5">
               <p className="about-desc">
-              We understand that the key to a successful digital product lies in its usability. At Web Design Mania, our dedicated team of UI designers creates intuitive interfaces that blend beauty and functionality seamlessly.
+              We understand that the key to a successful digital product lies in its usability. At Creative Logo Design, our dedicated team of UI designers creates intuitive interfaces that blend beauty and functionality seamlessly.
               </p>
             </div>
           </div>

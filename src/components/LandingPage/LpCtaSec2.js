@@ -19,7 +19,7 @@ const LpCtaSec2 = () => {
     
                 {/* <!-- Column 2: Button --> */}
                 <div class="col-md-4 text-center">
-                    <a target="_blank" href="https://wa.me/+447309931252">
+                    <a target="_blank" href="https://wa.me/+447380107663">
                         <button class="cta2-button">Leave A Message</button>
                     </a>
                 </div>

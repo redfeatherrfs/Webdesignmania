@@ -59,7 +59,7 @@ const CountdownTimerWithConfetti = ({ updatePopupTitle }) => {
 
       setLoading(true)
 
-      await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.co.uk/lp/php_mailer/index.php", {
+      await fetch(/*'http://localhost:9090'*//*"https://creativelogodesign.co.uk/php/index.php"*/"https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
           method: 'POST',
           body: JSON.stringify(formData)
       })
@@ -138,7 +138,7 @@ const CountdownTimerWithConfetti = ({ updatePopupTitle }) => {
           {/* Left Column with Countdown Timer */}
           <div className="col-md-7 d-flex " style={{ position: 'relative', color: 'white',  }}>
             <div style={{ padding: '20px' }}>
-              <h1 className="countdown-heading">Black Friday Web Design Mania - Unbeatable Deals Await!</h1>
+              <h1 className="countdown-heading">Black Friday Creative Logo Design - Unbeatable Deals Await!</h1>
               <p className="countdown-description">Transform your website with stunning designs at incredible discounts this Black Friday!🎉</p>
 
               <div className="countdown-timer">

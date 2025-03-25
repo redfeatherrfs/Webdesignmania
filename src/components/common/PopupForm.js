@@ -82,7 +82,7 @@ const PopupForm = ({ title }) => {
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090/packages.php'*//*"https://webdesignmania.co.uk/php/packages.php"*/"https://webdesignmania.co.uk/lp/php_mailer/package.php", {
+        await fetch(/*'http://localhost:9090/packages.php'*//*"https://creativelogodesign.co.uk/php/packages.php"*/"https://creativelogodesign.co.uk/lp/php_mailer/package.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -91,7 +91,7 @@ const PopupForm = ({ title }) => {
                 document.querySelector('button[data-bs-dismiss]').click()
                 setLoading(false)
                 if (success)
-                    navigate('/lp/thank-you')
+                    navigate('https://creativelogodesign.co.uk/thanks.php')
                 else
                     Swal.fire('Error', message, 'error')
             })

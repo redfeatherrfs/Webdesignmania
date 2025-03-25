@@ -15,7 +15,7 @@ const Footer = () => {
                     {/* About Section with Logo */}
                     <div className="col-md-4 mb-4">
                         <h5 className="footer-heading-sub">
-                            <Link to="/"> <img src={footer} alt="Web Design Mania Logo" style={{ maxWidth: '150px' }} /></Link>
+                            <Link to="/"> <img src={footer} alt="Creative Logo Design Logo" style={{ maxWidth: '150px' }} /></Link>
                         </h5>
                         <p className="text-light">
                             As a versatile, full-service agency specializing in website design and development, we create visually striking and cost-effective solutions for businesses of every scale.
@@ -59,11 +59,11 @@ const Footer = () => {
                             <h4 className="footer-heading">Contact Us</h4>
                             <p className="mb-1 text-light">
                                 <FaPhoneAlt />
-                                <a href="tel:+02045112009" className="text-light text-decoration-none">  0204 511 2009</a>
+                                <a href="tel:+442045112054" className="text-light text-decoration-none">  0204-511-2054</a>
                             </p>
                             <p className="mb-1 text-light">
                                 <FaEnvelope />
-                                <a href="mailto:info@webdesignmania.co.uk" className="text-light text-decoration-none"> info@webdesignmania.co.uk</a>
+                                <a href="mailto:support@creativelogodesign.co.uk" className="text-light text-decoration-none"> support@creativelogodesign.co.uk</a>
                             </p>
                             <p className="text-light">
                                 <FaMapMarkerAlt />

@@ -64,7 +64,7 @@ const CountdownTimerWithConfetti = () => {
           {/* Left Column with Countdown Timer */}
           <div className="col-md-7 d-flex justify-content-center align-items-center" style={{ position: 'relative', color: 'white', textAlign: 'center' }}>
             <div style={{ padding: '20px' }}>
-              <h1 className="countdown-heading">Black Friday Web Design Mania - Unbeatable Deals Await!</h1>
+              <h1 className="countdown-heading">Black Friday Creative Logo Design - Unbeatable Deals Await!</h1>
               <p className="countdown-description">Transform your website with stunning designs at incredible discounts this Black Friday!🎉</p>
 
               <div className="countdown-timer">

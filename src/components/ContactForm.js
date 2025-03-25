@@ -69,31 +69,59 @@ const ContactForm = () => {
 
 
 
+    // const handleSubmit = async e => {
+    //     e.preventDefault()
+
+    //     if (!validateEmailAndPhone())
+    //         return
+
+    
+    //     if (!validateFormFields())
+    //         return
+
+    //     setLoading(true)
+
+    //     await fetch("https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
+    //         method: 'POST',
+    //         body: JSON.stringify(formData)
+    //     })
+    //         .then(r => r.json())
+    //         .then(({ success, message }) => {
+    //             setLoading(false)
+    //             if (success)
+    //                 navigate('https://creativelogodesign.co.uk/thanks.php')
+    //             else
+    //                 Swal.fire('Error', message, 'error')
+    //         })
+    // }
+
     const handleSubmit = async e => {
-        e.preventDefault()
-
-        // Email & phone validation
-        if (!validateEmailAndPhone())
-            return
-
-        // Name & message fields validations
-        if (!validateFormFields())
-            return
-
-        setLoading(true)
-
-        await fetch(/*'http://localhost:9090'*//*"https://webdesignmania.co.uk/php/index.php"*/"https://webdesignmania.co.uk/lp/php_mailer/index.php", {
-            method: 'POST',
-            body: JSON.stringify(formData)
-        })
-            .then(r => r.json())
-            .then(({ success, message }) => {
-                setLoading(false)
-                if (success)
-                    navigate('/lp/thank-you')
-                else
-                    Swal.fire('Error', message, 'error')
-            })
+        e.preventDefault();
+    
+        if (!validateEmailAndPhone()) return;
+        if (!validateFormFields()) return;
+    
+        setLoading(true);
+    
+        try {
+            const response = await fetch("https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
+                method: 'POST',
+                body: JSON.stringify(formData)
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+              
+                window.location.href = "https://creativelogodesign.co.uk/thanks.php";
+            } else {
+                Swal.fire('Error', result.message, 'error');
+            }
+        } catch (error) {
+            Swal.fire('Error', 'Network error occurred', 'error');
+        } finally {
+            setLoading(false);
+        }
     }
 
     return (
@@ -105,11 +133,11 @@ const ContactForm = () => {
                 <ul className="contact-info">
                     <li>
                         <FaPhoneAlt className="contact-icon" />
-                        <a href="tel:+02045112009">0204 511 2009</a>
+                        <a href="tel:+442045112054">0204-511-2054</a>
                     </li>
                     <li>
                         <FaEnvelope className="contact-icon" />
-                        <a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>
+                        <a href="mailto:support@creativelogodesign.co.uk">support@creativelogodesign.co.uk</a>
                     </li>
                     <li>
                         <FaMapMarkerAlt className="contact-icon" />

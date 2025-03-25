@@ -97,7 +97,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
             .then(({ success, message }) => {
                 setLoading(false)
                 if (success)
-                    navigate('/lp/thank-you')
+                    navigate('/thanks.php')
                 else
                     Swal.fire('Error', message, 'error')
             })
@@ -127,7 +127,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                         </div>
 
                         <div className="lp-banner-margin">
-                            <p className="lpbanner-text">Web Design Mania is your ultimate toolkit for visionary web development, packed with advanced features to supercharge your digital journey. </p>
+                            <p className="lpbanner-text">Creative Logo Design is your ultimate toolkit for visionary web development, packed with advanced features to supercharge your digital journey. </p>
                             <div className="lpbanner-buttons">
                                 <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Custom Website Starter Package - £199')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>

@@ -232,7 +232,7 @@ const Stationary = () => {
         <>
             <Helmet>
                 <title>Custom Stationery Design Service by Top Graphic Designers</title>
-                <meta name="description" content="Web Design Mania offers custom stationery design by top graphic designers, creating unique, branded materials that leave a lasting impression on your audience." />
+                <meta name="description" content="Creative Logo Design offers custom stationery design by top graphic designers, creating unique, branded materials that leave a lasting impression on your audience." />
             </Helmet>
             <HeaderSection />
             <BannerSection

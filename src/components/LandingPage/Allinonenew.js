@@ -93,7 +93,7 @@ const AllInOne = ({ updatePopupTitle }) => {
 <div className="container">
   <div className="button-container">
       <button className="letsdiscuss"  data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('ALL-IN-ONE COMBO - £1199')} >Order Now</button>
-    <a href="tel:+02045112009" className="callnow" >  <button className="live-chat" >Call Now</button></a>
+    <a href="tel:+442045112054" className="callnow" >  <button className="live-chat" >Call Now</button></a>
     </div>
     </div>
     </section>

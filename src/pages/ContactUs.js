@@ -22,8 +22,8 @@ const AppPage = () => {
     return (
         <>
             <Helmet>
-                <title>Contact Us  - Web Design Mania</title>
-                <meta name="description" content="Get in touch with Web Design Mania today! Whether you have questions about our services or need a custom quote, our friendly team is here to help." />
+                <title>Contact Us  - Creative Logo Design</title>
+                <meta name="description" content="Get in touch with Creative Logo Design today! Whether you have questions about our services or need a custom quote, our friendly team is here to help." />
                 <link rel="canonical" href="https://webdesignmania.co.uk/lp/contact-us"/>
             </Helmet>     
             <HeaderSection />

@@ -178,7 +178,7 @@ const AppPage = () => {
         <>
             <Helmet>
                 <title>App Design and Development Services by top App Designers</title>
-                <meta name="description" content="Get top-notch app design and development services by leading app designers at Web Design Mania. We create user-friendly, innovative apps to your business needs." />
+                <meta name="description" content="Get top-notch app design and development services by leading app designers at Creative Logo Design. We create user-friendly, innovative apps to your business needs." />
             </Helmet>
             <HeaderSection />
             <BannerSection

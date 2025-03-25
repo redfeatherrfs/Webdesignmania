@@ -26,7 +26,7 @@ const LpthirdSection = () => {
                         <div className="lpiconbox">
                             <img src={web_design} alt="Icon 1" className="lpicon-image" />
                             <h4>Web Design  </h4>
-                            <p>Web design is one of the most important aspects of a website that catches a customer's attention. At Web Design Mania we refine the platform to empower remarkable small businesses and inspire incredible startups.</p>
+                            <p>Web design is one of the most important aspects of a website that catches a customer's attention. At Creative Logo Design we refine the platform to empower remarkable small businesses and inspire incredible startups.</p>
                         </div>
                     </div>
 
