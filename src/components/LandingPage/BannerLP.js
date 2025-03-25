@@ -85,20 +85,42 @@ const Lpbanner = ({ updatePopupTitle }) => {
         if (!validateFormFields())
             return
 
-        setLoading(true)
-
-        await fetch(/*'http://localhost:9090'*//*"https://creativelogodesign.co.uk/php/index.php"*/"https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
-            method: 'POST',
-            body: JSON.stringify(formData)
-        })
+        // setLoading(true)
+        // await fetch("https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
+        //     method: 'POST',
+        //     body: JSON.stringify(formData)
+        // })
+        //     .then(r => r.json())
+        //     .then(({ success, message }) => {
+        //         setLoading(false)
+        //         if (success)
+        //             navigate('https://creativelogodesign.co.uk/thanks.php')
+        //         else
+        //             Swal.fire('Error', message, 'error')
+        //     })
+            setLoading(true)
+            await fetch("https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
+                method: 'POST',
+                body: JSON.stringify(formData)
+            })
             .then(r => r.json())
             .then(({ success, message }) => {
-                setLoading(false)
-                if (success)
-                    navigate('https://creativelogodesign.co.uk/thanks.php')
-                else
-                    Swal.fire('Error', message, 'error')
+                console.log('Response:', success, message);  // Debugging output
+                setLoading(false);
+                if (success) {
+                    window.location.href = "https://creativelogodesign.co.uk/thanks.php";
+                } else {
+                    Swal.fire('Error', message, 'error');
+                }
             })
+            .catch(error => {
+                console.error('Error during fetch:', error);  // Log any fetch errors
+                setLoading(false);
+            });
+
+
+
+
     }
 
     return (

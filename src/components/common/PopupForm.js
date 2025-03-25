@@ -81,19 +81,40 @@ const PopupForm = ({ title }) => {
 
         setLoading(true)
 
-        await fetch("https://creativelogodesign.co.uk/lp/php_mailer/package.php", {
-            method: 'POST',
-            body: JSON.stringify(formData)
-        })
-            .then(r => r.json())
-            .then(({ success, message }) => {
-                document.querySelector('button[data-bs-dismiss]').click()
-                setLoading(false)
-                if (success)
-                    window.location.href = "https://creativelogodesign.co.uk/thanks.php";
-                else
-                    Swal.fire('Error', message, 'error')
-            })
+        // await fetch("https://creativelogodesign.co.uk/lp/php_mailer/package.php", {
+        //     method: 'POST',
+        //     body: JSON.stringify(formData)
+        // })
+        //     .then(r => r.json())
+        //     .then(({ success, message }) => {
+        //         document.querySelector('button[data-bs-dismiss]').click()
+        //         setLoading(false)
+        //         if (success)
+        //             window.location.href = "https://creativelogodesign.co.uk/thanks.php";
+        //         else
+        //             Swal.fire('Error', message, 'error')
+        //     })
+
+        setLoading(true)
+                    await fetch("https://creativelogodesign.co.uk/lp/php_mailer/package.php", {
+                        method: 'POST',
+                        body: JSON.stringify(formData)
+                    })
+                    .then(r => r.json())
+                    .then(({ success, message }) => {
+                        console.log('Response:', success, message);  // Debugging output
+                        setLoading(false);
+                        if (success) {
+                            window.location.href = "https://creativelogodesign.co.uk/thanks.php";
+                        } else {
+                            Swal.fire('Error', message, 'error');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error during fetch:', error);  // Log any fetch errors
+                        setLoading(false);
+                    });
+        
     }
 
 
