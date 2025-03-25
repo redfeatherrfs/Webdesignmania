@@ -90,7 +90,7 @@ const PopupForm = ({ title }) => {
                 document.querySelector('button[data-bs-dismiss]').click()
                 setLoading(false)
                 if (success)
-                    navigate('./thanks.php')
+                    window.location.href = "https://creativelogodesign.co.uk/thanks.php";
                 else
                     Swal.fire('Error', message, 'error')
             })

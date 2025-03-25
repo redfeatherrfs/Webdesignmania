@@ -89,7 +89,7 @@ const ContactForm = () => {
             .then(({ success, message }) => {
                 setLoading(false)
                 if (success)
-                    navigate('./thanks.php')
+                    window.location.href ="https://creativelogodesign.co.uk/thanks.php";
                 else
                     Swal.fire('Error', message, 'error')
             })
