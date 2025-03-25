@@ -63,7 +63,7 @@ const SupportSection = () => {
         </div>
             </Col>
             <Col xs={12} md={4} className="footer-col terms-links text-md-end text-center">
-            <p>&#169; Copyright 2025, WebDesignMania.</p>
+            <p>&#169; Copyright 2025, Creative Logo Design</p>
             </Col>
             <Col xs={12} md={4} className="footer-col terms-links text-md-end text-center">
                 <p>

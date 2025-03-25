@@ -69,59 +69,30 @@ const ContactForm = () => {
 
 
 
-    // const handleSubmit = async e => {
-    //     e.preventDefault()
-
-    //     if (!validateEmailAndPhone())
-    //         return
-
-    
-    //     if (!validateFormFields())
-    //         return
-
-    //     setLoading(true)
-
-    //     await fetch("https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
-    //         method: 'POST',
-    //         body: JSON.stringify(formData)
-    //     })
-    //         .then(r => r.json())
-    //         .then(({ success, message }) => {
-    //             setLoading(false)
-    //             if (success)
-    //                 navigate('https://creativelogodesign.co.uk/thanks.php')
-    //             else
-    //                 Swal.fire('Error', message, 'error')
-    //         })
-    // }
-
     const handleSubmit = async e => {
-        e.preventDefault();
+        e.preventDefault()
+
+        if (!validateEmailAndPhone())
+            return
+
     
-        if (!validateEmailAndPhone()) return;
-        if (!validateFormFields()) return;
-    
-        setLoading(true);
-    
-        try {
-            const response = await fetch("https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
-                method: 'POST',
-                body: JSON.stringify(formData)
-            });
-            
-            const result = await response.json();
-            
-            if (result.success) {
-              
-                window.location.href = "https://creativelogodesign.co.uk/thanks.php";
-            } else {
-                Swal.fire('Error', result.message, 'error');
-            }
-        } catch (error) {
-            Swal.fire('Error', 'Network error occurred', 'error');
-        } finally {
-            setLoading(false);
-        }
+        if (!validateFormFields())
+            return
+
+        setLoading(true)
+
+        await fetch("https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
+            method: 'POST',
+            body: JSON.stringify(formData)
+        })
+            .then(r => r.json())
+            .then(({ success, message }) => {
+                setLoading(false)
+                if (success)
+                    navigate('/thanks.php')
+                else
+                    Swal.fire('Error', message, 'error')
+            })
     }
 
     return (

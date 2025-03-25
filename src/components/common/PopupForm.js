@@ -72,17 +72,16 @@ const PopupForm = ({ title }) => {
     const handleSubmit = async e => {
         e.preventDefault()
 
-        // Email & phone validation
         if (!validateEmailAndPhone())
             return
 
-        // Name & message fields validations
+      
         if (!validateFormFields())
             return
 
         setLoading(true)
 
-        await fetch(/*'http://localhost:9090/packages.php'*//*"https://creativelogodesign.co.uk/php/packages.php"*/"https://creativelogodesign.co.uk/lp/php_mailer/package.php", {
+        await fetch("https://creativelogodesign.co.uk/lp/php_mailer/package.php", {
             method: 'POST',
             body: JSON.stringify(formData)
         })
@@ -91,11 +90,12 @@ const PopupForm = ({ title }) => {
                 document.querySelector('button[data-bs-dismiss]').click()
                 setLoading(false)
                 if (success)
-                    navigate('https://creativelogodesign.co.uk/thanks.php')
+                    navigate('/thanks.php')
                 else
                     Swal.fire('Error', message, 'error')
             })
     }
+
 
     return (
         <div className="modal fade" id="popupForm" tabIndex="-1">
