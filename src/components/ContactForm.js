@@ -89,7 +89,7 @@ const ContactForm = () => {
             .then(({ success, message }) => {
                 setLoading(false)
                 if (success)
-                    navigate('/thanks.php')
+                    navigate('./thanks.php')
                 else
                     Swal.fire('Error', message, 'error')
             })
