@@ -65,9 +65,9 @@ export default function VideoCarouselReviews() {
   return (
     <div className="video-carousel-reviews-section py-5">
       <div className="container text-center">
-        <h2 className="video-carousel-reviews-heading">Video Testimonial</h2>
+        <h2 className="main-heading">Video Testimonial</h2>
         <p className="video-carousel-reviews-description mb-4">
-          Hear directly from our happy clients – their success speaks for itself.
+          Hear directly from our happy clients their success speaks for itself.
         </p>
         <div className="video-carousel-reviews-wrapper mx-auto">
           {videoData.map((video, index) => (

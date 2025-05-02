@@ -122,7 +122,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
         //             Swal.fire('Error', message, 'error')
         //     })
             setLoading(true)
-            await fetch("https://creativelogodesign.co.uk/lp/php_mailer/index.php", {
+            await fetch("https://creativelogodesign.co.uk/website-lp/php_mailer/index.php", {
                 method: 'POST',
                 body: JSON.stringify(formData)
             })
