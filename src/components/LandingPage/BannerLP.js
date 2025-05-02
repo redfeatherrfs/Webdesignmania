@@ -134,38 +134,32 @@ const Lpbanner = ({ updatePopupTitle }) => {
                     <div className="col-md-7 lp-left-column">
                         <img src={webdesignlogo} alt="Logo" className="lpbanner-logo" />
                         <div className="lpbanner-heading-container" style={{ display: 'flex', alignItems: 'center' }}>
-                            {/* <img
-                                src={bracket} 
-                                alt="Bracket"
-                                className="lpbanner-bracket-img" 
-                                style={{ marginRight: '10px' }} 
-                            /> */}
                             <h1 className="lpbanner-heading">
-                                Custom Web Design <br />
-                                Starts from <span className="lpbanner-price"><img className="saleprice" src={saleprice} alt="199" /></span>
+                            Complete Business Setup in Just One Click
                             </h1>
+                            
                         </div>
 
                         <div className="lp-banner-margin">
-                            <p className="lpbanner-text">Creative Logo Design delivers visionary web design and development services, including 
-                                custom websites, responsive design, e-commerce solutions, SEO optimization, and user-friendly interfaces to 
-                                enhance your digital presence.</p>
+                            <p className="lpbanner-text">We take care of everything. You sit back, relax, and watch your business grow with
+                            monthly performance updates.</p>
                                 <ul className="lpbanner-points">
-                                <li>Top-Ranked Web Design Agency in the UK</li>
-                                <li>Recognised for Award-Winning Web Designers</li>
-                                <li>Reliable performance with top-notch security measures</li>
-                                <li>Custom Web Design Solutions for Every Industry</li>
+                                <li>Custom Website</li>
+                                <li>SEO Setup </li>
+                                <li>Social Media Profiles </li>
+                                <li>Google Business Profile </li>
+                                <li>Online Reputation Management </li>
+                                <li>Performance Marketing</li>
                             </ul>
                             <div className="lpbanner-buttons">
-                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Website Starter Package - £199')}>Get Started</button>
+                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Get a Website Quote')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
                             </div>
                             <div className="lpbanner-badges">
-                                {/* <img src={clutch} alt="Clutch" /> */}
-                                <a target="_blank" href="https://www.trustpilot.com/review/webdesignmania.co.uk">
+                             
+                                <a target="_blank" href="https://uk.trustpilot.com/review/creativelogodesign.co.uk">
                                     <img src={trustpilot} alt="Trustpilot" />
                                 </a>
-                                {/* <img src={barkicon} alt="Bark" /> */}
                             </div>
                         </div>
                     </div>
@@ -174,11 +168,12 @@ const Lpbanner = ({ updatePopupTitle }) => {
                     <div className="col-md-5 lp-right-column"
                         style={{
                             backgroundImage: `url(${formbg2})`, // Use your background image here
-                            backgroundSize: 'cover', // Cover the entire column
+                            backgroundSize: 'contain', // Cover the entire column
                             backgroundPosition: 'center', // Center the image
                             padding: '70px', // Add padding for spacing
                             borderRadius: '5px', // Optional: rounded corners
                             // height: '600px', // Ensure the height covers the content
+                            backgroundRepeat: 'no-repeat',
                         }}
                     >
                         <div className="lpbanner-form mx-3 mx-sm-0">

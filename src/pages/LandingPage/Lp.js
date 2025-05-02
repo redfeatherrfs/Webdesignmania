@@ -47,6 +47,8 @@ import WhyChooseService from "../../components/LandingPage/lpservices"
 import AllInOne from "../../components/LandingPage/Allinonenew"
 import CustomSection from "../../components/LandingPage/CustomSectionScrol"
 import LeftImageSec from "../../components/LandingPage/LeftImageSec"
+import VideoTestimonials from "../../components/LandingPage/VideoTestimonials"
+import VideoCarouselReviews from "../../components/LandingPage/VideoCarouselReviews"
 
 
 
@@ -184,7 +186,9 @@ const LpPage = () => {
             <TopHead updatePopupTitle={handleTitleChange} />
             <Lpbanner updatePopupTitle={handleTitleChange} />
             <LanguageLogos />
-            <LpPricingSection updatePopupTitle={handleTitleChange} />
+            {/* <LpPricingSection updatePopupTitle={handleTitleChange} /> */}
+            {/* <VideoTestimonials/> */}
+            <VideoCarouselReviews/>
             <WhyChooseService
                 heading={heading}
                  description={description}
@@ -243,7 +247,7 @@ const LpPage = () => {
             {/* <div style={{ padding: '100px 0px 50px 0px' }}>
             </div> */}
 
-       <AllInOne updatePopupTitle={handleTitleChange} />
+       {/* <AllInOne updatePopupTitle={handleTitleChange} /> */}
 
             <CustomSection/>
             <LeftImageSec/>

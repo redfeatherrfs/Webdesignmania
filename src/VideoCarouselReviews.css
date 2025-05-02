@@ -1,0 +1,95 @@
+.video-carousel-reviews-section {
+    background-color: #F0F0F0;
+  }
+  
+  .video-carousel-reviews-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: #222;
+  }
+  
+  .video-carousel-reviews-description {
+    font-size: 16px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .video-carousel-reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+  
+  .video-carousel-reviews-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .video-carousel-reviews-card {
+    flex: 0 0 auto;
+    width: 270px;
+    height: 500px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .video-carousel-reviews-video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-carousel-reviews-video-container video {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    display: block;
+    /* object-fit controlled via JS */
+  }
+  
+  /* Fullscreen fix */
+  video:fullscreen,
+  video:-webkit-full-screen,
+  video:-moz-full-screen {
+    object-fit: contain !important;
+    background-color: black;
+  }
+  
+  /* Play Button Style */
+  .video-carousel-reviews-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+    background-image: url('data:image/svg+xml;utf8,<svg width="36" height="36" viewBox="0 0 24 24" fill="black" xmlns="http://www.w3.org/2000/svg"><path d="M8 5v14l11-7z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36px;
+    animation: pulseZoom 2s infinite;
+  }
+  
+  @keyframes pulseZoom {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.15);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  /* Fix for fullscreen mode - show full video without zoom/crop */
