@@ -766,6 +766,15 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 }
 
+@media(max-width: 465px) {
+.lpbanner-buttons .lpbanner-btn {
+    margin-right: 15px;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    margin-top: 11px;
+}
+}
+
 /* Landing Page CTa Mobile Responsive */
 
 @media (max-width: 576px) {

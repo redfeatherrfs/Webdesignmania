@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import webdesignlogo from '../../images/creativeorangelogo.svg';
 import bgimg from '../../images/lpbgfinal.png';
 import saleprice from '../../images/saleprice.png';
@@ -8,11 +8,12 @@ import bracket from '../../images/bracket.png';
 import trustpilot from '../../images/trustpilotfinal.png';
 import clutch from '../../images/clutchicon.png';
 import barkicon from '../../images/barkicon.png';
-
+import { PopupWidget } from 'react-calendly';
 import '../../LandingPage.css';
 import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { isAlphanumeric, isAlphabetic, fieldLengthValidator } from '../../utils/validationHelpers'
+
 
 
 const Lpbanner = ({ updatePopupTitle }) => {
@@ -24,6 +25,28 @@ const Lpbanner = ({ updatePopupTitle }) => {
         phone: '',
         message: ''
     })
+
+    const [isCalendlyLoaded, setIsCalendlyLoaded] = useState(false);
+
+    useEffect(() => {
+      const script = document.createElement("script");
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      script.onload = () => setIsCalendlyLoaded(true);
+      document.head.appendChild(script);
+  
+      return () => {
+        document.head.removeChild(script);
+      };
+    }, []);
+  
+    const openCalendlyPopup = () => {
+      if (window.Calendly) {
+        window.Calendly.initPopupWidget({
+          url: "https://calendly.com/redfeathersolutions-rfs/consultation-request",
+        });
+      }
+    };
 
     const handleChange = e => {
         const { name, value } = e.target;
@@ -153,7 +176,12 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             </ul>
                             <div className="lpbanner-buttons">
                                 <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Get a Website Quote')}>Get Started</button>
-                                <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
+                                <a className="btn btn-outline-light lpbanner-btn" href="tel:+442045112054" >Call Now</a>
+                                <button 
+                                 onClick={openCalendlyPopup} className="btn btn-dark lpbanner-btn">
+      Book a Meeting
+    </button>
+    
                             </div>
                             <div className="lpbanner-badges">
                              
