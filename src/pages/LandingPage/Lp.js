@@ -168,8 +168,8 @@ const LpPage = () => {
     return (
         <>
             <Helmet>
-                <title>Web Design Service Starts from £199 - Creative Logo Design</title>
-                <meta name="description" content="Get custom web design and development services from UK #1 design company specializes in website design and marketing. Best bespoke web designers and developers team." />
+                <title>Complete Business Setup in Just One Click </title>
+                <meta name="description" content="We take care of everything. You sit back, relax, and watch your business grow with monthly performance updates." />
                 <link rel="canonical" href="https://creativelogodesign.co.uk/lp/" />
             </Helmet>
             {/* <!--  ClickCease.com tracking--> */}
