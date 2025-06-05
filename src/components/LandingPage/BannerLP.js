@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import webdesignlogo from '../../images/creativeorangelogo.svg';
-import bgimg from '../../images/lpbgfinal.png';
-import saleprice from '../../images/saleprice.png';
+import webdesignlogo from '../../images/creativeorangelogo.webp';
+import bgimg from '../../images/lpbgfinal.webp';
+import saleprice from '../../images/saleprice.webp';
 import formbg from '../../images/formbglp.png';
-import formbg2 from '../../images/formbglp2.png';
+import formbg2 from '../../images/formbglp2.webp';
 import bracket from '../../images/bracket.png';
-import trustpilot from '../../images/trustpilotfinal.png';
+import trustpilot from '../../images/trustpilotfinal.webp';
 import clutch from '../../images/clutchicon.png';
 import barkicon from '../../images/barkicon.png';
 

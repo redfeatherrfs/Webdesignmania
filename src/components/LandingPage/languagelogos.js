@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import '../../LandingPage.css'; // Ensure the path is correct
-import blogo1 from '../../images/breact.png';
-import blogo2 from '../../images/bnop.png';
-import blogo3 from '../../images/bwoo.png';
-import blogo4 from '../../images/bwordpress.png';
-import blogo5 from '../../images/bshopify.png';
-import blogo6 from '../../images/bvue.png';
-import blogo7 from '../../images/bphp.png';
-import blogo8 from '../../images/blara.png';
+import blogo1 from '../../images/breact.webp';
+import blogo2 from '../../images/bnop.webp';
+import blogo3 from '../../images/bwoo.webp';
+import blogo4 from '../../images/bwordpress.webp';
+import blogo5 from '../../images/bshopify.webp';
+import blogo6 from '../../images/bvue.webp';
+import blogo7 from '../../images/bphp.webp';
+import blogo8 from '../../images/blara.webp';
 
 const LanguageLogos = () => {
   useEffect(() => {

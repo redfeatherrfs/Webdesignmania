@@ -607,7 +607,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     position: relative; /* Ensures content is positioned above the background */
     background-size: cover; /* Ensures the image covers the whole area */
     background-position: center; /* Centers the background image */
-    background-image: url('./images/Group 1000009907.png'); /* Adjust the path */
+    background-image: url('./images/Group\ 1000009907.webp'); /* Adjust the path */
 }
 
 .lp-cta-sec2 h2 {

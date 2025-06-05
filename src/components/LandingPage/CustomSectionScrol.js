@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import supportIcon from '../../images/Group 1000009893.png';
-import consultIcon from '../../images/Group 1000009896.png';
-import chatIcon from '../../images/Group 1000009899.png';
-import Website from '../../images/Group 1000009901.png';
+import supportIcon from '../../images/Group 1000009893.webp';
+import consultIcon from '../../images/Group 1000009896.webp';
+import chatIcon from '../../images/Group 1000009899.webp';
+import Website from '../../images/Group 1000009901.webp';
 import './customscrol.css';
 
 const images = [supportIcon, consultIcon, chatIcon, Website];

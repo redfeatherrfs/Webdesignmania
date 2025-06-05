@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../AllInOneSectionnew.css';
-import bg from "../../images/allinonebg.png";
+import bg from "../../images/allinonebg.webp";
 import image1 from "../../images/websitedesign.png";
 import image2 from "../../images/logodesign.png";
 import image3 from "../../images/stationarydesign.png";
@@ -34,7 +34,7 @@ const AllInOne = ({ updatePopupTitle }) => {
         <div className="row">
           <div className="col-lg-3 col-md-6">
             <div className="service-card">
-              <img src={image1} alt="Web Icon" />
+              <img src={image1} alt="Web Icon" width={50} height={50} />
               <h4>WEBSITE DESIGN</h4>
               <ul className="service-list">
                 <li><GoDotFill style={{ color: 'white', marginRight: '10px' }} /> Unlimited Pages Website</li>
@@ -48,7 +48,7 @@ const AllInOne = ({ updatePopupTitle }) => {
           </div>
           <div className="col-lg-3 col-md-6">
             <div className="service-card">
-              <img src={image2} alt="Logo Icon" />
+              <img src={image2} alt="Logo Icon" width={50} height={50} />
               <h4>LOGO DESIGN</h4>
               <ul className="service-list">
                 <li><GoDotFill style={{ color: 'white', marginRight: '10px' }} /> Unlimited Logo Concepts</li>
@@ -61,7 +61,7 @@ const AllInOne = ({ updatePopupTitle }) => {
           </div>
           <div className="col-lg-3 col-md-6">
             <div className="service-card">
-              <img src={image3} alt="Stationary Icon" />
+              <img src={image3} alt="Stationary Icon" width={50} height={50} />
               <h4>STATIONARY DESIGN</h4>
               <ul className="service-list">
                 <li><GoDotFill style={{ color: 'white', marginRight: '10px' }} /> Business Card Design</li>
@@ -73,7 +73,7 @@ const AllInOne = ({ updatePopupTitle }) => {
           </div>
           <div className="col-lg-3 col-md-6">
             <div className="service-card">
-              <img src={image4} alt="Services Icon" />
+              <img src={image4} alt="Services Icon" width={50} height={50} />
               <h4>VALUE ADDED SERVICES</h4>
               <ul className="service-list">
                 <li><GoDotFill style={{ color: 'white', marginRight: '10px' }} /> Dedicated Account Manager</li>

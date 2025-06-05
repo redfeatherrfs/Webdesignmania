@@ -30,7 +30,7 @@ const WhyChooseService = ({
     {steps.slice(0, 3).map((step, index) => (
       <div className="col-lg-4 col-md-4" key={index}>
         <div className="choose-service-icon-box">
-          <img src={step.image} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
+          <img src={step.image}  width={50} height={50} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
           <h5 className="choose-service-icon-title font-weight-bold">{step.title}</h5>
           <p className="choose-service-icon-text">{step.description}</p>
         </div>
@@ -43,7 +43,7 @@ const WhyChooseService = ({
     {steps.slice(3, 6).map((step, index) => (
       <div className="col-lg-4 col-md-4" key={index}>
         <div className="choose-service-icon-box">
-          <img src={step.image} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
+          <img src={step.image}   width={50} height={50} alt={step.alt} className="img-fluid mb-3 choose-service-icon" />
           <h5 className="choose-service-icon-title font-weight-bold">{step.title}</h5>
           <p className="choose-service-icon-text">{step.description}</p>
         </div>

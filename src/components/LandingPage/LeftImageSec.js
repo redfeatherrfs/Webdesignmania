@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import foodDeliveryImage from '../../images/foodpanda.png'; // Replace with the actual image path
+import foodDeliveryImage from '../../images/foodpanda.webp'; // Replace with the actual image path
 import './LeftImage.css';
 
 const contents = [
