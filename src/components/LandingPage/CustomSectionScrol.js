@@ -60,7 +60,7 @@ function CustomSection() {
               <p>{contents[index].description}</p>
             </Col>
             <Col md={6} className="image-column">
-              <img src={images[index]} alt="Project example" className="img-fluid" />
+              <img src={images[index]} alt="Project example" className="img-fluid" width={500}  height={500} />
             </Col>
           </Row>
         </div>

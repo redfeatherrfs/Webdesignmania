@@ -7,9 +7,7 @@ import TopHead from "../../components/LandingPage/TopBar"
 import ImageRightBanner from "../../components/Aboutus/ImageRightbanner"
 import lpImage from "../../images/lpimageleft.png"
 import LpServiceIconBox from "../../components/LandingPage/LpServiceIconBox"
-import serviceiconbox1 from "../../images/lpicon1.png"
-import serviceiconbox2 from "../../images/inc500.png"
-import serviceiconbox3 from "../../images/lpicon3.png"
+
 import TestimonialSection from "../../components/Testimonial"
 import ContactForm from "../../components/ContactForm"
 import LpPortfolio from "../../components/LandingPage/LpPortfolio"
@@ -67,8 +65,7 @@ const steps = [
         image: whyservice1,
         alt: "Custom Web Development",
         title: "Custom Web Development",
-        width: 250,
-        heigth: 50,
+      
         description: "We specialise in building custom websites designed to meet and fulfill the unique requirements of your business. Each website is meticulously crafted to align with your goals, ensuring a seamless online presence."
     },
     {
@@ -123,40 +120,22 @@ const steps = [
 ];
 
 
-const iconBoxesData = [
-    {
-        image: serviceiconbox1,
-        heading: '5+ Years’ Experience ',
-        text: 'For over five years, we have been transforming marketing with innovative strategies. During this time, we have effectively addressed the diverse marketing needs of international clients, achieving remarkable success and widespread recognition.',
-    },
-    {
-        image: serviceiconbox2,
-        heading: '900+ Successful Clients',
-        text: 'We have served over 900 customers from various fields and always ensured their satisfaction. Our professional website designers’ success stems from the dedication, motivation, passion, loyalty, and expertise of our incredible team.',
-    },
-    {
-        image: serviceiconbox3,
-        heading: '800+ Custom Features',
-        text: 'Our company is a leading website development firm, specializing in e-commerce web development. Over the years, we have enhanced many brands\' presence and appeal.',
-    },
-
-];
 
 const imagesData = [
-    { src: LpImgSec1, alt: 'Description 1' },
-    { src: LpImgSec2, alt: 'Description 2' },
-    { src: LpImgSec3, alt: 'Description 3' },
+    { src: LpImgSec1, widh: 50 , height:50 , alt: 'Description 1' },
+    { src: LpImgSec2, widh: 50 , height:50 , alt: 'Description 2' },
+    { src: LpImgSec3, widh: 50 , height:50 , alt: 'Description 3' },
 ];
 
 
 const logosData = [
-    { src: LpLogoSlider1, alt: 'Logo 1' },
-    { src: LpLogoSlider2, alt: 'Logo 2' },
-    { src: LpLogoSlider3, alt: 'Logo 3' },
-    { src: LpLogoSlider4, alt: 'Logo 4' },
-    { src: LpLogoSlider5, alt: 'Logo 5' },
-    { src: LpLogoSlider1, alt: 'Logo 6' },
-    { src: LpLogoSlider2, alt: 'Logo 7' },
+    { src: LpLogoSlider1, widh: 50 , height:50 , alt: 'Logo 1' },
+    { src: LpLogoSlider2, widh: 50 , height:50 , alt: 'Logo 2' },
+    { src: LpLogoSlider3, widh: 50 , height:50 , alt: 'Logo 3' },
+    { src: LpLogoSlider4, widh: 50 , height:50 , alt: 'Logo 4' },
+    { src: LpLogoSlider5, widh: 50 , height:50 , alt: 'Logo 5' },
+    { src: LpLogoSlider1, widh: 50 , height:50 , alt: 'Logo 6' },
+    { src: LpLogoSlider2, widh: 50 , height:50 , alt: 'Logo 7' },
 ];
 
 const LpPage = () => {

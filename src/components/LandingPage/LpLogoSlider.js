@@ -57,7 +57,7 @@ const LpLogoSlider = ({ logos }) => {
                                 <SwiperSlide key={index}>
                                     <div className='d-flex h-100 align-items-center justify-content-center'>
                                         <div>
-                                            <img src={logo.src} alt={logo.alt} className="logo-image img-fluid" />
+                                            <img src={logo.src} alt={logo.alt} height={500} width={500}  className="logo-image img-fluid" />
                                         </div>
                                     </div>
                                 </SwiperSlide>
