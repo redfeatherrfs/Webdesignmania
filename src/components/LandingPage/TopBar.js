@@ -1,4 +1,4 @@
-import { FaPhone, FaComment } from 'react-icons/fa';
+import { FaPhone, FaWhatsapp } from 'react-icons/fa';
 import '../../LandingPage.css';
 
 
@@ -39,7 +39,7 @@ const TopHead = ({ updatePopupTitle }) => {
                                     className="chat_icon chat"
                                     style={{ color: 'white', display: 'flex', alignItems: 'center' }}
                                 >
-                                    <FaComment style={{ marginRight: '8px' }} />
+                                    <FaWhatsapp style={{ marginRight: '8px', size:'52' }} />
                                     Live Chat with Expert
                                 </a>
                             </li>
