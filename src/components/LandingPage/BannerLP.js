@@ -162,7 +162,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                             </div>
                             <div className="lpbanner-badges">
                                 {/* <img src={clutch} alt="Clutch" /> */}
-                                <a target="_blank" href="https://www.trustpilot.com/review/webdesignmania.co.uk">
+                                <a target="_blank" href="https://uk.trustpilot.com/review/creativelogodesign.co.uk">
                                     <img src={trustpilot} alt="Trustpilot" />
                                 </a>
                                 {/* <img src={barkicon} alt="Bark" /> */}
