@@ -1,216 +1,116 @@
-import React from 'react';
+// import React from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+
+
 import { Tabs, Tab, Container, Row, Col } from 'react-bootstrap';
 import '../PricingSection.css'; // Import the CSS file
 
-const PricingSection = () => {
-  // Sample packages with more items for each category
-  const packages = [
-    {
-      id: 1,
-      category: 'Logo Design',
-      items: [
-        {
-           title: "LOGO SPECIAL PACKAGE",
-           subtitle:"Professional & Unique Designs!",
-           price: "$299",
-           originalPric: "$799",
-           features: [
-        "Custom Logo Design",
-        "3 Initial Concepts",
-        "Unlimited Revisions",
-        "4 Original Logo Concepts",
-        "4 Dedicated Logo Designers",
-        "4 Revisions",
-        "With Grey Scale Format",
-        "Free Icon Design",
-        "24 – 48 Hours Turnaround Time",
-        "100% Satisfaction",
-        "100% Ownership Rights",
-        "Money Back Guarantee*",
-        "Dedicated Account Manager"],
-    
-        },
-        {
-          title: "PROFESSIONAL LOGO PACKAGE",
-          subtitle:"Professional & Unique Designs!",
-          price: "$299",
-          originalPric: "$799",
-          features: [
-       "Custom Logo Design",
-       "3 Initial Concepts",
-       "Unlimited Revisions",
-       "4 Original Logo Concepts",
-       "4 Dedicated Logo Designers",
-       "4 Revisions",
-       "With Grey Scale Format",
-       "Free Icon Design",
-       "24 – 48 Hours Turnaround Time",
-       "100% Satisfaction",
-       "100% Ownership Rights",
-       "Money Back Guarantee*",
-       "Dedicated Account Manager"],
-   
-       },
-       {
-        title: "LOGO INFINITE PACKAGE",
-        subtitle:"Professional & Unique Designs!",
-        price: "$299",
-        originalPric: "$799",
-        features: [
-     "Custom Logo Design",
-     "3 Initial Concepts",
-     "Unlimited Revisions",
-     "4 Original Logo Concepts",
-     "4 Dedicated Logo Designers",
-     "4 Revisions",
-     "With Grey Scale Format",
-     "Free Icon Design",
-     "24 – 48 Hours Turnaround Time",
-     "100% Satisfaction",
-     "100% Ownership Rights",
-     "Money Back Guarantee*",
-     "Dedicated Account Manager"],
- 
-     },
-      ],
-    },
-    {
-      id: 2,
-      category: 'Website',
-      items: [
-        {
-          title: "Basic Website Package",
-          subtitle: "Best Value for Money Guaranteed!",
-          price: "$199",
-          originalPrice: "$665",
-          features: ["3 Page Website", "5 Revisions", "2 Stock Images"],
-        },
-        {
-          title: "Standard Website Package",
-          subtitle: "Perfect for Small Businesses!",
-          price: "$499",
-          originalPrice: "$899",
-          features: ["5 Page Website", "10 Revisions", "SEO Ready"],
-        },
-        {
-          title: "Premium Website Package",
-          subtitle: "Advanced Features Included!",
-          price: "$999",
-          originalPrice: "$1499",
-          features: ["10 Page Website", "Unlimited Revisions", "E-commerce Ready"],
-        },
-      ],
-    },
-    {
-      id: 3,
-      category: 'E-Commerce',
-      items: [
-        {
-          title: "Basic E-Commerce Package",
-          subtitle: "Get Your Store Online!",
-          price: "$399",
-          originalPrice: "$999",
-          features: ["10 Products Setup", "Payment Gateway Integration", "Basic SEO Setup"],
-        },
-        {
-          title: "Standard E-Commerce Package",
-          subtitle: "Launch Your Business!",
-          price: "$699",
-          originalPrice: "$1299",
-          features: ["50 Products Setup", "Payment Gateway Integration", "Advanced SEO Setup"],
-        },
-        {
-          title: "Premium E-Commerce Package",
-          subtitle: "All-in-One Solution!",
-          price: "$1299",
-          originalPrice: "$1999",
-          features: ["Unlimited Products", "Custom Features", "Marketing Tools"],
-        },
-      ],
-    },
-    {
-      id: 4,
-      category: 'Stationery',
-      items: [
-        {
-          title: "Stationery Design Package",
-          subtitle: "Complete Branding Solution!",
-          price: "$150",
-          originalPrice: "$450",
-          features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
-        },
-        {
-          title: "Business Branding Package",
-          subtitle: "All Your Needs Covered!",
-          price: "$350",
-          originalPrice: "$750",
-          features: ["Business Cards", "Letterhead", "Email Signature"],
-        },
-        {
-          title: "Custom Stationery Package",
-          subtitle: "Tailored for You!",
-          price: "$250",
-          originalPrice: "$550",
-          features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
-        },
-      ],
-    },
-  ];
 
-  return (
-    <section className="pricing-section text-center py-5">
-      <Container>
-        <h2 className="mb-4">Pocket-Friendly Pricing Solutions</h2>
 
-        {/* React Bootstrap Tabs with Centered and No Underline */}
-        <Tabs
-          defaultActiveKey="Logo Design"
-          id="pricing-tabs"
-          className="mb-3 justify-content-center" // Center the tabs
-          style={{ borderBottom: 'none' }} // Remove the underline
-        >
-          {packages.map((pkg) => (
-            <Tab eventKey={pkg.category} title={pkg.category} key={pkg.id}>
-              <Row className="justify-content-center">
-                {/* Display items in rows of 3 */}
-                {pkg.items.map((item, index) => (
-                  <Col key={index} lg={4} md={6} sm={12} className="mb-3"> {/* Changed lg={3} to lg={4} */}
-                    <div className="package">
-                      <div className="package-header">
-                        <h5>{item.title}</h5>
-                        <h6>{item.subtitle}</h6>
+const PricingSection = ({ packages, updatePopupTitle }) => {
+    // State to manage the price
+    const [price, setPrice] = useState('$10'); // Default price
 
-                        {/* Price section */}
-                        <div className="price">
-                          <h2>{item.price}</h2>
-                          <div>
-                            <strike>{item.originalPrice}</strike>
-                            <span> Only</span>
-                          </div>
-                        </div>
-                      </div>
+    // Function to fetch user's location and set price
+    const fetchLocationAndSetPrice = async () => {
+        try {
+            const response = await axios.get('https://ipapi.co/json/');
+            const { country } = response.data;
 
-                      {/* Scrollable Div for Package Details */}
-                      <div className="scrollable-content">
-                        <ul className="package-list">
-                          {item.features.map((feature, index) => (
-                            <li key={index}>{feature}</li>
-                          ))}
-                        </ul>
-                      </div>
+            if (country === 'GB') {
+                setPrice('£10'); // Set price to £10 if from UK
+            } else {
+                setPrice('$10'); // Set price to $10 for everywhere else
+            }
+        } catch (error) {
+            console.error('Error fetching location:', error);
+        }
+    };
 
-                      {/* Button */}
-                      <a href="javascript:;" className="package-btn">START PROJECT</a>
-                    </div>
-                  </Col>
-                ))}
-              </Row>
-            </Tab>
-          ))}
-        </Tabs>
-      </Container>
-    </section>
-  );
+    useEffect(() => {
+        fetchLocationAndSetPrice(); // Fetch location on component mount
+    }, []);
+
+    return (
+        <section className="pricing-section text-center py-5">
+            <Container>
+                <h2 className="mb-4">Pricing </h2>
+                {/* <h3 className="mt-3">Price: {price}</h3> Display price */}
+                {/* React Bootstrap Tabs with Centered and No Underline */}
+                <Tabs
+                    defaultActiveKey={packages.find(p => p?.default)?.category}
+                    id="pricing-tabs"
+                    className="mb-3 justify-content-center" // Center the tabs
+                    style={{ borderBottom: 'none' }} // Remove the underline
+                >
+                    {packages.map((pkg, i) => (
+                        <Tab eventKey={pkg.category} title={pkg.category} key={i}>
+                            <Row className="justify-content-center">
+                                {/* Display items in rows of 3 */}
+                                {pkg.items.map((item, index) => (
+                                    <Col key={index} lg={4} md={6} sm={12} className="mb-3"> {/* Changed lg={3} to lg={4} */}
+                                        <div className="package">
+                                            <div className="package-header">
+                                                <div className='d-flex justify-content-between align-items-center mb-3'>
+                                                    <h5 className='mb-0'>{item.title}   </h5>
+                                                    {item?.mostPopular && (
+                                                        <span className="badge rounded-pill most-popular">Most Popular</span>
+                                                    )}
+
+                                                </div>
+                                                <h6>{item.subtitle}</h6>
+
+                                                {/* Price section */}
+                                                <div className="price">
+                                                    <h2>{item.price}</h2>
+                                                    {/* <div>
+                                                        <strike>{item.originalPrice}</strike> 
+                                                        Ensure originalPrice is used
+                                                        <span> Only</span>
+                                                    </div> */}
+                                                </div>
+                                            </div>
+
+                                            {/* Scrollable Div for Package Details */}
+                                            <div className="scrollable-content">
+                                                <ul className="package-list">
+                                                    {item.features.map((feature, index) => (
+                                                        <li key={index}>{feature}</li>
+                                                    ))}
+
+                                                    {item?.VAS?.length && (
+                                                        <>
+                                                            <div className='text-center text-dark'><b>Value Added Services</b></div>
+                                                            {item.VAS.map((service, index) => (
+                                                                <li key={index}>{service}</li>
+                                                            ))}
+                                                        </>
+                                                    )}
+
+                                                    {item?.whatYouWillGet?.length && (
+                                                        <>
+                                                            <div className='text-center text-dark'><b>What will you Get?</b></div>
+                                                            {item.whatYouWillGet.map((service, index) => (
+                                                                <li key={index}>{service}</li>
+                                                            ))}
+                                                        </>
+                                                    )}
+                                                </ul>
+                                            </div>
+
+                                            {/* Button */}
+                                            <button data-bs-toggle='modal' data-bs-target="#popupForm" onClick={() => updatePopupTitle(item.price.includes('$') ? `${item.title} - ${item.price}` : item.title)} className="package-btn">START PROJECT</button>
+                                        </div>
+                                    </Col>
+                                ))}
+                            </Row>
+                        </Tab>
+                    ))}
+                </Tabs>
+            </Container>
+        </section>
+    );
 };
 
 export default PricingSection;

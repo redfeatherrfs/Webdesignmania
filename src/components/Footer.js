@@ -1,83 +1,98 @@
 import React from 'react';
-import footer from '../images/footer.png'; // Ensure the image path is correct
-import visa from '../images/visa.png';
+import footer from '../images/lp-footer.png'; // Ensure the image path is correct
+import { FaFacebookF, FaLinkedinIn, FaInstagram, FaYoutube, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
+import visa from '../images/visa.png';
+import { Link } from 'react-router-dom';
+import ScrollToTopButton from './Scrolltotop';
 
 const Footer = () => {
-  return (
-    <footer className="footer">
-      <div className="container">
-        <div className="row">
-          {/* About Section with Logo */}
-          <div className="col-md-4">
-            <h5 className="footer-heading-sub">
-              <img src={footer} alt="Web Design Mania Logo" style={{ maxWidth: '150px' }} />
-            </h5>
-            <p>
-              As a versatile, full-service agency specializing in website design and development, we create visually striking and cost-effective solutions for businesses of every scale.
-            </p>
-          </div>
+    return (
+        <footer className="footer">
+            <div className="container">
+                <div className="row">
 
-          {/* Quick Links Section */}
-          <div className="col-md-3">
-            <h5 className="footer-heading">Quick Links</h5>
-            <ul className="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Expertise</a></li>
-            </ul>
-          </div>
+                    {/* About Section with Logo */}
+                    <div className="col-md-4 mb-4">
+                        <h5 className="footer-heading-sub">
+                            <Link to="/"> <img src={footer} alt="Creative Logo Design Logo" style={{ maxWidth: '150px' }} /></Link>
+                        </h5>
+                        <p className="text-light">
+                            As a versatile, full-service agency specializing in website design and development, we create visually striking and cost-effective solutions for businesses of every scale.
+                        </p>
+                    </div>
 
-          {/* Our Services Section */}
-          <div className="col-md-3">
-            <h5 className="footer-heading">Our Services</h5>
-            <ul className="footer-links">
-              <li><a href="#">App Design</a></li>
-              <li><a href="#">Website Design</a></li>
-              <li><a href="#">SMM</a></li>
-              <li><a href="#">Website</a></li>
-            </ul>
-          </div>
+                    {/* Quick Links Section */}
+                    <div className="col-md-2 mb-4">
+                        {/* <h5 className="footer-heading">Quick Links</h5>
+            <ul className="footer-links list-unstyled">
+              <li><Link to="/" className="text-light text-decoration-none">Home</Link></li>
+              <li><Link to="/about-us" className="text-light text-decoration-none">About Us</Link></li>
+              <li><Link to="/contact-us" className="text-light text-decoration-none">Contact Us</Link></li>
+            </ul> */}
+                    </div>
 
-          {/* Payment Methods and Social Icons Section */}
-          <div className="col-md-2">
-            <h5 className="footer-heading">Payment Methods</h5>
-            <div className="payment-icons">
-              <img src={visa} alt="Visa" />
-              {/* Uncomment if needed */}
-              {/* <img src="images/mastercard.png" alt="Mastercard" />
-              <img src="images/paypal.png" alt="Paypal" /> */}
-            </div>
-            <h5 className="footer-heading mt-3">Follow Us</h5>
-            <div className="social-icons">
-              <a href="#"><i className="bi bi-facebook"></i></a>
-              <a href="#"><i className="bi bi-twitter"></i></a>
-              <a href="#"><i className="bi bi-instagram"></i></a>
-              <a href="#"><i className="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
+                    {/* Our Services Section */}
+                    <div className="col-md-2 mb-4">
+                        {/* <h5 className="footer-heading">Our Services</h5>
+            <ul className="footer-links list-unstyled">
+              <li><Link to="/logo-design" className="text-light text-decoration-none">Logo Design</Link></li>
+              <li><Link to="/" className="text-light text-decoration-none">Website Design</Link></li>
+              <li><Link to="/app-design" className="text-light text-decoration-none">App Design</Link></li>
+              <li><Link to="/stationery" className="text-light text-decoration-none">Stationery</Link></li>
+              <li><Link to="/seo" className="text-light text-decoration-none">SEO</Link></li>
+              <li><Link to="/smm" className="text-light text-decoration-none">SMM</Link></li>
+            </ul> */}
+                    </div>
 
-      {/* Footer Bottom Section with two columns */}
-      <div className="footer-bottom">
-        <div className="container">
-          <div className="row">
-            {/* Left Column */}
-            <div className="col-6 text-start">
-              <p>©Copyright 2024, <strong>WebDesignMania</strong>. Powered by RFS</p>
+
+                    <div className="col-md-4 mb-4">
+                        <h5 className="footer-heading">Follow Us</h5>
+                        <div className="d-flex gap-3 mb-3">
+                            <a href="https://www.facebook.com/webdesignmaniaUS" className="text-light"><FaFacebookF size={25} /></a>
+                            <a href="https://www.instagram.com/webdesignmania_us/" className="text-light"><FaInstagram size={25} /></a>
+                            <a href="https://www.linkedin.com/company/web-design-mania-us/" className="text-light"><FaLinkedinIn size={25} /></a>
+                        </div>
+
+
+                        <div className="contact-details p-3" style={{ border: '1px solid rgba(255, 255, 255, 0.5)', borderRadius: '8px' }}>
+                            <h4 className="footer-heading">Contact Us</h4>
+                            <p className="mb-1 text-light">
+                                <FaPhoneAlt />
+                                <a href="tel:+442045112054" className="text-light text-decoration-none">  0204-511-2054</a>
+                            </p>
+                            <p className="mb-1 text-light">
+                                <FaEnvelope />
+                                <a href="mailto:support@creativelogodesign.co.uk" className="text-light text-decoration-none"> support@creativelogodesign.co.uk</a>
+                            </p>
+                            <p className="text-light">
+                                <FaMapMarkerAlt />
+                                <a href="https://www.google.com/maps/search/?api=1&query=41+Winthrop+Rd,+Edison,+NJ+08817" target="_blank" rel="noopener noreferrer" className="text-light text-decoration-none"> 497 Sunleigh Rd, Wembley HA0 4LY, UK</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            {/* Right Column */}
-            <div className="col-6 text-end">
-              <a href="#">Terms & conditions</a> | 
-              <a href="#">Privacy Policy</a>
+
+            {/* Footer Bottom Section with two columns */}
+            <div className="footer-bottom">
+                <div className="container">
+                    <div className="row">
+                        {/* Left Column */}
+                        <div className="col-6 text-start">
+                            <p className="text-light">© Copyright 2024, <strong>WebDesignMania</strong>. Powered by RFS</p>
+                        </div>
+                        {/* Right Column */}
+                        <div className="col-6 text-end">
+                            <a href="/terms-condition" target="_blank" className="text-light text-decoration-none">Terms & conditions</a> |
+                            <a href="/privacy-policy" target="_blank" className="text-light text-decoration-none"> Privacy Policy</a>
+                            <ScrollToTopButton />
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
+        </footer>
+    );
 };
 
 export default Footer;
