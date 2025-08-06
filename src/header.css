@@ -1,0 +1,87 @@
+/* Start header */
+.custom-header .navbar {
+    background: #853101;
+    padding: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.custom-header .navbar-brand img {
+    max-width: 150px; /* Adjust logo size */
+}
+
+.custom-header .custom-nav-link {
+    color: #ffffff !important; /* White text for navigation links */
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.custom-header .custom-nav-link:hover {
+    color: #dbe1ff !important; /* Hover effect */
+}
+
+.custom-header .custom-phone-number a {
+    color: #ffffff !important; /* White color for the phone number */
+    font-weight: 600;
+}
+
+.custom-header .custom-phone-number a:hover {
+    color: #dbe1ff !important; /* Hover effect for phone number */
+}
+
+.custom-header .navbar.fixed-top.scrolled {
+    background: #00000075; /* Background color when scrolled */
+}
+
+/* Show dropdown on hover */
+.custom-dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Adjusts margin to start dropdown directly under the parent */
+}
+
+/* Position dropdown correctly */
+.custom-dropdown .dropdown-menu {
+    position: absolute; /* Ensure dropdown is positioned absolutely */
+    top: 100%; /* Position it below the dropdown item */
+    left: 0; /* Align to the left */
+    display: none; /* Initially hidden */
+    background-color: black; /* Dropdown background color */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Dropdown item styling */
+.custom-dropdown .dropdown-item {
+    color: white; /* Text color for dropdown items */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for background */
+    font-size: 12px;
+}
+
+/* Hover effect for dropdown items */
+.custom-dropdown .dropdown-item:hover {
+    background-color: #dbe1ff; /* Change hover background color */
+    color: black; /* Change hover text color */
+}
+
+
+
+/* Mobile view adjustments */
+@media (max-width: 768px) { 
+    .custom-header .navbar {
+        background-color: black; /* Set navbar background color to black in mobile view */
+    }
+
+    .custom-dropdown .dropdown-menu {
+        background-color: black; /* Set dropdown background color to black */
+        color: white; /* Default text color for dropdown items */
+        position: absolute; /* Ensure dropdown is positioned correctly */
+        display: none; /* Initially hidden */
+        z-index: 1000; /* Ensure it appears above other content */
+    }
+
+    /* Show dropdown when toggled */
+    .custom-dropdown.show .dropdown-menu {
+        display: block; /* Display dropdown when it's toggled */
+    }
+}
+
+/* End header */

@@ -13,14 +13,14 @@
     object-fit: cover;
   }
   
-  .nav-tabs .nav-link {
-    background-color: #4b47e0;
+  #pricing-tabs .nav-link {
+    background-color: #853101;
     color: #fff;
     border-radius: 5px;
   }
   
-  .nav-tabs .nav-link.active {
-    background-color: #604bee;
+  #pricing-tabs .nav-link.active {
+    background-color: #853101;
     color: #fff;
   }
   

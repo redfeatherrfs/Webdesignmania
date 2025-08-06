@@ -1,91 +1,147 @@
-
 /* pricing */
 
 .scrollable-content {
-  max-height: 200px;
-  overflow-y: auto;
-  margin: 15px 0;
-  font-size: 12px;
-  color: grey;
-  font-weight: 600;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 15px 0;
+    font-size: 12px;
+    color: grey;
+    font-weight: 600;
+}
+
+.pricing-heading-one {
+    font-weight: 700;
+    font-size: 54px;
+}
+
+.pricing-one {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #A5A5A5;
+
 }
 
 .package-list {
-  list-style-type: none;
-  padding: 0;
-  text-align: left;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
 }
 
 .package-list li {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 .package-list li::before {
-  content: "\2022";
-  color: #0c140e;
-  font-size: 12px;
-  font-weight: bold;
-  margin-right: 5px;
+    content: "\2022";
+    color: #0c140e;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 .package-header {
-  margin-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+
 }
 
+.package-header h5 {
+    text-align: left;
+    color: #853101;
+}
+
+
 .package-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 15px;
+    display: inline-block;
+    padding: 10px 80px;
+    background: linear-gradient(0deg, #F36A3F 0%, #DE5A3E 96.76%);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
 }
 
 .package-btn:hover {
-  background-color: #0056b3;
+    background-color: #853101;
 }
 
 .price {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    text-align: left;
+    justify-content: left;
 }
 
 .price h2 {
-  margin-right: 10px;
-  color: red;
+    margin-right: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
 }
 
 .price strike {
-  color: gray;
+    color: gray;
 }
 
 .scrollable-content::-webkit-scrollbar {
-  width: 3px;
+    width: 3px;
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
-  background-color: #3A19CB;
-  border-radius: 5px;
+    background-color: #853101;
+    border-radius: 5px;
 }
 
 .scrollable-content::-webkit-scrollbar-track {
-  background-color: #B4B3BD;
+    background-color: #B4B3BD;
 }
 
 .package {
-  border: 2px solid #007bff;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-/* PricingSection.css */
-.pricing-tabs .nav-item {
-  margin-right: 15px; /* Adjust the value to control spacing */
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ensures the gradient doesn't overflow */
+    z-index: 1;
 }
 
-.pricing-tabs .nav-item:last-child {
-  margin-right: 0; /* Remove margin for the last tab */
+.package::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    /* Matches the main element’s border radius */
+    padding: 1px;
+    /* Matches the border width */
+    background: linear-gradient(0deg, rgba(35, 2, 177, 0.1) 2.39%, #853101 36.71%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+    /* Places gradient behind content */
+}
+
+/* PricingSection.css */
+#pricing-tabs .nav-item {
+    margin-right: 10px;
+    /* Adjust spacing as needed */
+    margin-top: 10px;
+}
+
+#pricing-tabs .nav-item:last-child {
+    margin-right: 0;
+    /* Removes extra spacing on the last item */
+}
+
+.most-popular {
+    background-color: #853101;
+    color: white;
+    padding: 7px 9px;
+    font-weight: 600;
 }
