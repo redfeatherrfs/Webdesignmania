@@ -1,0 +1,116 @@
+/* Main Section Container */
+.custom-section-food {
+    /* padding: 60px 0; */
+    position: relative;
+}
+
+.container {
+    max-width: 1200px; /* Set the max-width to 1200px */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Content row with image and text */
+.content-row-food {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap; /* Added for better wrapping on small screens */
+}
+
+/* Image column */
+.image-column-food {
+    flex: 1;
+    padding-right: 30px;
+    animation: fadeInLeft 1s forwards;
+    max-width: 100%; /* Ensures image is responsive */
+}
+
+.image-column-food img {
+    width: 100%; /* Makes the image responsive */
+    max-width: 75%; /* Ensures the image doesn't exceed its container size */
+}
+
+/* Content column */
+.content-column-food {
+    flex: 1;
+    opacity: 0;
+    animation: fadeInRight 1s forwards;
+}
+
+/* Title Styling */
+.content-title-food {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Description Styling */
+.content-description-food {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+}
+
+/* Fade-in left animation for the image */
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade-in right animation for the text */
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media (max-width: 768px) {
+ 
+    .image-column-food img {
+        max-width: 99% !important; /* Ensures the image doesn't exceed its container size */
+    }
+}
+
+@media (max-width: 767px) {
+    .content-row-food {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-column-food img {
+        max-width: 99%; /* Ensures the image doesn't exceed its container size */
+    }
+
+    .image-column-food {
+        margin-bottom: 20px;
+    }
+
+    .content-column-food {
+        text-align: center;
+    }
+
+    .content-title-food {
+        font-size: 26px; /* Smaller font size for mobile */
+        padding-right: 0px;
+    }
+
+    .content-description-food {
+        font-size: 14px; /* Adjust text size for mobile */
+        padding: 0 15px; /* Add padding to avoid text touching the edges */
+    }
+}
