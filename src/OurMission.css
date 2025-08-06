@@ -1,0 +1,48 @@
+/* OurMission section */
+.ourmission-section {
+    background-color: #f8f9fa; /* Light background for section */
+}
+
+.ourmission-section .sub-heading {
+    font-size: 1.2rem;
+    color: lightgrey;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.ourmission-section .main-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.ourmission-section .mission-img {
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.ourmission-section .mission-text {
+    font-size: 1rem;
+    color: #666;
+}
+
+.ourmission-section .vertical-line {
+    border-left: 2px solid #ddd;
+    height: 100px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .ourmission-section .main-heading {
+        font-size: 2rem;
+    }
+    .ourmission-section .sub-heading {
+        font-size: 1rem;
+    }
+    .ourmission-section .mission-img {
+        max-width: 80%;
+    }
+}

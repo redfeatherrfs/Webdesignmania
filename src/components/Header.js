@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import header from '../images/header logo.png'; // Ensure the image path is correct
+import { Link } from 'react-router-dom';
 
 
 const Header = () => {
@@ -44,17 +45,18 @@ const Header = () => {
           <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link custom-nav-link active" href="#">Home</a>
+              <Link to="/" className="nav-link custom-nav-link active" >Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-nav-link" href="#">About Us</a>
+              <Link to="/about-us" className="nav-link custom-nav-link">About Us</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-nav-link" href="#">Services</a>
+              <Link to="/" className="nav-link custom-nav-link">Services</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-nav-link" href="#">Expertise</a>
+              <Link to="/contact-us" className="nav-link custom-nav-link">Contact Us</Link>
               </li>
+              
             </ul>
             {/* Phone Number */}
             <div className="custom-phone-number ms-3">
