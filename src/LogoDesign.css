@@ -1,0 +1,267 @@
+.custom-text-section-v3 h2 {
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #010935;
+}
+
+.custom-container-margin-v3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.custom-text-section-v3 p {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.custom-bold-text-v3 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #512F90;
+    margin: 20px 0;
+}
+
+.custom-image-section-v3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center the image vertically */
+}
+
+.custom-image-section-v3 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box:hover .box-content {
+    background-color: #6A48FF;
+    /* Purple background on hover */
+}
+
+.box:hover .box-text {
+    display: block;
+    /* Show text on hover */
+}
+
+.box-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.box-content {
+    position: absolute;
+    top: 0;
+    /* Ensure it covers the top of the box */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Cover the entire box */
+
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, #6A48FF);
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    transition: background-color 1s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* Align text to the bottom */
+}
+
+.box-heading {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.box-text {
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
+    /* Hide text initially */
+}
+
+.box-heading-number {
+    display: block;
+    /* Make sure the number is on a new line */
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 58px;
+    /* Adjust as needed */
+    font-weight: 900;
+}
+
+.custom-logo-process {
+    padding: 20px 0;
+    margin-bottom: -30px;
+    margin-top: 50px;
+}
+
+.custom-logo-process h2 {
+    font-weight: 700;
+    color: #010935;
+    font-size: 40px;
+}
+
+.custom-logo-process p {
+    font-size: 18px;
+    color: #000;
+}
+
+.custom-section-v3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.custom-image-v3 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.custom-content-v3 {
+    text-align: left;
+}
+
+.custom-content-v3 h2 {
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #010935;
+}
+
+.custom-content-v3 p {
+    font-size: 16px;
+    color: #333;
+}
+
+.portfolio-heading {
+    font-weight: 700;
+    font-size: 54px;
+    text-align: center;
+}
+
+.logo-designs-portfolio .gallery .col-lg-4,
+.logo-designs-portfolio .gallery .col-md-6 {
+    padding: 0;
+    /* Remove padding from columns */
+}
+
+.logo-designs-portfolio .gallery img {
+    padding: 3px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.logo-designs-portfolio .gallery img:hover {
+    transform: scale(1.05); /* Image grows slightly */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
+}
+
+
+/* CustomLogoProcess.css */
+.box-heading {
+    color: white;
+}
+
+.logo-designs-portfolio .btn-primary {
+    background: linear-gradient(90deg, #F36A3F, #DE5A3E);
+    border: none;
+}
+
+
+
+@media (max-width: 1198px) and (min-width: 992px) {
+    .box-heading-number {
+        font-size: 34px;
+        /* Adjusted size for screens in this range */
+    }
+
+    .box-heading {
+        font-size: 22px;
+        /* Adjusted size for screens in this range */
+    }
+}
+/* Lightbox Overlay */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+/* Lightbox Overlay */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Lightbox Content */
+.lightbox-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    max-height: 90%;
+    animation: zoomIn 0.3s forwards;
+}
+
+/* Lightbox Image */
+.lightbox-img {
+    width: 80%; /* Ensures the image takes 80% of the viewport width */
+    max-height: 80%; /* Ensures the image doesn't exceed 80% of the viewport height */
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+    object-fit: contain;
+}
+
+/* Keyframes for Zoom Animation */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

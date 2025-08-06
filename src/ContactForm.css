@@ -1,0 +1,178 @@
+section.ebook-contact-form.container
+{
+  padding: 100px;
+}
+
+
+.btn-submit {
+  display: block; /* Ensure the button is visible */
+}
+
+
+
+.ebook-contact-form {
+  padding-bottom: 50px !important;
+}
+
+
+      .ebook-contact-form .left-column {
+          text-align: left;
+          padding-right: 30px;
+      }
+
+      .ebook-contact-form h2 {
+          font-weight: 800;
+          color: black;
+          font-size: 50px;
+          line-height: 1.1em;
+          margin-bottom: 30px;
+      }
+      .ebook-contact-form h3 {
+        font-weight: 700;
+        color: #C6C6C6;
+        font-size: 16px;
+        
+    }
+      .ebook-contact-form .highlight-text {
+          color: #853101; /* Orange color */
+      }
+
+      .ebook-contact-form .btn-custom {
+          background: linear-gradient(90deg, #F36A3F, #DE5A3E);
+          color: white;
+          border: none;
+          border-radius: 30px;
+          padding: 10px 25px;
+          font-size: 18px;
+          margin-bottom: 20px;
+      }
+
+      .form-control {
+        font-weight: 400;
+        /* line-height: 2.5; */
+        border: 1px solid #f7b09d;
+    }
+      /* .ebook-contact-form .btn-submit {
+          background: linear-gradient(90deg, #F36A3F, #DE5A3E);
+          border: none;
+          border-radius: 30px;
+          padding: 10px 30px;
+          color: white;
+          font-size: 18px;
+          margin-top: 15px;
+      } */
+
+      /* .form-control {
+        background-color: #f9f9f9;
+        border: 1px solid #2302B1;
+        height: 50px;
+        font-size: 16px;
+        border-radius: 8px;
+    } */
+
+      section.ebook-contact-form.container
+        {
+        padding: 30px;
+       
+        }
+      
+        .ebook-contact-form {
+          flex-direction: column;
+        }
+      
+        .ebook-contact-form .left-column {
+          padding-right: 0;
+        
+        }
+      
+      
+        .ebook-second-section {
+          padding-bottom: 0; /* Remove bottom padding in mobile view */
+        }
+
+
+        /* ContactForm.css */
+/* ContactForm.css */
+.left-column {
+    margin-bottom: 20px;
+  }
+  
+  .contact-info {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .contact-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact-icon {
+    background-color: #eaf2fc00; /* Light blue background for the icon circle */
+    border: 1px solid;
+    border-radius: 50%;
+    color: #ED5E39; /* Icon color */
+    padding: 12px; /* Padding to give circular shape */
+    font-size: 18px; /* Size of the icon */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+
+  /* textarea.form-control {
+    height: 100px;
+} */
+  
+  .contact-info a, .contact-info span {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+  
+  .contact-info a:hover {
+    color: #853101;
+    text-decoration: none;
+  }
+  
+  .btn-submit {
+    background-color: #ED5E39;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-submit:hover {
+    background-color: #ED5E39;
+  }
+  
+  
+      
+
+
+        @media (max-width: 1000px) 
+
+{
+
+  .ebook-contact-form h2 {
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+}
+}
+
+
+@media (max-width: 658px) 
+{
+section.ebook-contact-form.container
+        {
+        padding: 0px 20px 20px 20px;
+        text-align-last: center;
+        }
+    }
