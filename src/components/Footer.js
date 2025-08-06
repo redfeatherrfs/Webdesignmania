@@ -1,6 +1,7 @@
 import React from 'react';
 import footer from '../images/footer.png'; // Ensure the image path is correct
 import visa from '../images/visa.png';
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -22,9 +23,9 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="footer-heading">Quick Links</h5>
             <ul className="footer-links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Case Studies</a></li>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/about-us">About Us</Link></li>
+              <li><Link href="#">Case Studies</Link></li>
               <li><a href="#">Expertise</a></li>
             </ul>
           </div>
@@ -33,9 +34,9 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="footer-heading">Our Services</h5>
             <ul className="footer-links">
-              <li><a href="#">App Design</a></li>
+              <li><Link to="/app-design">App Design</Link></li>
               <li><a href="#">Website Design</a></li>
-              <li><a href="#">SMM</a></li>
+              <li><Link to="/smm">SMM</Link></li>
               <li><a href="#">Website</a></li>
             </ul>
           </div>
