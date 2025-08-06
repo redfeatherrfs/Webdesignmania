@@ -1,0 +1,126 @@
+/* All-In-One Section Styles */
+.all-in-one-section {
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  /* Heading and Subtext */
+  .all-in-one-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-left: 89px;
+}
+.all-in-one-heading img {
+    width: 80px;
+    /* margin-left: 10px; */
+    margin-bottom: -55px;
+    margin-left: -57px;
+    mix-blend-mode: color-dodge;
+}
+  .subtext {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Service Cards */
+  .service-card {
+    background-color: #EE633F;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    height: 357px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+  .service-card img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+  .service-card h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  .service-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .service-card ul li {
+    font-size: 0.9rem;
+  }
+
+  /* CSS for adding bullet points to service lists */
+.service-list {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px; /* Add padding to the left to space out the bullets */
+  }
+  
+  .service-list li {
+    margin-bottom: 10px; /* Space between each list item */
+  }
+  
+  
+  /* Buttons */
+  .action-buttons button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+  }
+  .btn-order {
+    background-color: #EE633F;
+    color: white;
+    border: none;
+  }
+  .btn-call {
+    background-color: white;
+    color: #EE633F;
+    border: 2px solid #EE633F;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    a.callnow {
+      width: 100%;
+  }
+    .all-in-one-heading {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-left: 0px;
+    }
+    .all-in-one-heading {
+      font-size: 2rem;
+    }
+    .subtext {
+      font-size: 1rem;
+    }
+    .service-card h4 {
+      font-size: 1rem;
+    }
+  }
+
+  /* @media (max-width: 400px) {
+  .all-in-one-heading img {
+    display: none;
+  }
+} */
+
+@media (min-width: 375px) and (max-width: 407px) {
+  .all-in-one-heading {
+      font-size: 2rem;
+      width: 311px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1208px) {
+  .service-card {
+      background-color: #ee633f;
+      border-radius: 8px;
+      color: #fff;
+      height: 446px;
+      margin-bottom: 20px;
+      padding: 20px;
+      text-align: start;
+  }
+}
+
