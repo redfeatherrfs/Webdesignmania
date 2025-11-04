@@ -191,7 +191,7 @@ const AppPage = () => {
         <>
             <Helmet>
                 <title>Result Driven Social Media Marketing (SMM) Services</title>
-                <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
+                <meta name="description" content="At Red Feather Solutions, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
             </Helmet>
             <HeaderSection />
             <BannerSection

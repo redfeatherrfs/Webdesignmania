@@ -15,7 +15,7 @@ const Footer = () => {
                     {/* About Section with Logo */}
                     <div className="col-md-4 mb-4">
                         <h5 className="footer-heading-sub">
-                            <Link to="/"> <img src={footer} alt="Web Design Mania Logo" style={{ maxWidth: '150px' }} /></Link>
+                            <Link to="/"> <img src={footer} alt="Red Feather Solutions Logo" style={{ maxWidth: '150px' }} /></Link>
                         </h5>
                         <p className="text-light">
                             As a versatile, full-service agency specializing in website design and development, we create visually striking and cost-effective solutions for businesses of every scale.
@@ -63,7 +63,7 @@ const Footer = () => {
                             </p>
                             <p className="mb-1 text-light">
                                 <FaEnvelope />
-                                <a href="mailto:info@webdesignmania.co.uk" className="text-light text-decoration-none"> info@webdesignmania.co.uk</a>
+                                <a href="mailto:info@redfeathersolutions.com" className="text-light text-decoration-none"> info@redfeathersolutions.com</a>
                             </p>
                             <p className="text-light">
                                 <FaMapMarkerAlt />

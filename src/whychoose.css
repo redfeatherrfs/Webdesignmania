@@ -144,7 +144,7 @@ h2.choose-service-heading.font-weight-bold {
   /* Let's Discuss Button Styling */
   .letsdiscuss {
     background-color: #ffffff; /* White background */
-    color: #ED5E39; /* Text color */
+    color: #160a48; /* Text color */
     border: none;
     border-radius: 5px; /* Rounded corners */
     font-size: 1rem; /* Text size */
@@ -177,8 +177,8 @@ h2.choose-service-heading.font-weight-bold {
   /* Live Chat Hover Effect */
   .live-chat:hover {
     background-color: #ffffff; /* Change background color */
-    color: #ED5E39; /* Change text color */
-    border-color: #ED5E39; /* Change border color */
+    color: #160a48; /* Change text color */
+    border-color: #160a48; /* Change border color */
   }
 
 

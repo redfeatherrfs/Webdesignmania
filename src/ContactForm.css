@@ -112,7 +112,7 @@ section.ebook-contact-form.container
     background-color: #eaf2fc00; /* Light blue background for the icon circle */
     border: 1px solid;
     border-radius: 50%;
-    color: #ED5E39; /* Icon color */
+    color: #160a48; /* Icon color */
     padding: 12px; /* Padding to give circular shape */
     font-size: 18px; /* Size of the icon */
     width: 40px;
@@ -140,7 +140,7 @@ section.ebook-contact-form.container
   }
   
   .btn-submit {
-    background-color: #ED5E39;
+    background-color: #160a48;
     color: white !important;
     padding: 10px 20px;
     border: none;
@@ -149,7 +149,7 @@ section.ebook-contact-form.container
   }
   
   .btn-submit:hover {
-    background-color: #ED5E39;
+    background-color: #160a48;
   }
   
   

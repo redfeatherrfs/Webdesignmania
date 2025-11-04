@@ -110,8 +110,8 @@ const ContactUsform = () => {
                                 <a href="tel:02045112009" className="contactuspg-link">
                                     <FaPhoneAlt /> 0204 511 2009
                                 </a><br />
-                                <a href="mailto:info@webdesignmania.co.uk" className="contactuspg-link">
-                                    <FaEnvelope /> info@webdesignmania.co.uk
+                                <a href="mailto:info@redfeathersolutions.com" className="contactuspg-link">
+                                    <FaEnvelope /> info@redfeathersolutions.com
                                 </a>
 
                                 {/* Social Icons */}

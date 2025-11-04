@@ -138,7 +138,7 @@ const CountdownTimerWithConfetti = ({ updatePopupTitle }) => {
           {/* Left Column with Countdown Timer */}
           <div className="col-md-7 d-flex " style={{ position: 'relative', color: 'white',  }}>
             <div style={{ padding: '20px' }}>
-              <h1 className="countdown-heading">Black Friday Web Design Mania - Unbeatable Deals Await!</h1>
+              <h1 className="countdown-heading">Black Friday Red Feather Solutions - Unbeatable Deals Await!</h1>
               <p className="countdown-description">Transform your website with stunning designs at incredible discounts this Black Friday!🎉</p>
 
               <div className="countdown-timer">

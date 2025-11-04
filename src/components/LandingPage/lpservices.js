@@ -10,7 +10,7 @@ const WhyChooseService = ({
 <section
   id="choose-service-section" className="py-5"
   
-  style={{ backgroundColor: "#EE633F" }}
+  style={{ backgroundColor: "#160a48" }}
 >
 
 

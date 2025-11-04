@@ -125,7 +125,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                         </div>
 
                         <div className="lp-banner-margin">
-                            <p className="lpbanner-text">Web Design Mania delivers visionary web design and development services, including 
+                            <p className="lpbanner-text">Red Feather Solutions delivers visionary web design and development services, including 
                                 custom websites, responsive design, e-commerce solutions, SEO optimization, and user-friendly interfaces to 
                                 enhance your digital presence.</p>
                                 <ul className="lpbanner-points">

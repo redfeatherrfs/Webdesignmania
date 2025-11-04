@@ -16,19 +16,19 @@ const TestimonialSection = ({ updatePopupTitle }) => {
     const testimonials = [
         {
             heading: "We couldn't be more pleased with the...",
-            quote: "We couldn't be more pleased with the app design provided by Web Design Mania. The interface is intuitive, the design is clean and modern, and the user experience has been dramatically improved. Adil and the team were professional, easy to work with, and consistently delivered on every milestone. Our app now stands out in a competitive market!",
+            quote: "We couldn't be more pleased with the app design provided by Red Feather Solutions. The interface is intuitive, the design is clean and modern, and the user experience has been dramatically improved. Adil and the team were professional, easy to work with, and consistently delivered on every milestone. Our app now stands out in a competitive market!",
             name: 'R. Simmons',
             image: download,
         },
         {
-            heading: "Web Design Mania did an amazing job...",
-            quote: "Web Design Mania did an amazing job with our logo and stationery design. They created a cohesive and elegant brand package that perfectly aligns with our business vision. The designs were delivered quickly, and they exceeded our expectations in both creativity and quality. We've received so many compliments on our new branding!",
+            heading: "Red Feather Solutions did an amazing job...",
+            quote: "Red Feather Solutions did an amazing job with our logo and stationery design. They created a cohesive and elegant brand package that perfectly aligns with our business vision. The designs were delivered quickly, and they exceeded our expectations in both creativity and quality. We've received so many compliments on our new branding!",
             name: 'Victor Watson',
             image: download,
         },
         {
-            heading: "We chose Web Design Mania for our...",
-            quote: "We chose Web Design Mania for our eCommerce redesign, and it was the best decision we made. Their team was extremely professional, guiding us through every step of the design process. The end result is a stunning website that has improved our user engagement and boosted our online sales. The site is responsive, easy to navigate, and optimized for all devices. Web Design Mania truly understands how to create a high-converting eCommerce platform!",
+            heading: "We chose Red Feather Solutions for our...",
+            quote: "We chose Red Feather Solutions for our eCommerce redesign, and it was the best decision we made. Their team was extremely professional, guiding us through every step of the design process. The end result is a stunning website that has improved our user engagement and boosted our online sales. The site is responsive, easy to navigate, and optimized for all devices. Red Feather Solutions truly understands how to create a high-converting eCommerce platform!",
             name: 'Charles Parks',
             image: download,
         },

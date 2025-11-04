@@ -166,7 +166,7 @@ const LpPage = () => {
     return (
         <>
             <Helmet>
-                <title>Web Design Service Starts from £199 - Web Design Mania</title>
+                <title>Web Design Service Starts from £199 - Red Feather Solutions</title>
                 <meta name="description" content="Get custom web design and development services from UK #1 design company specializes in website design and marketing. Best bespoke web designers and developers team." />
                 <link rel="canonical" href="https://webdesignmania.co.uk/lp/" />
             </Helmet>

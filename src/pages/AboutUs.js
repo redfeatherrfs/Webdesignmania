@@ -29,8 +29,8 @@ const AppPage = () => {
     return (
         <>
             <Helmet>
-                <title>About Us  - Web Design Mania</title>
-                <meta name="description" content="At Web Design Mania, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
+                <title>About Us  - Red Feather Solutions</title>
+                <meta name="description" content="At Red Feather Solutions, we believe in transforming your vision into reality. Our talented professionals work closely with clients to deliver digital solutions." />
                 <link rel="canonical" href="https://webdesignmania.co.uk/lp/about-us" />
             </Helmet>
 
@@ -78,7 +78,7 @@ const AppPage = () => {
                 <OurMission
                     ourmissionImg={ourMissionImage}
                     ourvissionImg={ourVisionImage}
-                    heading="Grow Your Community With Web Design Mania "
+                    heading="Grow Your Community With Red Feather Solutions "
                     subHeading="WHO WE ARE"
                     content1={{
 

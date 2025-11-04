@@ -12,7 +12,7 @@ const PrivacyPolicySection = () => {
                     <h2>Privacy Policy</h2>
                     <p style={{ textAlign: 'justify' }}>
                         <h4>Information Collection and Use</h4>
-                        <p>At Web Design Mania, we value your privacy and are committed to protecting your personal information. We collect personal information, such as your name and email address, to improve your experience and provide you with updates about our expert and affordable web design services, including but not limited to eCommerce Development, Responsive Websites Design, and Digital Marketing Services.</p>
+                        <p>At Red Feather Solutions, we value your privacy and are committed to protecting your personal information. We collect personal information, such as your name and email address, to improve your experience and provide you with updates about our expert and affordable web design services, including but not limited to eCommerce Development, Responsive Websites Design, and Digital Marketing Services.</p>
                         <h4>Data Security</h4>
                         <p>We take appropriate measures to protect your personal information from unauthorized access, damage, or destruction.</p>
                         <h4>Sharing of Personal Information</h4>
@@ -26,9 +26,9 @@ const PrivacyPolicySection = () => {
                         <h4>Changes to This Privacy Policy</h4>
                         <p>We may update our Privacy Policy from time to time. We will post any changes on this page and encourage you to review our Privacy Policy whenever you access our website.</p>
                         <h4>Contact Us</h4>
-                        <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:support@webdesignmania.co.uk">support@webdesignmania.co.uk</a>. Thank you for choosing Web Design Mania!</p>
+                        <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:support@webdesignmania.co.uk">support@webdesignmania.co.uk</a>. Thank you for choosing Red Feather Solutions!</p>
                         <p>Last updated: April 2, 2024</p>
-                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#ED5E39', border: 'none' }}>Back to Homepage</Link>
+                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#160a48', border: 'none' }}>Back to Homepage</Link>
                     </p>
                 </div>
             </div>

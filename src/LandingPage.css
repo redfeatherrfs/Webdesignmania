@@ -1,6 +1,6 @@
 .top-head {
     color: white;
-    background: #ED5E39;
+    background: #160a48;
     padding: 5px 0;
 }
 
@@ -32,7 +32,7 @@
 .top-left .avail-discount-btn {
     background: #ffffff;
     padding: 5px 20px;
-    color: #ED5E39;
+    color: #160a48;
     font-weight: bold;
     border-radius: 2px;
     font-size: 15px;
@@ -103,7 +103,7 @@
 
 .lpbanner-points li::before {
     content: "✔";
-    color: #ED5E39; /* Orange tick */
+    color: #160a48; /* Orange tick */
     font-size: 16px;
     font-weight: bold;
     position: absolute;
@@ -163,16 +163,16 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 .lpbanner-btn.btn-dark {
     color: #fff;
-    background-color: #ED5E39;
+    background-color: #160a48;
 }
 
 .lpbanner-btn.btn-outline-light:hover {
-    color: #ED5E39;
+    color: #160a48;
     /* Change text color to dark blue on hover */
 }
 
 .lpbanner-submit-btn:hover {
-    background-color: #ED5E39;
+    background-color: #160a48;
     /* Lighter blue color on hover */
     color: #ffffff;
     /* Keep text color white on hover */
@@ -229,7 +229,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #ED5E38;
+    background-color: #160a48;
     border-style: none;
 }
 

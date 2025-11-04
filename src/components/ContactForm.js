@@ -109,7 +109,7 @@ const ContactForm = () => {
                     </li>
                     <li>
                         <FaEnvelope className="contact-icon" />
-                        <a href="mailto:info@webdesignmania.co.uk">info@webdesignmania.co.uk</a>
+                        <a href="mailto:info@redfeathersolutions.com">info@redfeathersolutions.com</a>
                     </li>
                     <li>
                         <FaMapMarkerAlt className="contact-icon" />

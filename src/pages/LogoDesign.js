@@ -166,7 +166,7 @@ const LogoDesign = () => {
         <>
         <Helmet>
             <title>Custom Logo Design Services by Expert Logo Designers</title>
-            <meta name="description" content="Get unique branding with custom logo design services by expert designers at Web Design Mania. Stand out with a logo that truly represents your business." />
+            <meta name="description" content="Get unique branding with custom logo design services by expert designers at Red Feather Solutions. Stand out with a logo that truly represents your business." />
         </Helmet>     
          <HeaderSection />
          <BannerSection

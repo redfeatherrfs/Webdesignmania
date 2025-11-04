@@ -17,8 +17,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    price: "£199",
-                    originalPrice: "£665",
+                    price: "$149",
+                    originalPrice: "$665",
                     features: [
                         "Design Up to 3 Pages",
                         "5 Visual Images",
@@ -42,7 +42,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Custom Website Essential Package",
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£1320",
+                    originalPrice: "$1320",
                     subtitle: (
                         <>
                             Professional & Unique Design <br></br> 
@@ -51,7 +51,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                    
-                    price: "£399",
+                    price: "$399",
                     features: [
                         "Design Up to 6 Pages",
                         "8 Visual Images",
@@ -84,7 +84,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                 {
                     title: "Custom Website Business Package",
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£1995",
+                    originalPrice: "$1995",
                     subtitle: (
                         <>
                             Professional & Unique Design <br></br>
@@ -92,7 +92,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
 
                         </>
                     ),
-                    price: "£599",
+                    price: "$599",
                     features: [
                         "Design Up to 10 Pages",
                         "Logo Design",
@@ -140,8 +140,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£2496",
-                    price: "£749",
+                    originalPrice: "$2496",
+                    price: "$749",
                     features: [
                         "eCommerce Integration",
                         "Design Up to 20 Pages",
@@ -185,8 +185,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£4496",
-                    price: "£1349",
+                    originalPrice: "$4496",
+                    price: "$1349",
                 
                     features: [
                         "eCommerce Integration",
@@ -230,8 +230,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£16645",
-                    price: "£4994",
+                    originalPrice: "$16645",
+                    price: "$4994",
                     
                     features: [
                         "eCommerce Integration",
@@ -285,8 +285,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£139",
-                    price: "£45",
+                    originalPrice: "$139",
+                    price: "$45",
 
 
 
@@ -309,8 +309,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£285",
-                    price: "£85",
+                    originalPrice: "$285",
+                    price: "$85",
                     
                     features: [
                         "4 Logo Design Concepts",
@@ -331,8 +331,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£490",
-                    price: "£145",
+                    originalPrice: "$490",
+                    price: "$145",
                     features: [
                         "6 Logo Design Concepts",
                         "Unlimited Revisions",
@@ -357,9 +357,9 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£415",
+                    originalPrice: "$415",
                    
-                    price: "£129",
+                    price: "$129",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -383,9 +383,9 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£630",
+                    originalPrice: "$630",
                    
-                    price: "£199",
+                    price: "$199",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -414,7 +414,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                     boldTitle: " Get 70% Off",
                     originalPrice: "1035",
                    
-                    price: "£315",
+                    price: "$315",
                     features: [
                         "Business Card Design",
                         "Letterhead Design",
@@ -448,8 +448,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£799",
-                    price: "£249",
+                    originalPrice: "$799",
+                    price: "$249",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -493,8 +493,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£1650",
-                    price: "£499",
+                    originalPrice: "$1650",
+                    price: "$499",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -538,8 +538,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£2599",
-                    price: "£749",
+                    originalPrice: "$2599",
+                    price: "$749",
                     features: [
                         "Prior Analysis",
                         "Business Analysis",
@@ -591,8 +591,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£665",
-                    price: "£199",
+                    originalPrice: "$665",
+                    price: "$199",
 
                     features: [
                         "3 postings per week (per network) Facebook + Twitter + Instagram",
@@ -612,8 +612,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£1250",
-                    price: "£399",
+                    originalPrice: "$1250",
+                    price: "$399",
 
                     features: [
                         "4 postings per week (per network) Facebook + Twitter + Instagram + LinkedIn",
@@ -655,8 +655,8 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    originalPrice: "£1799",
-                    price: "£549",
+                    originalPrice: "$1799",
+                    price: "$549",
                     features: [
                         "Copywriting and visual designs",
                         "Business Page Optimization",
@@ -713,7 +713,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
       <ul className="package-list">
         {item.features.map((feature, index) => (
           <li key={index}>
-            <IoCheckmarkOutline style={{ color: '#ED5E38', fontSize: '20px', marginRight: '10px' }} />
+            <IoCheckmarkOutline style={{ color: '#160a48', fontSize: '20px', marginRight: '10px' }} />
             {feature}
           </li>
         ))}
@@ -725,7 +725,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             </div>
             {item.VAS.map((service, index) => (
               <li key={index}>
-                <IoCheckmarkOutline style={{ color: '#ED5E38', fontSize: '20px', marginRight: '10px' }} />
+                <IoCheckmarkOutline style={{ color: '#160a48', fontSize: '20px', marginRight: '10px' }} />
                 {service}
               </li>
             ))}
@@ -739,7 +739,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             </div>
             {item.whatYouWillGet.map((service, index) => (
               <li key={index}>
-                <IoCheckmarkOutline style={{ color: '#ED5E38', fontSize: '20px', marginRight: '10px' }} />
+                <IoCheckmarkOutline style={{ color: '#160a48', fontSize: '20px', marginRight: '10px' }} />
                 {service}
               </li>
             ))}
