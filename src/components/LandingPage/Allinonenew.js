@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../AllInOneSectionnew.css';
 import bg from "../../images/allinonebg.png";
-import image1 from "../../images/websitedesign.png";
-import image2 from "../../images/logodesign.png";
-import image3 from "../../images/stationarydesign.png";
-import image4 from "../../images/valueadded.png";
-import saleprice from '../../images/allinprice.png';
+import image1 from "../../images/websitedesign.svg";
+import image2 from "../../images/LogoDesign.svg";
+import image3 from "../../images/stationarydesign.svg";
+import image4 from "../../images/valueadded.svg";
+import saleprice from '../../images/allinprice.svg';
 
 // Importing the React Icons dot
 import { GoDotFill } from "react-icons/go";

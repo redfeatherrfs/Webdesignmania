@@ -28,7 +28,7 @@ const PrivacyPolicySection = () => {
                         <h4>Contact Us</h4>
                         <p>If you have any questions or concerns about this Privacy Policy, please contact us at <a href="mailto:support@webdesignmania.co.uk">support@webdesignmania.co.uk</a>. Thank you for choosing Red Feather Solutions!</p>
                         <p>Last updated: April 2, 2024</p>
-                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#160a48', border: 'none' }}>Back to Homepage</Link>
+                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#3E1EC9', border: 'none' }}>Back to Homepage</Link>
                     </p>
                 </div>
             </div>

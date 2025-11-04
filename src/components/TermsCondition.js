@@ -83,7 +83,7 @@ const TermsCondition = () => {
                         <p>Rest assured, our dedicated customer service team is available 24/7, ready to address any questions or concerns. Your satisfaction is our top priority.</p>
                         <h4>Policy on Communication</h4>
                         <p>For your security, all communication with Red Feather Solutions should be conducted through “<a href="mailto:info@redfeathersolutions.com">info@redfeathersolutions.com</a>” or the official phone numbers listed on our website. We cannot be held responsible for messages sent through other platforms. Trust our official channels for accurate and reliable communication.</p>
-                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#160a48', border: 'none' }}>Back to Homepage</Link>
+                        <Link className='btn btn-primary' to='/lp' style={{ backgroundColor: '#3E1EC9', border: 'none' }}>Back to Homepage</Link>
                     </p>
                 </div>
             </div>

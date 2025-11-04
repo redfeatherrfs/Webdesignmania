@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import webdesignlogo from '../../images/webdesignlogo.svg';
-import bgimg from '../../images/lpbgfinal.png';
-import saleprice from '../../images/saleprice.png';
+import bgimg from '../../images/lpbgblue.png';
+import saleprice from '../../images/149.png';
 import formbg from '../../images/formbglp.png';
 import formbg2 from '../../images/formbglp2.png';
 import bracket from '../../images/bracket.png';

@@ -713,7 +713,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
       <ul className="package-list">
         {item.features.map((feature, index) => (
           <li key={index}>
-            <IoCheckmarkOutline style={{ color: '#160a48', fontSize: '20px', marginRight: '10px' }} />
+            <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
             {feature}
           </li>
         ))}
@@ -725,7 +725,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             </div>
             {item.VAS.map((service, index) => (
               <li key={index}>
-                <IoCheckmarkOutline style={{ color: '#160a48', fontSize: '20px', marginRight: '10px' }} />
+                <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
                 {service}
               </li>
             ))}
@@ -739,7 +739,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
             </div>
             {item.whatYouWillGet.map((service, index) => (
               <li key={index}>
-                <IoCheckmarkOutline style={{ color: '#160a48', fontSize: '20px', marginRight: '10px' }} />
+                <IoCheckmarkOutline style={{ color: '#3E1EC9', fontSize: '20px', marginRight: '10px' }} />
                 {service}
               </li>
             ))}

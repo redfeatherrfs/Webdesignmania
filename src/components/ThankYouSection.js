@@ -9,7 +9,7 @@ const ThankYouPage = () => {
         <Col>
           <h1 className="thankyou">Thank You!</h1>
           <p className="lead">We appreciate your response. Your submission has been received successfully.</p>
-          <Button variant="primary" href="/lp" className="mt-3" style={{ backgroundColor: '#160a48', border: 'none' }}>
+          <Button variant="primary" href="/lp" className="mt-3" style={{ backgroundColor: '#3E1EC9', border: 'none' }}>
             Return to Home
           </Button>
         </Col>

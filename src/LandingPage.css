@@ -1,6 +1,6 @@
 .top-head {
     color: white;
-    background: #160a48;
+    background: #3E1EC9;
     padding: 5px 0;
 }
 
@@ -32,7 +32,7 @@
 .top-left .avail-discount-btn {
     background: #ffffff;
     padding: 5px 20px;
-    color: #160a48;
+    color: #3E1EC9;
     font-weight: bold;
     border-radius: 2px;
     font-size: 15px;
@@ -103,7 +103,7 @@
 
 .lpbanner-points li::before {
     content: "✔";
-    color: #160a48; /* Orange tick */
+    color: #3E1EC9; /* Orange tick */
     font-size: 16px;
     font-weight: bold;
     position: absolute;
@@ -163,16 +163,16 @@ textarea.lpbanner-input.lpbanner-textarea {
 
 .lpbanner-btn.btn-dark {
     color: #fff;
-    background-color: #160a48;
+    background-color: #3E1EC9;
 }
 
 .lpbanner-btn.btn-outline-light:hover {
-    color: #160a48;
+    color: #3E1EC9;
     /* Change text color to dark blue on hover */
 }
 
 .lpbanner-submit-btn:hover {
-    background-color: #160a48;
+    background-color: #3E1EC9;
     /* Lighter blue color on hover */
     color: #ffffff;
     /* Keep text color white on hover */
@@ -229,7 +229,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     width: 100%;
     padding: 10px;
     border-radius: 5px;
-    background-color: #160a48;
+    background-color: #3E1EC9;
     border-style: none;
 }
 
@@ -607,7 +607,7 @@ textarea.lpbanner-input.lpbanner-textarea {
     position: relative; /* Ensures content is positioned above the background */
     background-size: cover; /* Ensures the image covers the whole area */
     background-position: center; /* Centers the background image */
-    background-image: url('./images/Group 1000009907.png'); /* Adjust the path */
+    background-image: url('./images/GroupBLUE.png'); /* Adjust the path */
 }
 
 .lp-cta-sec2 h2 {

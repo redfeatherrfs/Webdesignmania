@@ -71,7 +71,7 @@
 
 .package-header h5 {
     text-align: left;
-    color: #160a48;
+    color: #3E1EC9;
     font-weight: 500;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .package-btn:hover {
-    background-color: #160a48;
+    background-color: #3E1EC9;
 }
 
 h2.price-heading.mb-4 {
@@ -120,7 +120,7 @@ h2.price-heading.mb-4 {
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
-    background-color: #160a48;
+    background-color: #3E1EC9;
     border-radius: 5px;
 }
 
@@ -149,7 +149,7 @@ h2.price-heading.mb-4 {
     /* Matches the main element’s border radius */
     padding: 1px;
     /* Matches the border width */
-    background: linear-gradient(0deg, rgba(35, 2, 177, 0.1) 2.39%, #160a48 36.71%);
+    background: linear-gradient(0deg, rgba(35, 2, 177, 0.1) 2.39%, #3E1EC9 36.71%);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);

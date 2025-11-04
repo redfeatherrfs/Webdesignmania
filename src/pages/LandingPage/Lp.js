@@ -17,15 +17,15 @@ import LpImgSec from "../../components/LandingPage/LpImgSec"
 import LpImgSec1 from "../../images/googlepartner.png"
 import LpImgSec2 from "../../images/inc500.png"
 import LpImgSec3 from "../../images/forbes.png"
-import whyservice1 from '../../images/Custom Web.png';
-import whyservice2 from '../../images/Mobile App Developement.png';
-import whyservice3 from '../../images/Ecommerce Solution.png';
-import whyservice4 from '../../images/Responsive Web Design.png';
-import whyservice5 from '../../images/Content Management System.png';
-import whyservice6 from '../../images/Web Application and Development.png';
-import whyservice7 from '../../images/SEO BOX.png';
-import whyservice8 from '../../images/UI-UX.png';
-import whyservice9 from '../../images/CLoud.png';
+import whyservice1 from '../../images/CustomWebDevelopment.png';
+import whyservice2 from '../../images/MobileAppDevelopement.png';
+import whyservice3 from '../../images/EcommerceSolution.png';
+import whyservice4 from '../../images/ResponsiveWebDesign.png';
+import whyservice5 from '../../images/ContentManagementSystems.png';
+import whyservice6 from '../../images/WebApplicationandDevelopment.png';
+import whyservice7 from '../../images/SEOBOX.png';
+import whyservice8 from '../../images/UI-UXDESIGN.png';
+import whyservice9 from '../../images/CLoudESIGN.png';
 
 
 import LpLogoSlider from "../../components/LandingPage/LpLogoSlider"

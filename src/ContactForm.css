@@ -34,11 +34,11 @@ section.ebook-contact-form.container
         
     }
       .ebook-contact-form .highlight-text {
-          color: #853101; /* Orange color */
+          color: #3e1ec9; /* Orange color */
       }
 
       .ebook-contact-form .btn-custom {
-          background: linear-gradient(90deg, #F36A3F, #DE5A3E);
+          background: linear-gradient(90deg, #3e1ec9, #4a26ebbe);
           color: white;
           border: none;
           border-radius: 30px;
@@ -50,7 +50,7 @@ section.ebook-contact-form.container
       .form-control {
         font-weight: 400;
         /* line-height: 2.5; */
-        border: 1px solid #f7b09d;
+        border: 1px solid #3e1ec9;
     }
       /* .ebook-contact-form .btn-submit {
           background: linear-gradient(90deg, #F36A3F, #DE5A3E);
@@ -112,7 +112,7 @@ section.ebook-contact-form.container
     background-color: #eaf2fc00; /* Light blue background for the icon circle */
     border: 1px solid;
     border-radius: 50%;
-    color: #160a48; /* Icon color */
+    color: #3E1EC9; /* Icon color */
     padding: 12px; /* Padding to give circular shape */
     font-size: 18px; /* Size of the icon */
     width: 40px;
@@ -135,12 +135,12 @@ section.ebook-contact-form.container
 }
   
   .contact-info a:hover {
-    color: #853101;
+    color: #3e1ec9;
     text-decoration: none;
   }
   
   .btn-submit {
-    background-color: #160a48;
+    background-color: #3E1EC9;
     color: white !important;
     padding: 10px 20px;
     border: none;
@@ -149,7 +149,7 @@ section.ebook-contact-form.container
   }
   
   .btn-submit:hover {
-    background-color: #160a48;
+    background-color: #3E1EC9;
   }
   
   
