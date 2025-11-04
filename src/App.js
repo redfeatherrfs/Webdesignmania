@@ -21,6 +21,8 @@ import Countdown from './pages/Countdown';
 import BlogPage from './pages/Blog';
 import BlogsPage from './pages/Blogs';
 // <!-- Bootstrap JS -->
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-...your-integrity-hash..." crossorigin="anonymous"></script>
 const App = () => {
     return (

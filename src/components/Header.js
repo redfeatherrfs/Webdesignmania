@@ -23,7 +23,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="custom-header">
+    <header className="custom-header">  
       {/* Removed 'fixed-top' from navbar class */}
       <nav className={`navbar navbar-expand-lg ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
