@@ -19,7 +19,7 @@ const CustomContainerV3 = ({updatePopupTitle}) => {
                                 className="cta-button" 
                                 data-bs-toggle="modal" 
                                 data-bs-target="#popupForm" 
-                                onClick={() => updatePopupTitle('Basic Package - $199')}
+                                onClick={() => updatePopupTitle('Basic Package - $149')}
                             >
                                Get Started
                             </button>

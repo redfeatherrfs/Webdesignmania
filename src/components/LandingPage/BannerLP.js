@@ -128,7 +128,7 @@ const Lpbanner = ({ updatePopupTitle }) => {
                         <div className="lp-banner-margin">
                             <p className="lpbanner-text">Web Design Mania provides an all-in-one solution for web development with advanced strategies to grow your digital presence. </p>
                             <div className="lpbanner-buttons">
-                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Website Starter Package - $199')}>Get Started</button>
+                                <button className="btn btn-dark lpbanner-btn" data-bs-toggle="modal" data-bs-target="#popupForm" onClick={() => updatePopupTitle('Website Starter Package - $149')}>Get Started</button>
                                 <a className="btn btn-outline-light lpbanner-btn" href="#pricing-section" >View Pricing</a>
                             </div>
                             <div className="lpbanner-badges">

@@ -515,7 +515,7 @@ const Home = () => {
                 {
                     title: "Starter Package",
                     subtitle: "Complete Branding Solution!",
-                    price: "$199",
+                    price: "$149",
                     features: [
                         "3 postings per week (per network) Facebook + Twitter + Instagram",
                         "Content Creation",

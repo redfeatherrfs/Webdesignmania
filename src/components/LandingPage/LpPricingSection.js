@@ -17,7 +17,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    price: "$199",
+                    price: "$149",
                     originalPrice: "$665",
                     features: [
                         "Design Up to 3 Pages",
@@ -557,7 +557,7 @@ const LpPricingSection = ({ updatePopupTitle }) => {
                         </>
                     ),
                     boldTitle: " Get 70% Off",
-                    price: "$199",
+                    price: "$149",
                     originalPrice: "$665",
                     features: [
                         "3 postings per week (per network) Facebook + Twitter + Instagram",
