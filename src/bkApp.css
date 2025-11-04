@@ -197,7 +197,7 @@ body {
 /* Start header */
 
 .custom-header .navbar {
-    background: linear-gradient(0deg, #1E00B200 7.59%, #160a48 82.03%);
+    background: linear-gradient(0deg, #1E00B200 7.59%, #160A48 82.03%);
     padding: 20px 0;
     transition: background-color 0.3s ease;
 }
