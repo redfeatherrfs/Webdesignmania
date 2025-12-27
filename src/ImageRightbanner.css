@@ -1,0 +1,76 @@
+.design-process-heading {
+    font-size: 2.5rem;
+  }
+
+  .orangegradient-h2 {
+    background: linear-gradient(180deg, #FFCE86 0%, #FB9130 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  .design-process-description {
+
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .design-process-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 10px */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes hover-shift {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-10px); /* Shift left by 10px */
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.img-animate {
+    animation: float 3s ease-in-out infinite; /* Up and down animation */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Left-right shift on hover */
+.img-animate:hover {
+    animation: hover-shift 0.6s ease-in-out infinite; /* Left-right animation on hover */
+}
+
+
+@media (max-width: 768px) {
+
+.image-right-banner {
+    text-align: center;
+  }
+  .design-process-description {
+    font-size: 16px;
+  }
+
+  .design-process-heading {
+    font-size: 2rem;
+  }
+  .design-process-heading {
+    font-size: 28px;
+   }
+}

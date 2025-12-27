@@ -1,72 +1,99 @@
+// Header.js
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import header from '../images/header logo.png'; // Ensure the image path is correct
-
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import '../header.css';
+import header from '../images/webdesignlogo.svg';
+import { Link } from 'react-router-dom';
+import { FaPhone, FaComment } from 'react-icons/fa';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
 
-  // Scroll effect handler
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 800;
-      setScrolled(isScrolled);
-    };
+    useEffect(() => {
+        const handleScroll = () => {
+            const isScrolled = window.scrollY > 800;
+            setScrolled(isScrolled);
+        };
 
-    window.addEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
-  return (
-    <header className="custom-header">
-      <nav className={`navbar navbar-expand-lg fixed-top ${scrolled ? 'scrolled' : ''}`}>
-        <div className="container">
-          {/* Logo */}
-          <a className="navbar-brand" href="#">
-            <img src={header} alt="Logo" width="150" />
-          </a>
-          {/* Toggle button for mobile view */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          {/* Navbar Links */}
-          <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul className="navbar-nav">
+    return (
+        <header className="custom-header">
+            {/* Removed 'fixed-top' from navbar class */}
+            <nav className={`navbar navbar-expand-lg ${scrolled ? 'scrolled' : ''}`}>
+                <div className="container">
+                    <Link className="navbar-brand" to="/lp">
+                        <img src={header} alt="Logo" width="150" />
+                    </Link>
+                    {/* <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon"></span>
+                    </button> */}
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        {/* <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link custom-nav-link active" href="#">Home</a>
+                <Link to="/" className="nav-link custom-nav-link active">Home</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-nav-link" href="#">About Us</a>
+                <Link to="/about-us" className="nav-link custom-nav-link">About Us</Link>
+              </li>
+              <li className="nav-item dropdown custom-dropdown">
+                <Link to="/services" className="nav-link dropdown-toggle custom-nav-link" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</Link>
+                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                  <li><Link to="/logo-design" className="dropdown-item">Logo Design</Link></li>
+                  <li><Link to="/" className="dropdown-item">Website Design</Link></li>
+                  <li><Link to="/app-design" className="dropdown-item">App Design</Link></li>
+                  <li><Link to="/stationery" className="dropdown-item">Stationery</Link></li>
+                  <li><Link to="/seo" className="dropdown-item">SEO</Link></li>
+                  <li><Link to="/smm" className="dropdown-item">SMM</Link></li>
+                </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link custom-nav-link" href="#">Services</a>
+                <Link to="/contact-us" className="nav-link custom-nav-link">Contact Us</Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link custom-nav-link" href="#">Expertise</a>
-              </li>
-            </ul>
-            {/* Phone Number */}
-            <div className="custom-phone-number ms-3">
-              <a href="tel:+15515543283" className="nav-link">
-                +1 (551) 554-3283
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-  );
+            </ul> */}
+                        <div className="custom-phone-number ms-3">
+                           <ul style={{ listStyleType: 'none', marginTop: '14px', textAlign: 'center' }}>
+                                                      <li style={{ display: 'inline-block', marginRight: '20px' }}>
+                                                          <a
+                                                              className="toll_icon"
+                                                              href="tel:+02045112009"
+                                                              style={{ color: 'white', display: 'flex', alignItems: 'center' , textDecoration:'none'}}
+                                                          >
+                                                              <FaPhone style={{ marginRight: '8px' }} />
+                                                              0204 511 2009
+                                                          </a>
+                                                      </li>
+                                                      <li style={{ display: 'inline-block' }}>
+                                                          <a
+                                                              href="https://wa.me/+447309931252"
+                                                              className="chat_icon chat"
+                                                              style={{ color: 'white', display: 'flex', alignItems: 'center', textDecoration:'none'}}
+                                                          >
+                                                              <FaComment style={{ marginRight: '8px' }} />
+                                                              Live Chat with Expert
+                                                          </a>
+                                                      </li>
+                                                  </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    );
 };
 
 export default Header;
