@@ -1,0 +1,253 @@
+import Lpbanner from "../../components/LandingPage/BannerLP"
+import LanguageLogos from "../../components/LandingPage/languagelogos"
+import LpPricingSection from "../../components/LandingPage/LpPricingSection"
+import LpthirdSection from "../../components/LandingPage/LpThirdSection"
+import LpCta1 from "../../components/LandingPage/LPCtaSection"
+import TopHead from "../../components/LandingPage/TopBar"
+import ImageRightBanner from "../../components/Aboutus/ImageRightbanner"
+import lpImage from "../../images/lpimageleft.png"
+import LpServiceIconBox from "../../components/LandingPage/LpServiceIconBox"
+import serviceiconbox1 from "../../images/lpicon1.png"
+import serviceiconbox2 from "../../images/lpicon2.png"
+import serviceiconbox3 from "../../images/lpicon3.png"
+import TestimonialSection from "../../components/Testimonial"
+import ContactForm from "../../components/ContactForm"
+import LpPortfolio from "../../components/LandingPage/LpPortfolio"
+import LpImgSec from "../../components/LandingPage/LpImgSec"
+import LpImgSec1 from "../../images/googlepartner.webp"
+import LpImgSec2 from "../../images/inc500.webp"
+import LpImgSec3 from "../../images/forbes.webp"
+import whyservice1 from '../../images/whyservice1.svg';
+import whyservice2 from '../../images/whyservice2.svg';
+import whyservice3 from '../../images/whyservice3.svg';
+import whyservice4 from '../../images/whyservice4.svg';
+import whyservice5 from '../../images/whyservice5.svg';
+import whyservice6 from '../../images/whyservice6.svg';
+import whyservice7 from '../../images/whyservice7.svg';
+import whyservice8 from '../../images/whyservice8.svg';
+import whyservice9 from '../../images/whyservice9.svg';
+
+
+import LpLogoSlider from "../../components/LandingPage/LpLogoSlider"
+import LpLogoSlider1 from "../../images/lplogoslider1.webp"
+import LpLogoSlider2 from "../../images/lplogoslider2.webp"
+import LpLogoSlider3 from "../../images/lplogoslider3.webp"
+import LpLogoSlider4 from "../../images/lplogoslider4.webp"
+import LpLogoSlider5 from "../../images/lplogoslider5.webp"
+import OurWorkProcess from "../../components/LandingPage/OurWorkProcess"
+import AllInOneCombo from "../../components/LandingPage/AllInOneSection"
+import LpCtaSec2 from "../../components/LandingPage/LpCtaSec2"
+import LpContactSec from "../../components/LandingPage/LpContactSec"
+import LpFooterSec from "../../components/LandingPage/LpFooterSection"
+import { useState } from "react"
+import PopupForm from "../../components/common/PopupForm"
+
+import { Helmet } from 'react-helmet-async';
+import WhyChooseService from "../../components/LandingPage/lpservices"
+import AllInOne from "../../components/LandingPage/Allinonenew"
+import CustomSection from "../../components/LandingPage/CustomSectionScrol"
+import LeftImageSec from "../../components/LandingPage/LeftImageSec"
+
+
+
+
+
+const heading = {
+    title: (
+        <>
+        Want to know more about our services? 
+        </>
+    ),
+    // highlight:"Animation Video",
+    // title2: "Production Company in the USA"
+};
+const description = "If you have any queries, drop us a message, our team will get back to you shortly. ";
+const steps = [
+    {
+        image: whyservice1,
+        alt: "Custom Web Development ",
+        title: "Custom Web Development ",
+        description: "We built custom websites to meet and fulfill the business requirement. "
+    },
+    {
+        image: whyservice2,
+        alt: "Mobile App Development",
+        title: "Mobile App Development",
+        description: "The developing process of apps using React Native, Flutter, and Swift, leveraging tools like Figma, Adobe XD, and Sketch for prototyping and UI/UX design, ensures top-level performance with smooth user experiences. "
+    },
+    {
+        image: whyservice3,
+        alt: "E-Commerce Solutions",
+        title: "E-Commerce Solutions",
+        description: "Developing e-commerce platforms with safe payment options and proper security of inventory. "
+    },
+    {
+        image: whyservice4,
+        alt: "Responsive Web Design",
+        title: "Responsive Web Design",
+        description: "Creating websites that deliver seamless and user-friendly experiences on any device. "
+    },
+    {
+        image: whyservice5,
+        alt: "Content Management System (CMS)",
+        title: "Content Management System (CMS)",
+        description: "To simplify content management systems, we develop and implement platforms such as WordPress, Joomla, and Drupal. "
+    },
+    {
+        image: whyservice6,
+        alt: "Web Application Development",
+        title: "Web Application Development",
+        description: "Developing engaging, interactive web applications for different business operations. "
+    },
+    {
+        image: whyservice7,
+        alt: "SEO & Digital Marketing",
+        title: "SEO & Digital Marketing",
+        description: "Strengthening websites for better search engine ranking and increasing web traffic through digital marketing techniques."
+    },
+    {
+        image: whyservice8,
+        alt: "UI/UX Design",
+        title: "UI/UX Design",
+        description: "Creating user-friendly interfaces and experiences to improve usability and boost engagement."
+    },
+    {
+        image: whyservice9,
+        alt: "Cloud Solutions",
+        title: "Cloud Solutions",
+        description: "Building flexible cloud infrastructure for hosting, storage, and seamless collaboration."
+    },
+ 
+];
+
+
+const iconBoxesData = [
+    {
+        image: serviceiconbox1,
+        heading: '5+ Years’ Experience ',
+        text: 'For over five years, we have been transforming marketing with innovative strategies. During this time, we have effectively addressed the diverse marketing needs of international clients, achieving remarkable success and widespread recognition.',
+    },
+    {
+        image: serviceiconbox2,
+        heading: '900+ Successful Clients',
+        text: 'We have served over 900 customers from various fields and always ensured their satisfaction. Our professional website designers’ success stems from the dedication, motivation, passion, loyalty, and expertise of our incredible team.',
+    },
+    {
+        image: serviceiconbox3,
+        heading: '800+ Custom Features',
+        text: 'Our company is a leading website development firm, specializing in e-commerce web development. Over the years, we have enhanced many brands\' presence and appeal.',
+    },
+
+];
+
+const imagesData = [
+    { src: LpImgSec1, alt: 'Description 1' },
+    { src: LpImgSec2, alt: 'Description 2' },
+    { src: LpImgSec3, alt: 'Description 3' },
+];
+
+
+const logosData = [
+    { src: LpLogoSlider1, alt: 'Logo 1' },
+    { src: LpLogoSlider2, alt: 'Logo 2' },
+    { src: LpLogoSlider3, alt: 'Logo 3' },
+    //  { src: LpLogoSlider4, alt: 'Logo 4'  },
+    { src: LpLogoSlider5, alt: 'Logo 5' },
+    { src: LpLogoSlider1, alt: 'Logo 6' },
+    { src: LpLogoSlider2, alt: 'Logo 7' },
+];
+
+const LpPage = () => {
+
+    const [title, setTitle] = useState('')
+
+    const handleTitleChange = newTitle => setTitle(newTitle)
+
+    return (
+        <>
+            <Helmet>
+                <title>Web Design Service Starts from $149 - Web Design Mania</title>
+                <meta name="description" content="Get custom web design and development services from UK #1 design company specializes in website design and marketing. Best bespoke web designers and developers team." />
+                <link rel="canonical" href="https://webdesignmania.com/lp/" />
+            </Helmet>
+
+            <TopHead updatePopupTitle={handleTitleChange} />
+            <Lpbanner updatePopupTitle={handleTitleChange} />
+            <LanguageLogos />
+            <LpPricingSection updatePopupTitle={handleTitleChange} />
+            <WhyChooseService
+                heading={heading}
+                 description={description}
+                steps={steps}
+            />
+
+<div>
+                <LpImgSec
+                    backgroundColor="#f0f0f0" // Example background color
+                    images={imagesData}
+                />
+            </div>
+            {/* <LpthirdSection /> */}
+            {/* <LpCta1 /> */}
+            {/* <div className="py-4 py-md-5">
+                <ImageRightBanner
+                    // subHeading="ABOUT US"
+                    heading="Customized Web Development Services That Talk To Your Audience"
+                    description={
+                        <>
+                            Enhance your brand's intelligence in the market with our innovative custom website design. To Stay ahead of the competition one needs a marvelous website developer. Therefore, by utilizing the world's most popular Content Management System. Our website redesign services can transform your brand from bland to standout, ensuring you are the coolest brand in the market.                        </>
+                    }
+                    imageSrc={lpImage}
+                    objectfit="contain"
+                    imageHeight="500px"  // Set height here
+                    imageWidth="100%"     // Set width here
+                    borderRadius="30px"
+                    reverseOrder={true}
+                    updatePopupTitle={handleTitleChange}
+                />
+            </div> */}
+            {/* <LpServiceIconBox
+                backgroundColor="#f9f9f9" // Example background color
+                servicesTitle="We Specialize In Coding High Performance Websites"
+                // message="Drop us a message, and our experts will get back to you shortly."
+                iconBoxes={iconBoxesData}
+            />
+           
+            <OurWorkProcess />
+            <AllInOne updatePopupTitle={handleTitleChange} />
+     
+          
+       
+            /> */}
+            {/* <div> */}
+                {/* <LpImgSec
+                    backgroundColor="#f0f0f0" // Example background color
+                    images={imagesData}
+                />
+            </div> */}
+            {/* <OurWorkProcess /> */}
+            {/* <AllInOneCombo updatePopupTitle={handleTitleChange} />
+            <div style={{ padding: '100px 0px 50px 0px' }}>
+                <LpPortfolio updatePopupTitle={handleTitleChange} />
+            </div> */}
+            {/* <div style={{ padding: '100px 0px 50px 0px' }}>
+            </div> */}
+
+       <AllInOne updatePopupTitle={handleTitleChange} />
+
+            <CustomSection/>
+            <LeftImageSec/>
+            
+            <LpLogoSlider logos={logosData} />
+            <LpCtaSec2 />
+
+            <TestimonialSection updatePopupTitle={handleTitleChange} />
+            <ContactForm />
+            <LpContactSec />
+            {/* <LpFooterSec /> */}
+            <PopupForm title={title} />
+        </>
+    )
+}
+
+export default LpPage

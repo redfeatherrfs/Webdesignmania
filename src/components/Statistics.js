@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImage from '../images/div.diag_slides.png';
+import bannerImage from '../images/companystatistics.webp';
 
 const StatisticsSection = () => {
   return (
@@ -12,13 +12,14 @@ const StatisticsSection = () => {
             <div className="col-md-7">
               <h2 className="sub-heading">Company Statistics</h2>
               <h2 className="about-heading">
-                We've achieved significant milestones with global partners
+              Grow With Exceptional UI Designs At Web Design Mania
+
               </h2>
             </div>
             {/* Right Side: Description */}
             <div className="col-md-5">
               <p className="about-desc">
-                Through strategic collaborations with esteemed global partners, we've delivered innovative solutions that drive success. Our unwavering commitment to excellence empowers businesses worldwide, redefining industry standards.
+              We understand that the key to a successful digital product lies in its usability. At Web Design Mania, our dedicated team of UI designers creates intuitive interfaces that blend beauty and functionality seamlessly.
               </p>
             </div>
           </div>
@@ -27,7 +28,7 @@ const StatisticsSection = () => {
       {/* End Statistics Section */}
 
       {/* Start Full Width Image Section */}
-      <section className="banner-section">
+      <section className="secbanner-section">
         <img src={bannerImage} alt="Background" className="img-fluid" />
       </section>
       {/* End Full Width Image Section */}

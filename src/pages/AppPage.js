@@ -1,0 +1,220 @@
+import BannerSection from "../components/banner"
+import EngagingUiCarouselSection from "../components/EngagingUiCarouselSection"
+import EngagingUISection from "../components/EngagingUiSection"
+import GetStartedSection from "../components/Formsection"
+import HeaderSection from "../components/Header"
+import LogoSection from "../components/logos"
+import UniqueUIDesignsSection from "../components/UniqueUIDesigns"
+import bannerImage from '../images/AppsPage.webp'
+import serviceImage1 from '../images/Mask group.png'
+import serviceImage2 from '../images/Mask group-1.png'
+import serviceImage3 from '../images/Mask group-2.png'
+import serviceImage4 from '../images/Mask group-3.png'
+import serviceImage5 from '../images/Mask group-4.png'
+import FooterSection from "../components/Footer"
+import ContactForm from "../components/ContactForm"
+import TestimonialSection from "../components/Testimonial"
+import PricingSection from "../components/PricingSection"
+import AppDevelopmentProcessSection from "../components/AppDevelopmentProcessSection"
+import TechnologyStackSection from "../components/TechnologyStackSection"
+import IndustriesSection from "../components/IndustriesSection"
+import { Helmet } from 'react-helmet-async';
+import { useState } from "react"
+import PopupForm from "../components/common/PopupForm"
+
+const AppPage = () => {
+    const [title, setTitle] = useState('')
+
+    const handleTitleChange = newTitle => setTitle(newTitle)
+
+    const services = [
+        { id: '01', title: 'Native App Development ', description: 'Delivering seamless, high-performance native apps tailored for optimal user experiences.', imgSrc: serviceImage1, alt: 'Android App Development' },
+        { id: '02', title: 'iOS App Development', description: 'Creating intuitive, high-quality iOS apps that enhance Apple device experiences.', imgSrc: serviceImage2, alt: 'iOS App Development' },
+        { id: '03', title: 'Android App Development', description: 'Building robust Android apps tailored for diverse devices and user needs.', imgSrc: serviceImage3, alt: 'React Native App Development' },
+        { id: '04', title: 'Flutter App Development', description: 'Cross-platform Flutter apps for smooth, consistent experiences across all devices.', imgSrc: serviceImage4, alt: 'Flutter App Development' },
+        { id: '05', title: 'Swift App Development', description: 'Crafting powerful, scalable Swift apps with unmatched performance and reliability.', imgSrc: serviceImage5, alt: 'Swift App Development' },
+    ];
+
+    const packages = [
+        {
+            category: 'Website',
+            default: true,
+            items: [
+                {
+                    title: "Start-up",
+                    subtitle: "For solo entrepreneur",
+                    price: "Let's talk!",
+                    features: [
+                        "1 design project per month",
+                        "Basic design consultation",
+                        "Limited revisions",
+                        "Email support",
+                    ],
+                },
+                {
+                    title: "Professional",
+                    mostPopular: true,
+                    subtitle: "For growing businesses",
+                    price: "Let's talk!",
+                    features: [
+                        "3 design projects per month",
+                        "Detailed design consultation",
+                        "Unlimited Revisions",
+                        "Priority email and chat support",
+                        "Access to design resources library",
+                    ],
+                },
+                {
+                    title: "Elite",
+                    subtitle: "Tailored solutions for startups",
+                    price: "Let's talk!",
+                    features: [
+                        "Customized design solutions",
+                        "Dedicated design team",
+                        "Unlimited design projects",
+                        "24/7 support",
+                        "Advanced collaboration tools",
+                        "Unlimited revisions",
+                    ],
+                },
+            ],
+        },
+        {
+            category: 'E-commerce',
+            items: [
+                {
+                    title: "Basic E-commerce Package",
+                    subtitle: "Best Value for Money Guaranteed!",
+                    price: "Let's talk!",
+                    features: ["3 Page Website", "5 Revisions", "2 Stock Images"],
+                },
+                {
+                    title: "Standard E-commerce Package",
+                    subtitle: "Perfect for Small Businesses!",
+                    price: "Let's talk!",
+                    features: ["5 Page Website", "10 Revisions", "SEO Ready"],
+                },
+                {
+                    title: "Premium E-commerce Package",
+                    subtitle: "Advanced Features Included!",
+                    price: "Let's talk!",
+                    features: ["10 Page Website", "Unlimited Revisions", "E-commerce Ready"],
+                },
+            ],
+        },
+        {
+            category: 'Stationery',
+            items: [
+                {
+                    title: "Stationery Design Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
+                },
+                {
+                    title: "Business Branding Package",
+                    subtitle: "All Your Needs Covered!",
+                    price: "Let's Talk",
+                    features: ["Business Cards", "Letterhead", "Email Signature"],
+                },
+                {
+                    title: "Custom Stationery Package",
+                    subtitle: "Tailored for You!",
+                    price: "Let's Talk",
+                    features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
+                },
+            ],
+        },
+        {
+            category: 'SEO',
+            items: [
+                {
+                    title: "SEO Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
+                },
+                {
+                    title: "SEO Package",
+                    subtitle: "All Your Needs Covered!",
+                    price: "Let's Talk",
+                    features: ["Business Cards", "Letterhead", "Email Signature"],
+                },
+                {
+                    title: "SEO Package",
+                    subtitle: "Tailored for You!",
+                    price: "Let's Talk",
+                    features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
+                },
+            ],
+        },
+        {
+            category: 'SMM',
+            items: [
+                {
+                    title: "SMM Package",
+                    subtitle: "Complete Branding Solution!",
+                    price: "Let's Talk",
+                    features: ["Business Card Design", "Letterhead Design", "Envelope Design"],
+                },
+                {
+                    title: "SMM Package",
+                    subtitle: "All Your Needs Covered!",
+                    price: "Let's Talk",
+                    features: ["Business Cards", "Letterhead", "Email Signature"],
+                },
+                {
+                    title: "SMM Package",
+                    subtitle: "Tailored for You!",
+                    price: "Let's Talk",
+                    features: ["Custom Designs", "Unlimited Revisions", "Source Files"],
+                },
+            ],
+        },
+
+    ]
+
+    return (
+        <>
+             <Helmet>
+    <title>Affordable App Design Services | Hire Mobile App Developers</title>
+    <meta name="description" content="Get affordable mobile app development services with Web Design Mania. We design, develop, and deploy mobile applications for Android and iOS platforms." />
+    <link rel="canonical" href="https://webdesignmania.com/mobile-app-design-services" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Affordable App Design Services | Hire Mobile App Developers" />
+    <meta property="og:description" content="Get affordable mobile app development services with Web Design Mania. We design, develop, and deploy mobile applications for Android and iOS platforms." />
+    <meta property="og:url" content="https://webdesignmania.com/mobile-app-design-services" />
+    <meta property="og:site_name" content="WebDesignMania" />
+    <meta property="article:publisher" content="https://www.facebook.com/webdesignmaniaUS" />
+    <meta property="article:modified_time" content="2024-08-23T06:56:32+00:00" />
+  </Helmet>
+            <HeaderSection />
+            <BannerSection
+                title='Your Partner in Creating Innovative Mobile App Design'
+                description="Ready to turn your app idea into a reality that stands out in the crowd? Partner with us and design apps that make a lasting impression at your fingertips. "
+                buttonlink='/'
+                buttontext="Start a Project"
+                image={bannerImage}
+                updatePopupTitle={handleTitleChange}
+            />
+            <LogoSection />
+            <GetStartedSection />
+            <EngagingUISection updatePopupTitle={handleTitleChange} />
+            <EngagingUiCarouselSection />
+            <UniqueUIDesignsSection services={services} page='app' />
+            <AppDevelopmentProcessSection />
+            {/* <TechnologyStackSection />
+            <IndustriesSection /> */}
+            <PricingSection packages={packages} updatePopupTitle={handleTitleChange}  />
+            <TestimonialSection updatePopupTitle={handleTitleChange} />
+            <ContactForm />
+            <FooterSection />
+            <PopupForm title={title} />
+        </>
+    )
+}
+
+export default AppPage
